@@ -1,2 +1,2 @@
 # Content
-Content for the IBM Bluemix DevOps Services site - hub.jazz.net
+We can help you get it done! Bluemix DevOps Services Content supports your work.
