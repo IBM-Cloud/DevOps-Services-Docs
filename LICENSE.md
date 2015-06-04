@@ -48,6 +48,6 @@ This agreement is governed by the laws of the State of New York and the intellec
 
 # 6.Trademarks
 
-IBM, and the IBM logo, are trademarks of IBM Corporation, in the United States, other countries, or both. For other trademarks see (http://www.ibm.com/legal/copytrade.shtml).
+IBM, and the IBM logo, are trademarks of IBM Corporation, in the United States, other countries, or both. For other trademarks see http://www.ibm.com/legal/copytrade.shtml.
 Other company, product, or service names may be trademarks or service marks of others.
 
