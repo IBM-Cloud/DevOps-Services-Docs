@@ -1,6 +1,6 @@
 # What is IBM Bluemix DevOps Services?
 
-** Newer **
+## **Newer **
 
 
 Last updated: 27 January 2015
