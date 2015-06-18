@@ -1,8 +1,5 @@
 # What is IBM Bluemix DevOps Services?
 
-## **Newer **
-
-
 Last updated: 27 January 2015
 
 IBM&reg; Bluemix&trade; DevOps Services is software as a service (SaaS) on the cloud that supports continuous delivery. With IBM Bluemix DevOps Services, you can develop, track, plan, and deploy software in one place.
