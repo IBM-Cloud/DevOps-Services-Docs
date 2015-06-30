@@ -1,5 +1,5 @@
 # Glossary
-Last modified: 25 March 2015
+Last modified: 25 June 2015
 
 This glossary provides terms and definitions for the IBM&reg; Bluemix&trade; DevOps Services features.
 
