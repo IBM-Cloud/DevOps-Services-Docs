@@ -1,6 +1,6 @@
 #Configure Bluemix billing for Bluemix DevOps Services
 
-Last modified: 31 March 2015
+Last modified: 1 April 2015
 
 All IBM&reg;  Bluemix&trade; DevOps Services projects include an allowance of free services. If you exceed your allowances, your work is interrupted. To avoid interruptions, set up a Bluemix billing account and configure your services. By configuring your Bluemix account, you also get advanced features for monitoring your builds, deployments, and status of your projects. 
 
