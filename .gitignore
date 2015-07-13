@@ -1,5 +1,6 @@
-# IDS files
+# project-specific files
 project.json
+
 # Logs
 logs
 *.log
