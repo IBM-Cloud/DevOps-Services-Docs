@@ -1,15 +1,27 @@
-# Administer a project in Bluemix DevOps Services 
+# Administering a project
 
-Last modified: 17 April 2015
+Last modified: 02 July 2015
 
 To administer IBM&reg; Bluemix&trade; DevOps Services projects, you must be a project admin or a project owner. A project can have multiple admins, but it can only have one owner. 
 
+---
+
+* [Project owner privileges](#project_owner_privileges)
+* [Project admin privileges](#project_admin_privileges)
+* [Project member privileges](#project_member_privileges)
+* [Managing projects](#managing_projects)
+* [Promoting or demoting project admins](#promoting_demoting)
+
+---
+
+<a name='project_owner_privileges'></a>
 ##Project owner privileges
 Project owners can do everything that project admins and members can do. In addition, project owners can do these tasks:
 * Rename the project
 * Transfer ownership of the project
 * Delete the project
 
+<a name='project_admin_privileges'></a>
 ##Project admin privileges
 
 Project admins can do the tasks that project members can do as well as these tasks:
@@ -32,7 +44,7 @@ Project admins can do the tasks that project members can do as well as these tas
 	
 	b. Force pushes
 
-
+<a name='project_member_privileges'></a>
 ##Project member privileges
 Project members have the fewest privileges and responsibilities. They can do these tasks:  
 * Add and edit work items
@@ -43,17 +55,19 @@ Project members have the fewest privileges and responsibilities. They can do the
 * Add, edit, delete, and run pipeline stages or jobs
 
 ----
+<a name='managing_projects'></a>
 ##Managing projects
 
 A common task for project owners and admins is to manage the project's settings and members. When you sign in to DevOps Services, the My Projects page opens. On the Requests page, you can see any requests to join projects that you administer. As an admin, you can accept or reject those requests. 
 
 In projects that you own or administer, you can invite people to be members. On the Members page, click **INVITE MEMBERS**.
 
-As a project owner or admin, you can also change your project settings. For example, you can add or change the project's image, modify its description, enable or disable features, and make the project public or private. If you are the project owner, you can also reassign its ownership or delete the project. To access the project settings, click the **Settings** icon.
+As a project owner or admin, you can also change your project settings. For example, you can add or change the project's image, modify its description, enable or disable features, and make the project public or private. If you are the project owner, you can also reassign its ownership, change its name, or delete the project. To access the project settings, click the **Settings** icon.
 
 ![Project settings gear icon][7]
 
 ----
+<a name='promoting_demoting'></a>
 ##Promoting or demoting project admins
 
 Because each project can have multiple admins, you can be promoted or promote others to the project admin role. 

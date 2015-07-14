@@ -1,19 +1,18 @@
-#Develop with Bluemix Live Sync and Node.js
+#Test and debug a Node.js app with Bluemix Live Sync
 
-Last modified: 22 April 2015
+Last modified: 30 June 2015
 
-Time: 30 minutes
+Testing and debugging are critical steps in the development process that help ensure that your app performs without unexpected results.  With IBM&reg; Bluemix&trade; DevOps Services, you can perform all of your testing and debugging for Node.js apps right from the Web IDE.  Bluemix Live Sync provides tools to deploy and make changes to your code within a test environment.  Simple code updates can be viewed immediately in the running app without the need to redeploy.  Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app while having all of the benefits of deploying with Bluemix.
 
-If you are building a Node.js app, you can quickly update it on IBM&reg; Bluemix&trade; and develop as you would on the desktop by using Bluemix Live Sync. You can use Bluemix Live Sync on the command line, through the Desktop Sync feature, and in the Web IDE, through the Live Edit feature. You can also [use Bluemix Live Sync to debug Node.js apps][2]. [Learn more about Bluemix Live Sync][4]. 
-
-In this tutorial, you deploy a Node.js app and then update it by using IBM&reg; Bluemix&trade; DevOps Services and Bluemix Live Sync. You can see the changes to your running Bluemix app immediately, without waiting for redeployment.
-
+##Contents
 * [Learning objectives](#objectives)
 * [Before you begin](#prereq)
-* [Create a Node.js app from a Bluemix starter](#create)
-* [Connect the Node.js app instance to DevOps Services](#connect)
-* [Edit the app by using the Web IDE and Bluemix Live Sync](#edit_ide)
-* [Edit the app locally by using Bluemix Live Sync](#edit_local)
+* [The run bar](#runbar)
+* [Create a launch configuration](#launch_configuration)
+* [Deploy an app to a test environment](#deploy_app)
+* [Turn on Live Edit mode](#live_edit)
+* [Debug a Node.js app](#debug)
+* [Test and debug on the command line](#local_edit)
 * [Summary](#summary)
 * [Next steps](#nextsteps)
 
@@ -22,115 +21,127 @@ In this tutorial, you deploy a Node.js app and then update it by using IBM&reg; 
 <a name='objectives'></a>
 ##Learning objectives
 
-* Create an app in Bluemix by using the SDK for Node.js starter pack.
-* Create a Git repository for the app.
-* On the Web IDE run bar, create a launch configuration.
-  * Enable the Live Edit feature.
-  * View code changes in the running app.
-* From the command line, enable the Live Edit feature.
-  * View code changes in the running app.
+* Create a launch configuration.
+* Deploy an app to a test environment.
+* Enable the Live Edit mode.
+* Open the Debugger for a Node.js app.
+* Enable the Desktop Sync feature from the command line.
+
 
 ---
 <a name='prereq'></a>
 ##Before you begin 
 * [Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix.
-* Download and install the Bluemix Live Sync command-line interface for [Windows][1] or for [Mac OS X](http://livesync.mybluemix.net/downloads/BluemixLive.pkg).
+* If you don't already have a Node.js project to work with, [create one](https://hub.jazz.net/tutorials/jazzeditor).
+* To develop locally from your desktop, download and install the Bluemix Live Sync command-line interface for [Windows](https://jazz.net/pub/bluemixlive/blive_setup.msi) or for [Mac OS X](http://livesync.mybluemix.net/downloads/BluemixLive.pkg).
 
-**Important:** The Live Sync command-line interface is available only for Windows 7 and 8 and Mac OS X version 10.9 or later. [Learn more about the Live Sync command-line interface][16].
+ **Important:** The Live Sync command-line interface is available only for Windows 7 and 8 and Mac OS X version 10.9 or later. [Learn more about the Live Sync command-line interface](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#live_sync_cli).
 
----
-<a name='create'></a>
-##Create a Node.js app from a Bluemix starter
-
-First, you need an app to edit. Bluemix provides everything you need to get started:
-
-1. Sign in to Bluemix.
-2. Click **CREATE AN APP**.
-3. Click **WEB**.
-4. For the starter, select the **SDK for Node.js**, and then click **CONTINUE**.
-5. Name the app, and then click **FINISH**.
-6. On the left side of the page, under your app's name, click **Overview**. 
-
-After a few moments, your app is running on Bluemix. To view it, click the URL beside Routes.
-
-![Sample starter app][14]
 
 ---
-<a name='connect'></a>
-##Connect the Node.js app to DevOps Services
+<a name='runbar'></a>
+##The run bar
+The run bar, which is located within the Web IDE, provides all of the controls for Bluemix Live Sync.  On the bar, you can see the deployed state of your app.  You can also deploy, stop, and open the app, open its Dashboard, and view logs.  If you're developing a Node.js app, the run bar contains additional icons to enable Live Edit mode, quickly restart the app, and open debugging tools.
 
-Next, create a Git repository that is hosted by DevOps Services and associate the repository with your app instance. The repository will be populated with the code from the SDK for Node.js starter.
+![Run bar](images/runbar.png)
 
-1. On your app's Overview page, click **ADD GIT**.
-![Clicking ADD GIT][6]
-2. On the Create Git Repository Page, confirm that the **Populate the repository with the starter application package and enable Delivery Pipeline (Build & Deploy)** check box is selected. Click **CONTINUE**.
-3. When the repository is initialized, close the Create Git Repository window. 
+You can use the run bar to quickly test and debug code in a personal environment before you push the code into production.  When you use the run bar to deploy your code, only the code that is currently in your workspace is deployed.  You have complete control to test and experiment before you check in any of your code.
 
-Your app instance is now associated with a DevOps Services project and Git Repository.
 
 ---
-<a name='edit_ide'></a>
-##Edit the app by using the Web IDE and Bluemix Live Sync
+<a name='launch_configuration'></a>
+##Create a launch configuration
 
-<a name='edit_ide_create'></a>
-###Create a launch configuration to use with Bluemix Live Sync
+Launch configurations define the settings that the Web IDE uses to deploy your app on Bluemix. By default, DevOps Services deploys to the bound Bluemix app that is associated with the DevOps Services project.  If you want to deploy your app locally, you first must create a launch configuration.
 
-Launch configurations define the settings that the Web IDE uses to deploy your app to Bluemix. By default, DevOps Services deploys to the Bluemix app that it was associated with when you created the app. To test your changes before committing to them, create a launch configuration.
-
-1. On your app's Overview page, click **EDIT CODE**. The Web IDE opens. 
-2. In the run bar, click the menu and then click the **Create a new launch configuration** icon.
-![Clicking Plus icon in the run bar][7]
-3. On the Edit Launch Configuration menu, indicate that this is a test version of your app by adding text to the app's name and host. For example, in the following configuration, `–live` is added to the name and host. DevOps Services provides a launch configuration name automatically.
-![Edit Launch Configuration menu][8]
+1. On the run bar, click the **Launch configuration** list and then click the **Create a new launch configuration** icon.
+![Clicking Plus icon in the run bar](images/new_launch_config.png)
+2. In the Edit Launch Configuration window, indicate that this is a test version of your app by adding text to the app's name and host. In the following example, `–live` is added to the name and host.  DevOps Services provides an initial launch configuration name automatically, but you can change the name if needed.
+![Edit Launch Configuration menu](images/edit_lc.png)
+3. Click **Next** to edit the manifest settings for the launch configuration.  The manifest file defines how your project is deployed.  The file includes information such as memory and instance allotments and is also where you can specify any services to bind to the app.  You can create several launch configurations to test different app setups.  For information about creating a manifest, [see the Bluemix documentation about application manifests](https://www.ng.bluemix.net/docs/#manageapps/index-gentopic2.html#appmanifest).<br>
+![Edit Launch Configuration menu](images/edit_lc_manifest.png)
 4. Click **SAVE**. 
 
-You can use the new launch configuration to edit your project through Bluemix Live Sync.
+You can now use your launch configuration to deploy the contents of your workspace to the test environment that you specified in the configuration.
 
-<a name='edit_ide_live'></a>
-###Edit in Live Edit mode
-
-When you’re forced to redeploy to Bluemix each time you make a change, you waste valuable development time. To quickly make changes to your project and preview the changes, turn on Live Edit mode in the DevOps Services Web IDE.
-
-1. On the run bar, click the menu and select your new launch configuration.
-  * The new launch configuration has the name of the original launch configuration with "-1" appended to it.
-2. Turn on **Live Edit**. The code in your workspace is deployed to Bluemix according to the new launch configuration.
-![Clicking the Live Edit button][9]
-3. When redeployment finishes, the deployment status icon turns green and the phrase "`(running: live edit)`" is shown beside your launch configuration on the run bar.
-4. On the run bar, click **Open the application URL**. The Bluemix Live Sync app opens in a new browser window.
-![Clicking the Open the application URL button][10]
-
-Edit the starter app:
-
-1. In the Web IDE editor, expand the **public** folder. Expand **stylesheets** and open the `style.css` file.
-
-2. In the `h1` rule set, increase the `font-size` value to `4em`.
-![The code editor][11]
-
-3. Refresh the browser window that shows the running app. The header size doubles.
-![4em header shown in running sample app][12]
-
-**Note:** Changes to static file types, such as CSS and HTML, are reflected when you refresh your browser. If you make changes to a Node module, you must first click **Quick Restart** on the run bar to see your changes in Live Edit mode.
-
-Turn off Live Edit mode.
-
-You edited the project in the Web IDE and previewed the result of your changes without redeploying to Bluemix. Excellent!
 
 ---
-<a name='edit_local'></a>
-##Edit the app locally by using Bluemix Live Sync
+<a name='deploy_app'></a>
+##Deploy an app to a test environment
 
-Live Sync isn't just available for work done in the Web IDE. You can also make changes on your local environment and see them previewed on Bluemix by using the Live Sync command-line tool, "bl," to synchronize the desktop with your project workspace. Before you follow the next steps, be sure to [download and install the Live Sync command-line interface][1].
+1. To deploy your app, click the deploy icon <img src="./images/deploy_button.png"  alt="The deploy icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> on the run bar. When you click the icon, an instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration.
+2. After your app is deployed, you can also complete any of these actions:
+![Run bar](images/runbar.png)
+
+ * <img src="./images/stop_button.png"  alt="The stop icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">Stop the app.
+ * <img src="./images/open_app_url.png"  alt="The open app URL icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">Open the deployed app.
+ * <img src="./images/view_logs.png"  alt="The view logs icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">View the logs of the deployed app.
+ * <img src="./images/open_dashboard.png"  alt="The open dashboard icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">Open the app's Dashboard.
+ * <img src="./images/enable_live_edit.png"  alt="The enable live edit slider" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">If you are developing a Node.js app, enable Live Edit mode.
+
+
+---
+<a name='live_edit'></a>
+##Turn on Live Edit mode
+Redeploying an app can waste valuable time when you are testing minor changes.  To save time, turn on Live Edit mode.  When Live Edit mode is on, you can quickly make changes to a Node.js app and preview the changes immediately.
+
+1. On the run bar, select or create a launch configuration.
+2. Click **Live Edit**. If the app is currently deployed in your workspace, it is redeployed to enable Live Edit mode.  Otherwise, the contents of your workspace are deployed in Live Edit mode by using the specified launch configuration.
+![Clicking the Live Edit button](images/live_edit_off.png)
+3. When redeployment finishes, the deployment status icon turns green and the phrase `(running: live edit)` is shown beside your launch configuration on the run bar.
+![Live Edit enabled](images/live_edit_on.png)
+
+When you work in Live Edit mode, changes to static files, such as HTML or CSS, can usually be seen immediately in the deployed app.  If you make changes that affect Node.js source files, you can restart the app quickly, without redeployment, by clicking the restart icon <img src="./images/live_edit_restart.png"  alt="The restart icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+
+
+---
+<a name='debug'></a>
+##Debug Node.js apps
+Another benefit of Live Edit mode is the Debug feature.  You can edit code dynamically, insert breakpoints, step through code, restart the runtime, and more, while your app is running on Bluemix.
+
+1. On the run bar, click the debug icon <img src="./images/debug_icon.png"  alt="The debug tools icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+![Debug tools console](images/debug_console.png)
+2. Select an option to manage the runtime of your app or begin debugging.
+
+ * If you click **Open Shell**, a Bash shell is displayed.  In the shell, you can access the container that your app is running in. You can remotely run diagnostic shell commands to administer your app.
+
+ ![Bash shell](images/bash_shell.png)
+	
+ * If you click **Open Debugger**, Node Inspector opens.  Node Inspector is a debugger interface for Node.js apps that uses the Blink Developer Tools (formerly WebKit Web Inspector).
+
+    **Note:** Node Inspector is currently supported on Chrome and Opera browsers only.
+
+ ![Node Inspector](images/node_inspector.png)
+
+ Node Inspector offers many useful debugging techniques for apps:
+	* Setting breakpoints and specifying trigger conditions in code
+	* Disabling or enabling all breakpoints
+	* Inspecting scopes, variables, and object properties
+	* Displaying the value of an expression in source code by hovering over it
+	* Editing variables and object properties
+	* Breaking on exceptions
+
+ For more information about Node Inspector, see these resources:
+    * [node-inspector GitHub website](https://github.com/node-inspector/node-inspector)
+    * [Debugging applications on the StrongLoop website](http://docs.strongloop.com/display/SLC/Debugging+applications)
+
+
+---
+<a name='local_edit'></a>
+##Test and debug on the command line
+
+You can use Bluemix Live Sync for more than work in the Web IDE. You can also make changes in your local environment and preview them on Bluemix.  To do so, use the Bluemix Live Sync command-line tool, "bl", which synchronizes your desktop with your project workspace.
+
+**Before you begin**: [Download and install the Bluemix Live Sync command-line interface](http://livesyncdownload.ng.bluemix.net).
 
 
 <a name='edit_local_download'></a>
 ###Synchronize your local environment with Bluemix
 
-Configure your local environment to work with Bluemix Live Sync:
-
-1. Open a command prompt.
-2. Log in to Bluemix by typing your IBM id and password:
+1. Open a command-line window.
+2. Sign in to Bluemix by typing your IBM id and password:
 ```
-bl login -u user_name -p password
+bl login
 ```
 3. View a list of your Bluemix projects: 
 ```
@@ -138,62 +149,36 @@ bl projects
 ```
 4. Synchronize your local environment with your project on Bluemix:
 ```
-bl sync projectName -d localDirectory
+bl sync projectName
 ```
+where `projectName` is your Bluemix app's name.
 
-Where `projectName` is your Bluemix app's name and `localDirectory` is the path to a local workspace.
+By synchronizing your local environment with Bluemix, you populate `localDirectory` with the files from your Node.js project. When you are finished making changes, type `q` to end synchronization.
 
-By synchronizing your local environment with Bluemix, you populate `localDirectory` with the files from your Node project. When you are finished making changes, type `q` to end synchronization.
+###Enable the Desktop Sync feature to edit code locally
 
-###Enable the Desktop Sync feature and make an edit
-
-1. In a second command prompt, enable the Desktop Sync feature:
+The Desktop Sync feature is like Live Edit mode for the command line. To debug on the command line, you must enable the Desktop Sync feature.
+1. In another command-line window, enable the Desktop Sync feature:
 ```
 cd localDirectory
 bl start
 ```
-2. Use the launch configuration that you created in the Web IDE. After you select the launch configuration, Desktop Sync is enabled in your local environment. View the App URL, Debug URL, Manage URL, and Live Sync state in the second command prompt window.
+2. Use the launch configuration that you created in the Web IDE. After you select the launch configuration, Desktop Sync is enabled in your local environment. In the command-line window that you just opened, you can view the app's URL, the debug URL, the manage URL, and view the Bluemix Live Sync state.
 
-3. Refresh the browser, and verify that you can see the changes that you saved to local, static files in your Debug instance. 
+3. Refresh the browser and verify that you can see the changes that you saved to static files in the local workspace. 
 
-4. In your favorite editor, find the `h1` rule set and add this declaration: `color: #00aed1`. Save the change and view it. If you update the Node module, to see your change, restart the Debug instance by entering `bl start --restart` in the command prompt.
+###Disable the Desktop Sync feature
 
-###Disable the Desktop Sync feature:
-
-If you made both of the changes, the header on your app's page is now big and blue. Nice work!
-![Big blue header in sample app][13]
-
-Disable the Desktop Sync feature:
-1. In the second command prompt, enter `bl stop`.
-2. In the first command prompt, press `q`.
-
-If you were working on a real project and you liked the way the app looked, you would commit your changes in Git. Then, the Pipeline in DevOps Services would deploy your updated app to Bluemix.
+1. In the second command-line window, enter `bl stop`.
+2. In the first command-line window, press `q`.
 
 ---
-
 <a name='summary'></a>
 ##Summary
 
-You used Bluemix Live Sync to edit a Node.js project both in the cloud and locally and to preview your changes along the way.
+You learned how to create a launch configuration and deploy an app from the run bar. You also used Bluemix Live Sync to edit a Node.js project and preview changes both in the cloud and locally from the command-line.
 
 <a name='nextsteps'></a>
 ##Next steps
 
-After you have tested your application, [learn more about setting up automated build and deploy processes](/docs/reference/deploy/). 
-
-[1]: https://jazz.net/pub/bluemixlive/blive_setup.msi 
-[2]: https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#bluemixlivedebugger
-[3]: https://console.ng.bluemix.net/
-[4]: https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html
-[5]: /tutorials/livesync/images/default_h1.png
-[6]: /tutorials/livesync/images/add_git.png
-[7]: /tutorials/livesync/images/run_plus.png
-[8]: /tutorials/livesync/images/edit_lc.png
-[9]: /tutorials/livesync/images/click_live_edit.png
-[10]: /tutorials/livesync/images/click_open_url.png
-[11]: /tutorials/livesync/images/editor.png
-[12]: /tutorials/livesync/images/4em_h1.png
-[13]: /tutorials/livesync/images/big_blue_h1.png
-[14]: /tutorials/livesync/images/default_h1.png
-[15]: /tutorials/livesync/images/click_play.png
-[16]: https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#live_sync_cli
+After you have tested and debugged your app, [learn more about setting up automated build and deploy processes](/docs/reference/deploy/). 

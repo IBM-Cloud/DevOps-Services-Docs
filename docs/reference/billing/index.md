@@ -1,11 +1,53 @@
-#Configure Bluemix billing for Bluemix DevOps Services
+#Managing your account
 
-Last modified: 1 April 2015
+Last modified: 9 July 2015
 
-All IBM&reg;  Bluemix&trade; DevOps Services projects include an allowance of free services. If you exceed your allowances, your work is interrupted. To avoid interruptions, set up a Bluemix billing account and configure your services. By configuring your Bluemix account, you also get advanced features for monitoring your builds, deployments, and status of your projects. 
+Without logging into IBM® Bluemix™ DevOps Services, you can explore existing projects or view the documentation. After you register with DevOps Services by using your IBM ID, you can access all of the features to develop, track, plan, and deploy software in one place.
 
-If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan services beyond the free allowance, configure both services. Each service requires a separate billing configuration. 
+---
 
+* [DevOps Services accounts](#idsaccounts)
+* [Setting up a DevOps Services account](#idssetup)
+* [Bluemix accounts](#bmaccounts)
+* [Table: Free allowance details](#table)
+* [Setting up a billing account](#setup)
+* [Monitoring your usage](#monitor)
+
+--- 
+<a name='idsaccounts'></a>
+##DevOps Services accounts
+
+After you register and set up an account with DevOps Services, you can do these tasks:
+
+* Develop and deploy software in the cloud
+* Code with the web integrated development environment (IDE) in your browser
+* Push your applications to Bluemix, IBM's cloud platform
+* Ask questions and get answers in our forum
+* Get started by forking projects or following a tutorial
+
+---
+<a name='idssetup'></a>
+##Setting up a DevOps Services account
+
+1.	[Register with DevOps services](https://hub.jazz.net/). You need an alias. An alias is a publicly visible short name. The first time you log in to DevOps Services from a web browser, you link your IBM ID with an alias. If you have a Jazz ID, that is used as your alias.
+2.	After your IBM ID and alias are linked, you can log in to DevOps Services from a web browser or your IBM® Rational Team Concert™ client, and you can access a Git repository from your local Git client.
+
+	* To log in from a web browser, use your IBM ID and IBM password. 
+	* To log in from your Rational Team Concert client, use your alias and IBM password.
+	* To access a Git repository from your local Git client, use your alias and IBM password.
+
+**Tip:** For authentication problems or if you are linked to the wrong account, you can request support by email at <idslogin@jazz.net>.
+
+---
+<a name='bmaccounts'></a>
+##Bluemix accounts
+
+All DevOps Services projects include an allowance of free services. If you exceed your allowances, your work is interrupted. To avoid interruptions, set up a Bluemix billing account and configure your services. By configuring your Bluemix account, you also get advanced features for monitoring your builds, deployments, and status of your projects. 
+
+If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan services beyond the free allowance, configure both services. Each service requires a separate billing configuration.
+
+---
+<a name='table'></a>
 ### Table: Free allowance details
 <table border="1" summary="" width="100%">
 	<tbody>
@@ -38,7 +80,8 @@ If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan servi
 </table> 
 
 ---
-##Set up a billing account
+<a name='setup'></a>
+##Setting up a billing account
 
 Before you set up your billing account, determine what the best plan for your project is. [Learn more about billing accounts](https://www.ng.bluemix.net/docs/#acctmgmt/billing.html#bil_plan).
 
@@ -53,8 +96,8 @@ To set up your billing account, complete these steps:
 6. Click **Create.**
 
 ---
-##Monitor your usage
-
+<a name='monitor'></a>
+##Monitoring your usage
 
 You can monitor the usage details for your Bluemix account. For more information, [see the billing and usage documentation](https://www.ng.bluemix.net/docs/#acctmgmt/index-gentopic1.html#genTopProcId2). To determine costs, [see the Bluemix Pricing page](https://bluemix.net/#/pricing).
 

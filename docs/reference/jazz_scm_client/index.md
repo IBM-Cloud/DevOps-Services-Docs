@@ -1,33 +1,33 @@
 # Setting up local Eclipse clients to work with Jazz source control
 
-Last modified: 20 March 2015
+Last modified: 13 July 2015
 
 If you use Jazz Source Control Management (SCM) for your IBM&reg; Bluemix&trade; DevOps Services project, you can either work locally and deliver changes through Eclipse or work by using the integrated Web IDE. If you work locally and deliver changes through Eclipse, you can install the IBM&reg; Rational Team Concert&trade; plug-in for version control.
 
 If you use the Track & Plan feature to manage your project plans and work items, you can also access your work items from Eclipse.
 
 ---
-##Contents
 
-* [Install the Rational Team Concert plug-in](#install_eclipse_and_the_rational_team_concert_plugin)
-* [Connect to your Bluemix DevOps Services projects from Eclipse](#connect_to_your_devops_services_projects_from_eclipse)
-* [Load Bluemix DevOps Services projects in Eclipse](#import_code_into_eclipse_from_jazz_source_control)
-* [Deliver changes](#delivering)
-* [Open Bluemix DevOps Services work item queries in Eclipse](#work_items)
-
+* [Installing the Rational Team Concert plug-in](#install_eclipse_and_the_rational_team_concert_plugin)
+* [Connecting to your DevOps Services projects from Eclipse](#connect_to_your_devops_services_projects_from_eclipse)
+* [Loading DevOps Services projects in Eclipse](#import_code_into_eclipse_from_jazz_source_control)
+* [Delivering changes](#delivering)
+* [Opening DevOps Services work item queries in Eclipse](#work_items)
+* [Limitations to change and configuration management features](#limitations)
 
 ---
+
 <a name='install_eclipse_and_the_rational_team_concert_plugin'></a>
-## Install the Rational Team Concert plug-in
+## Installing the Rational Team Concert plug-in
 
 
-**Before you begin**: 
+###Before you begin 
 
 The plugin is based on Rational Team Concert 5.0.2. 
 * Rational Team Concert 5.0.2 and later requires Eclipse 4.3.2 or later. If you do not have Eclipse installed already, [download and install Eclipse IDE for Java EE Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr2).
 * Eclipse 4.3.2 requires Java 1.7 or later. If you do not have Java 1.7 installed, [download and install a Java SE Development Kit](http://www.ibm.com/developerworks/java/jdk/).
 
-**Install the plug-in:**
+###Installing the plug-in
 
 1. In Eclipse, click **Help > Install New Software**.
 
@@ -46,20 +46,20 @@ The plugin is based on Rational Team Concert 5.0.2.
 
 ---
 <a name='connect_to_your_devops_services_projects_from_eclipse'></a>
-## Connect to your Bluemix DevOps Services projects from Eclipse
+## Connecting to your DevOps Services projects from Eclipse
 
-**Before you begin:**
-
-The project must use a Jazz Source Control Management (SCM) repository.
-
-**From Eclipse, you can connect to your projects in two ways:**
+From Eclipse, you can connect to your projects in two ways:
 
  * Use the Manage IBM DevOps Services Projects tool
  * Accept a team invitation
 
 After you connect to your project, you can access its work items.
 
-###Option 1: Connect by using the Manage IBM DevOps Services Projects tool
+###Before you begin
+
+The project must use a Jazz Source Control Management (SCM) repository.
+
+###Option 1: Connecting by using the Manage IBM DevOps Services Projects tool
 
 1. In the Eclipse Workbench, click **Window > Show View > Other > Team Artifacts**.
 
@@ -70,9 +70,9 @@ After you connect to your project, you can access its work items.
 
 4. Select the Bluemix DevOps Services projects to connect to and click **Finish**.
 
-###Option 2: Connect by accepting a team invitation
+###Option 2: Connecting by accepting a team invitation
 
-1. In [Bluemix DevOps Services](https://hub.jazz.net/), browse to your project overview page.
+1. In [DevOps Services](https://hub.jazz.net/), browse to your project's Overview page.
 
 2. Click **Configure eclipse client**. 
 ![Configure eclipse button on the project overview](images/configure-eclipse.jpg)
@@ -89,13 +89,13 @@ You are now connected to your Bluemix DevOps Services project in Eclipse. To see
 
 ---
 <a name='import_code_into_eclipse_from_jazz_source_control'></a>
-## Load Bluemix DevOps Services projects in Eclipse
+## Loading DevOps Services projects in Eclipse
 
-**Before you begin: **
+###Before you begin
 
 [Connect to a project from Eclipse](#connect_to_your_devops_services_projects_from_eclipse). The project must have the Track & Plan feature enabled.
 
-**Create a repository workspace:**
+###Creating a repository workspace
 
 1. In the Eclipse Workbench,  click **Window > Show View > Other > Team > Team Artifacts**.
 
@@ -109,7 +109,7 @@ You are now connected to your Bluemix DevOps Services project in Eclipse. To see
 
 5. Complete the wizard.
 
-**Load projects:**
+###Loading projects
 
 6. Click **Find and load Eclipse projects** and click **Next**.
 
@@ -120,7 +120,7 @@ You are now connected to your Bluemix DevOps Services project in Eclipse. To see
 ---
 
 <a name='delivering'></a>
-#Deliver changes
+## Delivering changes
 
 1. Make changes to the files. You can edit them with an Eclipse editor or an external editor of your choice.
 2. In the **Package** tab or **Project Explorer** view, refresh the files.
@@ -132,18 +132,37 @@ You are now connected to your Bluemix DevOps Services project in Eclipse. To see
 
 <a name='work_items'></a>
 
-#Open Bluemix DevOps Services work item queries in Eclipse
+## Opening DevOps Services work item queries in Eclipse
 
-**Before you begin: **
+###Before you begin
 
 [Connect to a project from Eclipse](#connect_to_your_devops_services_projects_from_eclipse). 
 
-**Open queries:**
+###Opening queries
 
 1. In the **Team artifacts** view, expand a project and **Work Items**.
 
-2. Create a new query or open existing queries.
+2. Create a query or open an existing query.
 
+---
+
+<a name='limitations'></a>
+
+##Limitations to change and configuration management features
+
+In DevOps Services projects, certain change and configuration management features that are in Rational Team Concert might not be available.
+
+###Project-area save permissions are not available
+
++ Team areas cannot be created.
++ Process customization for work items, workflows, approval and review requirements, pre- and post- conditions, and so on, cannot be configured.
++ In Eclipse, timelines cannot be edited directly. To manage timelines, in DevOps Services, click **TRACK & PLAN**, and open the Sprint Planning view.
++ Membership operations are not available. You can invite users to join a project from the DevOps Services project. For more information about user-role privileges, see [Administering a project in Bluemix DevOps Services](../projectadmin/).
+
+**Exception:** You can change work-item categories in the project-area editor.
+
+###Links to Jazz Team Server are not available
++ Personal dashboards cannot be accessed.
 
 
 

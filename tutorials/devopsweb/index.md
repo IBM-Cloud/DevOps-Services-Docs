@@ -1,6 +1,6 @@
-# Get started with Bluemix DevOps Services
+#Clone, edit, and deploy an app from Bluemix
 
-Last modified: 09 April 2015
+Last modified: 8 July 2015
 
 Time: 60 minutes 
 
@@ -46,7 +46,7 @@ If you haven't already registered for DevOps Services, [sign up](https://hub.jaz
 4. If you are prompted to log in to Bluemix, log in.
 5. Click **DEPLOY**.
 6. After the project is cloned and the deployment is complete, click **EDIT CODE** to continue.
-
+![EDIT CODE button][41]
 
 ---
 <a name='plan_change'></a>
@@ -57,9 +57,10 @@ With the Track & Plan feature in DevOps Services, you can manage projects by usi
 ###Enable the Track & Plan feature
 
 1. On the project's Overview page, click the **Project settings** icon.
-2. Open the **Options** page.
+![The Project Settings icon][44]
+2. Click **OPTIONS**.
 3. Select **Enable Track & Plan**.
-4. Click **Save**.
+4. Click **SAVE**.
 
 
 ###Explore the Track & Plan views
@@ -67,14 +68,14 @@ With the Track & Plan feature in DevOps Services, you can manage projects by usi
 1. Near the top of the page, click **TRACK & PLAN**.
 2. If you don't see lanes labeled OPEN and IN PROGRESS, enter the Lanes view by clicking **Display as lanes**.
 ![Click Display as lanes button][38]
-3. In the OPEN lane, click **Create a work item**. Work items are grouped into the OPEN, IN PROGRESS, and RESOLVED lanes based on their status.
+3. In the OPEN lane, click the **Create a work item** field. Work items are grouped into the OPEN, IN PROGRESS, and RESOLVED lanes based on their status.
 
 ###Create a task
 You can create different types of work items depending on what you're planning. For example, to describe a minor feature update, you might create a task item. To track the work to fix a problem, you might create a defect item. 
 
 Describe a task to personalize the Sentiment Analysis App. You can assign attributes to the new work item by clicking the attribute icons under the **Create a work item** field, and you can use shorthand in the field:
 
-1. In the **Create a work item** field, type `Update default search topic, then deploy app` as your work item's summary. In this field, you can also assign other information to the work item, such as its owner and priority, by typing special characters. For more information, see the [Track & Plan reference](https://hub.jazz.net/docs/reference/trackplan/).
+1. In the **Create a work item** field, enter `Update default search topic, then deploy app` as your work item's summary. In this field, you can also assign other information to the work item, such as its owner and priority, by typing special characters. For more information, see the [Track & Plan reference](https://hub.jazz.net/docs/reference/trackplan/).
 
    a. Assign the "task" type to the work item: after the summary, type a space and then type `*task`.
    
@@ -116,13 +117,13 @@ Your change is saved and ready to be committed to the project's remote repositor
 <a name='push_changes'></a>
 ## Push your change to the project repository
 
-For revision control and source code management, DevOps Services currently supports Git, Jazz SCM, and GitHub. Because the original Sentiment Analysis App project uses a Git repository that is hosted by IBM, your copy of the project uses a Git repository, too. 
+For revision control and source code management, DevOps Services supports Git, Jazz SCM, and GitHub. Because the original Sentiment Analysis App project uses a Git repository that is hosted by IBM, your copy of the project uses a Git repository, too. 
 
-The code that you changed is currently in your local workspace. Push the changed code to your project's master branch and then deploy your app to Bluemix.
+The code that you changed is currently in your workspace on the cloud. Push the changed code to your project's master branch and then deploy your app to Bluemix.
 
 1. On the far left, click the **Git Repository** icon. 
 ![The Git Repository icon][14]
-On the Git page that opens, check the Working Directory Changes section to verify that it shows an uncommitted change to the `app.js` file. You might also see other changes that are related to cloning the project into your workspace. You can ignore those changes. For this exercise, you are focused on the updated `app.js` file.
+On the Git page that opens, check the Working Directory Changes section to verify that it shows an uncommitted change to the `app.js` file. You might also see other changes that are related to cloning the project into your workspace. You can check in those changes. 
 2. Select the check box next to `app.js`. If you want to compare your version of the 'app.js' file with the version that is in the Git repository, click the arrow next to 'app.js'.
 3. Type a commit message. Somewhere in the message, be sure to include this phrase: `task <number of your work item>`. That phrase links this commit to the task work item. If you don’t remember the number, return to the Track &amp; Plan area to find it.
 ![Ready to commit a change to app.js][13]
@@ -141,24 +142,26 @@ When you clone a project by clicking the **Deploy to Bluemix** button, a pipelin
 
 A pipeline is formed by its stages. The pipeline for your Sentiment Analysis app has two stages: a build stage and a deployment stage. The purpose of the build stage is to run a build job on the included `Gruntfile.js` to validate your code. The purpose of the deployment stage is to run a deploy job that deploys your code to Bluemix.
 
-**Important:** You can complete this tutorial for free because a project is granted 60 minutes of free build time per month. However, the pipeline is a feature of the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). When you use the Delivery Pipeline service with Bluemix, you can generate charges to your Bluemix account. For more information about Bluemix, DevOps Services, and charges, [see Configure Bluemix billing for Bluemix DevOps Services][39].
+**Important:** You can complete this tutorial for free because a project is granted 60 minutes of free build time per month. However, the pipeline is a feature of the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). When you use the Delivery Pipeline service with Bluemix, you can generate charges to your Bluemix account. For more information about Bluemix, DevOps Services, and charges, [see Configuring Bluemix billing for Bluemix DevOps Services][39].
 
 ###Explore the build stage
 1. On the top navigation bar, click **BUILD & DEPLOY**. 
 
-2. On the Build stage tile, click the **Stage Configuration** icon and then click **Configure Stage**.  
-  
+2. On the Build stage tile, click the **Stage Configuration** icon <img src="/tutorials/devopsweb/images/configure_stage.png" alt="The Stage Configuration icon"
+align="bottom" style="display: inline; margin: 0px; border-style: none;
+margin-bottom: 0px;"> and then click **Configure Stage**.  
+
   a. On the **INPUT** tab, note this information:
-  
+
     * The input for the build is the master branch of the Git repository. 
     * The Build stage runs automatically every time a change is pushed to the repository. 
-  
+      ![The INPUT tab][42]
+
   b. Click the **JOBS** tab and note this information:
-  
     * The builder type is **Grunt**. The sample project uses JSHint validation to check its code for errors. For the validation to work, the repository must contain a Grunt build file and the build job must use Grunt. Every time a change is pushed to its repository, the project uses JSHint to make sure that the code is error-free.
     * Because the `app.js` file is located in the root of the project, you do not have to specify a working directory or a build archive directory.
     * If the build does not complete successfully, the stage stops running and any later jobs do not run.
-  
+
   c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
 
 ![A configured builder stage][8]
@@ -168,19 +171,20 @@ The next stage is the Deploy stage; it contains a deploy job. Deploy jobs deploy
 
 ###Explore the deployment stage
 
-0. On the Deploy stage tile, click the **Stage Configuration** icon and then click **Configure Stage**.
+0. On the Deploy stage tile, click the **Stage Configuration** icon <img src="/tutorials/devopsweb/images/configure_stage.png" alt="The Stage Configuration icon"
+align="bottom" style="display: inline; margin: 0px; border-style: none;
+margin-bottom: 0px;"> and then click **Configure Stage**.
 
   a. On the **INPUT** tab, note this information: 
-  
-     * The input for the deployment is the output from the Build stage. 
-     * The Deploy stage runs automatically every time the Build stage runs successfully. 
- 
-  b. Click the **JOBS** tab and note this information:
-  
-     * The app is set to deploy to your Bluemix organization and space.
-     * Bluemix is based on Cloud Foundry, so the deployment script uses the Cloud Foundry command-line interface command `cf push` to deploy your app. To learn more about configuring deployment scripts when using Cloud Foundry, [see the Cloud Foundry documentation][29]. 
+  * The input for the deployment is the output from the Build stage. 
+  * The Deploy stage runs automatically every time the Build stage runs successfully. 
+     ![The INPUT tab][46]
 
-  c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
+  b. Click the **JOBS** tab and note this information:
+  * The app is set to deploy to your Bluemix organization and space.
+  * Bluemix is based on Cloud Foundry, so the deployment script uses the Cloud Foundry command-line interface command `cf push` to deploy your app. To learn more about configuring deployment scripts when using Cloud Foundry, [see the Cloud Foundry documentation][29]. 
+
+c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
 
 ![A configured deployer stage][9]
 
@@ -192,7 +196,9 @@ With these connected stages, you have a fully functional pipeline. By default, t
 
 It's time to see the stages in action. You can start a build without waiting for changes to be pushed.
 
-1. On the Build stage tile, click the **Run Stage** icon. The build is added to the queue, is run, and then is deployed to Bluemix.
+1. On the Build stage tile, click the **Run Stage** icon <img src="/tutorials/devopsweb/images/run_stage.png" alt="The Run Stage icon"
+align="bottom" style="display: inline; margin: 0px; border-style: none;
+margin-bottom: 0px; max-width: 50%">. The build is added to the queue, is run, and then is deployed to Bluemix.
 2. After the deployment tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name. Make sure that your topic is in the INPUT section.
 3. If you want to see more information about your app, open its Bluemix Overview page by clicking the app's name, which is above the URL. For more information about the Overview page, [see Managing applications on Bluemix][28].
 
@@ -223,16 +229,16 @@ Well done! The Track & Plan service keeps administrative overheard to a minimum 
 <a name='summary'></a>
 ## Summary
 
-In only a few minutes, you cloned a Node.js app project, planned and tracked an update to the app, made the update, and deployed the updated app to Bluemix--all without leaving your browser. 
+You cloned a Node.js app project, planned and tracked an update to the app, made the update, and deployed the updated app to Bluemix--all without leaving your browser. 
 
 ---
 <a name='next_steps'></a>
 ## Next steps
 Now that you know the basics, you might want to explore this information:
 
-- [Setting up local clients to work with Git source control][37]
-- [Develop by using Bluemix Live Sync][40]
-- [Get started with the Track & Plan feature][35] 
+- [Working locally with Bluemix DevOps Services projects][37]
+- [Test and debug a Node.js app with Bluemix Live Sync][40]
+- [Track and plan a Bluemix DevOps Services project][35] 
 - [Build & Deploy reference (Pipeline)][36]
 
 [1]: https://bluemix.net/ (Bluemix)
@@ -267,3 +273,9 @@ Now that you know the basics, you might want to explore this information:
 [38]: /tutorials/devopsweb/images/displayAsLanes.png
 [39]: /docs/reference/billing/
 [40]: /tutorials/livesync
+[41]: /tutorials/devopsweb/images/editcode.png
+[42]: /tutorials/devopsweb/images/input_tab.png
+[43]: /tutorials/devopsweb/images/run_stage.png
+[44]: /tutorials/devopsweb/images/project_settings_icon.png
+[45]: /tutorials/devopsweb/images/configure_stage.png
+[46]: /tutorials/devopsweb/images/input_tab_deploy.png

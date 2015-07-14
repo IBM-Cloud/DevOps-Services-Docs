@@ -1,3 +1,5 @@
+# All Resources
+
 ### [Articles](#articles) | [Blogs](#blogs) | [Samples](#samples) | [Videos](#videos) | [Workshops](#workshops)
 
 
@@ -7,6 +9,45 @@
 
 ## Articles
 
+### Article: [Use Maven with the Bluemix DevOps Services delivery pipeline](http://www.ibm.com/developerworks/java/library/j-use-maven-with-the-bluemix-delivery-pipeline/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 20 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, java, maven, pipeline
+
+### Article: [Develop a public transportation system simulator with Node.js and the dashDB service](http://www.ibm.com/developerworks/analytics/library/ba-bluemix-pub-transport/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 8 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, bootstrap, dashdb, jquery_api, nodejs
+
+### Article: [Move a toy car with your mind](http://www.ibm.com/developerworks/analytics/library/ba-bluemix-pub-transport/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 8 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, cloudant_nosql, dashdb, nodejs, python, wearable
+
+### Article: [Develop Node.js apps without leaving your browser](http://www.ibm.com/developerworks/web/library/wa-develop-deploy-debug-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 8 April 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, bluemix_debugger, bluemix_live_sync, bluemix_shell, live_edit, nodejs
+
+### Article: [Intro to IBM Bluemix DevOps Services, Parts 1-4](http://www.ibm.com/developerworks/cloud/library/cl-intro1-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 30 Mar 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, build_and_deploy, git, track_and_plan, twilio, web_ide, pipeline, mongodb
+
+### Article: [Deploy a "Hello World" webpage to Bluemix](http://www.ibm.com/developerworks/cloud/library/cl-deploy-a-hello-world-webpage-to-bluemix-app/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 9 March 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, web_ide, deploy
+
+### Article: [Build your first Node.js website, Part 1](http://www.ibm.com/developerworks/web/library/wa-simplenode1-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 25 Feb 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide
+
+### Article: [Build your first Node.js website, Part 2](http://www.ibm.com/developerworks/web/library/wa-simplenode2-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 25 Feb 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide, express
+
+### Article: [Build your first Node.js website, Part 3](http://www.ibm.com/developerworks/web/library/wa-simplenode3-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 25 Feb 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide, redis
+
+
+### Article: [Set up automated build and deployment while creating a to-do list app](http://www.ibm.com/developerworks/web/library/wa-simplenode2-app/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 26 January 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, bluemix_debugger, bluemix_live_sync, bluemix_shell, live_edit, nodejs
+
+
 
 ### Article: [Quick guide to deploying code from IBM DevOps Services to Bluemix](http://www.ibm.com/developerworks/cloud/library/cl-autodeploy/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 09 December 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, web_ide, git, pipeline, fork
@@ -14,10 +55,6 @@ Last updated: 09 December 2014 <img src="../all/images/tag.png"  align="bottom" 
 ### Article: [Set up an agile team environment to build an Ionic app](http://www.ibm.com/developerworks/mobile/library/mo-ionic-framework-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 05 December 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
 ionic, bluemix, nodejs, mobile, git, pipeline, mobile-cloud, mobile-quality-assurance
-
-### Article: [Move a toy car with your mind](http://www.ibm.com/developerworks/analytics/library/ba-muse-toycar-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 13 November 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, arduino, muse, python, cloudant
-
 
 ### Article: [Build an Android app to reserve meeting facilities](http://www.ibm.com/developerworks/mobile/library/mo-approval-tool-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 03 November 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, mobile, cloudant, mqlight, twilio, android, eclipse
@@ -39,15 +76,6 @@ Last updated: 18 September 2014 <img src="../all/images/tag.png"  align="bottom"
 
 ### Article: [Build a simple word game app using Cloudant on Bluemix](http://www.ibm.com/developerworks/cloud/library/cl-guesstheword-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 03 September 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, cloudant, bootstrap, jquery, jade, express, git, web_ide, pipeline
-
-### Article: [Build your first Node.js website, Part 1](http://www.ibm.com/developerworks/web/library/wa-simplenode1-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 29 July 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide
-
-### Article: [Build your first Node.js website, Part 2](http://www.ibm.com/developerworks/web/library/wa-simplenode2-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 29 July 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide, express
-
-### Article: [Build your first Node.js website, Part 3](http://www.ibm.com/developerworks/web/library/wa-simplenode3-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 29 July 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide, redis
 
 ### Article: [Dynamic Google Gauge powered by Cloudant and Bluemix](http://www.ibm.com/developerworks/cloud/library/cl-dynamicgooglegauge-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 18 July 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, php, cloudant, PaaS, web_ide
@@ -83,6 +111,34 @@ Last updated: 27 June 2013 <img src="../all/images/tag.png"  align="bottom" styl
 ________________________________________
 ## Blogs
 
+### Blog: [Forking pipelines](http://robbieminshall.blogspot.com/2015/06/forking-pipelines.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 20 June 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, containers
+
+### Blog: [DevOps for Containers at DockerCon](https://developer.ibm.com/bluemix/2015/06/19/devops-for-containers/) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 19 June 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, containers
+
+### Blog: [Get your plan on the right “track” using Bluemix DevOps Services Track & Plan and our CSV import feature!](https://developer.ibm.com/devops-services/2015/06/15/import-work-items/)    <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> Last updated: 15 June 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> track_and_plan, rational_team_concert
+
+### Blog: [The key to get your app running on the cloud. FAST.](https://developer.ibm.com/devops-services/2015/05/30/the-key-to-get-your-app-running-on-the-cloud-fast/)    <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+Last updated: 30 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, manifest_yml, build_and_deploy
+
+### Blog: [Your path to success with Bluemix DevOps Services; bring your favorite tools and use our great environment	](https://developer.ibm.com/devops-services/2015/04/23/your-path-to-success-with-bluemix-devops-services-bring-your-favorite-tools-and-use-our-great-environment/)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+Last updated: 23 April 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, projects, deploy_to_bluemix_button, web_ide, build_and_deploy
+
+### Blog: [See how easy it is to host a simple web page on Bluemix!](https://developer.ibm.com/devops-services/2015/03/16/see-easy-host-simple-web-page-bluemix/) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 16 March 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, deploy_to_bluemix_button, build_and_deploy
+
+
+### Blog: [Put your hands up for IBM Bluemix DevOps Services in the classroom](https://developer.ibm.com/devops-services/2015/03/04/put-hands-ibm-bluemix-devops-services-classroom/) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> Last updated: 4 March 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, deploy_to_bluemix_button, build_and_deploy
+
+
+### Blog: [Share your code with the new Deploy to Bluemix button](https://developer.ibm.com/devops-services/2015/02/18/share-code-new-deploy-bluemix-button/) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+Last updated: 18 February 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, deploy_to_bluemix_button
+
+
+### Blog: [Don’t hog all the permissions! Use multiple admins support to share project management duties](https://developer.ibm.com/devops-services/2015/02/10/project-admins-support/)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> Last updated: 18 February 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> projects
+
+
 ### Blog: [The Head in the Clouds](https://www.ibm.com/developerworks/community/blogs/jlmarechaux/entry/the_head_in_the_clouds?lang=en)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 12 August 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> track_and_plan, pipeline, web_ide
 
@@ -107,6 +163,9 @@ Last updated: 26 January 2014 <img src="../all/images/tag.png"  align="bottom" s
 <a id="samples"></a>
 ___________
 ## Samples
+
+### Sample: [Puquios: a collection of example pipelines for IBM Bluemix](https://github.com/Puquios) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 2 July 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline
 
 ### Sample: [Twitter influence analyzer (Java)](https://hub.jazz.net/project/jstart/Twitter%20Influencer%20Analyzer%20%28Java%29/overview)
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> java, klout, mongodb, bluemix, eclipse
@@ -136,11 +195,39 @@ ___________
 ___________
 ##Videos
 
+### Video: [Speed dating with Bluemix and Containers](https://youtu.be/hHY777T-lVM) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 8 July 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, containers
+
+### Video: [Agile Development using IBM Bluemix and IBM DevOps Services, Parts 1 - 3](https://www.youtube.com/watch?v=iSnWJuQSLJA)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: May 27, 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, java, liberty, mysql, web_ide, fork, build_and_deploy, track_and_plan, manifest_yml, source_control
+
+### Video: [IBM DevOps Services Easily create a Node js application in Bluemix](https://www.youtube.com/watch?v=01DP97OV-W0)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: May 27, 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, git, web_ide, build_and_deploy, track_and_plan
+
+### Video: [Deploy to IBM Bluemix with the Bluemix Button, Part 1 (2:13 min) & 2 (3:29 min)](https://www.youtube.com/watch?v=-0ozdpVa1fE)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 27 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, deploy_to_bluemix_button
+
+### Video: [IBM Bluemix DevOps Services: Rank Backlog (0:47 min)](https://www.youtube.com/watch?v=VajRS5ENPJk)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 27 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> track_and_plan
+
+### Video: [IBM Bluemix DevOps Services: Populate Sprints (1:37 min)](https://www.youtube.com/watch?v=q3Kb3FEc9bE)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 27 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> track_and_plan
+
+### Video: [IBM Bluemix DevOps Services: Create Work Items, Add Attributes (1:03 min)](https://www.youtube.com/watch?v=SOsMVWS3sr8)
+<img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 27 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> track_and_plan
+
+### Video: [IBM UrbanCode Deploy with IBM BlueMix (10:10 min)](https://www.youtube.com/watch?v=zZWeH1abhuY) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: May 27, 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, urbancode_deploy
+
+### Video: [An Overview of IBM Bluemix DevOps Services (6:22 min)](https://www.youtube.com/watch?v=VJesera9jR0)<img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 18 Feb 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, bluemix_live_sync, live_edit, git, web_ide, track_and_plan, build_and_deploy
+
 ### Video: [An Overview of IBM Bluemix DevOps Services](https://www.youtube.com/watch?v=VJesera9jR0)<img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 18 February 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, git, track_and_plan, node.js, web_ide, live_edit, pipeline, projects
 
 ### Video: [Mobilizing your business with IBM Rational Application Developer, IBM DevOps Services & IBM Bluemix (31:48 min)](https://www.youtube.com/watch?v=-smL9UD92iE) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 13 January 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, rational-application-developer
+Last updated: 13 January 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, rational_application_developer
 
 ### Video: [Configuring IBM DevOps services to your Java EE application (6:40 min)](https://www.youtube.com/watch?v=eILDoKv8Uyk) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 18 December 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, java_ee, fork, pipeline
@@ -154,12 +241,6 @@ Last updated: 09 December 2014 <img src="../all/images/tag.png"  align="bottom" 
 
 ### Video: [IBM DevOps Services: Easily create a Node.js application in Bluemix (10 min)](https://www.youtube.com/watch?v=5I9o9q8k6p0) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 03 November 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, git, web_ide, pipeline, track_and_plan
-
-### Video: [Agile Development using IBM Bluemix and IBM DevOps Services, Part 1 of 3 (7:24 min)](https://www.youtube.com/watch?v=gqLfn3VPBfU&list=UUj3E8xDetYNUAiqtAcCZTaw)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 16 October 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, manifest, java, mysql
-
-### Video: [Agile Development using IBM Bluemix and IBM DevOps Services, Part 2 of 3 (6:47 min)](https://www.youtube.com/watch?v=Y8XbtREv4q4&list=UUj3E8xDetYNUAiqtAcCZTaw)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 16 October 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, track_and_plan
 
 ### Video: [Introducing Watson Services on Bluemix (8:24 min)](https://www.youtube.com/watch?v=gSgYLy7ov9o)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 8 October 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, watson
@@ -216,19 +297,15 @@ Last updated: 23 July 2014 <img src="../all/images/tag.png"  align="bottom" styl
 ___________
 ## Workshops
 
-### Workshop: [Workshop - Developing Node.js apps using IBM DevOps Services and Bluemix](http://bluelabs.mybluemix.net/workshops/introNodeJS)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+### Workshop: [Workshop - Developing Node.js apps using IBM DevOps Services and Bluemix](http://bluelabs.mybluemix.net/workshops/introNodeJS)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+Last updated: 20 February 2015 
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide, track_and_plan, git, pipeline, express, jade, mongodb, twitter
 
-### Workshop: [Intro to Bluemix and DevOps Services, Part 1: Deploy and update a simple app](http://www.ibm.com/developerworks/cloud/library/cl-intro1-app/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 23 September 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, web_ide
+### Workshop: [Intro to Bluemix and DevOps Services-4 Parts](http://www.ibm.com/developerworks/cloud/library/cl-intro1-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 27 March 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, web_ide, build_and_deploy
 
-### Workshop: [Intro to Bluemix and DevOps Services, Part 2: Deploy an app that uses a Bluemix service](http://www.ibm.com/developerworks/cloud/library/cl-intro2-app/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 23 September 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, mongodb
 
-### Workshop: [Intro to Bluemix and DevOps Services, Part 3: Plan, track, and take advantage of new Bluemix services](http://www.ibm.com/developerworks/cloud/library/cl-intro3-app/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 23 September 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, track_and_plan, twilio, web_ide
-
-### Workshop:  [Node.js Apps with IBM DevOps Services and Bluemix](https://developer.ibm.com/bluemix/docs/workshops/node-js-apps-ibm-devops-services-powered-jazzhub-ibm-codename-bluemix/)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+### Workshop:  [Node.js Apps with IBM DevOps Services and Bluemix](https://developer.ibm.com/bluemix/docs/node-js-apps-ibm-devops-services-bluemix/)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 24 April 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, edit, nodejs
 
 &copy; Copyright IBM Corporation 2013, 2015.

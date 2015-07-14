@@ -1,8 +1,8 @@
-#Get started with Bluemix and Bluemix DevOps Services using Node.js
+#Develop a Node.js app from Bluemix
 
-Last modified: 21 April 2015
+Last modified: 2 July 2015
 
-Time: 30 minutes
+Time: 15 minutes
 
 * [Learning objectives](#objectives)
 * [Before you begin](#prereq)
@@ -53,7 +53,7 @@ For example, if `bob@example.com` logs in to Bluemix for the first time, the act
 is `bob@example.com`.
 If you create more organizations or spaces in Bluemix, use the same ones as you follow the tutorials. Use the default selections.
 
-2. Click **CREATE AN APP**. For the kind of app that you are creating, click **Web**.  
+2. Click **CREATE AN APP**. For the kind of app that you are creating, click **WEB**.  
 
 3. For your starter, click **SDK for Node.js**. Review the docs and details, and then click **CONTINUE**.
 
@@ -90,28 +90,32 @@ based on [the Eclipse Orion open-source project](http://orion.eclipse.org/).
 
 You can edit files with syntax coloring support for multiple languages, including HTML, 
 CSS, JavaScript, Ruby, and Python. For some languages, such as JavaScript, the Web IDE also supports 
-syntax checking and code completion, both for standard language constructs and for the services that Bluemix provides. To use content assist, press Ctrl+Space. For example, this image shows code completion for the standard Node.js express module:
+syntax checking and code completion, both for standard language constructs and for the services that Bluemix provides. To use content assist, press Ctrl+Space. For example, this image shows code completion for the standard Node.js express module.
 ![Orion showing express completions](/tutorials/jazzeditor/images/completion.png)
 
-4. In the directory, find a file to modify; for example, `views/body.jade`. 
+To make a change to a file and then push the change, follow these steps:
+
+1. In the directory, find a file to modify; for example, `public/index.html`. 
 
 5. Edit the file in the editor.
 ![Orion editing index](/tutorials/jazzeditor/images/orion-really-cool_NEW.png)
 
 6. Push the change by using the integrated Git support. 
 
-	a. From the leftmost menu, click the **Git Repository** icon.
+	a. From the leftmost menu, click the **Git Repository** icon <img src="/tutorials/jazzeditor/images/git.gif"
+align="bottom" style="display: inline; margin: 0px; border-style: none;
+margin-bottom: 0px;">.
 	
-	b. Select the changed file:
+	b. Select check box for the changed file.
 ![Orion Git staging](/tutorials/jazzeditor/images/orion-git-stage_NEW.png)
-	c. Add a commit message and commit the changes:
+	c. Type a commit message, and then click **Commit**.
 ![Orion Git commit](/tutorials/jazzeditor/images/orion-commit_NEW.png)
-	d. Push the changes:
+	d. In the Outgoing section on the left, click **Push**.
 ![Orion Git push](/tutorials/jazzeditor/images/orion-push_NEW.png)
 
 7. To verify that your code was deployed, 
 click **BUILD & DEPLOY** and wait until you see an indication that the 
-app was deployed again. In the Deploy stage, under LAST EXECUTION RESULT, click the URL link that is below the app's name.
+app was deployed again. On the Deploy stage, in the LAST EXECUTION RESULT section, click the URL link under the app's name.
 ![Clicking the web app's URL](/tutorials/jazzeditor/images/click-webapp-url.png)
 
 Your update is shown.
