@@ -1,9 +1,9 @@
 # Git Source Code Management
 
-### Reference: [Git reference](/docs/reference/git)
+### Reference: [Git reference](/docs/git)
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  git
 
-### Reference: [Setting up local clients to work with Git source control](/docs/reference/gitclient)
+### Reference: [Setting up local clients to work with Git source control](/docs/gitclient)
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  git
 
 ### Tutorial: [Develop a Node.js app from Bluemix](/tutorials/jazzeditor)  

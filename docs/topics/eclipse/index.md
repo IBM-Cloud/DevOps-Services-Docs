@@ -1,9 +1,9 @@
 # Eclipse
 
-### Reference: [Setting up local clients to work with Git source control](/docs/reference/gitclient)  
+### Reference: [Setting up local clients to work with Git source control](/docs/gitclient)  
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> eclipse, git
 
-### Reference: [Setting up local Eclipse clients to work with Jazz source control](/docs/reference/jazz_scm_client)  
+### Reference: [Setting up local Eclipse clients to work with Jazz source control](/docs/jazz_scm_client)  
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, java, eclipse, jazz_scm, rtc
 
 

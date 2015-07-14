@@ -3,7 +3,7 @@
 ### Tutorial: [Track and plan a Bluemix DevOps Services project](/tutorials/trackplan)
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> track_and_plan
 
-### Reference:  [Track and plan](/docs/reference/trackplan)
+### Reference:  [Track and plan](/docs/trackplan)
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> track_and_plan
 
 
