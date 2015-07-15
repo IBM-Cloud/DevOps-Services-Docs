@@ -1,6 +1,6 @@
 #Managing your account
 
-Last modified: 9 July 2015
+Last modified: 15 July 2015
 
 Without logging into IBM® Bluemix™ DevOps Services, you can explore existing projects or view the documentation. After you register with DevOps Services by using your IBM ID, you can access all of the features to develop, track, plan, and deploy software in one place.
 
@@ -20,8 +20,11 @@ Without logging into IBM® Bluemix™ DevOps Services, you can explore existing 
 After you register and set up an account with DevOps Services, you can do these tasks:
 
 * Develop and deploy software in the cloud
+* Host your source code with built-in source code management
 * Code with the web integrated development environment (IDE) in your browser
+* Track and plan project activities
 * Push your applications to Bluemix, IBM's cloud platform
+* Collaborate with other people by using the collaboration tools to work with a team
 * Ask questions and get answers in our forum
 * Get started by forking projects or following a tutorial
 
@@ -29,12 +32,12 @@ After you register and set up an account with DevOps Services, you can do these 
 <a name='idssetup'></a>
 ##Setting up a DevOps Services account
 
-1.	[Register with DevOps services](https://hub.jazz.net/). You need an alias. An alias is a publicly visible short name. The first time you log in to DevOps Services from a web browser, you link your IBM ID with an alias. If you have a Jazz ID, that is used as your alias.
+1.	[Register with DevOps services](https://hub.jazz.net/). You need to create an alias or use an existing one. An alias is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services from a web browser, you link your IBM ID with an alias. If you have a Jazz ID, that is used as your alias.
 2.	After your IBM ID and alias are linked, you can log in to DevOps Services from a web browser or your IBM® Rational Team Concert™ client, and you can access a Git repository from your local Git client.
 
-	* To log in from a web browser, use your IBM ID and IBM password. 
-	* To log in from your Rational Team Concert client, use your alias and IBM password.
-	* To access a Git repository from your local Git client, use your alias and IBM password.
+	* To log in from a web browser, use your IBM ID credentials. 
+	* To log in from your Rational Team Concert client, use your alias and IBM ID password.
+	* To access a Git repository from your local Git client, use your alias and IBM ID password.
 
 **Tip:** For authentication problems or if you are linked to the wrong account, you can request support by email at <idslogin@jazz.net>.
 
