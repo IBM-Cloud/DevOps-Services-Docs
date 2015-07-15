@@ -5,7 +5,7 @@
 IBM&reg; Bluemix&trade; DevOps Services provides a wide variety of materials to help you get your job done.
 
 * The 
-[IBM Bluemix DevOps Services Blog](https://developer.ibm.com/devops-services/blog/) contains what new, how-to, and event information.
+[IBM Bluemix DevOps Services Blog](https://developer.ibm.com/devops-services/blog/) contains what's new, how-to, and event information.
 
 * The
 [IBM Bluemix Community Site](https://developer.ibm.com/bluemix/) contains tutorials, samples, and getting started information and well as updates for the Bluemix platform.
