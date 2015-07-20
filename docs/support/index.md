@@ -1,6 +1,6 @@
 # IBM Bluemix Developers Community and Support
 
-<h2> <img src="images/bluemixdarklogo_35.png" valign="center" alt="Bluemix DevOps Services logo" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"/>   If you need help, see the following...</h2>
+<h2> <img src="images/bluemixdarklogo_35.png" valign="center" alt="Bluemix DevOps Services logo" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"/>   If you need help...</h2>
 
 IBM&reg; Bluemix&trade; DevOps Services provides a wide variety of materials to help you get your job done.
 
