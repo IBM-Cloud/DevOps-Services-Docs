@@ -1,6 +1,6 @@
 #Clone, edit, and deploy an app from Bluemix
 
-Last modified: 8 July 2015
+Last modified: 17 July 2015
 
 Time: 60 minutes 
 
@@ -162,7 +162,7 @@ margin-bottom: 0px;"> and then click **Configure Stage**.
     * Because the `app.js` file is located in the root of the project, you do not have to specify a working directory or a build archive directory.
     * If the build does not complete successfully, the stage stops running and any later jobs do not run.
 
-  c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
+  c. Because you did not make any changes, click **CANCEL** to return to the Build & Deploy Pipeline page.
 
 ![A configured builder stage][8]
 
@@ -184,7 +184,7 @@ margin-bottom: 0px;"> and then click **Configure Stage**.
   * The app is set to deploy to your Bluemix organization and space.
   * Bluemix is based on Cloud Foundry, so the deployment script uses the Cloud Foundry command-line interface command `cf push` to deploy your app. To learn more about configuring deployment scripts when using Cloud Foundry, [see the Cloud Foundry documentation][29]. 
 
-c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
+c. Because you did not make any changes, click **CANCEL** to return to the Build & Deploy Pipeline page.
 
 ![A configured deployer stage][9]
 
@@ -260,7 +260,7 @@ Now that you know the basics, you might want to explore this information:
 [24]: http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html
 [26]: https://www.ng.bluemix.net/docs/#services/DeliveryPipeline/index.html#getstartwithCD
 [27]: http://sentiment-ua.mybluemix.net/
-[28]: https://www.ng.bluemix.net/docs/#manageapps/index.html#manageapps
+[28]: https://www.ng.bluemix.net/docs/manageapps/manageapps.html
 [29]: http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html#push
 [30]: https://hub.jazz.net/register
 [31]: https://jazz.net/action/register
