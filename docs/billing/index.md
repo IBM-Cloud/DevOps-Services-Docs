@@ -24,7 +24,7 @@ After you register and set up an account with DevOps Services, you can do these 
 * Code with the web integrated development environment (IDE) in your browser
 * Track and plan project activities
 * Push your applications to Bluemix, IBM's cloud platform
-* Collaborate with other people by using the collaboration tools to work with a team
+* Collaborate with other people by using the collaboration tools
 * Ask questions and get answers in our forum
 * Get started by forking projects or following a tutorial
 
