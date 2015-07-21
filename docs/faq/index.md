@@ -160,7 +160,7 @@ If you don't see the run bar in the Web IDE, one of these issues occured:
 
 1. DevOps Services isn't identifying your project as a project.
  * Fix: In your project's root directory, create a `project.json` file.
-2. DevOps Services failed to determine what folder your app is in.
+2. DevOps Services failed to determine which folder your app is in.
  * Fix: If your app is in a directory other than the project root, do one of these steps:
 	* In your project's root directory, create a `manifest.yml` file.  Then edit the file so that it points to the location of your app.		
 		For example: `path: path_to_your_app`
