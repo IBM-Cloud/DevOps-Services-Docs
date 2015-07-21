@@ -1,8 +1,8 @@
-#Managing your account
+#Managing your Bluemix DevOps Services account
 
-Last modified: 15 July 2015
+Last modified: 20 July 2015
 
-Without logging into IBM® Bluemix™ DevOps Services, you can explore existing projects or view the documentation. After you register with DevOps Services by using your IBM ID, you can access all of the features to develop, track, plan, and deploy software in one place.
+Without signing up for an account in IBM® Bluemix™ DevOps Services, you can explore projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
 ---
 
@@ -17,35 +17,35 @@ Without logging into IBM® Bluemix™ DevOps Services, you can explore existing 
 <a name='idsaccounts'></a>
 ##DevOps Services accounts
 
-After you register and set up an account with DevOps Services, you can do these tasks:
+After you sign up for a DevOps Services account and set it up, you can do these tasks:
 
 * Develop and deploy software in the cloud
-* Host your source code with built-in source code management
-* Code with the web integrated development environment (IDE) in your browser
+* Host your source code by using built-in source code management tools
+* Code in the Web IDE (integrated development environment)
 * Track and plan project activities
-* Push your applications to Bluemix, IBM's cloud platform
-* Collaborate with other people by using the collaboration tools
-* Ask questions and get answers in our forum
-* Get started by forking projects or following a tutorial
+* Push your apps to Bluemix, the IBM cloud platform
+* Collaborate with a team
+* Ask questions and get answers in the forum
+* Get started quickly by forking a project or completing a tutorial
 
 ---
 <a name='idssetup'></a>
 ##Setting up a DevOps Services account
 
-1.	[Register with DevOps services](https://hub.jazz.net/). You need to create an alias or use an existing one. An alias is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services from a web browser, you link your IBM ID with an alias. If you have a Jazz ID, that is used as your alias.
-2.	After your IBM ID and alias are linked, you can log in to DevOps Services from a web browser or your IBM® Rational Team Concert™ client, and you can access a Git repository from your local Git client.
+1.	[Sign up for DevOps services](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your IBM id with an alias. If you have a Jazz ID, that is used as your alias.
+2.	After your IBM id and alias are linked, you can log in to DevOps Services from a web browser or an IBM® Rational Team Concert™ client. In addition, you can access a Git repository from your local Git client.
 
-	* To log in from a web browser, use your IBM ID credentials. 
-	* To log in from your Rational Team Concert client, use your alias and IBM ID password.
-	* To access a Git repository from your local Git client, use your alias and IBM ID password.
+	* To log in from a web browser, use your IBM id credentials. 
+	* To log in from a Rational Team Concert client, use your alias and IBM ID password.
+	* To access a Git repository from your local Git client, use your alias and IBM id password.
 
-**Tip:** For authentication problems or if you are linked to the wrong account, you can request support by email at <idslogin@jazz.net>.
+**Tip:** If you have authentication problems or if you are linked to the wrong account, you can request support by sending an email to <idslogin@jazz.net>.
 
 ---
 <a name='bmaccounts'></a>
 ##Bluemix accounts
 
-All DevOps Services projects include an allowance of free services. If you exceed your allowances, your work is interrupted. To avoid interruptions, set up a Bluemix billing account and configure your services. By configuring your Bluemix account, you also get advanced features for monitoring your builds, deployments, and status of your projects. 
+All DevOps Services projects include an allowance of free services. If you exceed your allowances, your work is interrupted. To avoid interruptions, set up a Bluemix billing account and configure your services. By configuring your Bluemix account, you also get advanced features for monitoring your builds, deployments, and the status of your projects. 
 
 If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan services beyond the free allowance, configure both services. Each service requires a separate billing configuration.
 
@@ -88,15 +88,15 @@ If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan servi
 
 Before you set up your billing account, determine what the best plan for your project is. [Learn more about billing accounts](https://www.ng.bluemix.net/docs/#acctmgmt/billing.html#bil_plan).
 
-**Important:** The person who is responsible for setting up the billing account might not be the same person who is most affected by build and deployment failures and blocked access to Track & Plan pages. If you are not the person who sets up the account, ask your Bluemix billing manager to enable your billing account early.
+**Important:** The person who is responsible for setting up the billing account might not be the same person who is most affected by build and deployment failures and blocked access to Track & Plan views. If you are not the person who sets up the account, ask your Bluemix billing manager to enable your billing account early.
 
 To set up your billing account, complete these steps: 
-1. Go to your Bluemix dashboard and select the space that is listed in your DevOps Services project settings. 
+1. Go to your Bluemix Dashboard and select the space that is listed in your DevOps Services project settings. 
 2. Click **Services** and click **Add a Service or API**.
 3. From the DevOps section, select either **Delivery Pipeline** or **Track & Plan**.
 4. In the "Add Service" section, make sure that the space that corresponds to your  DevOps Services project is selected.
-5. From the **Selected Plan** list, choose a billing plan. 
-6. Click **Create.**
+5. From the **Selected Plan** list, select a billing plan. 
+6. Click **CREATE.**
 
 ---
 <a name='monitor'></a>
