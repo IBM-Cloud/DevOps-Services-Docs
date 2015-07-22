@@ -194,7 +194,7 @@ You can also create services and link them to your app, and define environment v
 
 [1]: https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html
 [2]: https://www.ng.bluemix.net/docs/#manageapps/eclipsetools/eclipsetools.html#eclipsetools
-[3]: /docs/reference/gitclient/images/gitURL.png
+[3]: images/gitURL.png
 [18]: https://developer.ibm.com/answers/questions/?community=devops-services (Bluemix DevOps Services forum)
 [19]: mailto:hub%40jazz.net
 [20]: /docs
