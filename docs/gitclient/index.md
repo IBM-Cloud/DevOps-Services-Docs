@@ -1,6 +1,6 @@
 #Setting up local clients to work with Git source control 
 
-Last modified: 21 July 2015
+Last modified: 22 July 2015
 
 If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repository and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repository or, if you work in Eclipse, install the EGit plug-in for version control.
 
@@ -198,6 +198,6 @@ You can also create services and link them to your app, and define environment v
 [18]: https://developer.ibm.com/answers/questions/?community=devops-services (Bluemix DevOps Services forum)
 [19]: mailto:hub%40jazz.net
 [20]: /docs
-[21]: /docs/reference/gitclient/images/egit_team_provider.png
-[22]: /docs/reference/gitclient/images/rtc_client_feature.png
-[23]: /docs/reference/gitclient/images/quick_restart.png
+[21]: images/egit_team_provider.png
+[22]: images/rtc_client_feature.png
+[23]: images/quick_restart.png
