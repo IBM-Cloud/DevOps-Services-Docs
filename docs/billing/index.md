@@ -1,6 +1,6 @@
 #Managing your Bluemix DevOps Services account
 
-Last modified: 20 July 2015
+Last modified: 21 July 2015
 
 Without signing up for an account in IBM® Bluemix™ DevOps Services, you can explore projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
