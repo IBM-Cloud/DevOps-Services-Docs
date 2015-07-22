@@ -30,6 +30,7 @@ Project admins can do the tasks that project members can do as well as these tas
 * Promote members to admins 
 * Demote admins to members (including self)
 * Edit Track & Plan sprints
+* Configure Build and Deploy
 * Update these project settings: 
 
 	a. Change the project photo and description
