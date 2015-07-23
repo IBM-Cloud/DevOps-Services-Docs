@@ -237,7 +237,7 @@ Contribute your changes and make sure the rest of your team can view your change
 
 2. Click **ADD STAGE** and name the stage `Production`.
 
-3. Turn off autodeploy by clicking **Only execute jobs when a user manually runs this stage** in the Stage Trigger field.
+3. Turn off autodeploy by clicking **Run jobs only when this stage is run manually** in the Stage Trigger field.
 
 4. Click the **JOBS** tab and then click **ADD JOB**. For the job type, select **Deploy**. 
 

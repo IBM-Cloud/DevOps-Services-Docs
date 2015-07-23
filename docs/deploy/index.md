@@ -1,6 +1,6 @@
 #Build and deploy
 
-Last modified: 9 July 2015
+Last modified: 23 July 2015
 
 The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
@@ -28,7 +28,7 @@ To learn how to add a stage, [see Adding a stage][19].
 
 By default in a stage, builds and deployments are triggered automatically every time changes are delivered to a project's source control repository. Stages and jobs run serially; they enable flow control for your work. For example, you might place a test stage before a deployment stage. If the tests in the test stage fail, the deployment stage won't run. 
 
-You might want tighter control of a specific stage. If you do not want a stage to run every time a change occurs at its input, you can disable the capability. On the **INPUT** tab, in the Stage Trigger section, click **Only execute jobs when a user manually runs this stage**. 
+You might want tighter control of a specific stage. If you do not want a stage to run every time a change occurs at its input, you can disable the capability. On the **INPUT** tab, in the Stage Trigger section, click **Run jobs only when this stage is run manually**. 
 
 
 
