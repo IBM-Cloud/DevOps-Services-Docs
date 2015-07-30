@@ -9,7 +9,7 @@ Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, a
 <a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank"><img src="images/video_icon.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">An Overview of IBM Bluemix DevOps Services</a>
 
 * [Before you begin](#prereq)
-* [Create a sample app that uses a Git repository, edit the app in Live Edit mode, and deploy to Bluemix](#start)
+* [Create a sample app, edit in Live Edit mode, and deploy to Bluemix](#start)
 * [Grow the app into a robust project that has members, sprints, and a backlog](#grow)
 * [Work on the app as a team](#team)
 * [Deploy to production](#deploy)
@@ -28,7 +28,7 @@ Adam's video starts on the Bluemix Dashboard. If you haven't signed up for DevOp
 
 ---
 <a name='start'></a>
-## Create a sample app that uses a Git repository, edit the app in Live Edit mode, and deploy to Bluemix
+## Create a sample app, edit in Live Edit mode, and deploy to Bluemix
 ---
  
 <a name='create_bluemix_app'></a>
