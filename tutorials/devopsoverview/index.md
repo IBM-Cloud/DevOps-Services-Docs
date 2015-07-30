@@ -9,12 +9,11 @@ Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, a
 <a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank"><img src="images/video_icon.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">An Overview of IBM Bluemix DevOps Services</a>
 
 * [Before you begin](#prereq)
-* [Create a sample app, edit in Live Edit mode, and deploy to Bluemix](#start)
-* [Grow the app into a robust project that has members, sprints, and a backlog](#grow)
-* [Work on the app as a team](#team)
-* [Deploy to production](#deploy)
+* [Part 1: Get started](#start)
+* [Part 2: Grow your project](#grow)
+* [Part 3: Work as a team](#team)
+* [Part 4: Deploy to production](#deploy)
 * [Summary](#summary)
-
 
 <a name='prereq'></a>
 ##Before you begin
@@ -26,7 +25,9 @@ Adam's video starts on the Bluemix Dashboard. If you haven't signed up for DevOp
 <img src="images/key_info.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  On the Bluemix website, you can find the [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview) to help you better understand the Bluemix platform.
 
 <a name='start'></a>
-## Create a sample app, edit in Live Edit mode, and deploy to Bluemix
+## Part 1: Get started
+
+Create a sample app, add a Git repository for source control, edit in Live Edit mode, and deploy to Bluemix.
  
 <a name='create_bluemix_app'></a>
 ### Create a sample app
@@ -116,9 +117,9 @@ go to the Build & Deploy Pipeline page and wait until you see an indication that
 app was deployed again. Then, click the URL link that is next to "Deploy to." Your update is shown.
 
 <a name='grow'></a>
-## Grow the app into a robust project that has members, sprints, and a backlog
+## Part 2: Grow your project
 
-Invite other team members and create work items for the team to complete.
+Grow the app into a robust project that has members, sprints, and a backlog.
 
 ### Invite a team member
 1. In the upper-left corner, click the project name to open the project's Overview page.
@@ -150,7 +151,7 @@ Create three work items to get the team started:
 2. Update the **Planned For** field by dragging the task from the Backlog lane to the Sprint 1 lane.
 
 <a name='team'></a>
-## Work on the app as a team
+## Part 3: Work as a team
 
 Members of the team can develop code independently and share changes when the changes are ready.
 
@@ -166,14 +167,12 @@ Members of the team can develop code independently and share changes when the ch
 
 3.  Click the project name to open the project.
 
-
 ### Start working on a task
 
 1. Click **TRACK & PLAN** to plan  your work.
 2. Click**SPRINT PLANNING**.  In the Sprint 1 lane, see the three work items.  The work item about updating the title is unassigned; assign it to yourself by clicking the question mark icon and selecting your name from the list. 
 
 3. For the same work item, set the status:  click the right arrow icon next to the owner and select **Start Working**.  This work item is **In progress** because you are going to start working on it now.
-
 
 ### Develop independently
 
@@ -187,7 +186,6 @@ Because you want to deploy to the same account as the original project, get the 
 3. In the Edit Launch Configuration window, change the host to be a unique name.
 
 4. Because Live Edit mode is on, when you change the code your changes are deployed automatically to your personal space while the original deployed app is unchanged.  For example, in the public/index.html, change `Hi there` to `Hello`.  To see your version of the deployed app, on the run bar, click on the **Open the URL** icon.
-
 
 ### Deliver your changes to the deployed app
 
@@ -205,8 +203,7 @@ Contribute your changes and make sure the rest of your team can view your change
 9. Verify your latest change is on the official version of the deployed app.  
 
 <a name='deploy'></a>
-##  Deploy to production
-
+## Part 4: Deploy to production
 
 1. As the project owner, click **BUILD & DEPLOY**.  You can see a simple pipeline with two stages.
 
