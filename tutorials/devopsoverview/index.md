@@ -1,55 +1,39 @@
 #Get started: Create, edit, and deploy an app from Bluemix
 
-Last modified: 25 June 2015
+Last modified: 30 July 2015
 
 Time: 30 minutes
 
-
- ---
-<a name='objectives'></a>
-## Learning objectives
-
-Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, you should first view the related video created by a DevOps Services expert, Adam Archer. 
+Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, first watch the related video created by a DevOps Services expert, Adam Archer. 
  
 <a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank"><img src="images/video_icon.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">An Overview of IBM Bluemix DevOps Services</a>
 
-# Steps
-* Step 1: Get started
- 
- Create a sample, edit it in Live Edit mode, and deploy to Bluemix.
+* [Before you begin](#prereq)
+* [Create a sample app that uses a Git repository, edit the app in Live Edit mode, and deploy to Bluemix](#start)
+* [Grow the app into a robust project that has members, sprints, and a backlog](#grow)
+* [Work on the app as a team](#team)
+* [Deploy to production](#deploy)
+* [Summary](#summary)
 
-* Step 2: Grow your project  
- 
- Grow the sample app into a robust project.
-  
-* Step 3: Work as a team
-  
-  Collaborate with your team. These steps get everyone going.
-  
-* Step 4: Deploy to production
-   
-   Get your project ready for production.
 ---
 
 <a name='prereq'></a>
 ##Before you begin
 
-Adam's video starts on the Bluemix Dashboard.  If you haven't signed up for DevOps Services or Bluemix yet, here are some pointers.
+Adam's video starts on the Bluemix Dashboard. If you haven't signed up for DevOps Services or Bluemix yet, here are some pointers.
 
 [Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
 
 <img src="images/key_info.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  On the Bluemix website, you can find the [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview) to help you better understand the Bluemix platform.
 
 ---
-# Part 1: Get started
+<a name='start'></a>
+# Create a sample app that uses a Git repository, edit the app in Live Edit mode, and deploy to Bluemix
 ---
  
 <a name='create_bluemix_app'></a>
-## 1.1 Create a sample app
+## Create a sample app
     
-
-
-
 [Sign in to Bluemix](https://www.ng.bluemix.net). The Dashboard opens, which is where Adam's video begins.
 
 ![Bluemix Dashboard](/tutorials/jazzeditor/images/bm-home_NEW.png)
@@ -73,7 +57,7 @@ Now that your app is running, you can see and modify the code by using DevOps Se
 
 ---
 <a name='git_integration_and_autodeployment'></a>
-## 1.2 Add DevOps Services
+## Add DevOps Services
 
 <!--You can work with your app's code in many ways. For example, with auto-deploy, you can modify the code that runs in your app by pushing your changes to a Git repository. You can auto-deploy your code if you use the Build & Deploy capabilities of DevOps Services. -->
 
@@ -90,7 +74,7 @@ You created a Git repository, populated it with the example code, and deployed t
 ![Git repo success message dialog](/tutorials/jazzeditor/images/bm-git-repo-success-msg_NEW.png)
 
 ---
-## 1.3 Edit the app in Live Edit mode
+## Edit the app in Live Edit mode
 
 <img src="images/key_info.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  For Node.js apps, you can make changes to static files, such as HTML or CSS, and immediately propagate the changes to the deployed app by using Bluemix Live Sync.
 
@@ -120,7 +104,7 @@ Bluemix Live Sync](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#
 ---
 <a name='push'></a>
 
-## 1.4 Deploy automatically with Git push
+## Deploy automatically with Git push
 
 1. Push the change by using the integrated Git support. 
 
@@ -137,11 +121,12 @@ go to the Build & Deploy Pipeline page and wait until you see an indication that
 app was deployed again. Then, click the URL link that is next to "Deploy to." Your update is shown.
 
 ---
-# Part 2: Grow your project
+<a name='grow'></a>
+# Grow the app into a robust project that has members, sprints, and a backlog
 ---
- Grow the project by inviting other team members and creating work items for the team to complete.
+Inviting other team members and create work items for the team to complete.
 
-## 2.1 Invite a team member
+## Invite a team member
 1. In the upper-left corner, click the project name to open the project's Overview page.
 2. Click **MEMBERS** and then click **INVITE MEMBERS**.
 3. Enter the email address of the team member to invite and then click **INVITE**. 
@@ -149,7 +134,7 @@ app was deployed again. Then, click the URL link that is next to "Deploy to." Yo
 ---
 
 <a name='backlog'></a> 
-## 2.2 Create a task backlog
+## Create a task backlog
 1. In the upper-right corner,  click **TRACK & PLAN**.
 
 2. If you need to turn on Track and Plan for this project, click the **Settings** icon in the upper-right corner.
@@ -167,18 +152,19 @@ Create three work items to get the team started:
    * Update the image
 
 ---
-## 2.3 Create and plan a sprint
+## Create and plan a sprint
 
 1. Create a sprint by clicking  **Add Sprints** and then clicking **CREATE**. You might need to refresh your window to see the new Sprint 1 lane.
 
 2. Update the **Planned For** field by dragging the task from the Backlog lane to the Sprint 1 lane.
 
 ---
-# Part 3: Work as a team 
+<a name='team'></a>
+# Work on the app as a team
 ---
 Members of the team can develop code independently and share changes when the changes are ready.
 
-## 3.1 Accept the invitation to join the project 
+## Accept the invitation to join the project 
 
 1. If you receive an email invitation, you can join the project by clicking on the link in the email invitation to the project. Alternatively, new team members can sign in, click **My Projects**, and then click **INVITATIONS**.
 
@@ -191,7 +177,7 @@ Members of the team can develop code independently and share changes when the ch
 3.  Click the project name to open the project.
 
 ---
-## 3.2 Start working on a task
+## Start working on a task
 
 1. Click **TRACK & PLAN** to plan  your work.
 2. Click**SPRINT PLANNING**.  In the Sprint 1 lane, see the three work items.  The work item about updating the title is unassigned; assign it to yourself by clicking the question mark icon and selecting your name from the list. 
@@ -199,7 +185,7 @@ Members of the team can develop code independently and share changes when the ch
 3. For the same work item, set the status:  click the right arrow icon next to the owner and select **Start Working**.  This work item is **In progress** because you are going to start working on it now.
 
 ---
-## 3.3 Develop independently
+## Develop independently
 
 You can make changes to your code and see them in your personal space before you contribute your changes to the team.
 
@@ -213,7 +199,7 @@ Because you want to deploy to the same account as the original project, get the 
 4. Because Live Edit mode is on, when you change the code your changes are deployed automatically to your personal space while the original deployed app is unchanged.  For example, in the public/index.html, change `Hi there` to `Hello`.  To see your version of the deployed app, on the run bar, click on the **Open the URL** icon.
 
 ---
-## 3.4 Deliver your changes to the deployed app
+## Deliver your changes to the deployed app
 
 Contribute your changes and make sure the rest of your team can view your changes.
 
@@ -228,10 +214,9 @@ Contribute your changes and make sure the rest of your team can view your change
 8. Because you committed the change for this work item, change the status to **Complete** and click **SAVE**.
 9. Verify your latest change is on the official version of the deployed app.  
 ---
-#  Part 4: Deploy to production
+<a name='deploy'></a>
+#  Deploy to production
 ---
-
-## 4.1 Add a Production Environment 
 
 1. As the project owner, click **BUILD & DEPLOY**.  You can see a simple pipeline with two stages.
 
