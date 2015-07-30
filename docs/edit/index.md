@@ -1,12 +1,11 @@
 # Editing code in Bluemix DevOps Services
 
-Last updated: 21 July 2015
+###### Last updated: 21 July 2015
 
 The Web IDE is a browser-based development environment where you can develop for the web.  You can develop in JavaScript, HTML, and CSS with the help of content assist, code completion, and error checking.  Moreover, the Web IDE works with nearly any language and offers syntax highlighting [for most file types](https://hub.jazz.net/docs/overview/#dev_support).  Source control is built in through Git or Jazz SCM, and you can deploy code locally to test and debug your apps.
 
 Best of all, the Web IDE is powered by the web.  You have nothing to install, nothing to maintain, and nothing to scale.  You can develop, anywhere that you have an internet connection.
 
----
 * [Setting up the editor](#editorsetup)
 * [Editing code](#editcode)
 * [Source control](#sourcecontrol)
@@ -15,7 +14,6 @@ Best of all, the Web IDE is powered by the web.  You have nothing to install, no
 * [Editing outside of the Web IDE](#editlocal)
 
 
----
 <a name='editorsetup'></a>
 ###Setting up the editor
 
@@ -46,7 +44,6 @@ By default, the settings for the editor style and font size are always shown.  T
 ![Editor Settings toggle](images/editor_settings_toggle.png)
 
 
----
 <a name='editcode'></a>
 ###Editing code
 
@@ -77,7 +74,6 @@ To see a list of the keyboard shortcuts in the editor:
 
 Outside of the editor, you can get help on any page by pressing `Shift+?`.
 
----
 <a name='sourcecontrol'></a>
 ###Source control
 You can access integrated source code management tools from the Web IDE.
@@ -85,7 +81,6 @@ You can access integrated source code management tools from the Web IDE.
 * If your project is sourced in Jazz, click the Jazz icon <img src="./images/jazz_icon.png"  alt="The Jazz icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/)
 
 
----
 <a name='deploy'></a>
 ###Deploying an app from your workspace
 
@@ -101,7 +96,6 @@ You can access integrated source code management tools from the Web IDE.
  * If you are developing a Node.js app, enable Live Edit mode: <img src="./images/enable_live_edit.png"  alt="The enable live edit slider" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
 
  
----
 <a namee='shell'></a>
 ###The command-line shell
 If you like working from a command-line shell, click the **Shell** icon<img src="./images/shell_icon.png"  alt="The shell icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  You can work in these ways:
@@ -111,7 +105,6 @@ If you like working from a command-line shell, click the **Shell** icon<img src=
 * View the plug-in contributions for a service
 
 
----
 <a name='editlocal'></a>
 ###Editing outside of the Web IDE
 

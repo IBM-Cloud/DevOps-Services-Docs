@@ -1,5 +1,6 @@
 # Glossary
-Last modified: 25 March 2015
+
+###### Last modified: 25 March 2015
 
 This glossary provides terms and definitions for the IBM&reg; Bluemix&trade; DevOps Services features.
 
@@ -11,14 +12,11 @@ For other terms and definitions, [see the IBM Terminology website](http://www-01
 
 For definitions of Git terms, [see the official Git Manual Page](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html).
 
----
+#[A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [I](#I) | [M](#M) | [O](#O) | [P](#P) | [R](#R) | [S](#S) | [T](#T) | [W](#W)  
 
-#[A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [I](#I) | [M](#M) | [O](#O) | [P](#P) | [R](#R) | [S](#S) | [T](#T) | [W](#W) | 
-
----
 <a name="A"></a>
 ##A
----
+
 <a name="adoption_item"></a>
 **adoption item**  
 A development work item that tracks when changes by one team must be adopted by another team.
@@ -57,10 +55,8 @@ to another location so that users can run or test it.
 2. To automatically retrieve and package build output, then move that output to another 
 location for users to run or test it.
 
----
 <a name="B"></a>
 ##B
----
 
 <a name="backlog"></a>
 **backlog**  
@@ -81,10 +77,8 @@ services for a particular domain.
 **builder**  
 A tool that builds and compiles code.
 
----
 <a name="C"></a>
 ##C
----
 
 <a name="CD"></a>
 **CD**  
@@ -124,10 +118,8 @@ A software development practice that employs techniques such as continuous testi
 continuous integration, and continuous deployment so that new features and fixes are 
 packaged and deployed rapidly and at low risk to test environments and then to customers.
 
----
 <a name="D"></a>
 ##D
----
 
 <a name="dashboard"></a>
 **dashboard**  
@@ -146,10 +138,8 @@ A process that retrieves the output of a build, packages the output with configu
 **DevOps**  
 A software methodology that integrates application development and IT operations.
 
----
 <a name="E"></a>
 ##E
----
 
 <a name="eclipse"></a>
 **Eclipse**
@@ -162,28 +152,22 @@ developers with a standard platform for developing plug-compatible application d
 In agile development, a work item that defines a big use case with a large or unknown amount 
 of work, which is often completed over several sprints. Epics can be divided into stories.
 
----
 <a name="F"></a>
 ##F
----
 
 <a name="fork"></a>
 **fork**  
 To create a project and Git repository that contain all of the repository content and history of another project.
 
----
 <a name="G"></a>
 ##G
----
 
 <a name="git"></a>
 **Git**  
 An open source program for source control management.
 
----
 <a name="I"></a>
 ##I
----
 
 <a name="Iaas"></a>
 **IaaS**  
@@ -194,7 +178,7 @@ See [infrastructure as a service](#infrastructure_as_a_service).
 An open-standards, cloud-based platform for building, managing, and running apps of all 
 types, such as web, mobile, big data, and smart devices. Capabilities include Java, mobile 
 back-end development, and application monitoring, as well as features from ecosystem 
-partners and open sourceâ€”all provided as-a-service in the cloud.
+partners and open source—all provided as-a-service in the cloud.
 
 <a name="IDE"></a>
 **IDE**  
@@ -218,10 +202,7 @@ that are accessible from a single user interface.
 **iteration**  
 [See sprint](#sprint).
 
----
 <a name="M"></a>
-##M
----
 
 <a name="mainfest_file"></a>
 **manifest file**  
@@ -238,10 +219,8 @@ branch.
 **milestone**  
 A significant event in a project or process that is used to determine progress toward goals.
 
----
 <a name="O"></a>
 ##O
----
 
 <a name="open_source"></a>
 **open source**  
@@ -250,10 +229,8 @@ source software is typically developed as a public collaboration and made freely
 although its use and redistribution might be subject to licensing restrictions. Linux is a 
 well known example of open source software.
 
----
 <a name="P"></a>
 ##P
----
 
 <a name="Paas"></a>
 **PaaS**  
@@ -273,10 +250,8 @@ order in which they are worked on.
 An organized collection used to group folders or packages. Projects are used for building, 
 version management, sharing, and organizing resources related to a single work effort.
 
----
 <a name="R"></a>
 ##R
----
 
 <a name="repo"></a>
 **repo**  
@@ -304,10 +279,8 @@ improvements after a sprint.
 **runtime environment**  
 A set of resources that are used to run a program or process.
 
----
 <a name="S"></a>
 ##S
----
 
 <a name="Saas"></a>
 **SaaS**  
@@ -374,10 +347,8 @@ value of the overall product.
 A feature that parses code and attempts to interpret it before compilation in order to 
 discover syntax errors that might cause apps to not compile properly, then notifies the user.
 
----
 <a name="T"></a>
 ##T
----
 
 <a name="task"></a>
 **task**  
@@ -396,10 +367,8 @@ and process.
 **track build item**  
 A development work item that tracks required fixes after a failed build.
 
----
 <a name="W"></a>
 ##W
----
 
 <a name="WAR"></a>
 **WAR**  
@@ -426,3 +395,4 @@ In Eclipse, the collection of projects and other resources that the user is curr
 developing in the workbench. Metadata about these resources resides in a directory on the 
 file system; the resources might reside in the same directory. [See also 
 repository workspace](#repository_workspace).
+

@@ -1,10 +1,9 @@
 #Build and deploy
 
-Last modified: 27 July 2015
+###### Last modified: 27 July 2015
 
 The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
----
 * [Stages](#stages)
 * [Jobs](#jobs)
 * [Manifest files](#manifests)
@@ -14,8 +13,6 @@ The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the p
 * [Running a stage](#run_stage)
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
-
----
 
 <a name="stages"></a>
 ##Stages
@@ -101,8 +98,6 @@ To use the `cf push` command arguments, open the configuration settings for a de
 The simplest possible pipeline contains two stages. First, there is a stage that contains a build job and takes input from a Git repository. When that build job runs, the app is built and sent to a build archive directory. If the first stage runs, a second stage that contains a deploy job runs. The second stage takes input from the earlier build job and deploys the app to Bluemix.
 
 ![A two-stage pipeline][12]
-
----
 
 <a name="add_stage"></a>
 ##Adding a stage

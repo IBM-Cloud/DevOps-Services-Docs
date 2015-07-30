@@ -1,18 +1,14 @@
 # Administering a project
 
-Last modified: 02 July 2015
+###### Last modified: 02 July 2015
 
 To administer IBM&reg; Bluemix&trade; DevOps Services projects, you must be a project admin or a project owner. A project can have multiple admins, but it can only have one owner. 
-
----
 
 * [Project owner privileges](#project_owner_privileges)
 * [Project admin privileges](#project_admin_privileges)
 * [Project member privileges](#project_member_privileges)
 * [Managing projects](#managing_projects)
 * [Promoting or demoting project admins](#promoting_demoting)
-
----
 
 <a name='project_owner_privileges'></a>
 ##Project owner privileges
@@ -55,7 +51,6 @@ Project members have the fewest privileges and responsibilities. They can do the
 * View and edit pipelines
 * Add, edit, delete, and run pipeline stages or jobs
 
-----
 <a name='managing_projects'></a>
 ##Managing projects
 
@@ -67,7 +62,6 @@ As a project owner or admin, you can also change your project settings. For exam
 
 ![Project settings gear icon][7]
 
-----
 <a name='promoting_demoting'></a>
 ##Promoting or demoting project admins
 
