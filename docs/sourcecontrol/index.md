@@ -7,13 +7,13 @@ In your IBM&reg; Bluemix&trade; DevOps Services project, you can use one of thre
 
 ## GitHub
 You can either create a GitHub repo or link to a repo. For more details, 
- see these topics in the docs:
+ see these topics:
 
 * [Git source control](/docs/git)
 * [Linking work items in Bluemix DevOps Services to code changes in GitHub](docs/githubhooks).
 
 ## Git
-If you decide to use Git for source control management, you create a Git repo that is hosted on Bluemix. You can also host a local Git repo. To do so, create your DevOps Services project, and then force push your local repo to the new hosted repo. For more information, see these topics in the docs:
+If you decide to use Git for source control management, you create a Git repo that is hosted on Bluemix. You can also host a local Git repo. To do so, create your DevOps Services project, and then force push your local repo to the new hosted repo. For more information, see these topics:
 
 * [Git source control](/docs/git)
 * [Setting up local clients to work with Git source control](gitclient)
