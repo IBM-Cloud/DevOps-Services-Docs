@@ -1,6 +1,6 @@
 # Glossary
 
-###### Last modified: 25 March 2015
+###### Last updated: 25 March 2015
 
 This glossary provides terms and definitions for the IBM&reg; Bluemix&trade; DevOps Services features.
 
@@ -178,7 +178,7 @@ See [infrastructure as a service](#infrastructure_as_a_service).
 An open-standards, cloud-based platform for building, managing, and running apps of all 
 types, such as web, mobile, big data, and smart devices. Capabilities include Java, mobile 
 back-end development, and application monitoring, as well as features from ecosystem 
-partners and open source—all provided as-a-service in the cloud.
+partners and open sourceâ€”all provided as-a-service in the cloud.
 
 <a name="IDE"></a>
 **IDE**  
