@@ -22,7 +22,7 @@ While you develop a Java app, push your code changes to a Git repository from th
 <hr style="border-width:1px;margin-top:1em;margin-bottom:0em">
 <h4>
 <a href="/tutorials/livesync"><strong>Test and debug a Node.js app with Bluemix Live Sync</strong></a> (30 minutes)</h4><h6><em>A tutorial about debugging a Node.js app, either from the Web IDE or the command line</em></h6>
-<h5>While your Node.js app is running on Bluemix, you can debug your code, deploy to a test environment, and make changes as needed.</h5>
+While your Node.js app is running on Bluemix, you can debug your code, deploy to a test environment, and make changes as needed.
 <hr style="border-width:1px;margin-top:1em;margin-bottom:0em">
 <h4>
 <a href="/tutorials/trackplan"><strong>Track and plan a Bluemix DevOps Services project</strong></a> (30 minutes)
