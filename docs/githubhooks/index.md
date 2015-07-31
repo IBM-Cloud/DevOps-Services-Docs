@@ -1,16 +1,12 @@
 #Linking work items in Bluemix DevOps Services to code changes in GitHub
 
-Last modified: 22 July 2015
+###### Last modified: 16 June 2015
 
 If you have source code in a GitHub repository, you can use your IBM&reg; Bluemix&trade; DevOps Services project to track changes by setting up a service hook on GitHub. When you push a change to your GitHub repository, the hook adds a change set link to your DevOps Services work item. You can view the changes in your GitHub repository by clicking the change set link in the work item.
-
----
 
  * [Creating a DevOps Services project](#create_project)
  * [Setting up the GitHub hook](#github_hook)
  * [Creating a work item to test the hooks](#create_work_item)
- 
----
 
 <a name='create_project'></a>
 ##Creating a DevOps Services project
@@ -26,7 +22,6 @@ If you have source code in a GitHub repository, you can use your IBM&reg; Bluemi
 7. Make sure that the **Add features for Scrum development** check box is selected.
 8. Click **CREATE**.
 
----
 <a name='github_hook'></a>
 ## Setting up the GitHub hook
 
@@ -65,7 +60,6 @@ You can use these keywords for hooks:
    - `track build item`
    - `work item`
 
----
 <a name='create_work_item'></a>
 ## Creating a work item for testing
 
@@ -86,12 +80,13 @@ To test your hook, create a work item and commit a change to your code.
 
 
 [1]: https://hub.jazz.net
-[2]: images/githubDevOpsProject.png
-[4]: images/githubSettings.png
-[5]: images/githubHooks.png
-[6]: images/githubServiceConfig2.png
-[7]: images/githubComment.png
-[8]: images/githubCommit.png
-[9]: images/githubLink.png
-[10]: images/githubChange.png
+[2]: /docs/reference/githubhooks/images/githubDevOpsProject.png
+[4]: /docs/reference/githubhooks/images/githubSettings.png
+[5]: /docs/reference/githubhooks/images/githubHooks.png
+[6]: /docs/reference/githubhooks/images/githubServiceConfig2.png
+[7]: /docs/reference/githubhooks/images/githubComment.png
+[8]: /docs/reference/githubhooks/images/githubCommit.png
+[9]: /docs/reference/githubhooks/images/githubLink.png
+[10]: /docs/reference/githubhooks/images/githubChange.png
+
 
