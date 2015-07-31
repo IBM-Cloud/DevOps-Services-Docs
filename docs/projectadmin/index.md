@@ -1,6 +1,6 @@
 # Administering a project
 
-###### Last modified: 02 July 2015
+###### Last updated: 02 July 2015
 
 To administer IBM&reg; Bluemix&trade; DevOps Services projects, you must be a project admin or a project owner. A project can have multiple admins, but it can only have one owner. 
 
