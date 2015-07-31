@@ -1,12 +1,11 @@
 #Deploy an app from a basic pipeline in Bluemix DevOps Services
 
-Last modified: 2 July 2015
+###### Last updated: 30 July 2015
 
 Time: 30 minutes
 
-Follow the steps in this tutorial to create a simple Build & Deploy pipeline for a Java&trade; app by using the IBM&reg; Continuous Delivery Pipeline with IBM Bluemix&trade; DevOps Services. The Delivery Pipeline allows you to set up automated stages to build and deploy an app to test and production environments.
+In this tutorial, you create your own version of an IBM&reg; Bluemix&trade; DevOps Services project by forking a project to your space. Then, in your project, you set up a basic pipeline that you can use to build and deploy a Java&trade; app to test and production environments.
 
-* [Learning objectives](#objectives)
 * [Before you begin](#before_begin)
 * [Fork a sample project](#fork_app)
 * [Create a build stage](#build_stage)
@@ -14,18 +13,6 @@ Follow the steps in this tutorial to create a simple Build & Deploy pipeline for
 * [Run the stages](#deploy_app)
 * [Summary](#summary)
 * [Next steps](#nextsteps)
-
----
-
-<a name='objectives'></a>
-##Learning objectives
-
-* Create your own version of a DevOps Services project by forking it to your space.
-* Create a build and deployment pipeline by using the Build & Deploy feature.
-
-
----
-
 
 <a name='before_begin'></a>
 ##Before you begin
@@ -42,8 +29,6 @@ Follow the steps in this tutorial to create a simple Build & Deploy pipeline for
 
 
 
----
-
 <a name='fork_app'></a>
 ##Fork a sample project
 
@@ -57,10 +42,9 @@ To quickly get started developing, fork a sample project named WordCounter. Word
 
 A new project is created with a copy of the code from the sample project. You're ready to build and deploy.
 
----
 <a name='build_stage'></a>
 ##Create a build stage
-The goal is to set up the Delivery Pipeline so that every time a change is delivered to the project, a build runs. The Java source files are built and stored in an output directory. By creating the build as the first in a sequence of stages, the build will run first. Later, you will create a deployment stage that will begin after the build completes successfully.
+The goal is to set up the pipeline so that every time a change is delivered to the project, a build runs. The Java source files are built and stored in an output directory. By creating the build as the first in a sequence of stages, the build will run first. Later, you will create a deployment stage that will begin after the build completes successfully.
 
 **Important:** You can complete this tutorial for free because a project is granted 60 minutes of free build time per month. If you exceed those 60 minutes, you might generate charges to your Bluemix account. For more information about Bluemix, DevOps Services, and charges, [see Configuring Bluemix billing for Bluemix DevOps Services](/docs/reference/billing/).
 
@@ -87,8 +71,6 @@ The goal is to set up the Delivery Pipeline so that every time a change is deliv
 9. Select the **Enable unit tests** check box so that you can review test cases after a build. In the `tests` directory, the WordCounter app contains the com.ibm.ids.example.tests.WordCountFinderTest unit test.
     
 10. Click **Save**. ![Add Builder](/tutorials/jazzrtc/images/configure_builder.png "Add Builder")
-
----
 
 <a name='deploy_stage'></a>
 ##Create a deployment stage
@@ -120,7 +102,6 @@ Next, create a stage that deploys your app to Bluemix, so that after a successfu
  
 ![Add Deployer](/tutorials/jazzrtc/images/configure_deployer.png "Add Deployer")
 
----
 <a name='deploy_app'></a>
 ##Run the stages
 Build and deploy your project for the first time to test them. You don't have to wait for someone to deliver code changes to trigger the builds, though they are set up to automatically run.
@@ -142,15 +123,13 @@ Build and deploy your project for the first time to test them. You don't have to
   ![Unit tests](images/unit_tests.png "Unit tests")
 
   
----
 <a name='summary'></a>
 ##Summary
 You created a basic build and deployment pipeline for a sample project. You are ready to create builds and deployments for your projects. 
 
----
 <a name='nextsteps'></a>
 ##Next steps
 
-* To learn more about using the Delivery Pipeline, [see the Build & Deploy reference](/docs/reference/deploy/). 
-* To learn more about IBM Containers, [see the Containers documentation on Bluemix](https://www.stage1.ng.bluemix.net/docs/starters/index-gentopic3.html#container_ov).
-* To learn more about using the Delivery Pipeline with containers, [see How to set up continuous delivery for IBM Containers](https://developer.ibm.com/bluemix/docs/set-up-continuous-delivery-ibm-containers/).
+* To learn more about the pipeline, [see Build & Deploy](/docs/reference/deploy/). 
+* To learn about IBM Containers, [see the Containers documentation on Bluemix](https://www.stage1.ng.bluemix.net/docs/starters/index-gentopic3.html#container_ov).
+* To learn about using the Delivery Pipeline service with containers, [see How to set up continuous delivery for IBM Containers](https://developer.ibm.com/bluemix/docs/set-up-continuous-delivery-ibm-containers/).

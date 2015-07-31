@@ -1,15 +1,10 @@
 #Get started: Create, edit, and deploy an app from Bluemix
 
-Last modified: 25 June 2015
+Last modified: 30 July 2015
 
 Time: 30 minutes
 
-
- ---
-<a name='objectives'></a>
-## Learning objectives
-
-Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, you should first view the related video created by a DevOps Services expert, Adam Archer. 
+Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, first watch the related video created by a DevOps Services expert, Adam Archer. 
  
 <a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank"><img src="images/video_icon.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">An Overview of IBM Bluemix DevOps Services</a>
 
@@ -47,9 +42,6 @@ Adam's video starts on the Bluemix Dashboard.  If you haven't signed up for DevO
 <a name='create_bluemix_app'></a>
 ## 1.1 Create a sample app
     
-
-
-
 [Sign in to Bluemix](https://www.ng.bluemix.net). The Dashboard opens, which is where Adam's video begins.
 
 ![Bluemix Dashboard](/tutorials/jazzeditor/images/bm-home_NEW.png)

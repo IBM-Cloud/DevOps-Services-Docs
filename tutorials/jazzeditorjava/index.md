@@ -1,10 +1,14 @@
 #Develop a Java app from Bluemix
 
-Last modified: 2 July 2015
+###### Last updated: 30 July 2015
 
 Time: 30 minutes
 
-* [Learning objectives](#objectives)
+IBM&reg; Bluemix&trade; is an open-standards, cloud-based platform where you can build, manage, and run all types
+of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, app monitoring, and features from ecosystem partners and open source, all through an as-a-service model in the cloud.
+
+In this tutorial, you create an app in Bluemix by using the Liberty for Java&trade; starter pack. You then create a Git repository for the app and add the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). After you make a change or two to your code, you push the changes to the Git repo from the command line. Then, you build and deploy your app by using the Delivery Pipeline service.
+
 * [Before you begin](#prereq)
 * [Create an app by using Bluemix](#create_bluemix_app)
 * [Push changes to the Git repository by using the command line](#push)
@@ -12,31 +16,15 @@ Time: 30 minutes
 * [Summary](#summary)
 * [Next steps](#next_steps)
 
-
----
-<a name='objectives'></a>
-##Learning objectives
-
-* Create an app in IBM&reg; Bluemix&trade; by using the Liberty for Java&trade; starter pack.
-* Create a Git repository for the app.
-* Add the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service).
-* Push changes to the Git repository from the command line.
-* Build and deploy your changes by using the Delivery Pipeline service.
-
----
-
 <a name='prereq'></a>
 ##Before you begin
 
 [Sign up for IBM&reg; Bluemix&trade; DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
 
----
 <a name='create_bluemix_app'></a>
-##Create an app by using Bluemix
+##Create an app in Bluemix
 
-Bluemix is an open-standard, cloud-based platform for building, managing and running apps of all types, including web, mobile, big data, and smart devices. The Bluemix capabilities include Java™, mobile back-end development, app monitoring, and capabilities from ecosystem partners and open source, all through an as-a-service model in the cloud.
-
-To start working, [sign in to Bluemix][1].
+[Sign in to Bluemix][1].
 
 ![Bluemix Dashboard][6]
 
@@ -95,8 +83,6 @@ Click **EDIT CODE**.
 Your project opens in the DevOps Services Web IDE (integrated development environment). When you clicked **ADD GIT** in Bluemix, a new Git repository was populated with sample code. When you clicked **EDIT CODE**, the sample code was loaded into this work area associated with the project, which is the project workspace.
 
 
----
-
 <a name='push'></a>
 ##Push changes to the Git repository by using the command line
 
@@ -149,7 +135,6 @@ If you want to configure desktop clients to work with your Git repository, [see 
 
 
 
----
 <a name='build_and_deploy'></a>
 ##Explore builds and deployments
 
@@ -224,18 +209,16 @@ The Delivery Pipeline configuration for your app has two stages: a build stage a
  ![Our really cool app][36]
 
 
----
 <a name='Summary'></a>
 ## Summary
 
 In this tutorial, you learned to create and run a Java web app by using Bluemix. 
 
 
----
-<a name='next_ steps'></a>
+<a name='next_steps'></a>
 ## Next steps
 
-[Learn more about Bluemix at IBM Bluemix Docs][53]. 
+[Learn more about Bluemix from the IBM Bluemix Docs][53]. 
 
 To learn how to configure Eclipse or other desktop clients to work with your Git repository, [see Working locally with Bluemix DevOps Services projects][26].
 

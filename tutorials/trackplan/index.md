@@ -1,23 +1,20 @@
 #Track and plan a Bluemix DevOps Services project
 
-Last modified: 2 July 2015
+###### Last updated: 30 July 2015
 
 Time: 30 minutes
 
-You can use the Track & Plan feature in IBM&reg; Bluemix&trade; DevOps Services to manage any type of project by using an agile approach. After you enable the Track & Plan feature, you can start getting organized right away by creating and assigning work items for your project.
+You can manage any type of project with an agile approach by using the Track & Plan feature in IBM&reg; Bluemix&trade; DevOps Services. The Track & Plan tools simplify project planning and speed your workflow. For example, you can drag work items from one project phase to another, such as from your project backlog to a sprint. 
 
-The Track & Plan tools can simplify your project planning and speed your workflow. For example, you can drag items from one project phase to another, such as from your project backlog to a sprint. You can also quickly assign work item attributes using keyboard shortcuts or icons.
+<!-- After you enable the Track & Plan feature, you can start getting organized right away by creating and assigning work items for your project. -->
 
-The Track & Plan feature is useful for supporting both large and small teams, and for managing complex and simple projects. 
+<!-- The Track & Plan feature is useful for supporting both large and small teams, and for managing complex and simple projects. -->
 
-You can use the Track & Plan feature with all of your public DevOps Services projects at no cost. If you use the feature with private projects, a fee might apply. For more details, [see the Pricing page][22].
-
-To try the Track & Plan feature, complete this tutorial. You'll start a simple, public, agile project and will use basic story, task, and defect work items to plan a chat page for a website.
+In this tutorial, you create a public, agile project that uses a Git repository. After you add the Track & Plan feature to the project, you plan a chat page for a website by creating and managing work items, triaging your backlog, and planning sprints. 
 
 <!--- Commenting out until feature explorer is updated. -->
 <!--- For a quick overview of features and functions, [explore the Track & Plan feature][9]. -->
 
-* [Learning objectives](#objectives)
 * [Before you begin](#prereq)
 * [Set up a DevOps Services project](#set_up_an_IBM_devops_services_project)
 * [Create your first work items](#create_your_first_work_items)
@@ -28,28 +25,16 @@ To try the Track & Plan feature, complete this tutorial. You'll start a simple, 
 * [Summary](#summary)
 * [Next steps](#nextsteps)
 
----
-<a name='objectives'></a>
-##Learning objectives
- 
-* Create a project in DevOps Services.
-* Add a Git repository to the project.
-* Add the Track & Plan feature to the project.
-* Plan work by creating work items.
-* Manage work in the backlog against the current work.
-* Plan sprints.
-* Manage the current work.
-
----
-
 <a name='prereq'></a>
- ##Before you begin
+##Before you begin
  
 [Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with IBM&reg; Bluemix&trade;. 
 
----
+You can use the Track & Plan feature with all of your public DevOps Services projects at no cost. If you use the feature with private projects, a fee might apply. For more details, [see the Pricing page][22].
+
 <a name='set_up_an_IBM_devops_services_project'></a>
- ##Set up a DevOps Services project
+##Set up a DevOps Services project
+
 1. [Sign in to DevOps Services][1].  Your Projects page opens.  
 ![Bluemix DevOps Services new user landing page][2]
 
@@ -75,9 +60,9 @@ DevOps Services supports both public and private projects. Anyone can access you
      ![New project selections][4]
 
 9. To include other people in your project, click **Invite others to join your project**, enter their email addresses, and click **INVITE**.
----
+
 <a name='create_your_first_work_items'></a>
- ##Create your first work items
+##Create your first work items
 
 1. Click **TRACK & PLAN**. 
 
@@ -123,7 +108,6 @@ You use these icons to set the work item attributes. Don't worry if you aren't s
 
 7. For each work item, click the **Triage to Backlog** icon <img src="/tutorials/trackplan/images/triagetobacklog.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: -10px;">.
 
----
 <a name='create_work_items_in_the_backlog'></a>
 ##Create parent and child work items from the backlog
  
@@ -180,9 +164,8 @@ You use these icons to set the work item attributes. Don't worry if you aren't s
 Your backlog should look like this image:  
      ![Unranked work items in the backlog][10]
 
----
 <a name='triage_the_backlog'></a>
- ##Triage the backlog
+##Triage the backlog
 
 1. Finish assigning work items owners.
 
@@ -217,9 +200,7 @@ Your backlog should look like this image:
 5. Assign story points to the stories.  In agile projects, story points are a team-determined scale that reflects the effort required to implement a story. Next to each story, click **0 pts** and select **20 pts** from the list.  
 **Note**: You can expand each story by clicking the plus sign (+) to review its child items.
 
-
----
- <a name='plan_sprint_1'></a>	
+<a name='plan_sprint_1'></a>	
 ##Plan Sprint 1
 
 1. To start creating sprints for your project, click **Sprint Planning** and then click **Add Sprints**. From the **Quantity** and **Duration** lists, select two 2-week sprints.  
@@ -238,9 +219,8 @@ Your backlog should look like this image:
 <!--- <iframe width="640" height="360" src="//www.youtube.com/embed/SLQVK6V3qME" frameborder="0" allowfullscreen></iframe>
 <div align = center>Video: Populating a sprint</div> -->
 
----
- <a name='work_through_the_sprint'></a>
- ##Work through the sprint
+<a name='work_through_the_sprint'></a>
+##Work through the sprint
  
 You set up your sprint and are ready to start work.
 
@@ -287,17 +267,15 @@ You set up your sprint and are ready to start work.
   4. Take a second look at the work items that you just created. The defect seems pretty important. Click **Sprint Planning** and drag the defect from the Backlog lane into the Sprint 1 lane.  
 **Tip**: If you are leading a team, you can triage new work items in the Incoming Work view and the Backlog view during your sprints.
 
----
- <a name='summary'></a> 
- ##Summary
+<a name='summary'></a> 
+##Summary
 
 You have a good overview of the Track & Plan feature and see that you can use it to track any type of project, no matter how small or complex.
 
----
- <a name='nextsteps'></a> 
- ##Next steps
+<a name='nextsteps'></a> 
+##Next steps
 
-To learn more about the Track & Plan feature, see the [Track & Plan reference for Bluemix DevOps Services](/docs/reference/trackplan).
+To learn more about the Track & Plan feature, see the [Track & Plan](/docs/reference/trackplan).
 
 
 [1]: https://hub.jazz.net

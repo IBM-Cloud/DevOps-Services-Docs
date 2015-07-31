@@ -1,11 +1,15 @@
 #Clone, edit, and deploy an app from Bluemix
 
-Last modified: 17 July 2015
+Last modified: 30 July 2015
 
 Time: 60 minutes 
 
+In this tutorial, you create your own version of an IBM&reg; Bluemix&trade; DevOps Services project by cloning it in your space. Your project's code is stored in a Git repository that is part of DevOps Services. The project is private, so people can't see it unless you invite them to join.
 
-* [Learning objectives](#objectives)
+In your project, you plan your work in the Track & Plan feature. If you've used IBM Rational Team Concert&trade;, the Track & Plan feature will seem familiar. As you work on your project, you update code in the editor and push the updates to the project repository, all by using the Web IDE.
+
+When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you create jobs to build and deploy your app by using the Build & Deploy feature (the pipeline). 
+
 * [Before you begin](#prereq)
 * [Explore and clone the sample project](#fork)
 * [Plan a change to your project](#plan_change)
@@ -16,16 +20,6 @@ Time: 60 minutes
 * [Complete the work item](#work_item)
 * [Summary](#summary)
 * [Next steps](#next_steps)
-
----
-<a name='objectives'></a>
-##Learning objectives
-
-+ Create your own version of an IBM&reg; Bluemix&trade; DevOps Services project by cloning it in your space. Your project's code is stored in a Git source code system that is part of DevOps Services. The project is private, so people can't see it unless you invite them to join.
-+ Plan updates to your project by creating a work item with the Track & Plan feature. If you've used IBM Rational Team Concert&trade;, the Track & Plan feature will seem familiar.
-+ Make a code update in the editor and push the updated code to the project repository, all by using the Web IDE.
-+ Create jobs to build your code and deploy it to IBM&reg; Bluemix&trade; by using the Build & Deploy feature (the pipeline). 
-+ Deploy your app to Bluemix, the IBM Platform as a Service solution.
 
 ---
 <a name='prereq'></a>
