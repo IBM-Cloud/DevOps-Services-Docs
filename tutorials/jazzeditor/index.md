@@ -2,7 +2,7 @@
 
 ###### Last updated: 30 July 2015
 
-##### Time: 15 minutes
+Time: 15 minutes
 
 IBM&reg; Bluemix&trade; is an open-standards, cloud-based platform where you can build, manage, and run all types
 of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, app monitoring, and features from ecosystem partners and open source, all through an as-a-service model in the cloud.
