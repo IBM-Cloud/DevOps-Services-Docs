@@ -90,7 +90,7 @@ To demote project admins to be regular project members:
 2. Click **DEMOTE**.
 ![Project admin selected for demotion][8]
 
-The former project admins are listed as members, and they automatically receive an email about the role change..
+The former project admins are listed as members, and they automatically receive an email about the role change.
 
 [1]: images/invitemembers.png
 [2]: images/projadminspage1.png
