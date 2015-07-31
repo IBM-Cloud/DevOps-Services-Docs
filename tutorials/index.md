@@ -5,7 +5,7 @@
 <div class="jh-col-12-122 f_left">
 <h4><a href="/tutorials/devopsoverview"><strong>Get started: Create, edit, and deploy an app from Bluemix</strong></a> (30 minutes)</h4>
 <h6><em>A tutorial about getting started, based on a video by DevOps Services expert Adam Archer</em></h6>
-<h5>Get started with DevOps Services by creating a project from Bluemix, planning your work as a team, editing code in Live Edit mode, and deploying your app to Bluemix.</h5>
+Get started with DevOps Services by creating a project from Bluemix, planning your work as a team, editing code in Live Edit mode, and deploying your app to Bluemix.
 <hr style="border-width:1px;margin-top:1em;margin-bottom:0em">
 <a href="/tutorials/devopsweb"><h4> <strong>Clone, edit, and deploy an app from Bluemix</strong></a> (60 minutes)</h4>
 <h6><em>A tutorial about a sample project that you clone with a click of the Deploy to Bluemix button</em></h6>
