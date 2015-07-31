@@ -21,7 +21,6 @@ When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you cr
 * [Summary](#summary)
 * [Next steps](#next_steps)
 
----
 <a name='prereq'></a>
 ## Before you begin
 
@@ -29,7 +28,7 @@ Are you new to DevOps Services? If you're not quite sure what you can do with it
 
 If you haven't already registered for DevOps Services, [sign up](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
 
----
+
 <a name='fork'></a>
 ## Explore and clone the sample project
 
@@ -42,7 +41,7 @@ If you haven't already registered for DevOps Services, [sign up](https://hub.jaz
 6. After the project is cloned and the deployment is complete, click **EDIT CODE** to continue.
 ![EDIT CODE button][41]
 
----
+
 <a name='plan_change'></a>
 ## Plan a change to your project
 
@@ -92,7 +91,7 @@ Your project now has one work item: a task to update the app's default search to
 ![Click Start Working on a task in the lanes view.][12]
 3. Write down the task's work item number, which in this example is 437. You need the number later when you link the task to a commit on the Git Repository page.
 
----
+
 <a name='modify_code'></a>
 ## Modify your project's code
 
@@ -107,7 +106,7 @@ You now have a sample project and a task to personalize it. You can make and del
 
 Your change is saved and ready to be committed to the project's remote repository.
 
----
+
 <a name='push_changes'></a>
 ## Push your change to the project repository
 
@@ -128,7 +127,7 @@ On the Git page that opens, check the Working Directory Changes section to verif
 
 You're almost done. Now that your updated code is in your remote repository, you can configure DevOps Services to build the code and then deploy it automatically to Bluemix. Your updated app is about to go live! 
 
----
+
 <a name='build_deploy'></a>
 ## Explore builds and deployments
 
@@ -184,7 +183,7 @@ c. Because you did not make any changes, click **CANCEL** to return to the Build
 
 With these connected stages, you have a fully functional pipeline. By default, the changes that you push to the master branch will trigger new builds. Successful builds are deployed according to your deployment stage configuration. In this case, the builds are deployed when you manually run the deployment stage.
 
----
+
 <a name='deploy_app'></a>
 ## Deploy the app and verify your change
 
@@ -200,9 +199,6 @@ margin-bottom: 0px; max-width: 50%">. The build is added to the queue, is run, a
 
 Now that you’re familiar with the deployment process, return to the code editor, make another change, and push it to your project's repository. This practice is a good way to observe the automatic build and deployment capabilities in DevOps Services and become familiar with the interface. All you need to do is push a change. DevOps Services does the rest. To see the pipeline at work, click **BUILD & DEPLOY**.
 
-
-
----
 <a name='work_item'></a>
 ## Complete the work item
 When you're satisfied with your changes, close the task. 
@@ -219,13 +215,12 @@ Well done! The Track & Plan service keeps administrative overheard to a minimum 
 
 ![A resolved work item][11]
 
----
 <a name='summary'></a>
 ## Summary
 
 You cloned a Node.js app project, planned and tracked an update to the app, made the update, and deployed the updated app to Bluemix--all without leaving your browser. 
 
----
+
 <a name='next_steps'></a>
 ## Next steps
 Now that you know the basics, you might want to explore this information:
@@ -233,7 +228,7 @@ Now that you know the basics, you might want to explore this information:
 - [Working locally with Bluemix DevOps Services projects][37]
 - [Test and debug a Node.js app with Bluemix Live Sync][40]
 - [Track and plan a Bluemix DevOps Services project][35] 
-- [Build & Deploy reference (Pipeline)][36]
+- [Build & Deploy (pipeline)][36]
 
 [1]: https://bluemix.net/ (Bluemix)
 [2]: https://hub.jazz.net/project/ibmdevopsservices/Sentiment%20Analysis%20App
