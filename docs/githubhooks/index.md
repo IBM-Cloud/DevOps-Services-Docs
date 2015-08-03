@@ -80,12 +80,12 @@ To test your hook, create a work item and commit a change to your code.
 
 
 [1]: https://hub.jazz.net
-[2]: /docs/reference/githubhooks/images/githubDevOpsProject.png
-[4]: /docs/reference/githubhooks/images/githubSettings.png
-[5]: /docs/reference/githubhooks/images/githubHooks.png
-[6]: /docs/reference/githubhooks/images/githubServiceConfig2.png
-[7]: /docs/reference/githubhooks/images/githubComment.png
-[8]: /docs/reference/githubhooks/images/githubCommit.png
+[2]: images/githubDevOpsProject.png
+[4]: images/githubSettings.png
+[5]: images/githubHooks.png
+[6]: images/githubServiceConfig2.png
+[7]: images/githubComment.png
+[8]: images/githubCommit.png
 [9]: /docs/reference/githubhooks/images/githubLink.png
 [10]: /docs/reference/githubhooks/images/githubChange.png
 
