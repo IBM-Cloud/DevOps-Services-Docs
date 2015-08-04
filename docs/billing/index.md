@@ -1,10 +1,8 @@
 #Managing your Bluemix DevOps Services account
 
-Last modified: 21 July 2015
+###### Last updated: 22 July 2015
 
 Without signing up for an account in IBM® Bluemix™ DevOps Services, you can explore projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
-
----
 
 * [DevOps Services accounts](#idsaccounts)
 * [Setting up a DevOps Services account](#idssetup)
@@ -13,7 +11,6 @@ Without signing up for an account in IBM® Bluemix™ DevOps Services, you can e
 * [Setting up a billing account](#setup)
 * [Monitoring your usage](#monitor)
 
---- 
 <a name='idsaccounts'></a>
 ##DevOps Services accounts
 
@@ -28,7 +25,6 @@ After you sign up for a DevOps Services account and set it up, you can do these 
 * Ask questions and get answers in the forum
 * Get started quickly by forking a project or completing a tutorial
 
----
 <a name='idssetup'></a>
 ##Setting up a DevOps Services account
 
@@ -41,7 +37,6 @@ After you sign up for a DevOps Services account and set it up, you can do these 
 
 **Tip:** If you have authentication problems or if you are linked to the wrong account, you can request support by sending an email to <idslogin@jazz.net>.
 
----
 <a name='bmaccounts'></a>
 ##Bluemix accounts
 
@@ -49,7 +44,6 @@ All DevOps Services projects include an allowance of free services. If you excee
 
 If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan services beyond the free allowance, configure both services. Each service requires a separate billing configuration.
 
----
 <a name='table'></a>
 ### Table: Free allowance details
 <table border="1" summary="" width="100%">
@@ -82,7 +76,6 @@ If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan servi
 	</tbody>
 </table> 
 
----
 <a name='setup'></a>
 ##Setting up a billing account
 
@@ -98,7 +91,6 @@ To set up your billing account, complete these steps:
 5. From the **Selected Plan** list, select a billing plan. 
 6. Click **CREATE.**
 
----
 <a name='monitor'></a>
 ##Monitoring your usage
 

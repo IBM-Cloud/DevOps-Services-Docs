@@ -305,8 +305,5 @@ Last updated: 20 February 2015
 Last updated: 27 March 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, web_ide, build_and_deploy
 
 
-### Workshop:  [Node.js Apps with IBM DevOps Services and Bluemix](https://developer.ibm.com/bluemix/docs/node-js-apps-ibm-devops-services-bluemix/)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 24 April 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, pipeline, edit, nodejs
-
 &copy; Copyright IBM Corporation 2013, 2015.
 

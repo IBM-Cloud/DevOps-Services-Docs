@@ -21,5 +21,5 @@ IBM&reg; Bluemix&trade; DevOps Services provides a wide variety of materials to 
 
 <br/>More than x videos
 
-<br/>More than x samples?
+<br/>More than x samples
 </center></h3>

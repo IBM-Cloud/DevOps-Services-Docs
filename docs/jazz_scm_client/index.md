@@ -1,12 +1,10 @@
 # Setting up local Eclipse clients to work with Jazz source control
 
-Last modified: 13 July 2015
+###### Last updated: 13 July 2015
 
 If you use Jazz Source Control Management (SCM) for your IBM&reg; Bluemix&trade; DevOps Services project, you can either work locally and deliver changes through Eclipse or work by using the integrated Web IDE. If you work locally and deliver changes through Eclipse, you can install the IBM&reg; Rational Team Concert&trade; plug-in for version control.
 
 If you use the Track & Plan feature to manage your project plans and work items, you can also access your work items from Eclipse.
-
----
 
 * [Installing the Rational Team Concert plug-in](#install_eclipse_and_the_rational_team_concert_plugin)
 * [Connecting to your DevOps Services projects from Eclipse](#connect_to_your_devops_services_projects_from_eclipse)
@@ -14,8 +12,6 @@ If you use the Track & Plan feature to manage your project plans and work items,
 * [Delivering changes](#delivering)
 * [Opening DevOps Services work item queries in Eclipse](#work_items)
 * [Limitations to change and configuration management features](#limitations)
-
----
 
 <a name='install_eclipse_and_the_rational_team_concert_plugin'></a>
 ## Installing the Rational Team Concert plug-in
@@ -44,7 +40,6 @@ The plugin is based on Rational Team Concert 5.0.2.
 
 4. If you are prompted to restart Eclipse, click **Yes**.
 
----
 <a name='connect_to_your_devops_services_projects_from_eclipse'></a>
 ## Connecting to your DevOps Services projects from Eclipse
 
@@ -87,7 +82,6 @@ The project must use a Jazz Source Control Management (SCM) repository.
 
 You are now connected to your Bluemix DevOps Services project in Eclipse. To see the new repository connection and project area, click the **Team Artifacts** tab.
 
----
 <a name='import_code_into_eclipse_from_jazz_source_control'></a>
 ## Loading DevOps Services projects in Eclipse
 
@@ -117,7 +111,6 @@ You are now connected to your Bluemix DevOps Services project in Eclipse. To see
 
 8. Click the **Package** tab or the **Project Explorer** tab to create or browse files and edit code.
 
----
 
 <a name='delivering'></a>
 ## Delivering changes
@@ -128,7 +121,6 @@ You are now connected to your Bluemix DevOps Services project in Eclipse. To see
 4. Add a comment to the changeset.
 5. Right-click the changeset and click **Deliver**.
 
----
 
 <a name='work_items'></a>
 
@@ -143,8 +135,6 @@ You are now connected to your Bluemix DevOps Services project in Eclipse. To see
 1. In the **Team artifacts** view, expand a project and **Work Items**.
 
 2. Create a query or open an existing query.
-
----
 
 <a name='limitations'></a>
 

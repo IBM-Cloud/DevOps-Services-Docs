@@ -1,6 +1,6 @@
 #Git source control 
 
-Last modified: 30 June 2015
+###### Last updated: 30 June 2015
 
 If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web integrated development environment (IDE). If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repository. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
@@ -10,7 +10,6 @@ To access Git commands from the Web IDE, click the Git Repository icon <img src=
 
 No matter where you code, you can use this quick reference to do common tasks.
 
----
 ##[Repositories](#repositories)
 * [Set up a local Git repository](#set_up_a_local_git_repository)
 * [Use an existing Git repository with DevOps Services projects](#existing_git_repository)
@@ -45,11 +44,9 @@ No matter where you code, you can use this quick reference to do common tasks.
 * [Troubleshoot authentication issues by using the push command](#troubleshoot_authentication_issues_by_using_the_push_command)
 * [Delete a branch from origin](#delete_a_branch_from_origin)
 
----
 <a name="repositories"></a>
 ##Repositories
 
----
 <a name="set_up_a_local_git_repository"></a>
 ### Set up a local Git repository
 
@@ -102,7 +99,6 @@ If you have a DevOps Services project with an initialized Git repository and you
 
 **Important:** A force push replaces your original DevOps Services Git repository; that repository cannot be recovered.
        
----
 <a name="replace_your_origin _repository"></a>
 ### Replace your origin repository
 
@@ -120,7 +116,6 @@ If you have a DevOps Services project with an initialized Git repository and you
 
 1. Type `git remote set-url origin <repository_url>` and press Enter.
 
----
 <a name="integrate_local_commits_in_the_web_IDE"></a>
 
 ###Integrate local commits in the Web IDE
@@ -129,11 +124,9 @@ When you work in the Web IDE, both your local and remote repositories are hosted
 
 1. Click **SYNC**. Sync combines the fetch, rebase, and push commands.
 
----
 <a name="branches"></a>
 ##Branches
 
---- 
 <a name="create_a_local_branch"></a>
 ### Create a local branch
 
@@ -147,7 +140,6 @@ When you work in the Web IDE, both your local and remote repositories are hosted
 #### Git terminal
 1. Type `git branch <branchname>` and press Enter.
 
----
 <a name="start_working_on_a_local_branch"></a>
 ### Work on a local branch
 
@@ -164,7 +156,6 @@ When you work in the Web IDE, both your local and remote repositories are hosted
 2. Type `git checkout <branchname>` and press Enter.
 
 
----
 <a name="update_a_local_branch_with_changes_from_the_remote_branch"></a>
 ### Update a local branch to include changes from the remote branch
 
@@ -178,7 +169,6 @@ When you work in the Web IDE, both your local and remote repositories are hosted
 
 1. Enter your IBM id and password.
 
----
 <a name="delete_a_local_branch"></a>
 ### Delete a local branch
 
@@ -192,7 +182,6 @@ When you work in the Web IDE, both your local and remote repositories are hosted
 ####Git terminal
 1. Type `git branch -d <branchname>` and press Enter.
 
----
 <a name="force_push"></a>
 ###Force push local changes to a remote branch
 
@@ -210,7 +199,6 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 
 1. Type `git push <origin> <remote branch> -f` and press Enter. 
 
----
 <a name="discard_changes"></a>
 ### Discard unstaged changes from the active local branch
 
@@ -221,11 +209,9 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 #### Git terminal
 1. Type `git checkout -- path/to/file/filename` to discard changes to a file.
 
----
 <a name="commits"></a>
 ##Commits
 
----
 <a name="commit_files_to_the_remote_branch"></a>
 ### Commit files and push to the remote branch
 
@@ -249,9 +235,6 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 
 4. Type `git push` and press Enter.
 
-
-
----
 <a name="link_commit"></a>
 ### Link a commit to a work item
 To link a commit to a Track & Plan work item for a Git project that is hosted at DevOps Services, add a work-item keyword and number to the Git commit message.
@@ -271,7 +254,6 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 1. Open your DevOps Services project's Overview page.
 2. Under the message to GitHub users, click **configure GitHub** to get instructions to configure commit linking between GitHub and DevOps Services.
 
----
 <a name="view_the_commit_history"></a>
 ### View the commit history
 
@@ -287,7 +269,6 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 
 3. To stop viewing entries, press  Q.
 
----
 <a name="compare_changes_that_a_commit_introduced"></a>
 ### Compare changes that a commit introduced
 
@@ -312,7 +293,6 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 
 1. To stop viewing entries, press  Q.
 
----
 <a name="modify_the_last_commit"></a>
 ### Modify the last commit
 **Note**: Do not modify your last commit after you push it to a remote repository.
@@ -334,7 +314,6 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 3. In your text editor, accept or modify the commit message.  
 **Note**: To save your commit message and close Vim, which might be your default text editor, press Esc, type `:wq`, and press Enter.
 
----
 <a name="tag_a_commit"></a>
 ### Tag a commit
 
@@ -352,7 +331,6 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 
 2. Type `git tag -a <tag_text> <commit_id>` and press Enter. 
 
----
 <a name="change_the_committer_name_and_email_address"></a>
 ### Change the committer name and email address
 
@@ -374,7 +352,6 @@ To update your name and email address for all repositories:
 
 2. Type `git config --global user.name "<Your Name>"` and press Enter.
 
----
 <a name="revert"></a>
 ###Revert a commit
 
@@ -390,7 +367,6 @@ Revert the changes that a commit has introduced into your active branch.
 
 1. Type `git revert <commit ID>` and press Enter.
 
----
 <a name="change_integration"></a>
 ##Change integration
 
@@ -427,7 +403,6 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 3. Type `git merge <source_name>` and press Enter.
 
----
 <a name="resolve_a_merge_conflict"></a>
 ### Resolve a merge conflict
 
@@ -461,7 +436,6 @@ When you need to deliver changes from a source branch to a destination branch, y
 		>>>>>>> merged_branch
 4. Stage each file that you modified, and then commit the merge.
 
----
 <a name="rebase_branches"></a>
 ### Rebase branches
 
@@ -494,7 +468,6 @@ When you need to deliver changes from a source branch to a destination branch, y
 5. Repeat the previous step as many times as necessary to complete the rebase operation.  
 **Note**: To stop the rebase operation, type `git rebase --abort` and press Enter.
 
----
 <a name="resolve_a_rebase_conflict"></a>
 ### Resolve a rebase conflict
 
@@ -530,12 +503,9 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 5. Resume the rebase operation by typing `git rebase --continue` and pressing Enter.
 
-
----
 <a name="git_terminal"></a>
 ##Git terminal only
 
----
 <a name="troubleshoot_authentication_issues_by_using_the_push_command"></a>
 ### Troubleshoot authentication issues by using the push command
 
@@ -545,7 +515,6 @@ When you push, if a "406 Not Acceptable" error occurs, complete these steps:
 
 1. If you cannot upgrade Git, add your repository again but place your alias in the repository URL.  For example: `https://your_alias@hub.jazz.net/alias/project_name`.
 
----
 <a name="delete_a_branch_from_origin"></a>
 ### Delete a branch from origin
 
@@ -559,3 +528,4 @@ Only project owners can delete branches from origin.
 [4]: #view_the_commit_history
 [5]: #start_working_on_a_local_branch
 [6]: http://git-scm.com/docs
+

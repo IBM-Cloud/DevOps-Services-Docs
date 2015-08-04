@@ -2,11 +2,10 @@
 
 # Track and plan
 
-Last updated: 7 July 2015
+###### Last updated: 7 July 2015
 
 With the Track & Plan feature, you track work for a project through work items. For example, if you find a bug in someone's code, you can open a Defect work item and assign it to the person who owns the code.
 
----
 
 * [Creating work items](#creatingwis)
 * [Work item states](#wistates)
@@ -17,7 +16,6 @@ With the Track & Plan feature, you track work for a project through work items. 
 * [Planning the work for your team](#planning)
 * [Reviewing the team's progress](#progress)
 
---- 
 
 <a name='creatingwis'></a>
 ##Creating work items
