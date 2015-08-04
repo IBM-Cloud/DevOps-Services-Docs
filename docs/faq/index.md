@@ -1,5 +1,5 @@
 # FAQs
-##### Last updated: 26 June 2015
+##### Last updated: 04 August 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -18,6 +18,8 @@ ____
 -   [How can I provide additional feedback?](#q8)
 -   [How can I report abuse?](#q18)
 -   [How can I see what's new?](#q19)
+-   [When I try to deploy an app from the run bar, why does it fail in a yellow, "not synchronized" state?](#yellowrunbar)
+-	[Where is the run bar?](#missingrunbar)
 -   [Which browser should I be using?](#q20)
 
 ____
@@ -134,6 +136,26 @@ Provide as much information as possible, including the URL where you see the abu
 ##### How can I see what's new?
 
 [Visit the What's New page](/whatsnew).
+
+<a name="yellowrunbar"></a>
+### When I try to deploy an app from the run bar, why does it fail in a yellow, "not synchronized" state?
+
+The app that you are deploying has the same route as another app that is running.  To fix this issue, change the route to be unique.
+
+<a name="missingrunbar"></a>
+### Where is the run bar?
+
+If you don't see the run bar in the Web IDE, one of these issues occured:
+
+1. DevOps Services isn't identifying your project as a project.
+* Fix: In your project's root directory, create a `project.json` file.
+2. DevOps Services failed to determine which folder your app is in.
+* Fix: If your app is in a directory other than the project root, do one of these steps:
+* In your project's root directory, create a `manifest.yml` file.  Then edit the file so that it points to the location of your app.		
+For example: `path: path_to_your_app`
+* Move your app so that it is in your project's root directory.
+* 3. DevOps Services does not detect that your app is a Node.js app.
+* Fix: In the app folder of your project, create a `package.json` file.
 
 <a name="q20"></a>
 ##### Which browser should I use? 
