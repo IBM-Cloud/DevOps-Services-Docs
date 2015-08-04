@@ -148,14 +148,14 @@ The app that you are deploying has the same route as another app that is running
 If you don't see the run bar in the Web IDE, one of these issues occured:
 
 1. DevOps Services isn't identifying your project as a project.
-* Fix: In your project's root directory, create a `project.json` file.
+   * Fix: In your project's root directory, create a `project.json` file.
 2. DevOps Services failed to determine which folder your app is in.
-* Fix: If your app is in a directory other than the project root, do one of these steps:
-* In your project's root directory, create a `manifest.yml` file.  Then edit the file so that it points to the location of your app.		
+   * Fix: If your app is in a directory other than the project root, do one of these steps:
+      * In your project's root directory, create a `manifest.yml` file.  Then edit the file so that it points to the location of your app.		
 For example: `path: path_to_your_app`
-* Move your app so that it is in your project's root directory.
+      * Move your app so that it is in your project's root directory.
 * 3. DevOps Services does not detect that your app is a Node.js app.
-* Fix: In the app folder of your project, create a `package.json` file.
+   * Fix: In the app folder of your project, create a `package.json` file.
 
 <a name="q20"></a>
 ##### Which browser should I use? 
