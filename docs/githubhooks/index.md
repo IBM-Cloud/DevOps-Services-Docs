@@ -86,7 +86,7 @@ To test your hook, create a work item and commit a change to your code.
 [6]: images/githubServiceConfig2.png
 [7]: images/githubComment.png
 [8]: images/githubCommit.png
-[9]: /docs/reference/githubhooks/images/githubLink.png
-[10]: /docs/reference/githubhooks/images/githubChange.png
+[9]: images/githubLink.png
+[10]: images/githubChange.png
 
 
