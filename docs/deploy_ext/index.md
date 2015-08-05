@@ -118,7 +118,7 @@ To create a globalization stage and job:
 
   a. In the **JOBS** tab, click **ADD JOB**.
   
-  b. Select the **Build job type.
+  b. Select the **Build** job type.
   
   c. For the **Builder type**, select **IBM Globalization**.
   
