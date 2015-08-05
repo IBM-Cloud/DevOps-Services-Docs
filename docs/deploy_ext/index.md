@@ -112,7 +112,7 @@ Before you begin, put all of your English-translatable strings in one or more `f
 2. In the globalization stage, add a job to translate the source files.
 
   a. On the **JOBS** tab, click **ADD JOB**.
-  
+
   b. For the job type, select **Build**.
   
   c. For the builder type, select **IBM Globalization**.
