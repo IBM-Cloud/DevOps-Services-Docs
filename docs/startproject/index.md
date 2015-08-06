@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-####### Last modified: 2 July 2015
+###### Last modified: 2 July 2015
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 

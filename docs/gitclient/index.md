@@ -1,10 +1,10 @@
 #Setting up local clients to work with Git source control 
 
-###### Last modified: 29 May 2015
+###### Last updated: 29 May 2015
 
 If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repository and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repository or, if you work in Eclipse, install the EGit plug-in for version control.
 
-If you use the Track & Plan feature and you want to manage your project plans and work items locally from Eclipse, install the IBM Rational Team Concert™ plug-in.
+If you use the Track & Plan feature and you want to manage your project plans and work items locally from Eclipse, install the IBM Rational Team Concertâ„¢ plug-in.
 
 * [Accessing your Git repository from your DevOps Services project](#access_git)
 * [Connecting the Track & Plan feature to Rational Team Concert](#eclipse_using_rtc)
@@ -62,7 +62,7 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 **Before you begin**: 
 
 * If you use Eclipse 4.2.2 or later, complete these steps. If you use an earlier version of Eclipse, [see the EGit/FAQ page for instructions](http://wiki.eclipse.org/EGit/FAQ#Where_can_I_find_older_releases_of_EGit.3F).  
-* If you do not have Eclipse installed and want tools for Java™ development, [download and install Eclipse IDE for Java EE Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr2).  
+* If you do not have Eclipse installed and want tools for Javaâ„¢ development, [download and install Eclipse IDE for Java EE Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr2).  
 * If you do not have Java 1.7 installed, [download and install the Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html).
 * Check whether the EGit plug-in is already installed. In Eclipse, click **Window > Show View > Other** and type `git` as the filter text. If you see a list of Git views, skip to [Connect to your DevOps Services project by using EGit](#connect_to_your_devops_services_project_with_egit).
 
@@ -182,11 +182,11 @@ You can also create services and link them to your app, and define environment v
 
 [1]: https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html
 [2]: https://www.ng.bluemix.net/docs/#manageapps/eclipsetools/eclipsetools.html#eclipsetools
-[3]: /docs/reference/gitclient/images/gitURL.png
+[3]: images/gitURL.png
 [18]: https://developer.ibm.com/answers/questions/?community=devops-services (Bluemix DevOps Services forum)
 [19]: mailto:hub%40jazz.net
 [20]: /docs
-[21]: /docs/reference/gitclient/images/egit_team_provider.png
-[22]: /docs/reference/gitclient/images/rtc_client_feature.png
-[23]: /docs/reference/gitclient/images/quick_restart.png
+[21]: images/egit_team_provider.png
+[22]: images/rtc_client_feature.png
+[23]:images/quick_restart.png
 

@@ -1,6 +1,6 @@
 # Administering a project
 
-###### Last modified: 02 July 2015
+###### Last updated: 02 July 2015
 
 To administer IBM&reg; Bluemix&trade; DevOps Services projects, you must be a project admin or a project owner. A project can have multiple admins, but it can only have one owner. 
 
@@ -90,7 +90,7 @@ To demote project admins to be regular project members:
 2. Click **DEMOTE**.
 ![Project admin selected for demotion][8]
 
-The former project admins are listed as members, and they automatically receive an email about the role change..
+The former project admins are listed as members, and they automatically receive an email about the role change.
 
 [1]: images/invitemembers.png
 [2]: images/projadminspage1.png
