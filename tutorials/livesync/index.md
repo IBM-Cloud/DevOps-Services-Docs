@@ -6,7 +6,6 @@ Testing and debugging are critical to ensure that your app performs without unex
 
 In this tutorial, you create a launch configuration that you use to deploy a Node.js app to a test environment. You enable Live Edit mode in the Web IDE, and then debug your app. If you prefer to work from the command line, you can set up the Bluemix Live Sync command-line tool.
 
-##Contents
 * [Before you begin](#prereq)
 * [The run bar](#runbar)
 * [Create a launch configuration](#launch_configuration)
