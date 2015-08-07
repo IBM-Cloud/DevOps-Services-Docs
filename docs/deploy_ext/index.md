@@ -2,7 +2,7 @@
 
 ###### Last updated: 7 August 2015
 
-You can extend the capabilities of your Build & Deploy pipeline with test jobs, such as jobs to run static code scans or globalize strings.
+You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
 * [Running static code scans by using the pipeline](#scan)
 * [Globalizing strings by using the pipeline](#globalize)
