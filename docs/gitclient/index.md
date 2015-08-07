@@ -85,9 +85,11 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 #### Connecting EGit to your DevOps Services project
 
-1. In Eclipse, click **Window > Preferences > General > Workspaces**. In the Text file encoding field, click **Other** and from the list, select **UTF-8**.
+1. In Eclipse, open the UTF-8 workspace.
+  * If you use a Mac, click **Eclipse > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
+  * If you use a Windows system, click **Window > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
 
-1. In [DevOps Services](https://hub.jazz.net/), browse to your project page. 
+2. In [DevOps Services](https://hub.jazz.net/), browse to your project page. 
 
 2. On the right side of the page, copy the **Git URL**.  
  **Note**: DevOps Services supports the HTTPS protocol for Git URLs. The SSH and Git protocols are not supported.  
