@@ -160,6 +160,7 @@ To view the runtime log, click **View runtime log**.
 
 In addition to job logs, you can view unit test results, generated artifacts, and code changes for any build job.
 
+<a name="ext"></a>
 ##Extending the capabilities of your pipeline
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
