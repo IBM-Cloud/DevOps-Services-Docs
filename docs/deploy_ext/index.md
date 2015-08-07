@@ -8,7 +8,7 @@ You can extend the capabilities of your Build & Deploy pipeline with test jobs, 
 * [Globalizing strings by using the Delivery Pipeline](#globalize)
 
 <a name="scan"></a>
-##Running static code scans by using the Delivery Pipeline
+##Running static code scans by using the pipeline
 Want to find security issues in your code before you deploy it? When you use the IBM® Static Analyzer for Bluemix™ as part of your pipeline, you can run automated checks against your  Java™ app's static `.war`, `.ear`, `.jar`, or `.class` build binary files.
 
 A pipeline that uses the Static Analyzer service typically includes these stages:
@@ -88,7 +88,7 @@ Before you begin, [review the Terms of Use for the service][4].
 
 For more information about using the Static Analyzer service from the Bluemix Dashboard, [see the Static Analyzer service docs][6].
     
-##Globalizing strings by using the Delivery Pipeline
+##Globalizing strings by using the pipeline
 
 You can translate strings automatically into other languages when you use the IBM Globalization service with your pipeline. The Globalization service uses machine translation to translate your source files as part of the pipeline's build and deployment process.
 
