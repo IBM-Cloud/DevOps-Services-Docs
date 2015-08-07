@@ -88,6 +88,7 @@ Before you begin, [review the Terms of Use for the service][4].
 
 For more information about using the Static Analyzer service from the Bluemix Dashboard, [see the Static Analyzer service docs][6].
     
+<a name="globalize"></a>
 ##Globalizing strings by using the pipeline
 
 You can translate strings automatically into other languages when you use the IBM Globalization service with your pipeline. The Globalization service uses machine translation to translate your source files as part of the pipeline's build and deployment process.
