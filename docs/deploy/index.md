@@ -165,7 +165,7 @@ You can extend the capabilities of your Build & Deploy pipeline by configuring y
 
 For more information on extending pipeline capabilities, [see Extending the capabilities of your Build & Deploy pipeline][21].
  
-[1]: https://www.ng.bluemix.net/docs/#manageapps/index-gentopic2.html#appmanifest
+[1]: https://www.ng.bluemix.net/docs/manageapps/deployingapps.html#appmanifest
 [2]: https://www.ng.bluemix.net/docs/#services/DeliveryPipeline/index.html#getstartwithCD
 [3]: http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html#push
 [4]: https://console.ng.bluemix.net/?ace_base=true/#/pricing/cloudOEPaneId=pricing
