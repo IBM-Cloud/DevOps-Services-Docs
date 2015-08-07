@@ -80,10 +80,10 @@ Before you begin, [review the Terms of Use for the service][4].
 
 ###Console output examples:
 
-#####Successful scan:
+#####Successful scan
 ![Example successful scan][7]
 
-####Pending scan:
+####Pending scan
 ![Example pending scan][8]
 
 For more information about using the Static Analyzer service from the Bluemix Dashboard, [see the Static Analyzer service docs][6].
