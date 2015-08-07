@@ -4,8 +4,8 @@
 
 You can extend the capabilities of your Build & Deploy pipeline with test jobs, such as jobs to run static code scans or globalize strings.
 
-* [Running static code scans by using the Delivery Pipeline](#scan)
-* [Globalizing strings by using the Delivery Pipeline](#globalize)
+* [Running static code scans by using the pipeline](#scan)
+* [Globalizing strings by using the pipeline](#globalize)
 
 <a name="scan"></a>
 ##Running static code scans by using the pipeline
@@ -45,7 +45,7 @@ Before you begin, [review the Terms of Use for the service][4].
   
   b. For the job type, select the **Test**.
   
-  c. For the **Tester type**, select **IBM Security Static Analyzer**.
+  c. For the tester type, select **IBM Security Static Analyzer**.
   
   d. For the organization and space, verify the values and update them if needed.
   
