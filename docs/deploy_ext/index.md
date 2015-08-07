@@ -33,7 +33,7 @@ Before you begin, [review the Terms of Use for the service][4].
 
   a. Click **ADD STAGE**.
   
-  b. Name the stage; for example, `Processing`
+  b. Name the stage; for example, `Processing`.
   
   c. For the input type, select **Build Artifacts**.
   
