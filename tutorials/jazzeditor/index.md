@@ -1,6 +1,6 @@
 #Develop a Node.js app from Bluemix
 
-###### Last updated: 30 July 2015
+###### Last updated: 06 August 2015
 
 Time: 15 minutes
 
@@ -9,10 +9,7 @@ of apps: mobile, smart devices, web, and big data. The Bluemix capabilities incl
 
 In this tutorial, you create an app in Bluemix by using the SDK for Node.js starter pack. You then create a Git repository for the app and push changes to that repo from the IBM&reg; Bluemix&trade; DevOps Services Web IDE.
 
-If you want more information about Bluemix, see these helpful resources:
-
-* [Getting Started with Bluemix](https://www.ng.bluemix.net/docs/#)
-* [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview)
+If you want more information about Bluemix, see [Getting Started with Bluemix](https://www.ng.bluemix.net/docs/#) and [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview).
 
 If you're ready to try Bluemix, start this tutorial!
 

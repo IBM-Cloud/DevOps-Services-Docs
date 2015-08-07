@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 27 July 2015
+###### Last updated: 7 August 2015
 
 The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
@@ -13,6 +13,7 @@ The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the p
 * [Running a stage](#run_stage)
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
+* [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
 ##Stages
@@ -159,8 +160,13 @@ To view the runtime log, click **View runtime log**.
 
 In addition to job logs, you can view unit test results, generated artifacts, and code changes for any build job.
 
+<a name="ext"></a>
+##Extending the capabilities of your pipeline
+You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
+
+For more information on extending pipeline capabilities, [see Extending the capabilities of your Build & Deploy pipeline][21].
  
-[1]: https://www.ng.bluemix.net/docs/#manageapps/index-gentopic2.html#appmanifest
+[1]: https://www.ng.bluemix.net/docs/manageapps/deployingapps.html#appmanifest
 [2]: https://www.ng.bluemix.net/docs/#services/DeliveryPipeline/index.html#getstartwithCD
 [3]: http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html#push
 [4]: https://console.ng.bluemix.net/?ace_base=true/#/pricing/cloudOEPaneId=pricing
@@ -180,3 +186,4 @@ In addition to job logs, you can view unit test results, generated artifacts, an
 [18]: ../../../tutorials/basicbuild
 [19]: #add_stage
 [20]: #add_job
+[21]: ../deploy_ext
