@@ -247,10 +247,10 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 **Note:** If your repository is hosted on GitHub, you can link your commits to work items when you push, but you must configure it on GitHub. For more information, [see Setting up the GitHub hook][7].
 
 Alternatively, to link a commit that was already pushed:
-	1. Open your project's Overview page.
-	2. Click **GIT LOG**.
-	3. Open the commit to link to a work item
-	4. Click **Link Work Item**.
+1. Open your project's Overview page.
+2. Click **GIT LOG**.
+3. Open the commit to link to a work item
+4. Click **Link Work Item**.
 
 <a name="view_the_commit_history"></a>
 ### View the commit history
