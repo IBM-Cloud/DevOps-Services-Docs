@@ -84,10 +84,10 @@ To test your hook, create a work item and commit a change to your code.
 
 To link one or more work items to a change that is already committed:
 1. Open your project's Overview page.
-1. Click GIT LOG.
+1. Click **GIT LOG**.
 1. Open the commit.
-1. Click Link Work Item.
-1. Select the work item and click OK.
+1. Click **Link Work Item**.
+1. Select the work item and click **OK**.
 
 A link to the change set will be listed on the Links tab of the work item. You can review the commit details by clicking the change set link on the work item. From there you can view the changed files by clicking one of the GitHub links. ![Link to view changes in GitHub.][11]
 
