@@ -1,10 +1,18 @@
 #Develop a Node.js app from Bluemix
 
-Last modified: 2 July 2015
+###### Last updated: 06 August 2015
 
 Time: 15 minutes
 
-* [Learning objectives](#objectives)
+IBM&reg; Bluemix&trade; is an open-standards, cloud-based platform where you can build, manage, and run all types
+of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, app monitoring, and features from ecosystem partners and open source, all through an as-a-service model in the cloud.
+
+In this tutorial, you create an app in Bluemix by using the SDK for Node.js starter pack. You then create a Git repository for the app and push changes to that repo from the IBM&reg; Bluemix&trade; DevOps Services Web IDE.
+
+If you want more information about Bluemix, see [Getting Started with Bluemix](https://www.ng.bluemix.net/docs/#) and [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview).
+
+If you're ready to try Bluemix, start this tutorial!
+
 * [Before you begin](#prereq)
 * [Create an app with Bluemix](#create_bluemix_app)
 * [Set up Git integration and auto-deploy](#git_integration_and_autodeployment)
@@ -12,38 +20,14 @@ Time: 15 minutes
 * [Summary](#summary)
 * [Next steps](#nextsteps)
  
- 
- ---
-<a name='objectives'></a>
-##Learning objectives
-
-* Create an app in IBM&reg; Bluemix&trade; by using the SDK for Node.js starter pack.
-* Create a Git repository for the app.
-* Push changes to the Git repository from the IBM&reg; Bluemix&trade; DevOps Services Web IDE.
-
----
 
 <a name='prereq'></a>
 ##Before you begin
 
 [Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
 
----
- 
-<a name='create_bluemix_app'></a>
-##Create an app with IBM Bluemix
-
-Bluemix is an open-standards, cloud-based platform where you can build, manage, and run all types
-of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, 
-app monitoring, and features from ecosystem partners and open source, 
-all through an as-a-service model in the cloud.
-
-You can find helpful information on the Bluemix website:
-
-* [Getting Started with Bluemix](https://www.ng.bluemix.net/docs/#)
-* [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview)
-
-To get started now, try this tutorial. You'll create an app and deploy it.
+ <a name='create_bluemix_app'></a>
+##Create an app in Bluemix
 
 1. Sign in to Bluemix. The Dashboard opens:
 ![Bluemix Dashboard](/tutorials/jazzeditor/images/bm-home_NEW.png)
@@ -63,7 +47,6 @@ After a moment, the app starts. The app's Overview page opens and shows that the
 
 Now that your app is running, you can see and modify its code by using DevOps Services.
 
----
 <a name='git_integration_and_autodeployment'></a>
 ##Set up Git integration and auto-deploy in DevOps Services
 
@@ -80,7 +63,6 @@ You created a Git repository, populated it with the example code, and deployed t
 3. Go to the app's Overview page and click **EDIT CODE**. Your new project opens in the web integrated development environment (Web IDE).  
 ![CODE button](/tutorials/jazzeditor/images/bm-code-button_NEW.png)
 
----
 <a name='push'></a>
 ##Push changes to the Git repository by using the Web IDE
 
@@ -121,7 +103,6 @@ app was deployed again. On the Deploy stage, in the LAST EXECUTION RESULT sectio
 Your update is shown.
 ![Our really cool app](/tutorials/jazzeditor/images/really-cool_NEW.png)
 
----
 <a name='summary'></a>
 ##Summary
 
@@ -136,6 +117,6 @@ and verified your changes.
 <a name='nextsteps'></a>
 ##Next steps
 
-After you have completed this tutorial, [learn more about testing your application as you develop by using Bluemix Live Sync](/tutorials/livesync). 
+[Learn more about testing your app as you develop by using Bluemix Live Sync](/tutorials/livesync). 
 
 [1]: /tutorials/jazzeditor/images/runbar_green.png

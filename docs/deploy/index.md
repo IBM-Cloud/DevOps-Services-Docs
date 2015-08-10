@@ -1,10 +1,9 @@
 #Build and deploy
 
-Last modified: 9 July 2015
+###### Last updated: 7 August 2015
 
 The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
----
 * [Stages](#stages)
 * [Jobs](#jobs)
 * [Manifest files](#manifests)
@@ -14,8 +13,7 @@ The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the p
 * [Running a stage](#run_stage)
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
-
----
+* [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
 ##Stages
@@ -28,7 +26,7 @@ To learn how to add a stage, [see Adding a stage][19].
 
 By default in a stage, builds and deployments are triggered automatically every time changes are delivered to a project's source control repository. Stages and jobs run serially; they enable flow control for your work. For example, you might place a test stage before a deployment stage. If the tests in the test stage fail, the deployment stage won't run. 
 
-You might want tighter control of a specific stage. If you do not want a stage to run every time a change occurs at its input, you can disable the capability. On the **INPUT** tab, in the Stage Trigger section, click **Only execute jobs when a user manually runs this stage**. 
+You might want tighter control of a specific stage. If you do not want a stage to run every time a change occurs at its input, you can disable the capability. On the **INPUT** tab, in the Stage Trigger section, click **Run jobs only when this stage is run manually**. 
 
 
 
@@ -47,7 +45,9 @@ To learn how to add a job to a stage, [see Adding a job to a stage][20].
 <a name="builds"></a>
 ###Build jobs
 
-Build jobs compile your project in preparation for deployment. 
+Build jobs compile your project in preparation for deployment. They generate artifacts that can be sent to a build archive directory, although by default, the artifacts are placed in the project's root directory.
+
+Jobs that take input from build jobs must reference build artifacts in the same structure that they were created in. For example, if a build job archives build artifacts to an `output` directory, a deploy script would refer to the `output` directory rather than the project root directory to deploy the compiled project.
 
 **Note**: If you select the **Simple** builder type for a build job, you skip the build process. In that case, your code is not compiled, but is sent to the deployment stage as is. To both build and deploy, select a builder type other than **Simple**. 
 
@@ -64,6 +64,8 @@ You can include environment variables within a build job's build shell commands.
 ###Deploy jobs
 
 Deploy jobs upload your project to Bluemix as an app and are accessible from a URL. After a project is deployed, you can find the deployed app on your Bluemix Dashboard. You can configure the build and deploy jobs as separate stages or add them to the same stage to run automatically.
+
+Deploy jobs can deploy new apps or update existing apps. Even if you first deployed an app by using another method, such as the Cloud Foundry command line interface or the run bar in the Web IDE, you can update the app by using a deploy job. To update an app, in the deploy job, use that app's name.
 
 <a name="deploys_var"></a>
 ####Environment variables for deployment scripts
@@ -97,8 +99,6 @@ To use the `cf push` command arguments, open the configuration settings for a de
 The simplest possible pipeline contains two stages. First, there is a stage that contains a build job and takes input from a Git repository. When that build job runs, the app is built and sent to a build archive directory. If the first stage runs, a second stage that contains a deploy job runs. The second stage takes input from the earlier build job and deploys the app to Bluemix.
 
 ![A two-stage pipeline][12]
-
----
 
 <a name="add_stage"></a>
 ##Adding a stage
@@ -145,6 +145,8 @@ When you run a stage manually, or if it runs because the stage before it is comp
 2. If a specific revision is not specified, search previous stages until a stage is found that uses the same input. Find and use the last successfully run revision of that input.
 3. If a specific revision is not specified and no other stages use the specified source as input, use the latest revision of the input.
 
+**Tip:** To deploy a previous build of an app, from the Stage History menu, select the build. Click SEND TO, and select a target.
+
 <a name="logs"></a>
 ##Viewing logs
 
@@ -158,8 +160,13 @@ To view the runtime log, click **View runtime log**.
 
 In addition to job logs, you can view unit test results, generated artifacts, and code changes for any build job.
 
+<a name="ext"></a>
+##Extending the capabilities of your pipeline
+You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
+
+For more information on extending pipeline capabilities, [see Extending the capabilities of your Build & Deploy pipeline][21].
  
-[1]: https://www.ng.bluemix.net/docs/#manageapps/index-gentopic2.html#appmanifest
+[1]: https://www.ng.bluemix.net/docs/manageapps/deployingapps.html#appmanifest
 [2]: https://www.ng.bluemix.net/docs/#services/DeliveryPipeline/index.html#getstartwithCD
 [3]: http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html#push
 [4]: https://console.ng.bluemix.net/?ace_base=true/#/pricing/cloudOEPaneId=pricing
@@ -179,3 +186,4 @@ In addition to job logs, you can view unit test results, generated artifacts, an
 [18]: ../../../tutorials/basicbuild
 [19]: #add_stage
 [20]: #add_job
+[21]: ../deploy_ext

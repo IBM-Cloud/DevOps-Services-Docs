@@ -1,10 +1,9 @@
 # Creating a project in Bluemix DevOps Services 
 
-Last modified: 2 July 2015
+###### Last modified: 2 July 2015
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
----
 
 * [Projects](#projects)
 * [Creating a project](#starting_a_devops_services_project)
@@ -12,7 +11,6 @@ In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can bu
 * [Creating a project for a Bluemix app](#creating_a_devops_services_project_for_your_bluemix_app)
 * [Cloning an existing app using the Deploy to Bluemix button](#deploy_to_bluemix_button)
 
----
 
 <a name='projects'></a>
 ## Projects
@@ -53,7 +51,6 @@ If you want to use only the traditional planning feature, which uses tasks and i
 
 8. Click **CREATE**.  
 
----
 <a name='forking_a_devops_services_project'></a>
 ## Forking a project
 
@@ -77,7 +74,6 @@ Although the complete source of the original project is copied, you'll notice th
 5. Click **CREATE**.
 
 
----
 ### Changing the org or space for a project
 
 After you fork your project, you might need to change the specified org or space. For example, if the org that is selected for the forked project cannot be found, specify a different org to deploy the project.
@@ -111,7 +107,6 @@ To change the org or space:
 7. If you wrote code for your app, push your code to your project's repository.
 
 
----
 <a name='deploy_to_bluemix_button'></a>
 ## Cloning an app by using the Deploy to Bluemix button
 

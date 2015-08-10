@@ -1,19 +1,15 @@
 #Setting up local clients to work with Git source control 
 
-Last modified: 29 May 2015
+###### Last updated: 29 May 2015
 
 If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repository and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repository or, if you work in Eclipse, install the EGit plug-in for version control.
 
 If you use the Track & Plan feature and you want to manage your project plans and work items locally from Eclipse, install the IBM Rational Team Concert™ plug-in.
 
----
-
 * [Accessing your Git repository from your DevOps Services project](#access_git)
 * [Connecting the Track & Plan feature to Rational Team Concert](#eclipse_using_rtc)
 * [Developing with Bluemix Live Sync and Node.js](#livesync)
 * [Developing with IBM Eclipse Tools](#etools)
-
----
 
 <a name='access_git'></a>
 ## Accessing your Git repository from your DevOps Services project
@@ -28,7 +24,6 @@ If you have a DevOps Services project that uses Git, you can connect the project
 
 If you know how to use the command line with Git, you can use this method to manage your repository. 
 
----
 <a name='clone_your_git_project_from_the_command_line'></a>
 #### Cloning your Git project from the command line
 
@@ -55,14 +50,12 @@ Check whether Git is installed. On a command line, type `git version`. If Git is
 
 After the download is complete, you have a local repository of the files for your project. For more information about using Git, [see the Git documentation](http://git-scm.com/doc).
 
-----
 <a name='eclipse_using_egit'></a>
 ### Option 2: Accessing your repository by using Eclipse and the EGit plug-in
 
 
 If you use Eclipse and have a project that uses Git for source control, you can use the EGit plug-in to manage your repository from Eclipse. 
 
----
 <a name='install_the_egit_eclipse_plugin'></a>
 #### Installing the EGit Eclipse plug-in
 
@@ -88,14 +81,15 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 5. If you are prompted to restart Eclipse, click **Yes**.
 
----
 <a name='connect_to_your_devops_services_project_with_egit'></a>
 
 #### Connecting EGit to your DevOps Services project
 
-1. In Eclipse, click **Window > Preferences > General > Workspaces**. In the Text file encoding field, click **Other** and from the list, select **UTF-8**.
+1. In Eclipse, open the UTF-8 workspace.
+  * If you use a Mac, click **Eclipse > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
+  * If you use a Windows system, click **Window > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
 
-1. In [DevOps Services](https://hub.jazz.net/), browse to your project page. 
+2. In [DevOps Services](https://hub.jazz.net/), browse to your project page. 
 
 2. On the right side of the page, copy the **Git URL**.  
  **Note**: DevOps Services supports the HTTPS protocol for Git URLs. The SSH and Git protocols are not supported.  
@@ -121,13 +115,11 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 12. To work on this project, click **Window > Open Perspective**, select **Other** and select **Git**.  The Git Repositories view lists your connected Git repositories.  You could also use the **Project Explorer** view.
 
----
 <a name='eclipse_using_rtc'></a>
 ## Connecting the Track & Plan feature to Rational Team Concert
 
 If you use Eclipse, you can use the Rational Team Concert plug-in to access your work items.
 
----
 <a name='install_eclipse_and_the_rational_team_concert_plugin'></a>
 ### Installing the Rational Team Concert plug-in
 
@@ -155,7 +147,6 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 
 7. If you are prompted to restart Eclipse, click **Yes**.
 
----
 <a name='connect_to_your_devops_service_projects_from_eclipse'></a>
 ## Connecting to your DevOps Services project from Eclipse
 
@@ -166,7 +157,6 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 4. Select the Bluemix DevOps Services projects to connect to and click **Finish**.
 5. Use the Work Items or My Work view to work with work items.
 
----
 <a name='livesync'></a>
 ## Developing with Bluemix Live Sync and Node.js
 
@@ -194,10 +184,11 @@ You can also create services and link them to your app, and define environment v
 
 [1]: https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html
 [2]: https://www.ng.bluemix.net/docs/#manageapps/eclipsetools/eclipsetools.html#eclipsetools
-[3]: /docs/reference/gitclient/images/gitURL.png
+[3]: images/gitURL.png
 [18]: https://developer.ibm.com/answers/questions/?community=devops-services (Bluemix DevOps Services forum)
 [19]: mailto:hub%40jazz.net
 [20]: /docs
-[21]: /docs/reference/gitclient/images/egit_team_provider.png
-[22]: /docs/reference/gitclient/images/rtc_client_feature.png
-[23]: /docs/reference/gitclient/images/quick_restart.png
+[21]: images/egit_team_provider.png
+[22]: images/rtc_client_feature.png
+[23]:images/quick_restart.png
+
