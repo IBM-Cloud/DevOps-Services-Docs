@@ -1,6 +1,6 @@
 # Setting up local Eclipse clients to work with Jazz source control
 
-###### Last updated: 13 July 2015
+###### Last updated: 10 August 2015
 
 If you use Jazz Source Control Management (SCM) for your IBM&reg; Bluemix&trade; DevOps Services project, you can either work locally and deliver changes through Eclipse or work by using the integrated Web IDE. If you work locally and deliver changes through Eclipse, you can install the IBM&reg; Rational Team Concert&trade; plug-in for version control.
 
@@ -56,14 +56,16 @@ The project must use a Jazz Source Control Management (SCM) repository.
 
 ###Option 1: Connecting by using the Manage IBM DevOps Services Projects tool
 
-1. In the Eclipse Workbench, click **Window > Show View > Other > Team Artifacts**.
+1. In Eclipse, click **Window > Preferences > General > Workspaces**. In the Text file encoding field, click **Other** and from the list, select **UTF-8**.
 
-2. Click the **Manage IBM DevOps Services Projects** icon.
+2. Click **Window > Show View > Other > Team Artifacts**.
+
+3. Click the **Manage IBM DevOps Services Projects** icon.
  ![Manage JazzHub Projects button within the Team Artifacts View](./images/jazzhubfeature.png)
 
-3. In the **Manage IBM DevOps Services Projects** window, enter your alias and IBM id password to sign in to Bluemix DevOps Services, and then click **Next**
+4. In the **Manage IBM DevOps Services Projects** window, enter your alias and IBM id password to sign in to Bluemix DevOps Services, and then click **Next**
 
-4. Select the Bluemix DevOps Services projects to connect to and click **Finish**.
+5. Select the Bluemix DevOps Services projects to connect to and click **Finish**.
 
 ###Option 2: Connecting by accepting a team invitation
 
@@ -74,11 +76,14 @@ The project must use a Jazz Source Control Management (SCM) repository.
 
 3. Copy the text for the project invitation.
 
-4. In Eclipse, click **File > Accept JazzHub Client Configuration**. If you don't see that menu option, click **File > Accept Team Invitation**.
+4. In Eclipse, click **Window > Preferences > General > Workspaces**. In the Text file encoding field, click **Other** and from the list, select **UTF-8**.
 
-5. Paste the invitation text, click **Next**, and then click **Finish**.
+5. Click **File > Accept JazzHub Client Configuration**. If you don't see that menu option, click **File > Accept Team Invitation**.
 
-6. Enter your alias and IBM id password to sign in  to Bluemix DevOps Services.
+6. Paste the invitation text, click **Next**, and then click **Finish**.
+
+7. Enter your alias and IBM id password to sign in to Bluemix DevOps Services.
+
 
 You are now connected to your Bluemix DevOps Services project in Eclipse. To see the new repository connection and project area, click the **Team Artifacts** tab.
 
