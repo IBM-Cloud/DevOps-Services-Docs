@@ -1,6 +1,6 @@
 # Editing code in Bluemix DevOps Services
 
-###### Last updated: 21 July 2015
+###### Last updated: 11 August 2015
 
 The Web IDE is a browser-based development environment where you can develop for the web.  You can develop in JavaScript, HTML, and CSS with the help of content assist, code completion, and error checking.  Moreover, the Web IDE works with nearly any language and offers syntax highlighting [for most file types](https://hub.jazz.net/docs/overview/#dev_support).  Source control is built in through Git or Jazz SCM, and you can deploy code locally to test and debug your apps.
 
@@ -47,7 +47,7 @@ By default, the settings for the editor style and font size are always shown.  T
 <a name='editcode'></a>
 ###Editing code
 
-The Web IDE has two main sections.  The first section is the file favigator on the left, which shows your project files in a tree structure.  From the file navigator, you can create, rename, delete, and otherwise manage your files and folders.
+The Web IDE has two main sections.  The first section is the file navigator on the left, which shows your project files in a tree structure.  From the file navigator, you can create, rename, delete, and otherwise manage your files and folders.
 
 **Tip:** You can upload files to the file navigator by dragging them from your computer to the file navigator.
 
@@ -78,7 +78,7 @@ Outside of the editor, you can get help on any page by pressing `Shift+?`.
 ###Source control
 You can access integrated source code management tools from the Web IDE.
 * If your project is sourced in Git, click the **Git Repository** icon <img src="./images/git_icon.png"  alt="The Git Repository icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  For more information, see [Source control with Git](../git/)
-* If your project is sourced in Jazz, click the Jazz icon <img src="./images/jazz_icon.png"  alt="The Jazz icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/)
+* If your project is sourced in Jazz, click the **Jazz** icon <img src="./images/jazz_icon.png"  alt="The Jazz icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/)
 
 
 <a name='deploy'></a>
@@ -94,6 +94,9 @@ You can access integrated source code management tools from the Web IDE.
  * View the logs of the deployed app: <img src="./images/view_logs.png"  alt="The view logs icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
  * Open the app's Dashboard: <img src="./images/open_dashboard.png"  alt="The open dashboard icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
  * If you are developing a Node.js app, enable Live Edit mode: <img src="./images/enable_live_edit.png"  alt="The enable live edit slider" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ * With Live Edit mode enabled, restart the app quickly, without redeployment: <img src="./images/live_edit_restart.png"  alt="The Live Edit restart icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ * With Live Edit mode enabled, access the debugger: <img src="./images/debug_icon.png"  alt="The debug icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+
 
  
 <a namee='shell'></a>
@@ -108,7 +111,7 @@ If you like working from a command-line shell, click the **Shell** icon<img src=
 <a name='editlocal'></a>
 ###Editing outside of the Web IDE
 
-If you have a favorite code editor and don't want to use the Web IDE, you need Bluemix Live Sync. Bluemix Live Sync is a command-line application that synchronizes the changes in your local file system with your cloud workspace in IBM Bluemix DevOps Services.  Bluemix Live Sync makes it possible for you to work directly with your project files by using any tool.
+If you have a favorite code editor and don't want to use the Web IDE, you can use Bluemix Live Sync. Bluemix Live Sync is a command-line application that synchronizes the changes in your local file system with your cloud workspace in IBM Bluemix DevOps Services.  Bluemix Live Sync makes it possible for you to work directly with your project files by using any tool.
 
 **Before you begin**: [Download and install the Bluemix Live Sync command-line interface](http://livesyncdownload.ng.bluemix.net).
 
@@ -117,7 +120,7 @@ If you have a favorite code editor and don't want to use the Web IDE, you need B
 ###Synchronizing your local environment with Bluemix
 
 1. Open a command-line window.
-2. Sign in to Bluemix by typing your IBM id and password:
+2. Sign in to Bluemix with the following command.  You will be prompted for your IBM id and password:
 ```
 bl login
 ```
