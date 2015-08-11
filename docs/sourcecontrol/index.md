@@ -1,6 +1,6 @@
 # Source control in Bluemix DevOps Services
 
-###### Last updated: 5 August 2015
+###### Last updated: 11 August 2015
 
 
 In your IBM&reg; Bluemix&trade; DevOps Services project, you can use one of three source control systems: a GitHub repository, a Git repository that is hosted on IBM&reg; Bluemix&trade;, or a Jazz source control management (SCM) repository that is hosted on Bluemix. You select a source control system when you create your project.
@@ -10,7 +10,7 @@ You can either create a GitHub repo or link to a repo. For more details,
  see these topics:
 
 * [Git source control](/docs/git)
-* [Linking work items in Bluemix DevOps Services to code changes in GitHub](/docs/githubhooks).
+* [Linking work items in Bluemix DevOps Services to commits in GitHub](/docs/githubhooks)
 
 ## Git
 If you decide to use Git for source control management, you create a Git repo that is hosted on Bluemix. You can also host a local Git repo. To do so, create your DevOps Services project, and then force push your local repo to the new hosted repo. For more information, see these topics:
