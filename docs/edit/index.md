@@ -1,6 +1,6 @@
 # Editing code in Bluemix DevOps Services
 
-###### Last updated: 10 August 2015
+###### Last updated: 11 August 2015
 
 The Web IDE is a browser-based development environment where you can develop for the web.  You can develop in JavaScript, HTML, and CSS with the help of content assist, code completion, and error checking.  Moreover, the Web IDE works with nearly any language and offers syntax highlighting [for most file types](https://hub.jazz.net/docs/overview/#dev_support).  Source control is built in through Git or Jazz SCM, and you can deploy code locally to test and debug your apps.
 
@@ -94,8 +94,9 @@ You can access integrated source code management tools from the Web IDE.
  * View the logs of the deployed app: <img src="./images/view_logs.png"  alt="The view logs icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
  * Open the app's Dashboard: <img src="./images/open_dashboard.png"  alt="The open dashboard icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
  * If you are developing a Node.js app, enable Live Edit mode: <img src="./images/enable_live_edit.png"  alt="The enable live edit slider" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
- * With Live Edit mode enabled, access the debugger: <img src="./images/debug_icon.png"  alt="The debug icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
  * With Live Edit mode enabled, restart the app quickly, without redeployment: <img src="./images/live_edit_restart.png"  alt="The Live Edit restart icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ * With Live Edit mode enabled, access the debugger: <img src="./images/debug_icon.png"  alt="The debug icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+
 
  
 <a namee='shell'></a>
@@ -129,7 +130,7 @@ bl projects
 ```
 4. Synchronize your local environment with your project on Bluemix:
 ```
-bl sync *projectName*
+bl sync projectName
 ```
 where `projectName` is your Bluemix app's name.
 
@@ -140,7 +141,7 @@ When you are finished making changes, enter `q` to end synchronization.
 The Desktop Sync feature is like Live Edit mode for the command line. You also need the Desktop Sync feature to debug on the command line.
 1. In another command-line window, Enter these commands to enable the Desktop Sync feature:
 ```
-cd *localDirectory*
+cd localDirectory
 bl start
 ```
 2. Use the launch configuration that you created in the Web IDE. After you select the launch configuration, the Desktop Sync feature is enabled in your local environment. In the command-line window that you just opened, you can view the app's URL, the debug URL, the manage URL, and view the Bluemix Live Sync state.
