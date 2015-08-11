@@ -1,12 +1,13 @@
 #Linking work items in Bluemix DevOps Services to code changes in GitHub
 
-###### Last updated: 16 June 2015
+###### Last updated: 11 August 2015
 
-If you have source code in a GitHub repository, you can use your IBM&reg; Bluemix&trade; DevOps Services project to track changes by setting up a service hook on GitHub. When you push a change to your GitHub repository, the hook adds a change set link to your DevOps Services work item. You can view the changes in your GitHub repository by clicking the change set link in the work item.
+If you have source code in a GitHub repository, you can use your IBM&reg; Bluemix&trade; DevOps Services project to track changes by setting up a service hook on GitHub. When you push a change to your GitHub repository, the hook adds a change set link to your DevOps Services work item. After a change is pushed, you can add a work item link from the Git Log page. 
 
  * [Creating a DevOps Services project](#create_project)
  * [Setting up the GitHub hook](#github_hook)
  * [Creating a work item to test the hooks](#create_work_item)
+ * [Adding a work item link after a change is pushed](#post_push)
 
 <a name='create_project'></a>
 ##Creating a DevOps Services project
@@ -78,6 +79,19 @@ To test your hook, create a work item and commit a change to your code.
 9. View the change in GitHub.
 ![Changed file in GitHub.][10]
 
+<a name='post_push'></a>
+##Adding a work item link after a change is pushed
+
+To link one or more work items to a change that is already committed:
+1. Open your project's Overview page.
+1. Click **GIT LOG**.
+1. Open the commit.
+1. Click **Link Work Item**.
+1. Select the work item and click **OK**.
+
+A link to the change set will be listed on the Links tab of the work item. You can review the commit details by clicking the change set link on the work item. From there you can view the changed files by clicking one of the GitHub links. ![Link to view changes in GitHub.][11]
+
+
 
 [1]: https://hub.jazz.net
 [2]: images/githubDevOpsProject.png
@@ -88,5 +102,6 @@ To test your hook, create a work item and commit a change to your code.
 [8]: images/githubCommit.png
 [9]: images/githubLink.png
 [10]: images/githubChange.png
+[11]: images/githublink.png
 
 

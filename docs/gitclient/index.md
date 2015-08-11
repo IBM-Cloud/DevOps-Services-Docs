@@ -1,6 +1,6 @@
 #Setting up local clients to work with Git source control 
 
-###### Last updated: 29 May 2015
+###### Last updated: 10 August 2015
 
 If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repository and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repository or, if you work in Eclipse, install the EGit plug-in for version control.
 
@@ -46,7 +46,11 @@ Check whether Git is installed. On a command line, type `git version`. If Git is
 
 4. Change the directory to where you want the local copy of the Git repository to be.
 
-5. Type `git clone`, paste the Git URL, and press Enter. When prompted, type your alias and IBM id password.
+5. Type `git clone`, paste the Git URL, and press Enter. 
+
+6. When you are prompted, type your alias and IBM password.   
+**Note:** If you are not prompted for your password, do not continue. Delete your cloned repository and repeat the steps by using a modified repository address: 
+`https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`.
 
 After the download is complete, you have a local repository of the files for your project. For more information about using Git, [see the Git documentation](http://git-scm.com/doc).
 
