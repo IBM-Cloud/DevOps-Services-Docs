@@ -1,5 +1,5 @@
 # FAQs
-##### Last updated: 11 August 2015
+##### Last updated: 12 August 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -69,7 +69,7 @@ After your IBM id and alias are linked, you can log in to DevOps Services from a
 
 ##### Can I connect my project to a GitHub repository? 
 
-Yes. When you create a project, select the option for GitHub and enter your GitHub repository.
+Yes. When you create a project, select the option for GitHub and select your GitHub repository from the list.
 
 In DevOps Services, you can track and plan the work you'll store in your GitHub repository. For instructions to configure GitHub to update your work items when you push changes, see [Linking work items in Bluemix DevOps Services to commits in GitHub](https://hub.jazz.net/docs/reference/githubhooks/).
 
