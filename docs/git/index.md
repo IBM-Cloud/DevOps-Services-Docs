@@ -13,7 +13,7 @@ No matter where you code, you can use this quick reference to do common tasks.
 ##[Repositories](#repositories)
 * [Set up a local Git repo](#set_up_a_local_git_repository)
 * [Use an existing Git repo with DevOps Services projects](#existing_git_repository)
-* [Replace your origin repo](#replace_your_origin repository)(#replace_your_origin _repository)
+* [Replace your origin repo](#replace_your_origin repository)
 * [Integrate local commits in the Web IDE](#integrate_local_commits_in_the_web_IDE)
 
 ##[Branches](#branches)
@@ -99,7 +99,7 @@ If you have a DevOps Services project with an initialized Git repo and you want 
 
 **Important:** A force push replaces your original DevOps Services Git repo; that repo cannot be recovered.
        
-<a name="replace_your_origin _repository"></a>
+<a name="replace_your_origin_repository"></a>
 ### Replace your origin repo
 
 #### DevOps Services Web IDE
