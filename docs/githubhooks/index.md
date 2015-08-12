@@ -1,12 +1,12 @@
 #Linking work items in Bluemix DevOps Services to commits in GitHub
 
-###### Last updated: 11 August 2015
+###### Last updated: 12 August 2015
 
 If you have source code in a GitHub repository, you can use your IBM&reg; Bluemix&trade; DevOps Services project to track changes by setting up a service hook on GitHub. When you push a change to your GitHub repo, the hook adds a change-set link to your DevOps Services work item. You can also add a work-item link to a commit on the Git Log page. 
 
  * [Creating a DevOps Services project](#create_project)
  * [Setting up the GitHub hook](#github_hook)
- * [Testing the hooks](#create_work_item)
+ * [Testing the hook](#create_work_item)
  * [Adding a link after a change is pushed](#post_push)
 
 <a name='create_project'></a>
@@ -28,11 +28,11 @@ If you already have a DevOps Services project that is connected to a GitHub repo
 
 You need to set up your GitHub repo to create a link when the repo receives a push. To do so, you configure a service hook. The hook adds a link to a work item whenever a change is pushed to your repo and you include a work item keyword and number in the commit message. 
 
-### Before you begin:
+### Before you begin
 
 The IBM Bluemix DevOps Services hook replaces the RationalJazzHub hook. If you configured the RationalJazzHub hook, disable it and configure the IBM Bluemix DevOps Services hook instead.
 
-### Configuring the service hook:
+### Configuring the service hook
 
 1. In your GitHub repo, in the right column, click **Settings**.
 ![GitHub settings link.][4]
@@ -71,8 +71,8 @@ You can use these keywords for hooks:
    - `story`
    - `task`
    - `track build item`
-   - `work item`
-In this example, the keyword is `task` and number is `530`.
+   - `work item`    
+   In this example, the keyword is `task` and number is `530`.
 ![Commit comment in Web IDE][8]
 7. Commit and push the change.
 8. Open your work item. On the **LINKS** tab, click the change set.   

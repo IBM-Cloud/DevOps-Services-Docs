@@ -1,19 +1,19 @@
 #Git source control 
 
-###### Last updated: 11 August 2015
+###### Last updated: 12 August 2015
 
 If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web integrated development environment (IDE). If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
 For a complete Git reference, [see the official Git documentation][6].
 
-To access Git commands from the Web IDE, click the Git Repository icon <img src="./images/gitrepository.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+To access Git commands from the Web IDE, click the **Git Repository** icon <img src="./images/gitrepository.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
 
 No matter where you code, you can use this quick reference to do common tasks.
-
+<a name="top"></a>
 ##[Repositories](#repositories)
 * [Set up a local Git repo](#set_up_a_local_git_repository)
 * [Use an existing Git repo with DevOps Services projects](#existing_git_repository)
-* [Replace your origin repo](#replace_your_origin repository)
+* [Replace your origin repo](#replace_your_origin repository)(#replace_your_origin _repository)
 * [Integrate local commits in the Web IDE](#integrate_local_commits_in_the_web_IDE)
 
 ##[Branches](#branches)
@@ -86,7 +86,7 @@ If you already have a Git repo, you can use it with a DevOps Services project.
 2. Name your project.
 3. Click **Create a new repository**.
 4. Click **Create a Git repo on Bluemix**.    
-**Note:** Do not select "Initialize the repository with a README and license template." 
+**Note:** Do not select the **Initialize the repository with a README and license template** check box. 
 5. Select or clear the other project options as needed.
 6. Click **CREATE**.
 7. Open a command-line window and change to your Git repo directory.
@@ -116,13 +116,15 @@ If you have a DevOps Services project with an initialized Git repo and you want 
 
 1. Type `git remote set-url origin <repository_url>` and press Enter.
 
-<a name="integrate_local_commits_in_the_web_IDE"></a>
 
+<a name="integrate_local_commits_in_the_web_IDE"></a>
 ###Integrate local commits in the Web IDE
 
 When you work in the Web IDE, both your local and remote repos are hosted on the cloud. To view the  changes that you made in a local repo that is stored outside of DevOps Services, you must sync to your remote repo.
 
 1. Click **SYNC**. Sync combines the fetch, rebase, and push commands.
+
+[Back to top](#top)
 
 <a name="branches"></a>
 ##Branches
@@ -209,6 +211,8 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 #### Git terminal
 1. Type `git checkout -- path/to/file/filename` to discard changes to a file.
 
+[Back to top](#top)
+
 <a name="commits"></a>
 ##Commits
 
@@ -237,14 +241,12 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 
 <a name="link_commit"></a>
 ### Link a commit to a work item
-If you work in a project that uses a Git repo on Bluemix, you can link a commit to a Track & Plan work item.
+If you work in a project that uses a Git repo on Bluemix, you can link a commit to a Track & Plan work item. If your repo is hosted on GitHub, you can link your commits to work items when you push, but first, [you must configure it on GitHub][7].
 
 1. When you write your Git commit message, specify a work item in this format: *work item keyword number*.
  * For example, if you type `Implements story 32`, you link the commit to story item 32.
  * Valid work item keywords: `adoption item, bug, defect, epic, impediment, item, retrospective, story, task, track build item,` and `work item`.
 2. Push the commit. A linked commit is shown on the work item's **LINKS** tab.
-
-**Tip:** If your repo is hosted on GitHub, you can link your commits to work items when you push, but first, [you must configure it on GitHub][7]. 
 
 If you push a commit and want to link it to work items later, you can link them on the Git Log page.
 
@@ -366,6 +368,8 @@ Revert the changes that a commit has introduced into your active branch.
 ####Git terminal
 
 1. Type `git revert <commit ID>` and press Enter.
+
+[Back to top](#top)
 
 <a name="change_integration"></a>
 ##Change integration
@@ -502,6 +506,8 @@ When you need to deliver changes from a source branch to a destination branch, y
 4. Stage each file that you modified.
 
 5. Resume the rebase operation by typing `git rebase --continue` and pressing Enter.
+
+[Back to top](#top)
 
 <a name="git_terminal"></a>
 ##Git terminal only
