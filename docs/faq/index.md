@@ -64,7 +64,7 @@ After your IBM id and alias are linked, you can log in to DevOps Services from a
 * To log in from a browser, use your IBM id and IBM password. 
 * To log in from your Rational Team Concert client, use your alias and IBM password.
 * To access a Git repository from your local Git client, use your alias and IBM password.      
-   For example: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`
+   For example: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`     
    For more information, see [Set up a local Git repo](/git/#set_up_a_local_git_repository).
 
 <a name="git"></a>
