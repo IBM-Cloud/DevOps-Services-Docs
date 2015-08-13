@@ -1,6 +1,6 @@
 #Setting up local clients to work with Git source control 
 
-###### Last updated: 10 August 2015
+###### Last updated: 13 August 2015
 
 If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repository and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repository or, if you work in Eclipse, install the EGit plug-in for version control.
 
@@ -89,7 +89,7 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 #### Connecting EGit to your DevOps Services project
 
-1. In Eclipse, open the UTF-8 workspace.
+1. In Eclipse, set the default character encoding to UTF-8.
   * If you use a Mac, click **Eclipse > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
   * If you use a Windows system, click **Window > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
 
@@ -129,7 +129,7 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 
 **Before you begin**
 
-* Rational Team Concert 5.0.2 and later requires Eclipse 4.3.2. Eclipse requires Java 1.7.  
+* Rational Team Concert 5.0.2 and later requires Eclipse 4.3.2. or later. Eclipse requires Java 1.7.  
 * If you do not have Eclipse installed and want tools for Java development, [download and install the  Java EE IDE for Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr2).  
 * If you do not have Java 1.7 installed, [download and install the Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html).
 
