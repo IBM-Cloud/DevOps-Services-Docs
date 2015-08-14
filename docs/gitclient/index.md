@@ -5,12 +5,11 @@
 If you use a Git repo for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repo and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repo or, if you work in Eclipse, install the EGit plug-in for version control.
 
 If you use the Track & Plan feature and you want to manage your project plans and work items locally from Eclipse, install the IBM Rational Team Concert™ plug-in.
-
+<a name="top"></a>
 * [Accessing your Git repo from your DevOps Services project](#access_git)
 * [Connecting the Track & Plan feature to Rational Team Concert](#eclipse_using_rtc)
 * [Developing with Bluemix Live Sync and Node.js](#livesync)
 * [Developing with IBM Eclipse Tools](#etools)
-
 <a name='access_git'></a>
 ## Accessing your Git repo from your DevOps Services project
 
@@ -54,6 +53,8 @@ Check whether Git is installed. On a command line, type `git version`. If Git is
 
 After the download is complete, you have a local repo of the files for your project. For more information about using Git, [see the Git documentation](http://git-scm.com/doc).
 
+[Back to top](#top)
+
 <a name='eclipse_using_egit'></a>
 ### Option 2: Accessing your repo by using Eclipse and the EGit plug-in
 
@@ -86,7 +87,6 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 5. If you are prompted to restart Eclipse, click **Yes**.
 
 <a name='connect_to_your_devops_services_project_with_egit'></a>
-
 #### Connecting EGit to your DevOps Services project
 
 1. In Eclipse, set the default character encoding to UTF-8.
@@ -119,7 +119,9 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 12. Type a project name and click **Finish**.
 
-13. To work on this project, click **Window > Open Perspective**, select **Other** and select **Git**.  The Git Repositories view lists your connected Git repos.  You could also use the **Project Explorer** view.
+13. To work on this project, click **Window > Open Perspective**, select **Other** and select **Git**.  The Git Repositories view lists your connected Git repos.  You could also use the **Project Explorer** view.    
+
+[Back to top](#top)
 
 <a name='eclipse_using_rtc'></a>
 ## Connecting the Track & Plan feature to Rational Team Concert
@@ -152,6 +154,8 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 6. If you see a security warning message, click **OK**.
 
 7. If you are prompted to restart Eclipse, click **Yes**.
+
+[Back to top](#top)
 
 <a name='connect_to_your_devops_service_projects_from_eclipse'></a>
 ## Connecting to your DevOps Services project from Eclipse
