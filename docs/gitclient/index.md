@@ -1,11 +1,12 @@
 #Setting up local clients to work with Git source control 
 
-###### Last updated: 13 August 2015
+###### Last updated: 14 August 2015
 
+<a name="top"></a>
 If you use a Git repo for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repo and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repo or, if you work in Eclipse, install the EGit plug-in for version control.
 
 If you use the Track & Plan feature and you want to manage your project plans and work items locally from Eclipse, install the IBM Rational Team Concert™ plug-in.
-<a name="top"></a>
+
 * [Accessing your Git repo from your DevOps Services project](#access_git)
 * [Connecting the Track & Plan feature to Rational Team Concert](#eclipse_using_rtc)
 * [Developing with Bluemix Live Sync and Node.js](#livesync)
