@@ -1,6 +1,6 @@
 #Linking work items in Bluemix DevOps Services to commits in GitHub
 
-###### Last updated: 12 August 2015
+###### Last updated: 14 August 2015
 
 If you have source code in a GitHub repository, you can use your IBM&reg; Bluemix&trade; DevOps Services project to track changes by setting up a service hook on GitHub. When you push a change to your GitHub repo, the hook adds a change-set link to your DevOps Services work item. You can also add a work-item link to a commit on the Git Log page. 
 
@@ -77,7 +77,11 @@ You can use these keywords for hooks:
 7. Commit and push the change.
 8. Open your work item. On the **LINKS** tab, click the change set.   
 ![Work item link to the change set.][9]
-9. View the change in GitHub.
+9. View the commit on the Git Log page.   
+![Commit on Git Log page][12]   
+10. Click **View in GitHub**.   
+![View in GitHub link.][13]   
+11. View the changed file in GitHub.
 ![Changed file in GitHub.][10]
 
 <a name='post_push'></a>
@@ -104,5 +108,7 @@ A link to the change set is listed on the work item's **LINKS** tab. You can rev
 [9]: images/githubLink.png
 [10]: images/githubChange.png
 [11]: images/githublink.png
+[12]: images/gitlogcommit.png
+[13]: images/viewingithub.png
 
 
