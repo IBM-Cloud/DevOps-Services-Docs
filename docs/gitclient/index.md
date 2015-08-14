@@ -1,6 +1,6 @@
 #Setting up local clients to work with Git source control 
 
-###### Last updated: 29 May 2015
+###### Last updated: 10 August 2015
 
 If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repository and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repository or, if you work in Eclipse, install the EGit plug-in for version control.
 
@@ -46,7 +46,11 @@ Check whether Git is installed. On a command line, type `git version`. If Git is
 
 4. Change the directory to where you want the local copy of the Git repository to be.
 
-5. Type `git clone`, paste the Git URL, and press Enter. When prompted, type your alias and IBM id password.
+5. Type `git clone`, paste the Git URL, and press Enter. 
+
+6. When you are prompted, type your alias and IBM password.   
+**Note:** If you are not prompted for your password, do not continue. Delete your cloned repository and repeat the steps by using a modified repository address: 
+`https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`.
 
 After the download is complete, you have a local repository of the files for your project. For more information about using Git, [see the Git documentation](http://git-scm.com/doc).
 
@@ -85,9 +89,11 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 #### Connecting EGit to your DevOps Services project
 
-1. In Eclipse, click **Window > Preferences > General > Workspaces**. In the Text file encoding field, click **Other** and from the list, select **UTF-8**.
+1. In Eclipse, open the UTF-8 workspace.
+  * If you use a Mac, click **Eclipse > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
+  * If you use a Windows system, click **Window > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
 
-1. In [DevOps Services](https://hub.jazz.net/), browse to your project page. 
+2. In [DevOps Services](https://hub.jazz.net/), browse to your project page. 
 
 2. On the right side of the page, copy the **Git URL**.  
  **Note**: DevOps Services supports the HTTPS protocol for Git URLs. The SSH and Git protocols are not supported.  
