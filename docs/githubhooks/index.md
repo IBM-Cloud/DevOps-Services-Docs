@@ -79,9 +79,9 @@ You can use these keywords for hooks:
 ![Work item link to the change set.][9]
 9. View the commit on the Git Log page.   
 ![Commit on Git Log page][12]   
-10. Click **View in GitHub**.   
+10. To view the changed file in GitHub, click **View in GitHub**.   
 ![View in GitHub link.][13]   
-11. View the changed file in GitHub.
+11. View the changes in GitHub.
 ![Changed file in GitHub.][10]
 
 <a name='post_push'></a>
