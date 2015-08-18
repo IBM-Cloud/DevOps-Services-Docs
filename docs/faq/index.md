@@ -1,5 +1,5 @@
 # FAQs
-##### Last updated: 13 August 2015
+##### Last updated: 18 August 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -65,7 +65,7 @@ After your IBM id and alias are linked, you can log in to DevOps Services from a
 * To log in from your Rational Team Concert client, use your alias and IBM password.
 * To access a Git repository from your local Git client, use your alias and IBM password.      
    For example: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`     
-   For more information, see [Set up a local Git repo](/git/#set_up_a_local_git_repository).
+   For more information, see [Set up a local Git repo](../docs/git/#set_up_a_local_git_repository).
 
 <a name="git"></a>
 
