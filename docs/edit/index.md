@@ -10,7 +10,7 @@ Best of all, the Web IDE is powered by the web.  You have nothing to install, no
 * [Editing code](#editcode)
 * [Source control](#sourcecontrol)
 * [Deploying an app from your workspace](#deploy)
-* [Use command line Shell](@shell)
+* [Use command line Shell](#shell)
 * [Editing outside of the Web IDE](#editlocal)
 
 
@@ -32,7 +32,7 @@ You can view and modify the Web IDE's settings by clicking the **Settings** icon
 | Plug-ins  | Install, disable, or remove plug-ins from the editor  |
 | Tern  | View a list of all of the Tern code analysis plug-ins that are in the editor |
 	
-If you often need to change certain settings while you edit, you can access those settings quickly from the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon" "> in the upper-right corner of the editor
+If you often need to change certain settings while you edit, you can access those settings quickly from the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon"> in the upper-right corner of the editor
 
 ![Local Editor Settings](images/local_editor_settings.png)
 
@@ -101,7 +101,7 @@ You can access integrated source code management tools from the Web IDE.
  
 <a namee='shell'></a>
 ###The command-line shell
-If you like working from a command-line shell, click the **Shell** icon<img  class="inline" src="./images/shell_icon.png"  alt="The shell icon>.  You can work in these ways:
+If you like working from a command-line shell, click the **Shell** icon <img  class="inline" src="./images/shell_icon.png"  alt="The shell icon">.  You can work in these ways:
 * Interact with Cloud Foundry compatible targets
 * Edit files in your project's directory
 * Manage the editor plug-ins
