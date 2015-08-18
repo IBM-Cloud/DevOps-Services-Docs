@@ -2,7 +2,7 @@
 
 # Track and plan
 
-###### Last updated: 7 July 2015
+###### Last updated: 18 August 2015
 
 With the Track & Plan feature, you track work for a project through work items. For example, if you find a bug in someone's code, you can open a Defect work item and assign it to the person who owns the code.
 
@@ -99,7 +99,7 @@ Custom views return results for only the current sprint and status that you're v
 ##Viewing and organizing your work items
 
 - To view work items that you own, see the My Work view. 
-- If you often use specific work items, you can mark them as your favorites by clicking their Star icons <img src="./images/star.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">. Then, you can see all of your favorite work items in the My Starred view. When you click the Star icon for a work item, only you can see that you marked it as a favorite.  
+- If you often use specific work items, you can mark them as your favorites by clicking their Star icons <img class="inline"  src="./images/star.gif" alt="Star icon">. Then, you can see all of your favorite work items in the My Starred view. When you click the Star icon for a work item, only you can see that you marked it as a favorite.  
 - To view all of the work items that you are subscribed to, see the My Subscribed view.
 - To view your work items sorted by their modified dates, see the My Recent Work view.
 - To view your work item activity, see the My Activities view. The My Events section lists the work items that you were mentioned in. The My Subscriptions section lists all of the changes that occurred in work items that you are subscribed to.
@@ -113,8 +113,8 @@ When a work item is created but not assigned to a sprint, the work item is shown
 As soon as a work item is assigned to a sprint, it is removed from the Incoming Work view.
 
 In the Incoming Work view, you can triage work items in several ways: 
-- To reject the work item, click the **Trash this item** icon <img src="./images/trash.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">. The work item is resolved and its status is changed to Invalid.
-- To accept the work item and assign it to the Backlog, click the **Triage to backlog** icon <img src="./images/triage.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">. Then, you can evaluate the work item against other work items in the Sprint Planning view and assign the work item to a sprint.
+- To reject the work item, click the **Trash this item** icon <img class="inline"  src="./images/trash.gif" alt="Trash this item icon">. The work item is resolved and its status is changed to Invalid.
+- To accept the work item and assign it to the Backlog, click the **Triage to backlog** icon <img  class="inline" src="./images/triage.gif" alt="Triage to backlog icon">. Then, you can evaluate the work item against other work items in the Sprint Planning view and assign the work item to a sprint.
 - To assign the work item to a sprint, open the work item and select a value from the **Planned for** list.
 
 ![Triaging work items in the Incoming work view](images/incoming_work_attributes.png)
@@ -124,7 +124,7 @@ In the Incoming Work view, you can triage work items in several ways:
 ##Planning the work for your team
 In the Sprint Planning view, you can plan sprints by dragging work items between sprint lanes. To reassign work items, drag them between the lanes.  
 
-**Tip:** If you keep the Backlog open, you can quickly move work items from it to a specific sprint. To keep the Backlog open, click the **Pin** icon <img src="./images/pin.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+**Tip:** If you keep the Backlog open, you can quickly move work items from it to a specific sprint. To keep the Backlog open, click the **Pin** icon <img  class="inline" src="./images/pin.gif" alt="Pin icon">.
 
 You can also review statistics about the sprint's progress:
 - Hours worked vs. total hours estimated

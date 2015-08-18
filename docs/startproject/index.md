@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last modified: 2 July 2015
+###### Last modified: 18 August 2015
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
@@ -114,7 +114,7 @@ App developers can embed the **Deploy to Bluemix** button in many kinds of conte
 
 When you click the button, Bluemix opens, the app is cloned, any necessary build tools are set up, and the Cloud Foundry script to deploy the app to your Bluemix account is provided. With the **Deploy to Bluemix** button, you can confidently clone and deploy apps to Bluemix.
 
-1. Click <img src="./images/deploy-button.png"  alt="Deploy to Bluemix" align="center" style="display: inline; margin: 0px; border-style: none;"> for an app to open the Deploy to Bluemix page.
+1. Click <img class="inline" src="./images/deploy-button.png"  alt="Deploy to Bluemix"> for an app to open the Deploy to Bluemix page.
 
 2. Log in to or sign up for Bluemix.
 

@@ -100,7 +100,13 @@ To see an example of a typical pipeline that uses the Globalization service, wat
 <iframe width="640" height="360" src="https://www.youtube.com/embed/UToj7FIomCg?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 
 ###Creating a globalization stage and job
-Before you begin, put all of your English-translatable strings in one or more `filename_en.properties` or `filename_en.json` files that all have the same name. For example: `messages_en.properties`.
+Before you begin:
+
+1. Put all of your English-translatable strings in one or more `filename_en.properties` or `filename_en.json` files that all have the same name. For example: `messages_en.properties`.
+
+2. If your messages are in `.json` files, remove the depth from the structure by removing any subkeys. To remove the subkeys, change instances of `{key: {subkey: value, subkey:value}}` to `{key:value, key:value}`. 
+
+To create the globalization stage and job:
 
 1. Create a globalization stage.
 

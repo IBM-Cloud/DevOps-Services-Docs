@@ -1,5 +1,5 @@
 # FAQs
-##### Last updated: 04 August 2015
+##### Last updated: 13 August 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -63,15 +63,17 @@ After your IBM id and alias are linked, you can log in to DevOps Services from a
 
 * To log in from a browser, use your IBM id and IBM password. 
 * To log in from your Rational Team Concert client, use your alias and IBM password.
-* To access a Git repository from your local Git client, use your alias and IBM password.
+* To access a Git repository from your local Git client, use your alias and IBM password.      
+   For example: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`     
+   For more information, see [Set up a local Git repo](/git/#set_up_a_local_git_repository).
 
 <a name="git"></a>
 
 ##### Can I connect my project to a GitHub repository? 
 
-Yes. When you create a project, select the option for GitHub and enter your GitHub repository.
+Yes. When you create a project, select the option for GitHub and select your GitHub repository from the list.
 
-In DevOps Services, you can track and plan the work you'll store in your GitHub repository. For instructions to configure GitHub to update your work items when you push changes, see [Linking work items in Bluemix DevOps Services to code changes in GitHub](https://hub.jazz.net/docs/reference/githubhooks/).
+In DevOps Services, you can track and plan the work you'll store in your GitHub repository. For instructions to configure GitHub to update your work items when you push changes, see [Linking work items in Bluemix DevOps Services to commits in GitHub](../docs/githubhooks/).
 
 You can also edit the code that is stored in your GitHub repository by using the Web IDE. When you want to start coding, navigate to your project and click **EDIT CODE** at the top of the page.
 
