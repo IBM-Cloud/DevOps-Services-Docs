@@ -1,21 +1,27 @@
 #Clone, edit, and deploy an app from Bluemix
 
-Last modified: 17 July 2015
+Last modified: 18 August 2015
 
 Time: 60 minutes 
 
 
-* [Learning objectives](#objectives)
-* [Before you begin](#prereq)
-* [Explore and clone the sample project](#fork)
-* [Plan a change to your project](#plan_change)
-* [Modify your project's code](#modify_code)
-* [Push your change to the project repository](#push_changes)
-* [Explore builds and deployments](#build_deploy)
-* [Deploy the app and verify your change](#deploy_app)
-* [Complete the work item](#work_item)
-* [Summary](#summary)
-* [Next steps](#next_steps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="8"><h4>Table of Contents</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#<<link_1>>">Before you begin</a></td>
+     <td><a href="#<<link_2>>">Explore and clone the sample project</a></td>
+     <td><a href="#<<link_3>>">Plan a change to your project</a></td>
+     <td><a href="#<<link_4>>">Modify your project&#39;s code</a></td>
+     <td><a href="#<<link_5>>">Push your change to the project repository</a></td>
+     <td><a href="#<<link_6>>">Explore builds and deployments</a></td>
+     <td><a href="#<<link_7>>">Deploy the app and verify your changes</a></td>
+     <td><a href="#<<link_8>>">Complete the work item</a></td>
+   </tr>
+ </table>
+</div>
 
 ---
 <a name='objectives'></a>
