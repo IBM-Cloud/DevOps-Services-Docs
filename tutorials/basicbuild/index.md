@@ -6,13 +6,22 @@ Time: 30 minutes
 
 In this tutorial, you create your own version of an IBM&reg; Bluemix&trade; DevOps Services project by forking a project to your space. Then, in your project, you set up a basic pipeline that you can use to build and deploy a Java&trade; app to test and production environments.
 
-* [Before you begin](#before_begin)
-* [Fork a sample project](#fork_app)
-* [Create a build stage](#build_stage)
-* [Create a deployment stage](#deploy_stage)
-* [Run the stages](#deploy_app)
-* [Summary](#summary)
-* [Next steps](#nextsteps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="7"></td>
+   </tr>
+   <tr>
+     <td><a href="#before_begin">Before you begin</a></td>
+     <td><a href="#fork_app">Fork a sample project</a></td>
+     <td><a href="#build_stage">Create a build stage</a></td>
+     <td><a href="#deploy_stage">Create a deployment stage</a></td>
+     <td><a href="#deploy_app">Run the stages</a></td>
+     <td><a href="#summary">Summary</a></td>
+     <td><a href="#nextsteps">Next steps</a></td>
+   </tr>
+ </table>
+</div>
 
 <a name='before_begin'></a>
 ##Before you begin
