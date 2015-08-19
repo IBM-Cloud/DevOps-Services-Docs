@@ -1,26 +1,17 @@
 #Creating a basic pipeline
 
-###### Last updated: 19 August 2015
+###### Last updated: 1 April 2015
 
 Time: 30 minutes
 
 Follow the steps in this tutorial to create a simple Build & Deploy pipeline for a Java&trade; app by using IBM&reg; Bluemix&trade; DevOps Services. 
 
-<div class="table-of-contents">
- <table>
-   <tr>
-     <td colspan="6"></td>
-   </tr>
-   <tr>
-     <td><a href="#objectives">Before you begin</a></td>
-     <td><a href="#before_begin">Explore and clone the sample project</a></td>
-     <td><a href="#fork_app">Plan a change to your project</a></td>
-     <td><a href="#deploy_app">Modify your project&#39;s code</a></td>
-     <td><a href="#summary">Push your change to the project repository</a></td>
-     <td><a href="#nextsteps">Explore builds and deployments</a></td>
-   </tr>
- </table>
-</div>
+* [Learning objectives](#objectives)
+* [Before you begin](#before_begin)
+* [Fork a sample project](#fork_app)
+* [Create build and deployment stages](#deploy_app)
+* [Summary](#summary)
+* [Next steps](#nextsteps)
 
 
 <a name='objectives'></a>
