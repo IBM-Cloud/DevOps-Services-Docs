@@ -13,7 +13,7 @@ In your IBM&reg; Bluemix&trade; DevOps Services project, you can use one of thre
 Store your source code with this popular Git hosting service and use DevOps Services to develop and deploy your application to Bluemix. If you choose this option, you must have a GitHub account and give Bluemix access to your GitHub account. When you create a project, you can either create a new GitHub repo or link to a repo that you're already using. For more details, see these topics:
 
 * [Git source control](/docs/git)
-* [Linking work items in Bluemix DevOps Services to commits in GitHub](/docs/githubhooks)
+* [GitHub source control for Bluemix DevOps Services projects](/docs/githubhooks)
 
 <a name='hostedgit'></a>
 ## Git
