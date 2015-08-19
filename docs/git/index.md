@@ -454,7 +454,7 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 1. Click the name of the source branch.
 
-1. In the Incoming section, click the rebase icon <img  class="screen-shot" src="./images/rebase.gif" alt="Rebase icon">.
+1. In the Incoming section, click the rebase icon <img  class="inline" src="./images/rebase.gif" alt="Rebase icon">.
 
 5. If you encounter conflicts, [resolve them](#resolve_a_rebase_conflict).
 
