@@ -1,12 +1,12 @@
 #Git source control 
 
-###### Last updated: 17 August 2015
+###### Last updated: 18 August 2015
 
 If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
 For a complete Git reference, [see the official Git documentation][6].
 
-To access Git commands from the Web IDE, click the **Git Repository** icon <img src="./images/gitrepository.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+To access Git commands from the Web IDE, click the **Git Repository** icon <img class="inline" src="./images/gitrepository.png" alt="Git Respository icon">.
 
 **Note:** For a Git repo that is hosted by DevOps Services, the file size limit is 100 MB.
 
@@ -55,7 +55,7 @@ No matter where you code, you can use this quick reference to do common tasks.
 #### DevOps Services Web IDE
 When you use a hosted Git repo with your DevOps Services project, you work with both your local and remote repos through the Web IDE.
 
-1. Click **EDIT CODE** <img src="./images/editcode.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> and start coding!
+1. Click **EDIT CODE** <img class="inline" src="./images/editcode.gif" alt="Edit code button"> and start coding!
 
 #### Git terminal
 If you want to code and test locally, set up a local repo.
@@ -106,13 +106,13 @@ If you have a DevOps Services project with an initialized Git repo and you want 
 
 #### DevOps Services Web IDE
 
-1. Click the configuration icon <img src="./images/configuration.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. Click the configuration icon <img  class="inline" src="./images/configuration.png" alt="Configuration icon">.
 
-1. In the remote.origin.url pane, click the edit icon <img src="./images/editconfiguration.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> to edit the configuration entry.
+1. In the remote.origin.url pane, click the edit icon <img  class="inline" src="./images/editconfiguration.png" alt="Edit icon"> to edit the configuration entry.
 
 1. In the **value** field, paste your new repo URL. Click **Submit**.
 
-1. Click the **REFERENCE** list and expand **origin**. Click the fetch icon <img src="./images/fetchfromremote.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> to fetch from the remote repo.
+1. Click the **REFERENCE** list and expand **origin**. Click the fetch icon <img class="inline" src="./images/fetchfromremote.png" alt="Fetch icon"> to fetch from the remote repo.
 
 #### Git terminal
 
@@ -150,7 +150,7 @@ When you work in the Web IDE, both your local and remote repos are hosted on the
 #### DevOps Services Web IDE
 1. Click the **REFERENCE** list and expand **local**.
 
-2. Next to the branch to modify, click the checkout icon <img src="./images/checkout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+2. Next to the branch to modify, click the checkout icon <img  class="inline" src="./images/checkout.gif" alt="Checkout icon">.
 
 1. Make sure that your selected branch is shown in the **REFERENCE** list.
 
@@ -181,7 +181,7 @@ When you work in the Web IDE, both your local and remote repos are hosted on the
 
 1. Click the **REFERENCE** list and expand **local**.
 
-2. Next to the local branch to remove, click **Delete** <img src="./images/delete.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+2. Next to the local branch to remove, click **Delete** <img class="inline"  src="./images/delete.gif" alt="Delete icon">.
 
 ####Git terminal
 1. Type `git branch -d <branchname>` and press Enter.
@@ -208,7 +208,7 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 
 #### DevOps Services Web IDE
 1. In the Working Directory Changes section, select the check box for each modified file that has changes you want to discard. 
-2. Click the checkout icon <img src="./images/discard.png"  align="bottom" alt="Checkout the selected files, discarding all changes"style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px; max-width:34px;">.
+2. Click the checkout icon <img class="inline"  src="./images/discard.png" alt="Checkout the selected files, discarding all changes">.
 
 #### Git terminal
 1. Type `git checkout -- path/to/file/filename` to discard changes to a file.
@@ -326,7 +326,7 @@ If you push a commit and want to link it to work items later, you can link them 
 
 2. View the details of the commit by clicking it.
 
-2. In the commit pane, click **Create a tag for the commit** <img src="./images/tag.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+2. In the commit pane, click **Create a tag for the commit** <img class="inline"  src="./images/tag.gif" alt="Create a tag for the commit">.
 
 3. In the name field, type your tag text. Click **Submit**.
 
@@ -339,7 +339,7 @@ If you push a commit and want to link it to work items later, you can link them 
 ### Change the committer name and email address
 
 #### DevOps Services Web IDE
-1. Click the configuration icon <img src="./images/configuration.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. Click the configuration icon <img class="inline" src="./images/configuration.png" alt="Configuration icon">.
 
 3. Change the user email address and name by updating the user.email and user.name values. Click **Submit** to save each change.
 
@@ -365,7 +365,7 @@ Revert the changes that a commit has introduced into your active branch.
 
 1. Under History, select a commit. 
 
-2. On the right side of the page, above the commit summary, click the revert icon <img src="./images/revert.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">. 
+2. On the right side of the page, above the commit summary, click the revert icon <img class="inline" src="./images/revert.png" alt="Revert icon">. 
 
 ####Git terminal
 
@@ -386,19 +386,19 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 2. Check out the destination branch. For more information, [see Work on a local branch][5].
 
- <img src="./images/destinationbranch.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ <img class="screen-shot" src="./images/destinationbranch.png" alt="Checkout destination branch">
 
 1. Click the **REFERENCE** list, expand **local**, and click the name of the source branch. The changes from the source branch are shown in the Incoming section.
 
-  <img src="./images/sourcebranch.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+  <img class="screen-shot" src="./images/sourcebranch.png" alt="Changes from the source branch shown in the Incoming section">
 
 1. In the Incoming section, click the **Merge** icon. 
 
- <img src="./images/mergeicon.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ <img class="screen-shot" src="./images/mergeicon.png" alt="Merge icon in the Incoming section">
 
 1. In the **REFERENCE** list, click the checkout icon next to the branch that you just merged the changes into.
 
-  <img src="./images/checkoutmaster.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+  <img class="screen-shot"  src="./images/checkoutmaster.png" alt="Checkout from master">
 
 1. If you want to deliver the changes, click **PUSH**. Otherwise, at this point, you can create a test deployment to make sure that everything is working as expected.
 
@@ -454,7 +454,7 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 1. Click the name of the source branch.
 
-1. In the Incoming section, click the rebase icon <img src="./images/rebase.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. In the Incoming section, click the rebase icon <img  class="inline" src="./images/rebase.gif" alt="Rebase icon">.
 
 5. If you encounter conflicts, [resolve them](#resolve_a_rebase_conflict).
 

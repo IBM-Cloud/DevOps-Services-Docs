@@ -1,6 +1,6 @@
 #Develop a Java app from Bluemix
 
-###### Last updated: 30 July 2015
+###### Last updated: 18 August 2015
 
 Time: 30 minutes
 
@@ -138,7 +138,7 @@ If you want to configure desktop clients to work with your Git repository, [see 
 <a name='build_and_deploy'></a>
 ##Explore builds and deployments
 
-On the Build & Deploy Pipeline page, run your build by clicking the **Run Stage** icon <img src="/tutorials/jazzeditorjava/images/run_stage.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> on the Build Stage tile. 
+On the Build & Deploy Pipeline page, run your build by clicking the **Run Stage** icon <img  class="inline" src="images/run_stage.gif" alt="Run Stage icon"> on the Build Stage tile. 
 
 The build stage begins running. The deploy stage is configured to auto-deploy your app after the completion of a  successful build stage. 
 
@@ -159,7 +159,7 @@ The Delivery Pipeline configuration for your app has two stages: a build stage a
 
 1. In the upper-right corner, click **BUILD & DEPLOY**. 
 
-2. On the Build Stage tile, click the **Stage Configuration** icon <img src="/tutorials/jazzeditorjava/images/configure_stage.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> and click **Configure stage**.  
+2. On the Build Stage tile, click the **Stage Configuration** icon <img class="inline"  src="images/configure_stage.gif" alt="Stage Configuration icon"> and click **Configure stage**.  
   
   a. Click the **INPUT** tab and review the settings:
   
@@ -176,12 +176,12 @@ The Delivery Pipeline configuration for your app has two stages: a build stage a
   
   c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
  
-3. At the top of the Build Stage tile, click the **Run Stage** icon <img src="/tutorials/jazzeditorjava/images/run_stage.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">. After a moment, you have a successful build.
+3. At the top of the Build Stage tile, click the **Run Stage** icon <img  class="inline" src="images/run_stage.gif" alt="Run Stage icon">. After a moment, you have a successful build.
 
 
 ####Explore the deploy stage
 
-1. On the Deploy Stage tile, click the **Stage Configuration** icon <img src="/tutorials/jazzeditorjava/images/configure_stage.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> and click **Configure stage**.
+1. On the Deploy Stage tile, click the **Stage Configuration** icon <img  class="inline" src="images/configure_stage.gif" alt=="Stage Configuration"> and click **Configure stage**.
 
   a. Click the **INPUT** tab and review the settings: 
   
@@ -202,7 +202,7 @@ The Delivery Pipeline configuration for your app has two stages: a build stage a
 
   ![Dropping to deploy][49]
 
-  You can also start a deployment by clicking the **Run Stage** icon <img src="/tutorials/jazzeditorjava/images/run_stage.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> on the deploy stage. In a few moments, your app is deployed to Bluemix.
+  You can also start a deployment by clicking the **Run Stage** icon <img class="inline"  src="images/run_stage.gif" alt="Run Stage icon"> on the deploy stage. In a few moments, your app is deployed to Bluemix.
 
 2. To view your app on the web, on the Deploy Stage tile, click the URL in the LAST EXECUTION RESULT section. If the app is already open in a browser window, refresh the page. To view your app’s Bluemix Dashboard, click the app's name above the URL. 
 
@@ -225,61 +225,61 @@ To learn how to configure Eclipse or other desktop clients to work with your Git
 To learn how to integrate unit testing into your DevOps Services projects, [see Setting up local Eclipse clients to work with Jazz source control][40].
 
    [1]: https://bluemix.net/ (Bluemix)
-   [2]: /tutorials/jazzeditorjava/images/bm-join.png
+   [2]: images/bm-join.png
    [3]: https://bluemix.net/docs/QuickStart.jsp (Bluemix getting started)
    [4]: https://bluemix.net/docs/BlueMixIntro.jsp (Bluemix overview)
    [5]: https://bluemix.net/docs/Tutorials.jsp (Bluemix tutorials)
-   [6]: /tutorials/jazzeditorjava/images/demo-dash.png 
-   [7]: /tutorials/jazzeditorjava/images/bm-java-starter.png 
-   [8]: /tutorials/jazzeditorjava/images/create-jws-app.png 
-   [9]: /tutorials/jazzeditorjava/images/examplepanel.gif 
-   [10]: /tutorials/jazzeditorjava/images/bm-example.png 
-   [11]: /tutorials/jazzeditorjava/images/addgitintegration.png
-   [12]: /tutorials/jazzeditorjava/images/jh-signin.gif 
-   [13]: /tutorials/jazzeditorjava/images/bm-create-git-repo.png
-   [14]: /tutorials/jazzeditorjava/images/bm-git-repo-success-msg.png 
-   [15]: /tutorials/jazzeditorjava/images/bm-code-button.png 
-   [16]: /tutorials/jazzeditorjava/images/webide.gif 
-   [17]: /tutorials/jazzeditorjava/images/simpledeploy2.png
-   [18]: /tutorials/jazzeditorjava/images/configbuilder.png 
-   [19]: /tutorials/jazzeditorjava/images/deployer.png 
+   [6]: images/demo-dash.png 
+   [7]: images/bm-java-starter.png 
+   [8]: images/create-jws-app.png 
+   [9]: images/examplepanel.gif 
+   [10]: images/bm-example.png 
+   [11]: images/addgitintegration.png
+   [12]: images/jh-signin.gif 
+   [13]: images/bm-create-git-repo.png
+   [14]: images/bm-git-repo-success-msg.png 
+   [15]: images/bm-code-button.png 
+   [16]: images/webide.gif 
+   [17]: images/simpledeploy2.png
+   [18]: images/configbuilder.png 
+   [19]: images/deployer.png 
    [20]: /tutorials/clients (Setting up Eclipse, Git, and Rational Team Concert Desktop Clients for use with Bluemix DevOps Services)
-   [21]: /tutorials/jazzeditorjava/images/cli-git-clone.gif 
-   [22]: /tutorials/jazzeditorjava/images/cli-stage-commit.gif 
-   [23]: /tutorials/jazzeditorjava/images/cli-push.gif 
-   [24]: /tutorials/jazzeditorjava/images/autodeploy.gif 
-   [25]: /tutorials/jazzeditorjava/images/app-new-title.png 
+   [21]: images/cli-git-clone.gif 
+   [22]: images/cli-stage-commit.gif 
+   [23]: images/cli-push.gif 
+   [24]: images/autodeploy.gif 
+   [25]: images/app-new-title.png 
    [26]: /tutorials/clients (Setting up Eclipse, Git, and Rational Team Concert Desktop Clients for use with Bluemix DevOps Services)
    [27]: https://hub.jazz.net/learn (Bluemix DevOps Services introduction)
    [28]: http://orion.eclipse.org/ (The Eclipse Orion project)
-   [29]: /tutorials/jazzeditorjava/images/orion.png
-   [30]: /tutorials/jazzeditorjava/images/completion.png 
-   [31]: /tutorials/jazzeditorjava/images/heyworld.png 
-   [32]: /tutorials/jazzeditorjava/images/orion-git-status.png 
-   [33]: /tutorials/jazzeditorjava/images/unstaged.png 
-   [34]: /tutorials/jazzeditorjava/images/commit.png
-   [35]: /tutorials/jazzeditorjava/images/push.png 
-   [36]: /tutorials/jazzeditorjava/images/endexampleapp.png 
-   [37]: /tutorials/jazzeditorjava/images/manualdeploy.png
+   [29]: images/orion.png
+   [30]: images/completion.png 
+   [31]: images/heyworld.png 
+   [32]: images/orion-git-status.png 
+   [33]: images/unstaged.png 
+   [34]: images/commit.png
+   [35]: images/push.png 
+   [36]: images/endexampleapp.png 
+   [37]: images/manualdeploy.png
    [38]: https://www.ibmdw.net/answers?community=jazzhub (forum)
    [39]: mailto:hub%40jazz.net
-   [40]: /docs/reference/jazz_scm_client/ (Setting up local Eclipse clients to work with Jazz source control)
+   [40]: /docs/jazz_scm_client/ (Setting up local Eclipse clients to work with Jazz source control)
    [41]: /tutorials/jazzeditor (Getting Started with Bluemix and Bluemix DevOps Services using Node.js)
    [42]: /tutorials/clients (Setting up Eclipse, Git, and Rational Team Concert Desktop Clients to access Bluemix DevOps Services)
    [43]: /tutorials/jazzweb (Developing Bluemix applications in Node.js with the Bluemix DevOps Services Web IDE)
-   [44]: /tutorials/jazzeditorjava/images/panel_gear.gif
-   [45]: /tutorials/jazzeditorjava/images/un-pipeline.png
-   [46]: /tutorials/jazzeditorjava/images/configured-builder.png
-   [47]: /tutorials/jazzeditorjava/images/configured-and-built.png
-   [48]: /tutorials/jazzeditorjava/images/configured-pipeline.png
-   [49]: /tutorials/jazzeditorjava/images/drop-to-deploy.png
-   [50]: /tutorials/jazzeditorjava/images/deployed-with-pipeline.png
-   [51]: /tutorials/jazzeditorjava/images/click-to-open.gif
-   [52]: /tutorials/jazzeditorjava/images/config-to-delete.png
+   [44]: images/panel_gear.gif
+   [45]: images/un-pipeline.png
+   [46]: images/configured-builder.png
+   [47]: images/configured-and-built.png
+   [48]: images/configured-pipeline.png
+   [49]: images/drop-to-deploy.png
+   [50]: images/deployed-with-pipeline.png
+   [51]: images/click-to-open.gif
+   [52]: images/config-to-delete.png
    [53]: https://www.ng.bluemix.net/docs/#
-   [54]: /tutorials/jazzeditorjava/images/bm-name-app.png
-   [55]: /tutorials/jazzeditorjava/images/bm-web-starter.png
-   [56]: /tutorials/jazzeditorjava/images/runbar_green.png
-   [57]: /tutorials/jazzeditorjava/images/playbutton.png
-   [58]: /docs/reference/billing/
+   [54]: images/bm-name-app.png
+   [55]: images/bm-web-starter.png
+   [56]: images/runbar_green.png
+   [57]: images/playbutton.png
+   [58]: /docs/billing/
    [59]: http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html#push

@@ -1,6 +1,6 @@
 #Develop a Node.js app from Bluemix
 
-###### Last updated: 06 August 2015
+###### Last updated: 18 August 2015
 
 Time: 15 minutes
 
@@ -84,9 +84,7 @@ To make a change to a file and then push the change, follow these steps:
 
 6. Push the change by using the integrated Git support. 
 
-	a. From the leftmost menu, click the **Git Repository** icon <img src="/tutorials/jazzeditor/images/git.gif"
-align="bottom" style="display: inline; margin: 0px; border-style: none;
-margin-bottom: 0px;">.
+	a. From the leftmost menu, click the **Git Repository** icon <img  class="inline" src="/tutorials/jazzeditor/images/git.gif" alt="Git Repository icon">.
 	
 	b. Select check box for the changed file.
 ![Orion Git staging](/tutorials/jazzeditor/images/orion-git-stage_NEW.png)
