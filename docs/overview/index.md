@@ -1,13 +1,31 @@
 # What's IBM Bluemix DevOps Services?
 
-###### Last updated: 22 June 2015
+###### Last updated: 14 August 2015
 
 IBM&reg; Bluemix&trade; DevOps Services is software as a service (SaaS) on the cloud that supports continuous delivery. With DevOps Services, you can develop, track, plan, and deploy software in one place.
 
-From your projects, you can access everything that you need to build all kinds of apps. You can work on your own or use the collaboration tools to work with a team. After you build an app, you can deploy it to the IBM&reg; Bluemix&trade; cloud platform. In minutes, you can go from source code to a running app. 
+From your projects, you can access everything that you need to build all kinds of apps. You can work on your own or use the collaboration tools to work with a team. After you build an app, you can deploy it to the IBM&reg; Bluemix&trade; cloud platform. In minutes, you can go from source code to a running app.
+
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>&nbsp;
+		<a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank">
+			<div class="hollowButton">WATCH A VIDEO<div class="extra-title">to see what you can do</div>
+			</div>
+		</a>&nbsp;
+		<a href="/tutorials/devopsweb">
+			<div class="hollowButton">DO A TUTORIAL<div class="extra-title">on clone and deploy an app</div>
+			</div>
+		</a>
+   </div>
+</div>
 
 <a id="capabilities"></a>
-## DevOps Services capabilities
+<h2 style="padding-top:0px"> DevOps Services capabilities
 
 * Agile planning through the Track & Plan service 
 <!-- <image of quick planner>  -->
