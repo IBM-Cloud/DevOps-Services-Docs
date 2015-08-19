@@ -11,14 +11,14 @@ Time: 60 minutes
      <td colspan="8"><h4>Table of Contents</h4></td>
    </tr>
    <tr>
-     <td><a href="#<<link_1>>">Before you begin</a></td>
-     <td><a href="#<<link_2>>">Explore and clone the sample project</a></td>
-     <td><a href="#<<link_3>>">Plan a change to your project</a></td>
-     <td><a href="#<<link_4>>">Modify your project&#39;s code</a></td>
-     <td><a href="#<<link_5>>">Push your change to the project repository</a></td>
-     <td><a href="#<<link_6>>">Explore builds and deployments</a></td>
-     <td><a href="#<<link_7>>">Deploy the app and verify your changes</a></td>
-     <td><a href="#<<link_8>>">Complete the work item</a></td>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#fork">Explore and clone the sample project</a></td>
+     <td><a href="#plan_change">Plan a change to your project</a></td>
+     <td><a href="#modify_code">Modify your project&#39;s code</a></td>
+     <td><a href="#push_changes">Push your change to the project repository</a></td>
+     <td><a href="#build_deploy">Explore builds and deployments</a></td>
+     <td><a href="#deploy_app">Deploy the app and verify your changes</a></td>
+     <td><a href="#work_item">Complete the work item</a></td>
    </tr>
  </table>
 </div>
