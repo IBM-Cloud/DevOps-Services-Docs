@@ -1,33 +1,35 @@
+<a name="top"></a>
 #Setting up local clients to work with Git source control 
 
-###### Last updated: 10 August 2015
+###### Last updated: 18 August 2015
 
-If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repository and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repository or, if you work in Eclipse, install the EGit plug-in for version control.
+
+If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repo and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repo or, if you work in Eclipse, install the EGit plug-in for version control.
 
 If you use the Track & Plan feature and you want to manage your project plans and work items locally from Eclipse, install the IBM Rational Team Concert™ plug-in.
 
-* [Accessing your Git repository from your DevOps Services project](#access_git)
+* [Accessing your Git repo from your DevOps Services project](#access_git)
 * [Connecting the Track & Plan feature to Rational Team Concert](#eclipse_using_rtc)
 * [Developing with Bluemix Live Sync and Node.js](#livesync)
 * [Developing with IBM Eclipse Tools](#etools)
 
 <a name='access_git'></a>
-## Accessing your Git repository from your DevOps Services project
+## Accessing your Git repo from your DevOps Services project
 
-If you have a DevOps Services project that uses Git, you can connect the project to a Git repository in two ways:
+If you have a DevOps Services project that uses Git, you can connect the project to a Git repo in two ways:
 
-* [Option 1: Accessing your repository by using command-line Git](#command_line_git)
-* [Option 2: Accessing your repository by using Eclipse and the EGit plug-in](#eclipse_using_egit)
+* [Option 1: Accessing your repo by using command-line Git](#command_line_git)
+* [Option 2: Accessing your repo by using Eclipse and the EGit plug-in](#eclipse_using_egit)
 
 <a name='command_line_git'></a>
-### Option 1: Accessing your repository by using command-line Git
+### Option 1: Accessing your repo by using command-line Git
 
-If you know how to use the command line with Git, you can use this method to manage your repository. 
+If you know how to use the command line with Git, you can use this method to manage your repo. 
 
 <a name='clone_your_git_project_from_the_command_line'></a>
 #### Cloning your Git project from the command line
 
-Create a local copy of the project files by cloning the Git repository so that you can access the contents of your repository outside the Web IDE. 
+Create a local copy of the project files by cloning the Git repo so that you can access the contents of your repo outside the Web IDE. 
 
 **Before you begin**
 
@@ -44,21 +46,23 @@ Check whether Git is installed. On a command line, type `git version`. If Git is
 ![The Git URL field on the Project page.][3]
 3. Open a command line.
 
-4. Change the directory to where you want the local copy of the Git repository to be.
+4. Change the directory to where you want the local copy of the Git repo to be.
 
 5. Type `git clone`, paste the Git URL, and press Enter. 
 
 6. When you are prompted, type your alias and IBM password.   
-**Note:** If you are not prompted for your password, do not continue. Delete your cloned repository and repeat the steps by using a modified repository address: 
+**Note:** If you are not prompted for your password, do not continue. Delete your cloned repo and repeat the steps by using a modified repo address: 
 `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`.
 
-After the download is complete, you have a local repository of the files for your project. For more information about using Git, [see the Git documentation](http://git-scm.com/doc).
+After the download is complete, you have a local repo of the files for your project. For more information about using Git, [see the Git documentation](http://git-scm.com/doc).
+
+[Back to top](#top)
 
 <a name='eclipse_using_egit'></a>
-### Option 2: Accessing your repository by using Eclipse and the EGit plug-in
+### Option 2: Accessing your repo by using Eclipse and the EGit plug-in
 
 
-If you use Eclipse and have a project that uses Git for source control, you can use the EGit plug-in to manage your repository from Eclipse. 
+If you use Eclipse and have a project that uses Git for source control, you can use the EGit plug-in to manage your repo from Eclipse. 
 
 <a name='install_the_egit_eclipse_plugin'></a>
 #### Installing the EGit Eclipse plug-in
@@ -74,7 +78,7 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 1. In Eclipse, click **Help > Install New Software...**.
 
 2. In the Install window, complete these steps:
-  1. In the **Work with** field, type `http://download.eclipse.org/egit/updates` and click **Add...** and type a name for this install repository.
+  1. In the **Work with** field, type `http://download.eclipse.org/egit/updates` and click **Add...** and type a name for this install repo.
   2. In the Eclipse Git Team Provider section, select only the **Eclipse Git Team Provider** check box.
 ![Installing the Eclipse Git Team Provider][21] 
 
@@ -86,10 +90,9 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 5. If you are prompted to restart Eclipse, click **Yes**.
 
 <a name='connect_to_your_devops_services_project_with_egit'></a>
-
 #### Connecting EGit to your DevOps Services project
 
-1. In Eclipse, open the UTF-8 workspace.
+1. In Eclipse, set the default character encoding to UTF-8.
   * If you use a Mac, click **Eclipse > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
   * If you use a Windows system, click **Window > Preferences > General > Workspace**. In the "Text file encoding" section, click **Other**, and from the list, select **UTF-8**.
 
@@ -111,13 +114,17 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 8. Select the branches to work on and click **Next**.
 
-9. If necessary, update the local destination directory for the cloned repository and click **Next**. 
+9. If necessary, update the local destination directory for the cloned repo and click **Next**. 
 
-10. Click **Import as general project** and click **Finish**.
+10. If you are importing an Eclipse project, click **Import existing Eclipse projects**, otherwise click **Import as a general project**.
 
-11. Type a project name and click **Finish**.
+11. Click **Finish**.
 
-12. To work on this project, click **Window > Open Perspective**, select **Other** and select **Git**.  The Git Repositories view lists your connected Git repositories.  You could also use the **Project Explorer** view.
+12. Type a project name and click **Finish**.
+
+13. To work on this project, click **Window > Open Perspective**, select **Other** and select **Git**.  The Git Repositories view lists your connected Git repos.  You could also use the **Project Explorer** view.    
+
+[Back to top](#top)
 
 <a name='eclipse_using_rtc'></a>
 ## Connecting the Track & Plan feature to Rational Team Concert
@@ -129,7 +136,7 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 
 **Before you begin**
 
-* Rational Team Concert 5.0.2 and later requires Eclipse 4.3.2. Eclipse requires Java 1.7.  
+* Rational Team Concert 5.0.2 and later requires Eclipse 4.3.2. or later. Eclipse requires Java 1.7.  
 * If you do not have Eclipse installed and want tools for Java development, [download and install the  Java EE IDE for Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr2).  
 * If you do not have Java 1.7 installed, [download and install the Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html).
 
@@ -139,7 +146,7 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 
 3. In the Install window, complete these steps:
 
-  1. In the **Work with** field, type `https://jazz.net/downloads/rational-team-concert/5.0.2/5.0.2/p2` and click **Add...** and type a name for this repository.
+  1. In the **Work with** field, type `https://jazz.net/downloads/rational-team-concert/5.0.2/5.0.2/p2` and click **Add...** and type a name for this repo.
   2. Press **OK** to load the contents of the update site.
   3. Select the **Rational Team Concert Client** check box.
   4. Select the **Group items by category** check box.
@@ -150,6 +157,8 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 6. If you see a security warning message, click **OK**.
 
 7. If you are prompted to restart Eclipse, click **Yes**.
+
+[Back to top](#top)
 
 <a name='connect_to_your_devops_service_projects_from_eclipse'></a>
 ## Connecting to your DevOps Services project from Eclipse
