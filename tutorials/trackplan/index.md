@@ -273,7 +273,7 @@ You have a good overview of the Track & Plan feature and see that you can use it
 <a name='nextsteps'></a> 
 ##Next steps
 
-To learn more about the Track & Plan feature, see the [Track & Plan](/docs/reference/trackplan).
+To learn more about the Track & Plan feature, see [Track and plan](/docs/trackplan).
 
 
 [1]: https://hub.jazz.net
