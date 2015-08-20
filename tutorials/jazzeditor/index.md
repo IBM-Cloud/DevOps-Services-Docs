@@ -1,6 +1,6 @@
 #Develop a Node.js app from Bluemix
 
-###### Last updated: 18 August 2015
+###### Last updated: 20 August 2015
 
 Time: 15 minutes
 
@@ -13,12 +13,22 @@ If you want more information about Bluemix, see [Getting Started with Bluemix](h
 
 If you're ready to try Bluemix, start this tutorial!
 
-* [Before you begin](#prereq)
-* [Create an app with Bluemix](#create_bluemix_app)
-* [Set up Git integration and auto-deploy](#git_integration_and_autodeployment)
-* [Push changes to the Git repository by using the Web IDE](#push)
-* [Summary](#summary)
-* [Next steps](#nextsteps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="9"><h4>Table of Contents</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#create_bluemix_app">Create an app with Bluemix</a></td>
+     <td><a href="#git_integration_and_autodeployment">Set up Git integration and auto-deploy</a></td>
+     <td><a href="#push">Push changes to the Git repository by using the Web IDE</a></td>
+     <td><a href="#summary">Summary</a></td>
+     <td><a href="#next_steps">Next steps</a></td>
+   </tr>
+ </table>
+</div>
+
  
 
 <a name='prereq'></a>
