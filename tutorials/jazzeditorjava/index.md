@@ -9,12 +9,23 @@ of apps: mobile, smart devices, web, and big data. The Bluemix capabilities incl
 
 In this tutorial, you create an app in Bluemix by using the Liberty for Java&trade; starter pack. You then create a Git repository for the app and add the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). After you make a change or two to your code, you push the changes to the Git repo from the command line. Then, you build and deploy your app by using the Delivery Pipeline service.
 
-* [Before you begin](#prereq)
-* [Create an app by using Bluemix](#create_bluemix_app)
-* [Push changes to the Git repository by using the command line](#push)
-* [Explore builds and deployments](#build_and_deploy)
-* [Summary](#summary)
-* [Next steps](#next_steps)
+
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="6"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq>">Before you begin</a></td>
+     <td><a href="#create_bluemix_app">Create an app by using Bluemix</a></td>
+     <td><a href="#push">Push changes to the Git repository by using the command line</a></td>
+     <td><a href="#build_and_deploy">Explore builds and deployments</a></td>
+     <td><a href="#summary">Summary</a></td>
+     <td><a href="#next_steps">Next steps</a></td>
+   </tr>
+ </table>
+</div>
+
 
 <a name='prereq'></a>
 ##Before you begin
