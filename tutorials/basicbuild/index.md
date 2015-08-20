@@ -1,6 +1,6 @@
 #Deploy an app from a basic pipeline in Bluemix DevOps Services
 
-###### Last updated: 30 July 2015
+###### Last updated: 20 August 2015
 
 Time: 30 minutes
 
@@ -9,7 +9,7 @@ In this tutorial, you create your own version of an IBM&reg; Bluemix&trade; DevO
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="7"></td>
+     <td colspan="7"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
      <td><a href="#before_begin">Before you begin</a></td>
