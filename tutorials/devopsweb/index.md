@@ -13,7 +13,7 @@ When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you cr
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="8"><h4>Table of Contents</h4></td>
+     <td colspan="8"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
