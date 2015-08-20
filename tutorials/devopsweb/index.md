@@ -35,7 +35,7 @@ If you haven't already registered for DevOps Services, [sign up](https://hub.jaz
 1. If you want to get an idea of what the app that you are about to create is like, [see the sample app running][27]. The app analyzes Twitter users' collective sentiment about a search phrase. 
 2. If you want to get an idea of what the project is like, [see the contents of the Sentiment Analysis project][2]. This Node.js app uses a Git repository, and includes a Grunt build file.
 3. Create your own copy of the Sentiment Analysis project by clicking the following button, **Deploy to Bluemix**. When you click the button, the project is cloned to a new, private project that you own, and then the new project is deployed to Bluemix:
-<a target="_blank" href="https://bluemix.net/deploy?repository=https://hub.jazz.net/git/ibmdevopsservices/Sentiment.Analysis.App"><img src="images/bigButton.png" alt="Deploy to Bluemix"></a>
+<a target="_blank" href="https://bluemix.net/deploy?repository=https://hub.jazz.net/git/ibmdevopsservices/Sentiment.Analysis.App"><img class="button" src="images/bigButton.png" alt="Deploy to Bluemix"></a>
 4. If you are prompted to log in to Bluemix, log in.
 5. Click **DEPLOY**.
 6. After the project is cloned and the deployment is complete, click **EDIT CODE** to continue.
@@ -140,9 +140,7 @@ A pipeline is formed by its stages. The pipeline for your Sentiment Analysis app
 ###Explore the build stage
 1. On the top navigation bar, click **BUILD & DEPLOY**. 
 
-2. On the Build stage tile, click the **Stage Configuration** icon <img src="/tutorials/devopsweb/images/configure_stage.png" alt="The Stage Configuration icon"
-align="bottom" style="display: inline; margin: 0px; border-style: none;
-margin-bottom: 0px;"> and then click **Configure Stage**.  
+2. On the Build stage tile, click the **Stage Configuration** icon <img class="inline" src="images/configure_stage.png" alt="The Stage Configuration icon"> and then click **Configure Stage**.  
 
   a. On the **INPUT** tab, note this information:
 
@@ -164,9 +162,7 @@ The next stage is the Deploy stage; it contains a deploy job. Deploy jobs deploy
 
 ###Explore the deployment stage
 
-0. On the Deploy stage tile, click the **Stage Configuration** icon <img src="/tutorials/devopsweb/images/configure_stage.png" alt="The Stage Configuration icon"
-align="bottom" style="display: inline; margin: 0px; border-style: none;
-margin-bottom: 0px;"> and then click **Configure Stage**.
+0. On the Deploy stage tile, click the **Stage Configuration** icon <img class="inline" src="images/configure_stage.png" alt="The Stage Configuration icon"> and then click **Configure Stage**.
 
   a. On the **INPUT** tab, note this information: 
   * The input for the deployment is the output from the Build stage. 
@@ -189,9 +185,7 @@ With these connected stages, you have a fully functional pipeline. By default, t
 
 It's time to see the stages in action. You can start a build without waiting for changes to be pushed.
 
-1. On the Build stage tile, click the **Run Stage** icon <img src="/tutorials/devopsweb/images/run_stage.png" alt="The Run Stage icon"
-align="bottom" style="display: inline; margin: 0px; border-style: none;
-margin-bottom: 0px; max-width: 50%">. The build is added to the queue, is run, and then is deployed to Bluemix.
+1. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="/tutorials/devopsweb/images/run_stage.png" alt="The Run Stage icon">. The build is added to the queue, is run, and then is deployed to Bluemix.
 2. After the deployment tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name. Make sure that your topic is in the INPUT section.
 3. If you want to see more information about your app, open its Bluemix Overview page by clicking the app's name, which is above the URL. For more information about the Overview page, [see Managing applications on Bluemix][28].
 

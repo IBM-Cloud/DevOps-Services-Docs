@@ -1,6 +1,6 @@
 # Editing code in Bluemix DevOps Services
 
-###### Last updated: 11 August 2015
+###### Last updated: 18 August 2015
 
 The Web IDE is a browser-based development environment where you can develop for the web.  You can develop in JavaScript, HTML, and CSS with the help of content assist, code completion, and error checking.  Moreover, the Web IDE works with nearly any language and offers syntax highlighting [for most file types](https://hub.jazz.net/docs/overview/#dev_support).  Source control is built in through Git or Jazz SCM, and you can deploy code locally to test and debug your apps.
 
@@ -10,7 +10,7 @@ Best of all, the Web IDE is powered by the web.  You have nothing to install, no
 * [Editing code](#editcode)
 * [Source control](#sourcecontrol)
 * [Deploying an app from your workspace](#deploy)
-* [Use command line Shell](@shell)
+* [Use command line Shell](#shell)
 * [Editing outside of the Web IDE](#editlocal)
 
 
@@ -19,7 +19,7 @@ Best of all, the Web IDE is powered by the web.  You have nothing to install, no
 
 The configuration of a code editor can be personal.  The Web IDE is customizable so that you can choose the color schemes, technical tools, and settings that meet your development needs.
 
-You can view and modify the Web IDE's settings by clicking the **Settings** icon <img src="./images/settings_icon.png"  alt="The settings icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> from the navigation bar.
+You can view and modify the Web IDE's settings by clicking the **Settings** icon <img class="inline" src="./images/settings_icon.png"  alt="The settings icon"> from the navigation bar.
 
 | Categories | Description  |
 |---|---|
@@ -32,12 +32,12 @@ You can view and modify the Web IDE's settings by clicking the **Settings** icon
 | Plug-ins  | Install, disable, or remove plug-ins from the editor  |
 | Tern  | View a list of all of the Tern code analysis plug-ins that are in the editor |
 	
-If you often need to change certain settings while you edit, you can access those settings quickly from the **Local Editor Settings** icon <img src="./images/local_settings_icon.png"  alt="Local Editor Settings icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> in the upper-right corner of the editor
+If you often need to change certain settings while you edit, you can access those settings quickly from the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon"> in the upper-right corner of the editor
 
 ![Local Editor Settings](images/local_editor_settings.png)
 
 By default, the settings for the editor style and font size are always shown.  To include other editor settings in the menu, follow these steps:
-1. Click the **Local Editor Settings** icon <img src="./images/local_settings_icon.png"  alt="Local Editor Settings icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. Click the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon">.
 2. Click **Editor Settings**.
 3. Click the circle next to the setting name to include or exclude it from the **Local Editor Settings** menu.
 
@@ -56,7 +56,7 @@ The second section is the editor pane on the right.  The editor provides several
 ![Web IDE](images/webide.png)
 
 ####Working with multiple files
-1. To work with two files at the same time, click the **split editor mode** icon <img src="./images/split_editor_icon.png"  alt="Split Editor icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> at the top of the editor.
+1. To work with two files at the same time, click the **split editor mode** icon <img class="inline" src="./images/split_editor_icon.png"  alt="Split Editor icon"> at the top of the editor.
 2. From the menu that opens, select a view.
 
  After you select a view, if a file was already open in the editor, it is shown in both editor views.
@@ -77,31 +77,31 @@ Outside of the editor, you can get help on any page by pressing `Shift+?`.
 <a name='sourcecontrol'></a>
 ###Source control
 You can access integrated source code management tools from the Web IDE.
-* If your project is sourced in Git, click the **Git Repository** icon <img src="./images/git_icon.png"  alt="The Git Repository icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  For more information, see [Source control with Git](../git/)
-* If your project is sourced in Jazz, click the **Jazz** icon <img src="./images/jazz_icon.png"  alt="The Jazz icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/)
+* If your project is sourced in Git, click the **Git Repository** icon <img class="inline" src="./images/git_icon.png"  alt="The Git Repository icon">.  For more information, see [Source control with Git](../git/)
+* If your project is sourced in Jazz, click the **Jazz** icon <img class="inline" src="./images/jazz_icon.png"  alt="The Jazz icon">.  For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/)
 
 
 <a name='deploy'></a>
 ###Deploying an app from your workspace
 
 1. To deploy your app, either select a launch configuration from the run bar or [create a launch configuration](https://hub.jazz.net/tutorials/livesync/#launch_configuration)
-1. Click the deploy icon <img src="./images/deploy_button.png"  alt="The deploy icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  An instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration. 
+1. Click the deploy icon <img class="inline" src="./images/deploy_button.png"  alt="The deploy icon">.  An instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration. 
 2. After your app is deployed, you can click the icons on the run bar to complete more actions:
 ![Run bar](images/runbar.png)
 
- * Stop the app: <img src="./images/stop_button.png"  alt="The stop icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
- * Open the deployed app: <img src="./images/open_app_url.png"  alt="The open app URL icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
- * View the logs of the deployed app: <img src="./images/view_logs.png"  alt="The view logs icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
- * Open the app's Dashboard: <img src="./images/open_dashboard.png"  alt="The open dashboard icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
- * If you are developing a Node.js app, enable Live Edit mode: <img src="./images/enable_live_edit.png"  alt="The enable live edit slider" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
- * With Live Edit mode enabled, restart the app quickly, without redeployment: <img src="./images/live_edit_restart.png"  alt="The Live Edit restart icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
- * With Live Edit mode enabled, access the debugger: <img src="./images/debug_icon.png"  alt="The debug icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ * Stop the app: <img  class="inline" src="./images/stop_button.png"  alt="The stop icon">
+ * Open the deployed app: <img class="inline" src="./images/open_app_url.png"  alt="The open app URL icon">
+ * View the logs of the deployed app: <img class="inline" src="./images/view_logs.png"  alt="The view logs icon">
+ * Open the app's Dashboard: <img  class="inline" src="./images/open_dashboard.png"  alt="The open dashboard icon">
+ * If you are developing a Node.js app, enable Live Edit mode: <img  class="inline"  src="./images/enable_live_edit.png"  alt="The enable live edit slider">
+ * With Live Edit mode enabled, restart the app quickly, without redeployment: <img  class="inline" src="./images/live_edit_restart.png"  alt="The Live Edit restart icon">
+ * With Live Edit mode enabled, access the debugger: <img  class="inline" src="./images/debug_icon.png"  alt="The debug icon">
 
 
  
 <a namee='shell'></a>
 ###The command-line shell
-If you like working from a command-line shell, click the **Shell** icon<img src="./images/shell_icon.png"  alt="The shell icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.  You can work in these ways:
+If you like working from a command-line shell, click the **Shell** icon <img  class="inline" src="./images/shell_icon.png"  alt="The shell icon">.  You can work in these ways:
 * Interact with Cloud Foundry compatible targets
 * Edit files in your project's directory
 * Manage the editor plug-ins

@@ -1,6 +1,6 @@
 #Test and debug a Node.js app with Bluemix Live Sync
 
-###### Last updated: 30 July 2015
+###### Last updated: 18 August 2015
 
 Testing and debugging are critical to ensure that your app performs without unexpected results. In IBM&reg; Bluemix&trade; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and make changes to your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app while having all of the benefits of deploying with Bluemix.
 
@@ -53,15 +53,15 @@ You can now use your launch configuration to deploy the contents of your workspa
 <a name='deploy_app'></a>
 ##Deploy an app to a test environment
 
-1. To deploy your app, click the deploy icon <img src="./images/deploy_button.png"  alt="The deploy icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> on the run bar. When you click the icon, an instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration.
+1. To deploy your app, click the deploy icon <img class="inline"  src="./images/deploy_button.png"  alt="The deploy icon">  on the run bar. When you click the icon, an instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration.
 2. After your app is deployed, you can also complete any of these actions:
 ![Run bar](images/runbar.png)
 
- * <img src="./images/stop_button.png"  alt="The stop icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">Stop the app.
- * <img src="./images/open_app_url.png"  alt="The open app URL icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">Open the deployed app.
- * <img src="./images/view_logs.png"  alt="The view logs icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">View the logs of the deployed app.
- * <img src="./images/open_dashboard.png"  alt="The open dashboard icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">Open the app's Dashboard.
- * <img src="./images/enable_live_edit.png"  alt="The enable live edit slider" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">If you are developing a Node.js app, enable Live Edit mode.
+ * <img  class="inline" src="./images/stop_button.png"  alt="The stop icon">  Stop the app.
+ * <img class="inline"  src="./images/open_app_url.png"  alt="The open app URL icon">  Open the deployed app.
+ * <img class="inline"  src="./images/view_logs.png"  alt="The view logs icon" >  View the logs of the deployed app.
+ * <img  class="inline" src="./images/open_dashboard.png"  alt="The open dashboard icon">  Open the app's Dashboard.
+ * <img class="inline"  src="./images/enable_live_edit.png"  alt="The enable live edit slider">  If you are developing a Node.js app, enable Live Edit mode.
 
 
 <a name='live_edit'></a>
@@ -74,14 +74,14 @@ Redeploying an app can waste valuable time when you are testing minor changes.  
 3. When redeployment finishes, the deployment status icon turns green and the phrase `(running: live edit)` is shown beside your launch configuration on the run bar.
 ![Live Edit enabled](images/live_edit_on.png)
 
-When you work in Live Edit mode, changes to static files, such as HTML or CSS, can usually be seen immediately in the deployed app.  If you make changes that affect Node.js source files, you can restart the app quickly, without redeployment, by clicking the restart icon <img src="./images/live_edit_restart.png"  alt="The restart icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+When you work in Live Edit mode, changes to static files, such as HTML or CSS, can usually be seen immediately in the deployed app.  If you make changes that affect Node.js source files, you can restart the app quickly, without redeployment, by clicking the restart icon <img  class="inline" src="./images/live_edit_restart.png"  alt="The restart icon">.
 
 
 <a name='debug'></a>
 ##Debug Node.js apps
 Another benefit of Live Edit mode is the Debug feature.  You can edit code dynamically, insert breakpoints, step through code, restart the runtime, and more, while your app is running on Bluemix.
 
-1. On the run bar, click the debug icon <img src="./images/debug_icon.png"  alt="The debug tools icon" align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. On the run bar, click the debug icon <img class="inline"  src="./images/debug_icon.png"  alt="The debug tools icon">.
 ![Debug tools console](images/debug_console.png)
 2. Select an option to manage the runtime of your app or begin debugging.
 

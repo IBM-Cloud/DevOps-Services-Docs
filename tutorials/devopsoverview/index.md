@@ -1,12 +1,12 @@
 #Get started: Create, edit, and deploy an app from Bluemix
 
-Last modified: 06 August 2015
+Last modified: 18 August 2015
 
 Time: 30 minutes
 
 Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, first watch the related video created by a DevOps Services expert, Adam Archer. 
  
-<a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank"><img src="images/video_icon.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">An Overview of IBM Bluemix DevOps Services</a>
+<img  class="inline" src="images/video_icon.png" alt="Video icon">&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank">An Overview of IBM Bluemix DevOps Services</a>
 
 * [Before you begin](#prereq)
 * [Get started](#start)
@@ -22,7 +22,7 @@ Adam's video starts on the Bluemix Dashboard. If you haven't signed up for DevOp
 
 [Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
 
-<img src="images/key_info.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  On the Bluemix website, you can find the [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview) to help you better understand the Bluemix platform.
+<img  class="inline" src="images/key_info.png" alt="Key information icon">  On the Bluemix website, you can find the [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview) to help you better understand the Bluemix platform.
 
 <a name='start'></a>
 ## Get started
@@ -73,7 +73,7 @@ You created a Git repository, populated it with the example code, and deployed t
 
 ### Edit the app in Live Edit mode
 
-<img src="images/key_info.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  For Node.js apps, you can make changes to static files, such as HTML or CSS, and immediately propagate the changes to the deployed app by using Bluemix Live Sync.
+<img class="inline"  src="images/key_info.png" alt="Key information icon">  For Node.js apps, you can make changes to static files, such as HTML or CSS, and immediately propagate the changes to the deployed app by using Bluemix Live Sync.
 
 1. Go to the app's Overview page in Bluemix and click **EDIT CODE** (When you clicked **ADD GIT**, that link was replaced by **EDIT CODE**). Your new project opens in the web integrated development environment (Web IDE).  
 <!--![CODE button](/tutorials/jazzeditor/images/bm-code-button_NEW.png) -->
@@ -85,7 +85,7 @@ You created a Git repository, populated it with the example code, and deployed t
  
 4. To see your updated static files, refresh the deployed app in the browser.  
 
- <img src="images/key_info.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  If you update a node module, use the **Quick Restart** icon to restart the node run time in seconds, without redeploying the app.
+ <img class="inline"  src="images/key_info.png" alt="Key information icon">  If you update a node module, use the **Quick Restart** icon to restart the node run time in seconds, without redeploying the app.
  
 5. To try out Live Edit mode, in the directory, click `public/index.html`.  Change "Hi there!" to "Hi there! More title text!". You can see the changes in the deployed app.  
 
@@ -94,7 +94,7 @@ You created a Git repository, populated it with the example code, and deployed t
 
 <!-- You can use the Debug feature to create breakpoints and inspect variables in your node modules so you can isolate problem areas as you work. -->
  
-<img src="images/key_info.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> You can also do this kind of live editing and quick refresh by using the Desktop Sync feature. [For more information, see 
+<img  class="inline" src="images/key_info.png" alt="Key information icon"> You can also do this kind of live editing and quick refresh by using the Desktop Sync feature. [For more information, see 
 Bluemix Live Sync](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#bluemixlive).
 
 

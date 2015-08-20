@@ -1,19 +1,21 @@
 #Git source control 
 
-###### Last updated: 30 June 2015
+###### Last updated: 18 August 2015
 
-If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web integrated development environment (IDE). If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repository. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
+If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
 For a complete Git reference, [see the official Git documentation][6].
 
-To access Git commands from the Web IDE, click the Git Repository icon <img src="./images/gitrepository.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+To access Git commands from the Web IDE, click the **Git Repository** icon <img class="inline" src="./images/gitrepository.png" alt="Git Respository icon">.
+
+**Note:** For a Git repo that is hosted by DevOps Services, the file size limit is 100 MB.
 
 No matter where you code, you can use this quick reference to do common tasks.
-
+<a name="top"></a>
 ##[Repositories](#repositories)
-* [Set up a local Git repository](#set_up_a_local_git_repository)
-* [Use an existing Git repository with DevOps Services projects](#existing_git_repository)
-* [Replace your origin repository](#replace_your_origin _repository)
+* [Set up a local Git repo](#set_up_a_local_git_repository)
+* [Use an existing Git repo with DevOps Services projects](#existing_git_repository)
+* [Replace your origin repo](#replace_your_origin_repository)
 * [Integrate local commits in the Web IDE](#integrate_local_commits_in_the_web_IDE)
 
 ##[Branches](#branches)
@@ -48,19 +50,19 @@ No matter where you code, you can use this quick reference to do common tasks.
 ##Repositories
 
 <a name="set_up_a_local_git_repository"></a>
-### Set up a local Git repository
+### Set up a local Git repo
 
 #### DevOps Services Web IDE
-When you use a hosted Git repository with your DevOps Services project, you work with both your local and remote repositories through the Web IDE.
+When you use a hosted Git repo with your DevOps Services project, you work with both your local and remote repos through the Web IDE.
 
-1. Click **EDIT CODE** <img src="./images/editcode.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> and start coding!
+1. Click **EDIT CODE** <img class="inline" src="./images/editcode.gif" alt="Edit code button"> and start coding!
 
 #### Git terminal
-If you want to code and test locally, set up a local repository.
+If you want to code and test locally, set up a local repo.
 
 **Before you begin**: If Git is not installed on your computer, [follow these instructions][1].
 
-1. Determine which directory to store your local repository in. If necessary, you can create a directory.
+1. Determine which directory to store your local repo in. If necessary, you can create a directory.
 
 1. By using your terminal, move to the directory.  
 
@@ -71,58 +73,60 @@ If you want to code and test locally, set up a local repository.
 
 1. In your terminal, type `git clone `, paste your Git URL, and press Enter.
 
-1. When you are prompted, enter your IBM id and password.  
-**Note**: If you are not prompted for your password, do not continue.  Delete your cloned repository
-and repeat the steps by using a modified repository address: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`.
+1. When you are prompted, enter your alias and password.  
+**Note**: If you are not prompted for your password, do not continue.  Delete your cloned repo
+and repeat the steps by using a modified repo address: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`.
 
-1. After your repository replicates, move into your new local repository.  
+1. After your repo replicates, move into your new local repo.  
 
 <a name="existing_git_repository"></a>
-### Use an existing Git repository with DevOps Services projects 
-If you already have a Git repository, you can use it with a DevOps Services project.
+### Use an existing Git repo with DevOps Services projects 
+If you already have a Git repo, you can use it with a DevOps Services project.
 
-#### Setting up a new DevOps Services project with an existing Git repository
+#### Setting up a new DevOps Services project with an existing Git repo
 1. [Go to DevOps Services][2]. On the My Projects page, click **CREATE PROJECT**.
 2. Name your project.
 3. Click **Create a new repository**.
 4. Click **Create a Git repo on Bluemix**.    
-**Note:** Do not select "Initialize the repository with a README and license template." 
+**Note:** Do not select the **Initialize the repository with a README and license template** check box. 
 5. Select or clear the other project options as needed.
 6. Click **CREATE**.
-7. Open a command-line window and change to your Git repository directory.
-8. Push the contents of the repository by typing these commands:         
+7. Open a command-line window and change to your Git repo directory.
+8. Push the contents of the repo by typing these commands:         
        git remote add new_repo https://hub.jazz.net/git/your_alias/project_name     
        git push -u new_repo master     
 
-#### Replacing a DevOps Services Git repository with another Git repository
-If you have a DevOps Services project with an initialized Git repository and you want to use another Git repository instead, you must be the owner or an administrator of the project. To overwrite the repository, add a `-f` (force push) to the `git push` command, like this: `git push -f -u new_repo master`.
+#### Replacing a DevOps Services Git repo with another Git repo
+If you have a DevOps Services project with an initialized Git repo and you want to use another Git repo instead, you must be the owner or an administrator of the project. To overwrite the repo, add a `-f` (force push) to the `git push` command, like this: `git push -f -u new_repo master`.
 
-**Important:** A force push replaces your original DevOps Services Git repository; that repository cannot be recovered.
+**Important:** A force push replaces your original DevOps Services Git repo; that repo cannot be recovered.
        
-<a name="replace_your_origin _repository"></a>
-### Replace your origin repository
+<a name="replace_your_origin_repository"></a>
+### Replace your origin repo
 
 #### DevOps Services Web IDE
 
-1. Click the configuration icon <img src="./images/configuration.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. Click the configuration icon <img  class="inline" src="./images/configuration.png" alt="Configuration icon">.
 
-1. In the remote.origin.url pane, click the edit icon <img src="./images/editconfiguration.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> to edit the configuration entry.
+1. In the remote.origin.url pane, click the edit icon <img  class="inline" src="./images/editconfiguration.png" alt="Edit icon"> to edit the configuration entry.
 
-1. In the **value** field, paste your new repository URL. Click **Submit**.
+1. In the **value** field, paste your new repo URL. Click **Submit**.
 
-1. Click the **REFERENCE** list and expand **origin**. Click the fetch icon <img src="./images/fetchfromremote.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;"> to fetch from the remote repository.
+1. Click the **REFERENCE** list and expand **origin**. Click the fetch icon <img class="inline" src="./images/fetchfromremote.png" alt="Fetch icon"> to fetch from the remote repo.
 
 #### Git terminal
 
 1. Type `git remote set-url origin <repository_url>` and press Enter.
 
-<a name="integrate_local_commits_in_the_web_IDE"></a>
 
+<a name="integrate_local_commits_in_the_web_IDE"></a>
 ###Integrate local commits in the Web IDE
 
-When you work in the Web IDE, both your local and remote repositories are hosted on the cloud. To view the  changes that you made in a local repository that is stored outside of DevOps Services, you must sync to your remote repository.
+When you work in the Web IDE, both your local and remote repos are hosted on the cloud. To view the  changes that you made in a local repo that is stored outside of DevOps Services, you must sync to your remote repo.
 
 1. Click **SYNC**. Sync combines the fetch, rebase, and push commands.
+
+[Back to top](#top)
 
 <a name="branches"></a>
 ##Branches
@@ -146,7 +150,7 @@ When you work in the Web IDE, both your local and remote repositories are hosted
 #### DevOps Services Web IDE
 1. Click the **REFERENCE** list and expand **local**.
 
-2. Next to the branch to modify, click the checkout icon <img src="./images/checkout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+2. Next to the branch to modify, click the checkout icon <img  class="inline" src="./images/checkout.gif" alt="Checkout icon">.
 
 1. Make sure that your selected branch is shown in the **REFERENCE** list.
 
@@ -177,7 +181,7 @@ When you work in the Web IDE, both your local and remote repositories are hosted
 
 1. Click the **REFERENCE** list and expand **local**.
 
-2. Next to the local branch to remove, click **Delete** <img src="./images/delete.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+2. Next to the local branch to remove, click **Delete** <img class="inline"  src="./images/delete.gif" alt="Delete icon">.
 
 ####Git terminal
 1. Type `git branch -d <branchname>` and press Enter.
@@ -204,10 +208,12 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 
 #### DevOps Services Web IDE
 1. In the Working Directory Changes section, select the check box for each modified file that has changes you want to discard. 
-2. Click the checkout icon <img src="./images/discard.png"  align="bottom" alt="Checkout the selected files, discarding all changes"style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px; max-width:34px;">.
+2. Click the checkout icon <img class="inline"  src="./images/discard.png" alt="Checkout the selected files, discarding all changes">.
 
 #### Git terminal
 1. Type `git checkout -- path/to/file/filename` to discard changes to a file.
+
+[Back to top](#top)
 
 <a name="commits"></a>
 ##Commits
@@ -237,22 +243,20 @@ Overwrite the contents of a referenced remote branch with the contents of your a
 
 <a name="link_commit"></a>
 ### Link a commit to a work item
-To link a commit to a Track & Plan work item for a Git project that is hosted at DevOps Services, add a work-item keyword and number to the Git commit message.
+If you work in a project that uses a Git repo on Bluemix, you can link a commit to a Track & Plan work item. If your repo is hosted on GitHub, you can link your commits to work items when you push, but first, [you must configure it on GitHub][7].
 
-1. When you write a Git commit message, specify a work item. The message format is `<work item keyword> <number>`.
- * For example, if you type `Implements story 32` as the commit message, you link the commit to story item 32.
+1. When you write your Git commit message, specify a work item in this format: *work item keyword number*.
+ * For example, if you type `Implements story 32`, you link the commit to story item 32.
  * Valid work item keywords: `adoption item, bug, defect, epic, impediment, item, retrospective, story, task, track build item,` and `work item`.
-2. Push the commit. A linked commit is shown on a work item's **LINKS** tab.
-3. Alternatively, link a commit that was already pushed:
-	1. Open your project's Overview page.
-	2. Click **GIT LOG**.
-	3. Open the commit to link to a work item
-	4. Click **Link Work Item**.
+2. Push the commit. A linked commit is shown on the work item's **LINKS** tab.
 
-**Note:** If your repository is hosted on GitHub, you can link your commits to work items when you push. This activity requires extra configuration:
+If you push a commit and want to link it to work items later, you can link them on the Git Log page.
 
-1. Open your DevOps Services project's Overview page.
-2. Under the message to GitHub users, click **configure GitHub** to get instructions to configure commit linking between GitHub and DevOps Services.
+1. Open your project's Overview page.
+2. Click **GIT LOG**.
+3. Open the commit. 
+4. Click **Link Work Item**. 
+5. Select the work item and click **OK**.
 
 <a name="view_the_commit_history"></a>
 ### View the commit history
@@ -295,7 +299,7 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 
 <a name="modify_the_last_commit"></a>
 ### Modify the last commit
-**Note**: Do not modify your last commit after you push it to a remote repository.
+**Note**: Do not modify your last commit after you push it to a remote repo.
 
 ####DevOps Services Web IDE
 1. Select the check boxes for the items to add to the commit.
@@ -322,7 +326,7 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 
 2. View the details of the commit by clicking it.
 
-2. In the commit pane, click **Create a tag for the commit** <img src="./images/tag.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+2. In the commit pane, click **Create a tag for the commit** <img class="inline"  src="./images/tag.gif" alt="Create a tag for the commit">.
 
 3. In the name field, type your tag text. Click **Submit**.
 
@@ -335,18 +339,18 @@ To link a commit to a Track & Plan work item for a Git project that is hosted at
 ### Change the committer name and email address
 
 #### DevOps Services Web IDE
-1. Click the configuration icon <img src="./images/configuration.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. Click the configuration icon <img class="inline" src="./images/configuration.png" alt="Configuration icon">.
 
 3. Change the user email address and name by updating the user.email and user.name values. Click **Submit** to save each change.
 
 #### Git terminal
-To update your name and email address for a single repository:
+To update your name and email address for a single repo:
 
 1. Type `git config user.email "<your@email.com>"` and press Enter.
 
 2. Type `git config user.name "<Your Name>"` and press Enter.
 
-To update your name and email address for all repositories:
+To update your name and email address for all repos:
 
 1. Type `git config --global user.email "<your@email.com>"` and press Enter.
 
@@ -361,11 +365,13 @@ Revert the changes that a commit has introduced into your active branch.
 
 1. Under History, select a commit. 
 
-2. On the right side of the page, above the commit summary, click the revert icon <img src="./images/revert.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">. 
+2. On the right side of the page, above the commit summary, click the revert icon <img class="inline" src="./images/revert.png" alt="Revert icon">. 
 
 ####Git terminal
 
 1. Type `git revert <commit ID>` and press Enter.
+
+[Back to top](#top)
 
 <a name="change_integration"></a>
 ##Change integration
@@ -380,19 +386,19 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 2. Check out the destination branch. For more information, [see Work on a local branch][5].
 
- <img src="./images/destinationbranch.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ <img class="screen-shot" src="./images/destinationbranch.png" alt="Checkout destination branch">
 
 1. Click the **REFERENCE** list, expand **local**, and click the name of the source branch. The changes from the source branch are shown in the Incoming section.
 
-  <img src="./images/sourcebranch.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+  <img class="screen-shot" src="./images/sourcebranch.png" alt="Changes from the source branch shown in the Incoming section">
 
 1. In the Incoming section, click the **Merge** icon. 
 
- <img src="./images/mergeicon.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+ <img class="screen-shot" src="./images/mergeicon.png" alt="Merge icon in the Incoming section">
 
 1. In the **REFERENCE** list, click the checkout icon next to the branch that you just merged the changes into.
 
-  <img src="./images/checkoutmaster.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">
+  <img class="screen-shot"  src="./images/checkoutmaster.png" alt="Checkout from master">
 
 1. If you want to deliver the changes, click **PUSH**. Otherwise, at this point, you can create a test deployment to make sure that everything is working as expected.
 
@@ -448,7 +454,7 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 1. Click the name of the source branch.
 
-1. In the Incoming section, click the rebase icon <img src="./images/rebase.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 0px;">.
+1. In the Incoming section, click the rebase icon <img  class="inline" src="./images/rebase.gif" alt="Rebase icon">.
 
 5. If you encounter conflicts, [resolve them](#resolve_a_rebase_conflict).
 
@@ -503,6 +509,8 @@ When you need to deliver changes from a source branch to a destination branch, y
 
 5. Resume the rebase operation by typing `git rebase --continue` and pressing Enter.
 
+[Back to top](#top)
+
 <a name="git_terminal"></a>
 ##Git terminal only
 
@@ -513,7 +521,7 @@ When you push, if a "406 Not Acceptable" error occurs, complete these steps:
 
 1. Upgrade your version of Git.
 
-1. If you cannot upgrade Git, add your repository again but place your alias in the repository URL.  For example: `https://your_alias@hub.jazz.net/alias/project_name`.
+1. If you cannot upgrade Git, add your repo again but place your alias in the repo URL.  For example: `https://your_alias@hub.jazz.net/alias/project_name`.
 
 <a name="delete_a_branch_from_origin"></a>
 ### Delete a branch from origin
@@ -528,4 +536,5 @@ Only project owners can delete branches from origin.
 [4]: #view_the_commit_history
 [5]: #start_working_on_a_local_branch
 [6]: http://git-scm.com/docs
+[7]: ../githubhooks/#github_hook
 
