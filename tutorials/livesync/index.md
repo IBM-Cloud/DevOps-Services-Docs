@@ -20,7 +20,7 @@ In this tutorial, you create a launch configuration that you use to deploy a Nod
      <td><a href="#debug">Debug a Node.js app</a></td>
      <td><a href="#local_edit">Test and debug on the command line</a></td>
      <td><a href="#summary">Summary</a></td>
-     <td><a href="#next_steps">Next steps</a></td>
+     <td><a href="#nextsteps">Next steps</a></td>
    </tr>
  </table>
 </div>

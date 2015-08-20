@@ -16,7 +16,7 @@ If you're ready to try Bluemix, start this tutorial!
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="9"><h4>Table of Contents</h4></td>
+     <td colspan="6"><h4>Table of Contents</h4></td>
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
@@ -24,7 +24,7 @@ If you're ready to try Bluemix, start this tutorial!
      <td><a href="#git_integration_and_autodeployment">Set up Git integration and auto-deploy</a></td>
      <td><a href="#push">Push changes to the Git repository by using the Web IDE</a></td>
      <td><a href="#summary">Summary</a></td>
-     <td><a href="#next_steps">Next steps</a></td>
+     <td><a href="#nextsteps">Next steps</a></td>
    </tr>
  </table>
 </div>
