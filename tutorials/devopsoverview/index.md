@@ -8,12 +8,20 @@ Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, a
  
 <img  class="inline" src="images/video_icon.png" alt="Video icon">&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank">An Overview of IBM Bluemix DevOps Services</a>
 
-* [Before you begin](#prereq)
-* [Get started](#start)
-* [Grow your project](#grow)
-* [Work as a team](#team)
-* [Deploy to production](#deploy)
-* [Summary](#summary)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="5"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq>">Before you begin</a></td>
+     <td><a href="#grow">Grow your project</a></td>
+     <td><a href="#team">Work as a team</a></td>
+     <td><a href="#deploy">Deploy to production</a></td>
+     <td><a href="#summary">Summary</a></td>
+   </tr>
+ </table>
+</div>
 
 <a name='prereq'></a>
 ##Before you begin
