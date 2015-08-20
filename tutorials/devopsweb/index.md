@@ -1,6 +1,6 @@
 #Clone, edit, and deploy an app from Bluemix
 
-Last modified: 30 July 2015
+Last modified: 19 August 2015
 
 Time: 60 minutes 
 
@@ -10,16 +10,23 @@ In your project, you plan your work in the Track & Plan feature. If you've used 
 
 When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you create jobs to build and deploy your app by using the Build & Deploy feature (the pipeline). 
 
-* [Before you begin](#prereq)
-* [Explore and clone the sample project](#fork)
-* [Plan a change to your project](#plan_change)
-* [Modify your project's code](#modify_code)
-* [Push your change to the project repository](#push_changes)
-* [Explore builds and deployments](#build_deploy)
-* [Deploy the app and verify your change](#deploy_app)
-* [Complete the work item](#work_item)
-* [Summary](#summary)
-* [Next steps](#next_steps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="8"><h4>Table of Contents</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#fork">Explore and clone the sample project</a></td>
+     <td><a href="#plan_change">Plan a change to your project</a></td>
+     <td><a href="#modify_code">Modify your project&#39;s code</a></td>
+     <td><a href="#push_changes">Push your change to the project repository</a></td>
+     <td><a href="#build_deploy">Explore builds and deployments</a></td>
+     <td><a href="#deploy_app">Deploy the app and verify your changes</a></td>
+     <td><a href="#work_item">Complete the work item</a></td>
+   </tr>
+ </table>
+</div>
 
 <a name='prereq'></a>
 ## Before you begin
