@@ -9,7 +9,7 @@ In this tutorial, you create a launch configuration that you use to deploy a Nod
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="9"><h4>Table of Contents</h4></td>
+     <td colspan="8"><h4>Table of Contents</h4></td>
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
@@ -20,7 +20,6 @@ In this tutorial, you create a launch configuration that you use to deploy a Nod
      <td><a href="#debug">Debug a Node.js app</a></td>
      <td><a href="#local_edit">Test and debug on the command line</a></td>
      <td><a href="#summary">Summary</a></td>
-     <td><a href="#nextsteps">Next steps</a></td>
    </tr>
  </table>
 </div>
