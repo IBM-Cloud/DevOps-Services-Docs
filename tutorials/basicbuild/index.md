@@ -9,7 +9,7 @@ In this tutorial, you create your own version of an IBM&reg; Bluemix&trade; DevO
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="7"><h4>Summary of steps</h4></td>
+     <td colspan="6"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
      <td><a href="#before_begin">Before you begin</a></td>
@@ -18,7 +18,6 @@ In this tutorial, you create your own version of an IBM&reg; Bluemix&trade; DevO
      <td><a href="#deploy_stage">Create a deployment stage</a></td>
      <td><a href="#deploy_app">Run the stages</a></td>
      <td><a href="#summary">Summary</a></td>
-     <td><a href="#nextsteps">Next steps</a></td>
    </tr>
  </table>
 </div>
