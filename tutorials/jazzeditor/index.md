@@ -16,7 +16,7 @@ If you're ready to try Bluemix, start this tutorial!
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="6"><h4>Table of Contents</h4></td>
+     <td colspan="6"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
