@@ -1,6 +1,6 @@
 #Clone, edit, and deploy an app from Bluemix
 
-Last modified: 19 August 2015
+######Last modified: 24 August 2015
 
 Time: 60 minutes 
 
@@ -13,7 +13,7 @@ When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you cr
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="8"><h4>Table of Contents</h4></td>
+     <td colspan="8"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
@@ -31,10 +31,17 @@ When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you cr
 <a name='prereq'></a>
 ## Before you begin
 
-Are you new to DevOps Services? If you're not quite sure what you can do with it, [get a quick overview before you start this tutorial](https://hub.jazz.net/docs/overview/).
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
 
-If you haven't already registered for DevOps Services, [sign up](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
-
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>&nbsp;
+   </div>
+</div>
 
 <a name='fork'></a>
 ## Explore and clone the sample project

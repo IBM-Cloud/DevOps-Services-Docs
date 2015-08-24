@@ -1,6 +1,6 @@
 #Develop a Java app from Bluemix
 
-###### Last updated: 18 August 2015
+###### Last updated: 24 August 2015
 
 Time: 30 minutes
 
@@ -9,17 +9,38 @@ of apps: mobile, smart devices, web, and big data. The Bluemix capabilities incl
 
 In this tutorial, you create an app in Bluemix by using the Liberty for Java&trade; starter pack. You then create a Git repository for the app and add the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). After you make a change or two to your code, you push the changes to the Git repo from the command line. Then, you build and deploy your app by using the Delivery Pipeline service.
 
-* [Before you begin](#prereq)
-* [Create an app by using Bluemix](#create_bluemix_app)
-* [Push changes to the Git repository by using the command line](#push)
-* [Explore builds and deployments](#build_and_deploy)
-* [Summary](#summary)
-* [Next steps](#next_steps)
+
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="6"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq>">Before you begin</a></td>
+     <td><a href="#create_bluemix_app">Create an app by using Bluemix</a></td>
+     <td><a href="#push">Push changes to the Git repository by using the command line</a></td>
+     <td><a href="#build_and_deploy">Explore builds and deployments</a></td>
+     <td><a href="#summary">Summary</a></td>
+     <td><a href="#next_steps">Next steps</a></td>
+   </tr>
+ </table>
+</div>
+
 
 <a name='prereq'></a>
 ##Before you begin
 
-[Sign up for IBM&reg; Bluemix&trade; DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
+
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>&nbsp;
+   </div>
+</div>
 
 <a name='create_bluemix_app'></a>
 ##Create an app in Bluemix

@@ -1,6 +1,6 @@
 #Develop a Node.js app from Bluemix
 
-###### Last updated: 18 August 2015
+###### Last updated: 24 August 2015
 
 Time: 15 minutes
 
@@ -13,18 +13,37 @@ If you want more information about Bluemix, see [Getting Started with Bluemix](h
 
 If you're ready to try Bluemix, start this tutorial!
 
-* [Before you begin](#prereq)
-* [Create an app with Bluemix](#create_bluemix_app)
-* [Set up Git integration and auto-deploy](#git_integration_and_autodeployment)
-* [Push changes to the Git repository by using the Web IDE](#push)
-* [Summary](#summary)
-* [Next steps](#nextsteps)
- 
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="6"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#create_bluemix_app">Create an app with Bluemix</a></td>
+     <td><a href="#git_integration_and_autodeployment">Set up Git integration and auto-deploy</a></td>
+     <td><a href="#push">Push changes to the Git repository by using the Web IDE</a></td>
+     <td><a href="#summary">Summary</a></td>
+     <td><a href="#nextsteps">Next steps</a></td>
+   </tr>
+ </table>
+</div>
 
+ 
 <a name='prereq'></a>
 ##Before you begin
 
-[Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
+
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>&nbsp;
+   </div>
+</div>
 
  <a name='create_bluemix_app'></a>
 ##Create an app in Bluemix

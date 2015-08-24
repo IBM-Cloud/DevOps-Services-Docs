@@ -1,4 +1,4 @@
-# What's IBM Bluemix DevOps Services?
+# IBM Bluemix DevOps Services overview
 
 ###### Last updated: 14 August 2015
 
@@ -25,7 +25,7 @@ From your projects, you can access everything that you need to build all kinds o
 </div>
 
 <a id="capabilities"></a>
-<h2 style="padding-top:0px"> DevOps Services capabilities
+<h2 style="padding-top:0px"> DevOps Services capabilities </h2>
 
 * Agile planning through the Track & Plan service 
 <!-- <image of quick planner>  -->
