@@ -1,14 +1,17 @@
-#GitHub source control for Bluemix DevOps Services projects
+#Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 19 August 2015
+###### Last updated: 21 August 2015
 
-If you have source code in a GitHub repository, or plan to, you can connect it to a IBM&reg; Bluemix&trade; DevOps Services project. You can configure a Build & Deploy pipeline to automate the deployment of the source in your GitHub repo to your running app on Bluemix. You can automatically track changes between DevOps Services and GitHub by setting up a service hook on GitHub. And after you pushed, you can manually add work-item links to commits on the DevOps Services Git Log page. 
+If you have source code in a GitHub repository, or plan to, you can connect it to a IBM&reg; Bluemix&trade; DevOps Services project. You can automatically track changes between DevOps Services and GitHub by setting up a service hook on GitHub. And after you push, you can add work-item links to commits on the DevOps Services Git Log page. You can configure a Build & Deploy pipeline to automate the deployment of the source in your GitHub repo to your running app on Bluemix.
+
+For a complete GitHub reference, [see the official Git documentation](https://help.github.com/).
 
  * [Creating a DevOps Services project and a new GitHub repo](#create_project)
  * [Connecting a DevOps Services project to a GitHub repo](#existing_github)
  * [Setting up the GitHub hook](#github_hook)
  * [Testing the hook](#create_work_item)
  * [Adding a link after a change is pushed](#post_push)
+ * [Build and deploy your changes](#builddeploy)
 
 <a name='create_project'></a>
 ##Creating a DevOps Services project and a new GitHub repo
@@ -109,6 +112,11 @@ If you already pushed a change and need to link it to a work item, follow these 
 1. Select the work item and click **OK**.
 
 A link to the change set is listed on the work item's **LINKS** tab. You can review the commit details by clicking the change-set link on the work item. From there, you can view the changed files by clicking the GitHub links. ![Link to view changes in GitHub.][11]
+
+<a name='builddeploy'></a>
+##Build and deploy
+
+You can configure a Build & Deploy pipeline to automate the deployment of the source in your GitHub repo to your app on Bluemix. After your pipeline is set up, you can request your deployments manually or configure them to run automatically when you push changes to your GitHub repo. For information about setting up a pipeline, [see the Build & Deploy reference](/docs/deploy/).
 
 
 
