@@ -6,7 +6,7 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
 
  For a complete GitHub reference, [see the official Git documentation](https://help.github.com/).
 
- * [Creating a DevOps Services project and a new GitHub repo](#create_project)
+ * [Creating a DevOps Services project and a GitHub repo](#create_project)
  * [Connecting a DevOps Services project to a GitHub repo](#existing_github)
  * [Setting up the GitHub hook](#github_hook)
  * [Testing the hook](#create_work_item)
@@ -44,7 +44,7 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 <a name='github_hook'></a>
 ## Setting up the GitHub hook
 
-If you want the GitHub repo to create a link to a related work item whenever the repo receives a push. To do so, configure a service hook. The hook adds a link to a work item whenever a change is pushed to your repo and you include a work item keyword and number in the commit message. 
+If you want the GitHub repo to create a link to a related work item whenever the repo receives a push, configure a service hook. The hook adds a link to a work item whenever a change is pushed to your repo and you include a work item keyword and number in the commit message. 
 
 ### Before you begin
 
