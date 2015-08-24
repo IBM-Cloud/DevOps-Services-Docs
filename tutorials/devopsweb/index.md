@@ -1,6 +1,6 @@
 #Clone, edit, and deploy an app from Bluemix
 
-Last modified: 24 August 2015
+######Last modified: 24 August 2015
 
 Time: 60 minutes 
 
