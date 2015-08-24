@@ -1,11 +1,13 @@
 #Extending the capabilities of your Build & Deploy pipeline
 
-###### Last updated: 7 August 2015
+###### Last updated: 19 August 2015
 
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
 * [Running static code scans by using the pipeline](#scan)
 * [Globalizing strings by using the pipeline](#globalize)
+* [Creating Slack notifications for builds in the pipeline](#slack)
+* [Creating HipChat notifications for builds in the Delivery Pipeline](#hipchat)
 
 <a name="scan"></a>
 ##Running static code scans by using the pipeline
@@ -149,6 +151,157 @@ The machine translated files are placed in the same directory as the source `.pr
 After the stage is completed, you can review the translated files from the console output. You can also direct translators to the files so that they can review the machine-translation output and provide revisions to improve quality. The revisions are stored in a Cloudant™ database and take precedence over any future machine translations of the same strings.
 
 For more information about using the Globalization service from the Bluemix Dashboard, [see the Globalization service documentation][10].
+
+
+<a name="slack"></a>
+## Creating Slack notifications for builds in the pipeline
+
+You can send notifications about IBM Container Service, IBM Security Static Analyzer, and IBM Globalization build results from your Delivery Pipeline to your Slack channels.
+
+Before you begin, create or copy a Slack WebHook URL:
+
+1. Open the Slack Integration page for your project: https://_project_name_.slack.com/services
+2. In the list of integrations, locate **Incoming WebHooks** and click **Add**.
+3. Select a channel and click **Add Incoming WebHooks Integration**.
+4. Add a **WebHook URL** or copy an existing one.
+
+For more information, [see Incoming WebHooks in the Slack documentation](https://api.slack.com/incoming-webhooks).
+
+To create Slack notifications:
+
+1. In the pipeline, open the configuration for a stage.
+2. In the **ENVIRONMENT PROPERTIES** tab, click **ADD PROPERTY**.
+3. Select **Text property**.
+4. Enter the name and a value for the environment property. Repeat to create multiple environment properties.
+  
+  _Table 1. Environment properties for configuring Slack notifications_
+  
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Value</th>
+  <th>Description</th>
+  <tr/>
+  <tr>
+    <td><code>SLACK_WEBHOOK_PATH</code></td>
+    <td>A URL</td>
+    <td>Required. The WebHook URL that is saved in the settings for your Slack Project.</td>
+  </tr>
+  <tr>
+    <td><code>SLACK_COLOR</code></td>
+    <td>You can enter one of the following values:
+      <ul><li><code>good</code></li>
+      <li><code>warning</code></li>
+      <li><code>danger</code></li>
+      <li>Any hexadecimal color, such as #439FEO</li></ul></td>
+    <td>Optional. The color of the border that is displayed along the left side of the message in Slack. The default colors are green for good messages, red for bad messages, and gray for informational messages.</td>
+  </tr>
+  <tr>
+    <td><code>NOTIFY_FILTER</code></td>
+    <td>To receive only a subset of the message types, enter one of the following values:
+      <ul>
+      <li><code>good</code>: Get unknown, good and info messages only. Bad messages are not sent.</li>
+      <li><code>bad</code>: Get all messages.</li>
+      <li><code>info</code>: Get info messages only. Good, bad, and unknown messages are not sent.</li>
+      <li><code>unknown</code>: Get all messages.</li></ul>
+      Example: If you set <code>NOTIFY_FILTER = bad</code>, error notifications are only  displayed in the Slack Channel.</td>
+    <td>Optional. Decide which type of messages to send notifications for. By default, good and bad messages are sent, but not informational messages.
+      <ul><li><code>good</code>: Successful build results.</li>
+      <li><code>bad</code>: Unsuccessful build results.</li>
+      <li><code>info</code>: Informational messages about the build process.</li>
+      <li><code>unknown</code>: Unknown messages are not assigned a type.</li></ul></td>
+   </table>
+  
+5. Click **Save**.
+
+6. Repeat these steps to send Slack notifications for other stages that include IBM Container Service, IBM Security Analyzer, and IBM Globalization jobs.
+
+The build notification that is displayed in Slack includes a link to the DevOps Services project and sometimes to the project's dashboard. For a Slack user to open these links, the user must be registered with DevOps Services and be a member of the project that the pipeline is configured in.
+
+
+<a name="hipchat"></a>
+## Creating HipChat notifications for builds in the pipeline
+
+You can send notifications about IBM Container Service, IBM Security Static Analyzer, and IBM Globalization build results from your Delivery Pipeline to your HipChat rooms.
+
+Before you begin, create or copy and existing HipChat token:
+
+1. Go to you HipChat Account page for your project: https://_project_name_.hipchat.com/account/api
+2. Create a new token, or use an existing one.
+
+To create HipChat notifications:
+
+1. In the pipeline, open the configuration for a stage.
+2. In the **ENVIRONMENT PROPERTIES** tab, click **ADD PROPERTY**.
+3. Select **Text Property**.
+4. Enter the name and a value for the environment property. Repeat to create multiple environment properties.
+  
+  _Table 2. Environment Properties for configuring HipChat notifications_
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Value</th>
+  <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>HIP_CHAT_TOKEN</code></td>
+    <td>Alphanumeric String</td>
+    <td>Required. See above "Before you begin" for instructions on creating or copying an existing HipChat token.</td>
+  </tr>
+  <tr>
+    <td><code>HIP_CHAT_ROOM_NAME</code></td>
+    <td>Room name</td>
+    <td>Required.</td>
+  </tr>
+  <tr>
+    <td><code>HIP_CHAT_COLOR</code></td>
+    <td>Enter one of the following values:
+      <ul><li><code>yellow</code></li>
+      <li><code>red</code></li>
+      <li><code>green</code></li>
+      <li><code>purple</code></li>
+      <li><code>gray</code></li>
+      <li><code>random</code></li></ul>
+    </td>
+    <td>Optional: Specify the background color and the left-side border color of HipChat notifications. If you set <code>HIP_CHAT_COLOR</code>, you do not need to specify when you call the script below.
+     <p><code>-l notification_level</code></p> </td>
+  </tr>
+  <tr>
+    <td><code>NOTIFICATION_COLOR</code></td>
+    <td>Enter one of the following values:
+      <ul><li><code>good</code></li>
+      <li><code>danger</code></li>
+      <li><code>info</code></li></ul>
+    This variable applies to both HipChat and Clack notification colors. If you specify <code>NOTIFICATION_COLOR</code>, you do not need to specify <code>HIP_CHAT_COLOR</code> or <code>SLACK_COLOR</code>.</td>
+    <td>Optional: Specify the background color and the left-side border color of both HipChat and Slack notifications. If you set <code>NOTIFICATION_COLOR</code>, you do not need to specify when you call the script below.
+     <p><code>-l notification_level</code></p> </td>
+  </tr>
+  <tr>
+    <td><code>NOTIFICATION_LEVEL</code></td>
+    <td>Enter one of the following values:
+      <ul><li><code>good</code></li>
+      <li><code>info</code></li>
+      <li><code>bad</code></li></ul></td>
+    <td>Optional: Specify the notification level. See <code>NOTIFICATION_FILTER</code> for more detail on what triggers the notification.</td>
+  </tr>
+  <tr>
+    <td><code>NOTIFICATION_FILTER</code></td>
+    <td>Enter one of the following values:
+      <ul><li><code>good</code></li>
+      <li><code>info</code></li>
+      <li><code>bad</code></li></ul>
+    <td>Optional: Specify the notification filter level. Notifications are sent when the following parameters are met:
+      <ul><li><code>NOTIFICATION_FILTER = good</code> and <code>NOTIFICATION_LEVEL = bad</code>, <code>good</code>, or <code>unknown</code></li>
+      <li><code>NOTIFICATION_FILTER = info</code> and <code>NOTIFICATION_LEVEL = bad</code>, <code>good</code>, <code>info</code>, or <code>unknown</code></li>
+      <li><code>NOTIFICATION_FILTER = bad</code> and <code>NOTIFICATION_LEVEL = bad</code> or <code>unknown</code></li>
+      <li><code>NOTIFICATION_FILTER = unknown</code> and <code>NOTIFICATION_LEVEL = bad</code>, <code>good</code>, or <code>unknown</code></li></ul></td>
+    </tr>
+  </table>
+  
+5. Click **Save**.
+
+6. Repeat these steps to send HipChat notifications for other stages that include IBM Container Service, IBM Security Static Analyzer, and IBM Globalization jobs.
+
 
 [1]: https://hub.jazz.net/docs/deploy
 [2]: https://www.ng.bluemix.net/docs/containers/container_single_pipeline_ov.html#container_single_pipeline_ov

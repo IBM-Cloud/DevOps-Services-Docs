@@ -1,20 +1,29 @@
 #Test and debug a Node.js app with Bluemix Live Sync
 
-###### Last updated: 18 August 2015
+###### Last updated: 20 August 2015
 
 Testing and debugging are critical to ensure that your app performs without unexpected results. In IBM&reg; Bluemix&trade; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and make changes to your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app while having all of the benefits of deploying with Bluemix.
 
 In this tutorial, you create a launch configuration that you use to deploy a Node.js app to a test environment. You enable Live Edit mode in the Web IDE, and then debug your app. If you prefer to work from the command line, you can set up the Bluemix Live Sync command-line tool.
 
-* [Before you begin](#prereq)
-* [The run bar](#runbar)
-* [Create a launch configuration](#launch_configuration)
-* [Deploy an app to a test environment](#deploy_app)
-* [Turn on Live Edit mode](#live_edit)
-* [Debug a Node.js app](#debug)
-* [Test and debug on the command line](#local_edit)
-* [Summary](#summary)
-* [Next steps](#nextsteps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="8"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#runbar">The run bar</a></td>
+     <td><a href="#launch_configuration">Create a launch configuration</a></td>
+     <td><a href="#deploy_app">Deploy an app to a test environment</a></td>
+     <td><a href="#live_edit">Turn on Live Edit mode</a></td>
+     <td><a href="#debug">Debug a Node.js app</a></td>
+     <td><a href="#local_edit">Test and debug on the command line</a></td>
+     <td><a href="#summary">Summary</a></td>
+   </tr>
+ </table>
+</div>
+
 
 <a name='prereq'></a>
 ##Before you begin 

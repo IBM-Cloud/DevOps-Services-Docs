@@ -1,6 +1,6 @@
 #Track and plan a Bluemix DevOps Services project
 
-###### Last updated: 18 August 2015
+###### Last updated: 20 August 2015
 
 Time: 30 minutes
 
@@ -15,15 +15,23 @@ In this tutorial, you create a public, agile project that uses a Git repository.
 <!--- Commenting out until feature explorer is updated. -->
 <!--- For a quick overview of features and functions, [explore the Track & Plan feature][9]. -->
 
-* [Before you begin](#prereq)
-* [Set up a DevOps Services project](#set_up_an_IBM_devops_services_project)
-* [Create your first work items](#create_your_first_work_items)
-* [Create parent and child work items from the backlog](#create_work_items_in_the_backlog)
-* [Triage the backlog](#triage_the_backlog)
-* [Plan Sprint 1](#plan_sprint_1)
-* [Work through the sprint](#work_through_the_sprint)
-* [Summary](#summary)
-* [Next steps](#nextsteps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="8"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#set_up_an_IBM_devops_services_project">Set up a project</a></td>
+     <td><a href="#create_your_first_work_items">Create your first work items</a></td>
+     <td><a href="#create_work_items_in_the_backlog">Create parent and child work items</a></td>
+     <td><a href="#triage_the_backlog">Triage the backlog</a></td>
+     <td><a href="#plan_sprint_1">Plan Sprint 1</a></td>
+     <td><a href="#work_through_the_sprint">Work through the sprint</a></td>
+     <td><a href="#summary">Summary</a></td>
+   </tr>
+ </table>
+</div>
 
 <a name='prereq'></a>
 ##Before you begin
