@@ -34,7 +34,7 @@ IBM DevOps Services has a new name: IBM Bluemix DevOps Services. This change cor
 
 ##### How much does it cost?
 
-[Get pricing information](/learn/cost).
+[Get pricing information](https://console.ng.bluemix.net/pricing/).
 
 <a name="q17"></a>
 
