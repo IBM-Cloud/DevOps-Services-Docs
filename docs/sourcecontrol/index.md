@@ -29,5 +29,5 @@ If you want to store your source code in a Git repo, create your DevOps Services
 
 <a name='jazzscm'></a>
 ## Jazz SCM
-Jazz SCM works well with Eclipse and IBM Rational Team Concert&trade;. For information about using Jazz SCM hosted on Bluemix, [see Setting up local Eclipse clients to work with Jazz SCM](/docs/jazz_scm_client).
+Jazz SCM works well with Eclipse and IBM Rational Team Concert&trade;. For information about using a Jazz SCM repo that is hosted on Bluemix, [see Setting up local Eclipse clients to work with Jazz SCM](/docs/jazz_scm_client).
 
