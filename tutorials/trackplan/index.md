@@ -47,7 +47,6 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 		</a>
    </div>
 </div> 
-
 You can use the Track & Plan feature with all of your public DevOps Services projects at no cost. If you use the feature with private projects, a fee might apply. For more details, [see the Pricing page][22].
 
 <a name='set_up_an_IBM_devops_services_project'></a>
