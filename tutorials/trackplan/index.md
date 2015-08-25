@@ -46,7 +46,8 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 			</div>
 		</a>&nbsp;
    </div>
-</div> 
+</div>
+<h5> </h5>
 
 You can use the Track & Plan feature with all of your public DevOps Services projects at no cost. If you use the feature with private projects, a fee might apply. For more details, [see the Pricing page][22].
 
