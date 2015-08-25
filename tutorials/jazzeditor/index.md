@@ -44,8 +44,7 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 		</a>
    </div>
 </div>
-
- <a name='create_bluemix_app'></a>
+<a name='create_bluemix_app'></a>
 ##Create an app in Bluemix
 
 1. Sign in to Bluemix. The Dashboard opens:
