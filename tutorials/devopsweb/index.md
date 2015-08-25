@@ -42,7 +42,6 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 		</a>
    </div>
 </div>
-
 <a name='fork'></a>
 ## Explore and clone the sample project
 
