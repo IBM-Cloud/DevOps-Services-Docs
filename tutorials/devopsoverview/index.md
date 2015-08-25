@@ -34,16 +34,13 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
 			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
 			</div>
-		</a>&nbsp;
+		</a>
    </div>
 </div>
-
 <!-- Adam's video starts on the Bluemix Dashboard. If you haven't signed up for DevOps Services or Bluemix yet, here are some pointers.-->
-
 <!-- <img  class="inline" src="images/key_info.png" alt="Key information icon">  On the Bluemix website, you can find the [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview) to help you better understand the Bluemix platform. -->
-
 <a name='start'></a>
-## Get started
+##Get started
 
 Create a sample app, add a Git repository for source control, edit in Live Edit mode, and deploy to Bluemix. This section of the tutorial corresponds to Part 1 of the related video.
  

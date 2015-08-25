@@ -38,10 +38,9 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
 			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
 			</div>
-		</a>&nbsp;
+		</a>
    </div>
 </div>
-
 <a name='create_bluemix_app'></a>
 ##Create an app in Bluemix
 
