@@ -44,10 +44,9 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
 			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
 			</div>
-		</a>&nbsp;
+		</a>
    </div>
 </div> 
-
 You can use the Track & Plan feature with all of your public DevOps Services projects at no cost. If you use the feature with private projects, a fee might apply. For more details, [see the Pricing page][22].
 
 <a name='set_up_an_IBM_devops_services_project'></a>
