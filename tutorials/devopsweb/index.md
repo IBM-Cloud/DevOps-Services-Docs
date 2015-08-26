@@ -1,6 +1,6 @@
 #Clone, edit, and deploy an app from Bluemix
 
-Last modified: 30 July 2015
+######Last modified: 24 August 2015
 
 Time: 60 minutes 
 
@@ -10,25 +10,38 @@ In your project, you plan your work in the Track & Plan feature. If you've used 
 
 When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you create jobs to build and deploy your app by using the Build & Deploy feature (the pipeline). 
 
-* [Before you begin](#prereq)
-* [Explore and clone the sample project](#fork)
-* [Plan a change to your project](#plan_change)
-* [Modify your project's code](#modify_code)
-* [Push your change to the project repository](#push_changes)
-* [Explore builds and deployments](#build_deploy)
-* [Deploy the app and verify your change](#deploy_app)
-* [Complete the work item](#work_item)
-* [Summary](#summary)
-* [Next steps](#next_steps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="8"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#fork">Explore and clone the sample project</a></td>
+     <td><a href="#plan_change">Plan a change to your project</a></td>
+     <td><a href="#modify_code">Modify your project&#39;s code</a></td>
+     <td><a href="#push_changes">Push your change to the project repository</a></td>
+     <td><a href="#build_deploy">Explore builds and deployments</a></td>
+     <td><a href="#deploy_app">Deploy the app and verify your changes</a></td>
+     <td><a href="#work_item">Complete the work item</a></td>
+   </tr>
+ </table>
+</div>
 
 <a name='prereq'></a>
 ## Before you begin
 
-Are you new to DevOps Services? If you're not quite sure what you can do with it, [get a quick overview before you start this tutorial](https://hub.jazz.net/docs/overview/).
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
 
-If you haven't already registered for DevOps Services, [sign up](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
-
-
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>
+   </div>
+</div>
 <a name='fork'></a>
 ## Explore and clone the sample project
 

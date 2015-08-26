@@ -36,7 +36,7 @@ In a sample project that you fork to your space, create a pipeline that you can 
 </div></div>
 
 
-### For more tutorials, visit <a href="https://developer.ibm.com/bluemix/docs/"><img style="display: inline; margin: 0px; border-style: none; margin-bottom: 2px;" src="images/bluemix-developers-community.png"></a>.
+### For more tutorials, visit <a href="https://developer.ibm.com/bluemix/docs/"><img style="display: inline; margin: 0px; border-style: none; margin-bottom: 2px;" src="images/bluemix-developers-community.png"></a>
 
 
 

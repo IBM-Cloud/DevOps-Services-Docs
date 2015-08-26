@@ -8,6 +8,7 @@ ____
 -   [How much does it cost?](#q2)
 -   [What help resources are available?](#q17)
 -   [Why can't I accept an invitation?](#invite)
+-   [How do I change the email address of the DevOps Services account that is associated with my IBM id? ](#changeemail)
 -   [Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client?](#rtcgit)
 -   [Can I connect my project to a GitHub repository?](#git)
 -   [Can I remove DevOps Services access from my GitHub account?](#github_revoke)
@@ -34,7 +35,7 @@ IBM DevOps Services has a new name: IBM Bluemix DevOps Services. This change cor
 
 ##### How much does it cost?
 
-[Get pricing information](/learn/cost).
+[Get pricing information](https://console.ng.bluemix.net/pricing/).
 
 <a name="q17"></a>
 
@@ -53,6 +54,15 @@ If you try to accept a project invitation but get a message that states `A probl
    * [Bluemix DevOps Services profile](https://hub.jazz.net/account/profile): On the left, click **PERSONAL INFORMATION**, and then check the value in the **Email** field.
 
 - You are logged in to DevOps Services as a user who has a different email address. To fix this issue, log out and log back in as the user who the invitation was sent to. 
+
+<a name="changeemail"></a>
+
+##### How do I change the email address of the DevOps Services account that is associated with my IBM id?
+
+1. Go to your [DevOps Services profile](https://hub.jazz.net/account/profile). 
+2. On the left, click **PERSONAL INFORMATION**, and then update your email address.
+
+
 <a name="rtcgit"></a>
 
 ##### Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client? 

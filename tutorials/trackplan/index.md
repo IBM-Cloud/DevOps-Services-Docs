@@ -1,6 +1,6 @@
 #Track and plan a Bluemix DevOps Services project
 
-###### Last updated: 18 August 2015
+###### Last updated: 24 August 2015
 
 Time: 30 minutes
 
@@ -15,20 +15,39 @@ In this tutorial, you create a public, agile project that uses a Git repository.
 <!--- Commenting out until feature explorer is updated. -->
 <!--- For a quick overview of features and functions, [explore the Track & Plan feature][9]. -->
 
-* [Before you begin](#prereq)
-* [Set up a DevOps Services project](#set_up_an_IBM_devops_services_project)
-* [Create your first work items](#create_your_first_work_items)
-* [Create parent and child work items from the backlog](#create_work_items_in_the_backlog)
-* [Triage the backlog](#triage_the_backlog)
-* [Plan Sprint 1](#plan_sprint_1)
-* [Work through the sprint](#work_through_the_sprint)
-* [Summary](#summary)
-* [Next steps](#nextsteps)
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="8"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#set_up_an_IBM_devops_services_project">Set up a project</a></td>
+     <td><a href="#create_your_first_work_items">Create your first work items</a></td>
+     <td><a href="#create_work_items_in_the_backlog">Create parent and child work items</a></td>
+     <td><a href="#triage_the_backlog">Triage the backlog</a></td>
+     <td><a href="#plan_sprint_1">Plan Sprint 1</a></td>
+     <td><a href="#work_through_the_sprint">Work through the sprint</a></td>
+     <td><a href="#summary">Summary</a></td>
+   </tr>
+ </table>
+</div>
 
 <a name='prereq'></a>
 ##Before you begin
  
-[Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with IBM&reg; Bluemix&trade;. 
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
+
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>
+   </div>
+</div>
+<h5> </h5>
 
 You can use the Track & Plan feature with all of your public DevOps Services projects at no cost. If you use the feature with private projects, a fee might apply. For more details, [see the Pricing page][22].
 
