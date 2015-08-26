@@ -35,7 +35,9 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 			</div>
 		</a>
    </div>
-</div> 
+</div>
+<h5> </h5>
+
 If you want to use the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service) beyond the free monthly build time, add the service to your Bluemix space:  
 
    a. [Open the Bluemix Catalog](https://console.ng.bluemix.net/?ace_base=true/#/store/cloudOEPaneId=store). From the **Category** list, select **DevOps**.

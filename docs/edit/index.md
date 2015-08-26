@@ -10,12 +10,12 @@ Best of all, the Web IDE is powered by the web.  You have nothing to install, no
 * [Editing code](#editcode)
 * [Source control](#sourcecontrol)
 * [Deploying an app from your workspace](#deploy)
-* [Use command line Shell](#shell)
+* [The command line shell](#shell)
 * [Editing outside of the Web IDE](#editlocal)
 
 
 <a name='editorsetup'></a>
-###Setting up the editor
+##Setting up the editor
 
 The configuration of a code editor can be personal.  The Web IDE is customizable so that you can choose the color schemes, technical tools, and settings that meet your development needs.
 
@@ -45,7 +45,7 @@ By default, the settings for the editor style and font size are always shown.  T
 
 
 <a name='editcode'></a>
-###Editing code
+##Editing code
 
 The Web IDE has two main sections.  The first section is the file navigator on the left, which shows your project files in a tree structure.  From the file navigator, you can create, rename, delete, and otherwise manage your files and folders.
 
@@ -55,7 +55,7 @@ The second section is the editor pane on the right.  The editor provides several
 
 ![Web IDE](images/webide.png)
 
-####Working with multiple files
+###Working with multiple files
 1. To work with two files at the same time, click the **split editor mode** icon <img class="inline" src="./images/split_editor_icon.png"  alt="Split Editor icon"> at the top of the editor.
 2. From the menu that opens, select a view.
 
@@ -65,7 +65,7 @@ The second section is the editor pane on the right.  The editor provides several
  1. Move the cursor to the editor view that you want to change.
  2. In the file navigator, click a file.
 
-####Keyboard shortcuts
+###Keyboard shortcuts
 Most of the commands in the Web IDE are accessible only through keyboard shortcuts.
 
 To see a list of the keyboard shortcuts in the editor:
@@ -75,14 +75,14 @@ To see a list of the keyboard shortcuts in the editor:
 Outside of the editor, you can get help on any page by pressing `Shift+?`.
 
 <a name='sourcecontrol'></a>
-###Source control
+##Source control
 You can access integrated source code management tools from the Web IDE.
 * If your project is sourced in Git, click the **Git Repository** icon <img class="inline" src="./images/git_icon.png"  alt="The Git Repository icon">.  For more information, see [Source control with Git](../git/)
 * If your project is sourced in Jazz, click the **Jazz** icon <img class="inline" src="./images/jazz_icon.png"  alt="The Jazz icon">.  For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/)
 
 
 <a name='deploy'></a>
-###Deploying an app from your workspace
+##Deploying an app from your workspace
 
 1. To deploy your app, either select a launch configuration from the run bar or [create a launch configuration](https://hub.jazz.net/tutorials/livesync/#launch_configuration)
 1. Click the deploy icon <img class="inline" src="./images/deploy_button.png"  alt="The deploy icon">.  An instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration. 
@@ -99,8 +99,8 @@ You can access integrated source code management tools from the Web IDE.
 
 
  
-<a namee='shell'></a>
-###The command-line shell
+<a name='shell'></a>
+##The command-line shell
 If you like working from a command-line shell, click the **Shell** icon <img  class="inline" src="./images/shell_icon.png"  alt="The shell icon">.  You can work in these ways:
 * Interact with Cloud Foundry compatible targets
 * Edit files in your project's directory
@@ -109,12 +109,13 @@ If you like working from a command-line shell, click the **Shell** icon <img  cl
 
 
 <a name='editlocal'></a>
-###Editing outside of the Web IDE
+##Editing outside of the Web IDE
 
 If you have a favorite code editor and don't want to use the Web IDE, you can use Bluemix Live Sync. Bluemix Live Sync is a command-line application that synchronizes the changes in your local file system with your cloud workspace in IBM Bluemix DevOps Services.  Bluemix Live Sync makes it possible for you to work directly with your project files by using any tool.
 
-**Before you begin**: [Download and install the Bluemix Live Sync command-line interface](http://livesyncdownload.ng.bluemix.net).
+###Before you begin 
 
+[Download and install the Bluemix Live Sync command-line interface](http://livesyncdownload.ng.bluemix.net).
 
 <a name='edit_local_download'></a>
 ###Synchronizing your local environment with Bluemix
