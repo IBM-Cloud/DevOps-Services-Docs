@@ -57,10 +57,10 @@ If you try to accept a project invitation but get a message that states `A probl
 
 <a name="changeemail"></a>
 
-##### I have a new email address. How do I change the email address of the DevOps Services account that is associated with my IBM id?
+##### How do I change the email address of the DevOps Services account that is associated with my IBM id?
 
 1. Go to your [DevOps Services profile](https://hub.jazz.net/account/profile). 
-2. On the left, click **PERSONAL INFORMATION**, and then change the value in the **Email** field.
+2. On the left, click **PERSONAL INFORMATION**, and then update your email address.
 
 
 <a name="rtcgit"></a>
