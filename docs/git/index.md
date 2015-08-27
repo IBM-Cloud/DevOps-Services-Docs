@@ -1,10 +1,10 @@
 #Git source control 
 
-###### Last updated: 18 August 2015
+###### Last updated: 27 August 2015
 
-If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
+If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. You can also use GitHub source control with DevOps Services projects. If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
-For a complete Git reference, [see the official Git documentation][6].
+For information about using a GitHub repo, [see Setting up GitHub for DevOps Services projects][8]. For a complete Git reference, [see the official Git documentation][6].
 
 To access Git commands from the Web IDE, click the **Git Repository** icon <img class="inline" src="./images/gitrepository.png" alt="Git Respository icon">.
 
@@ -537,4 +537,4 @@ Only project owners can delete branches from origin.
 [5]: #start_working_on_a_local_branch
 [6]: http://git-scm.com/docs
 [7]: ../githubhooks/#github_hook
-
+[8]: ../githubhooks/
