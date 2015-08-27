@@ -1,4 +1,4 @@
-# FAQs
+# FAQ
 ##### Last updated: 27 August 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
