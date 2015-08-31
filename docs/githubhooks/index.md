@@ -113,7 +113,8 @@ If the link isn't working as expected, follow these steps to find the problem:
 ![GitHub web hooks and services link.][5]
 1. To view the message, hover over the IBM Bluemix DevOps Services status icon.
 ![Error message on service hook.][14]
-1. Resolve the error according to the GitHub message.
+1. Resolve the error according to the GitHub message and verify that there are no errors by checking the status icon again.
+![Status icon without errors.][15]
 
 <a name='post_push'></a>
 ##Adding a link after a change is pushed
@@ -147,5 +148,5 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 [12]: images/gitlogcommit1.png
 [13]: images/viewingithub.png
 [14]: images/troubleshoothook.png
-[15]: images/gith
+[15]: images/githubResolved.png
 
