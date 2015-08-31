@@ -147,6 +147,6 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 [11]: images/githublink.png
 [12]: images/gitlogcommit1.png
 [13]: images/viewingithub.png
-[14]: images/troubleshoothook.png
+[14]: images/troubleshoothook1.png
 [15]: images/githubResolved.png
 
