@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 31 August 2015
+###### Last updated: 01 September 2015
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
@@ -113,7 +113,12 @@ If the link isn't working as expected, follow these steps to find the problem:
 ![GitHub web hooks and services link.][5]
 1. To view the message, hover over the IBM Bluemix DevOps Services status icon.
 ![Error message on service hook.][14]
-1. Resolve the error according to the GitHub message and verify that there are no errors by checking the status icon again.
+1. Resolve the error according to the GitHub message. 
+1. To verify that the fix worked, choose one of the following options:
+   a. Commit and push another change.
+   b. From the service page for IBM Bluemix DevOps Services, click **Test service**.
+   ![GitHub Test service button][16]
+1. Verify that there are no errors by checking the status icon again.
 ![Status icon without errors.][15]
 
 <a name='post_push'></a>
@@ -149,4 +154,5 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 [13]: images/viewingithub.png
 [14]: images/troubleshoothook1.png
 [15]: images/githubResolved.png
+[16]: images/githubTestService.png
 
