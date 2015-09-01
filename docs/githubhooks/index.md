@@ -114,10 +114,8 @@ If the link isn't working as expected, follow these steps to find the problem:
 1. To view the message, hover over the IBM Bluemix DevOps Services status icon.
 ![Error message on service hook.][14]
 1. Resolve the error according to the GitHub message.      
-1. To verify that the fix worked, choose one of the following options:
-   a. Commit and push another change.     
-   b. From the service page for IBM Bluemix DevOps Services, click **Test service**.
-   ![GitHub Test service button][16]
+1. To verify that the fix worked, commit and push another change or from the service page for IBM Bluemix DevOps Services, click **Test service**.
+![GitHub Test service button][16]
 1. Verify that there are no errors by checking the status icon again.
 ![Status icon without errors.][15]
 
