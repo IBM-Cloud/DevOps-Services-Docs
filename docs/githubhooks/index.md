@@ -55,7 +55,7 @@ The IBM Bluemix DevOps Services hook replaces the RationalJazzHub hook. If you c
 
 1. In your GitHub repo, on the right, click **Settings**.
 ![GitHub settings link.][4]
-2. Click **Webhooks & Services**.
+2. Click **Webhooks & services**.
 ![GitHub web hooks and services link.][5]
 3. Click **Add service**, and from the **Available Services** list, select **IBM Bluemix DevOps Services**.
 4. Type your IBM id and password.
@@ -109,13 +109,13 @@ You can use these keywords for hooks:
 If the link isn't working as expected, follow these steps to find the problem:
 1. In your GitHub repo, on the right, click **Settings**.
 ![GitHub settings link.][4]
-1. Click **Webhooks & Services**.
+1. Click **Webhooks & services**.
 ![GitHub web hooks and services link.][5]
 1. To view the message, hover over the IBM Bluemix DevOps Services status icon.
 ![Error message on service hook.][14]
-1. Resolve the error according to the GitHub message. 
+1. Resolve the error according to the GitHub message.      
 1. To verify that the fix worked, choose one of the following options:
-   a. Commit and push another change.
+   a. Commit and push another change.     
    b. From the service page for IBM Bluemix DevOps Services, click **Test service**.
    ![GitHub Test service button][16]
 1. Verify that there are no errors by checking the status icon again.
