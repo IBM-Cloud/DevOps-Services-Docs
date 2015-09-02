@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 27 August 2015
+##### Last updated: 02 September 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -12,6 +12,7 @@ ____
 -   [Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client?](#rtcgit)
 -   [Can I connect my project to a GitHub repository?](#git)
 -   [Can I remove DevOps Services access from my GitHub account?](#github_revoke)
+-   [How can I troubleshoot errors in my GitHub service hooks?](#github_trouble)
 -   [Why can't I use the Add Git link from the Bluemix console?](#git_link)
 -   [Which Git data transfer protocols does DevOps Services support?](#protocols)
 -   [My team doesn't develop code. Is DevOps Services right for us?](#q5)
@@ -105,11 +106,31 @@ To remove DevOps Services access to your GitHub account:
 
 The next time you create a DevOps Services project that uses a GitHub repository, you are prompted to authorize with GitHub. Before you can authorize your DevOps Services project, you must be logged in to the GitHub account that you want to use.
 
+<a name="github_trouble"></a>
+### How can I troubleshoot errors in my GitHub service hooks?
+
+If you configured your GitHub project to create work item links when you push commits and the links aren't working as expected, follow these steps to find the problem:
+
+1. In your GitHub repo, on the right, click **Settings**.
+![GitHub settings link.][2]
+1. Click **Webhooks & services**.
+![GitHub web hooks and services link.][3]
+1. To view the message, hover over the IBM Bluemix DevOps Services status icon.
+![Error message on service hook.][4]
+1. Resolve the error according to the GitHub message.      
+1. To verify that the fix worked, commit and push another change or from the service page for IBM Bluemix DevOps Services, click **Test service**.
+![GitHub Test service button][5]
+1. Verify that there are no errors by checking the status icon again.
+![Status icon without errors.][6]
+
+For information, see [Setting up GitHub for Bluemix DevOps Services projects](/docs/githubhooks).
+
 <a name="git_link"></a>
 
 ### Why can't I use the ADD GIT link from the Bluemix console?
 
 See [Cannot add Git repository](https://www.ng.bluemix.net/docs/#troubleshoot/index-gentopic4.html#cannot_addgit).
+
 
 <a name="protocols"></a>
 
@@ -180,5 +201,10 @@ DevOps Services supports the latest version of these browsers:
 * Safari
 
 [1]: /docs/faq/images/toprightnav.gif
+[2]: images/githubSettings1.png
+[3]: images/githubHooks1.png
+[4]: images/troubleshoothook1.png
+[5]: images/githubTestService.png
+[6]: images/githubResolved.png
 
 
