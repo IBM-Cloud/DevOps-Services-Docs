@@ -118,12 +118,12 @@ If you configured your GitHub project to create work item links when you push co
 1. To view the message, hover over the IBM Bluemix DevOps Services status icon.
 ![Error message on service hook.][4]
 1. Resolve the error according to the GitHub message.      
-1. To verify that the fix worked, commit and push another change or from the service page for IBM Bluemix DevOps Services, click **Test service**.
+1. To verify that the fix worked, commit and push another change, or go to the service page for IBM Bluemix DevOps Services and click **Test service**.
 ![GitHub Test service button][5]
 1. Verify that there are no errors by checking the status icon again.
 ![Status icon without errors.][6]
 
-For information, see [Setting up GitHub for Bluemix DevOps Services projects](/docs/githubhooks).
+For more information, see [Setting up GitHub for Bluemix DevOps Services projects](/docs/githubhooks).
 
 <a name="git_link"></a>
 
