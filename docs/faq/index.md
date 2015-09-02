@@ -201,10 +201,10 @@ DevOps Services supports the latest version of these browsers:
 * Safari
 
 [1]: /docs/faq/images/toprightnav.gif
-[2]: images/githubSettings1.png
-[3]: images/githubHooks1.png
-[4]: images/troubleshoothook1.png
-[5]: images/githubTestService.png
-[6]: images/githubResolved.png
+[2]: images/githubSettings1_small.png
+[3]: images/githubHooks1_small.png
+[4]: images/troubleshoothook1_small.png
+[5]: images/githubTestService_small.png
+[6]: images/githubResolved_small.png
 
 
