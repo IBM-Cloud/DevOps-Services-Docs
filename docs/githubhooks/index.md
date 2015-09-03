@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 01 September 2015
+###### Last updated: 02 September 2015
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
@@ -10,7 +10,6 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
  * [Connecting a DevOps Services project to a GitHub repo](#existing_github)
  * [Setting up the GitHub hook](#github_hook)
  * [Testing the hook](#create_work_item)
- * [Troubleshooting the hook](#troubleshoot)
  * [Adding a link after a change is pushed](#post_push)
  * [Building the source from your repo and deploying to Bluemix](#builddeploy)
 
@@ -101,23 +100,9 @@ You can use these keywords for hooks:
 10. To view the changed file in GitHub, click **View in GitHub**.   
 ![View in GitHub link.][13]   
 11. View the changes in GitHub.
-![Changed file in GitHub.][10]
+![Changed file in GitHub.][10]    
 
-<a name='troubleshoot'></a>
-##Troubleshooting the hook
-
-If the link isn't working as expected, follow these steps to find the problem:
-1. In your GitHub repo, on the right, click **Settings**.
-![GitHub settings link.][4]
-1. Click **Webhooks & services**.
-![GitHub web hooks and services link.][5]
-1. To view the message, hover over the IBM Bluemix DevOps Services status icon.
-![Error message on service hook.][14]
-1. Resolve the error according to the GitHub message.      
-1. To verify that the fix worked, commit and push another change or from the service page for IBM Bluemix DevOps Services, click **Test service**.
-![GitHub Test service button][16]
-1. Verify that there are no errors by checking the status icon again.
-![Status icon without errors.][15]
+If your link isn't working as expected, [troubleshoot the hook][14].
 
 <a name='post_push'></a>
 ##Adding a link after a change is pushed
@@ -150,7 +135,6 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 [11]: images/githublink.png
 [12]: images/gitlogcommit1.png
 [13]: images/viewingithub.png
-[14]: images/troubleshoothook1.png
-[15]: images/githubResolved.png
-[16]: images/githubTestService.png
+[14]: /docs/faq/#github_trouble
+
 
