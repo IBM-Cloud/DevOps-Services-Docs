@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 02 September 2015
+##### Last updated: 03 September 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -12,7 +12,7 @@ ____
 -   [Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client?](#rtcgit)
 -   [Can I connect my project to a GitHub repository?](#git)
 -   [Can I remove DevOps Services access from my GitHub account?](#github_revoke)
--   [How can I troubleshoot errors in my GitHub service hooks?](#github_trouble)
+-   [I set up a GitHub hook for my project, but it isn't working. What can I do?](#github_trouble)
 -   [Why can't I use the Add Git link from the Bluemix console?](#git_link)
 -   [Which Git data transfer protocols does DevOps Services support?](#protocols)
 -   [My team doesn't develop code. Is DevOps Services right for us?](#q5)
@@ -107,9 +107,9 @@ To remove DevOps Services access to your GitHub account:
 The next time you create a DevOps Services project that uses a GitHub repository, you are prompted to authorize with GitHub. Before you can authorize your DevOps Services project, you must be logged in to the GitHub account that you want to use.
 
 <a name="github_trouble"></a>
-### How can I troubleshoot errors in my GitHub service hooks?
+### I set up a GitHub hook for my project, but it isn't working. What can I do?
 
-If you configured your GitHub project to create work item links when you push commits and the links aren't working as expected, follow these steps to find the problem:
+If you configured your GitHub project to create work-item links when you push commits and the links aren't working as expected, follow these steps to find the problem:
 
 1. In your GitHub repo, on the right, click **Settings**.
 ![GitHub settings link.][2]
