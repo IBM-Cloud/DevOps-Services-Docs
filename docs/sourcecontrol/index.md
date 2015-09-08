@@ -1,6 +1,6 @@
 # Source control in Bluemix DevOps Services
 
-###### Last updated: 27 August 2015
+###### Last updated: 02 September 2015
 
 For your project's repository, you can choose one of three source control systems: a GitHub repo, a Git repo that is hosted on IBM&reg; Bluemix&trade;, or a Jazz source control management (SCM) repo that is hosted on Bluemix. You select a source control system when you create your project. 
 * [GitHub](#github)
@@ -19,9 +19,11 @@ If you want to store your code in a GitHub repo, you must have a GitHub account 
 <a name='hostedgit'></a>
 ## Git
 
-You can create a Git repo that is hosted on Bluemix or you can use a local Git repo. The repo can be public or private. You control access to it by adding members to your DevOps Services project.
+You can create a public or private Git repo that is hosted on Bluemix. You control access to the repo by adding members to your DevOps Services project.
 
-If you want to store your source code in a Git repo, create your DevOps Services project and then force push your local repo to the new hosted repo. For more information, see these topics:
+If you want to store your source code in a hosted Git repo and you already have a local Git repo, create your DevOps Services project and then force push your local repo to the new hosted repo. 
+
+For more information about using Git with DevOps Services projects, see these topics:
 
 * [Setting up local clients to work with Git source control](/docs/gitclient)
 * [Git source control](/docs/git)
