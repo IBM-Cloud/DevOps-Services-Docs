@@ -64,9 +64,9 @@ If you want to use only the traditional planning feature, which uses tasks and i
  **Note:** To work with existing code stored in a GitHub repo, `git clone` the repo to a local directory.
 
 4. Log in to Bluemix with your IBM id and password:
-```
-bl login
-```
+ ```
+ bl login
+ ```
 
 5. Type `bl create` to get started. You will be prompted for all required information.  Alternatively, create your project using all default options by appending the `-q` option to the `bl create` command.
 
