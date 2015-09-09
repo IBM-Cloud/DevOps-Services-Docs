@@ -68,7 +68,7 @@ If you want to use only the traditional planning feature, which uses tasks and i
 bl login
 ```
 
-5. Enter `bl create`. You will be prompted for all required information.  Alternatively, type `bl create -q` to get started using default settings.
+5. Type `bl create` to get started. You will be prompted for all required information.  Alternatively, create your project using all default options by appending the `-q` option to the `bl create` command.
 
   If you are creating a new project from scratch or from existing code that is local to your machine, select a repository location.
   * Type `1` to create a hosted Git repository on DevOps Services.
