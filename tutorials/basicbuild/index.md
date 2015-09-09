@@ -1,6 +1,6 @@
-#Deploy an app from a basic pipeline in Bluemix DevOps Services
+#Set up a pipeline and deploy an app
 
-###### Last updated: 24 August 2015
+###### Last updated: 9 September 2015
 
 Time: 30 minutes
 
