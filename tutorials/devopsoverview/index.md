@@ -1,6 +1,6 @@
-#Get started: Create, edit, and deploy an app from Bluemix
+#Get started: Create, edit, and deploy an app
 
-######Last modified: 24 August 2015
+######Last modified: 9 September 2015
 
 Time: 30 minutes
 
