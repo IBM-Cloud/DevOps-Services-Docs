@@ -71,15 +71,15 @@ bl login
 5. Enter `bl create`. You will be prompted for all required information.  Alternatively, type `bl create -q` to get started using default settings.
 
   If you are creating a new project from scratch or from existing code that is local to your machine, select a repository location.
-  * To create a hosted repository, type `1` to create a Git repository on DevOps Services.  
-  * If you have a GitHub account and would prefer to host your code there, type `2` to create a new GitHub repo.  You will be prompted to authorize your GitHub account with the IBM Bluemix Live Sync command line interface.
-  * If you have a GitHub Enterprise account and would prefer to host your code there, type `3` to create a new GitHub Enterprise repo.  You will be prompted to authorize your GitHub Enterprise account with the IBM Bluemix Live Sync command line interface.
+  * Type `1` to create a hosted Git repository on DevOps Services.
+  * Type `2` to create a new GitHub repo to host your code.  You will be prompted to authorize your GitHub account with the bl command line interface.
+  * Type `3` to create a new GitHub Enterprise repo to host your code.  You will be prompted to authorize your GitHub Enterprise account with the bl command line interface.
 
  If you are creating a new project but have code in an existing GitHub repo, you will be prompted to authenticate with your GitHub username and password.
  
-After you have chosen all of your options, Bluemix Live Sync command line interface will automatically create a new IBM DevOps Project, set up and populate the repo that you selected, and deploy the code to Bluemix.
+After you have defined all of your project details, Bluemix Live Sync command line interface will automatically create a new IBM DevOps Project, set up and populate the repo that you selected, and deploy the code to Bluemix.
 
-For additional information about the bl command-line, see [bl commands](https://www.ng.bluemix.net/docs/cli/bl_cli.html)
+For additional information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/cli/bl_cli.html)
 
 
 <a name='forking_a_devops_services_project'></a>
