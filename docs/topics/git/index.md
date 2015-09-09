@@ -6,10 +6,10 @@
 ### Reference: [Setting up local clients to work with Git source control](/docs/gitclient)
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  git
 
-### Tutorial: [Develop a Node.js app from Bluemix](/tutorials/jazzeditor)  
+### Tutorial: [Develop and deploy a Node.js app](/tutorials/jazzeditor)  
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, git, webide, pipeline, cloud_foundry
 
-### Tutorial: [Develop a Java app from Bluemix](/tutorials/jazzeditorjava)  
+### Tutorial: [Develop and deploy a Java app](/tutorials/jazzeditorjava)  
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, java, git, webide, pipeline
 
 
