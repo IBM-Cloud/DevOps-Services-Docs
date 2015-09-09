@@ -1,6 +1,6 @@
 # Node.js
 
-### Tutorial: [Develop a Node.js app from Bluemix](/tutorials/jazzeditor)  
+### Tutorial: [Develop a Node.js app](/tutorials/jazzeditor)  
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, git, web_ide, pipeline, cloud_foundry
 
 ### Article: [Develop a public transportation system simulator with Node.js and the dashDB service](http://www.ibm.com/developerworks/analytics/library/ba-bluemix-pub-transport/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
