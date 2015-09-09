@@ -1,10 +1,10 @@
 #Git source control 
 
-###### Last updated: 18 August 2015
+###### Last updated: 02 September 2015
 
-If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. If you work on a local workstation, you can use Git terminal commands to edit the contents of your hosted repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
+If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. You can also use GitHub source control with DevOps Services projects. If you work on a local workstation, you can use Git terminal commands to edit the contents of your Git repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
-For a complete Git reference, [see the official Git documentation][6].
+For information about using a GitHub repo, [see Setting up GitHub for DevOps Services projects][8]. For a complete Git reference, [see the official Git documentation][6].
 
 To access Git commands from the Web IDE, click the **Git Repository** icon <img class="inline" src="./images/gitrepository.png" alt="Git Respository icon">.
 
@@ -53,7 +53,7 @@ No matter where you code, you can use this quick reference to do common tasks.
 ### Set up a local Git repo
 
 #### DevOps Services Web IDE
-When you use a hosted Git repo with your DevOps Services project, you work with both your local and remote repos through the Web IDE.
+When you use a Git repo with your DevOps Services project, you work with both your local and remote repos through the Web IDE.
 
 1. Click **EDIT CODE** <img class="inline" src="./images/editcode.gif" alt="Edit code button"> and start coding!
 
@@ -122,7 +122,7 @@ If you have a DevOps Services project with an initialized Git repo and you want 
 <a name="integrate_local_commits_in_the_web_IDE"></a>
 ###Integrate local commits in the Web IDE
 
-When you work in the Web IDE, both your local and remote repos are hosted on the cloud. To view the  changes that you made in a local repo that is stored outside of DevOps Services, you must sync to your remote repo.
+When you work in the Web IDE, both your local and remote repos are hosted on the cloud. To view the changes that you made in a local repo that is stored outside of DevOps Services, you must sync to your remote repo.
 
 1. Click **SYNC**. Sync combines the fetch, rebase, and push commands.
 
@@ -537,4 +537,4 @@ Only project owners can delete branches from origin.
 [5]: #start_working_on_a_local_branch
 [6]: http://git-scm.com/docs
 [7]: ../githubhooks/#github_hook
-
+[8]: ../githubhooks/

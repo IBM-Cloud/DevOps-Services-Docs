@@ -1,6 +1,6 @@
 #Get started: Create, edit, and deploy an app from Bluemix
 
-Last modified: 18 August 2015
+######Last modified: 24 August 2015
 
 Time: 30 minutes
 
@@ -26,14 +26,21 @@ Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, a
 <a name='prereq'></a>
 ##Before you begin
 
-Adam's video starts on the Bluemix Dashboard. If you haven't signed up for DevOps Services or Bluemix yet, here are some pointers.
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
 
-[Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
-
-<img  class="inline" src="images/key_info.png" alt="Key information icon">  On the Bluemix website, you can find the [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview) to help you better understand the Bluemix platform.
-
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>
+   </div>
+</div>
+<!-- Adam's video starts on the Bluemix Dashboard. If you haven't signed up for DevOps Services or Bluemix yet, here are some pointers.-->
+<!-- <img  class="inline" src="images/key_info.png" alt="Key information icon">  On the Bluemix website, you can find the [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview) to help you better understand the Bluemix platform. -->
 <a name='start'></a>
-## Get started
+##Get started
 
 Create a sample app, add a Git repository for source control, edit in Live Edit mode, and deploy to Bluemix. This section of the tutorial corresponds to Part 1 of the related video.
  
