@@ -1,6 +1,6 @@
 #Get started: Create, edit, and deploy an app
 
-######Last modified: 9 September 2015
+######Last updated: 9 September 2015
 
 Time: 30 minutes
 
