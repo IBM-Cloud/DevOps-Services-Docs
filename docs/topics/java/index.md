@@ -1,6 +1,6 @@
 # Java
 
-### Tutorial: [Develop a Java app from Bluemix](/tutorials/jazzeditorjava)
+### Tutorial: [Develop and deploy a Java app](/tutorials/jazzeditorjava)
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, java, git, web_ide, pipeline
 
 ### Article: [Use Maven with the Bluemix DevOps Services delivery pipeline](http://www.ibm.com/developerworks/java/library/j-use-maven-with-the-bluemix-delivery-pipeline/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
