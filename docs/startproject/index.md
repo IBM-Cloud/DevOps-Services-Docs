@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last updated: 14 September 2015
+###### Last updated: 15 September 2015
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
@@ -61,7 +61,7 @@ If you want to use only the traditional planning feature, which uses tasks and i
 
 3. Navigate to a new directory or a directory that already contains code.
 
- **Tip:** To work with code that is already stored in a GitHub repo, `git clone` the repo to a local directory.
+ **Tip:** To work with code that is already stored in a Git repo, `git clone` the repo to a local directory.
 
 4. Log in to Bluemix:
  ```
@@ -70,18 +70,13 @@ If you want to use only the traditional planning feature, which uses tasks and i
 
 5. When you are prompted for credentials, enter your IBM id and password.
 
-6. Start the project creation process by entering one of these commands:
-  * If you want to specify the options for your project, enter `bl create` and then follow the prompts on the command line.
-  * If you want to create a project that uses all of the default options, enter `bl create -q`.
+6. Start the project creation process by entering `bl create` and then follow the prompts on the command line.
 
-7. If you are creating a project from scratch or from code that is on your computer, select a repo.
-  * To create a Git repo that is hosted on Bluemix, enter `1`.
-  * To create a GitHub repo for your code, enter `2`.  When you are prompted, authorize your GitHub account with the bl command-line interface.
-  * To create a GitHub Enterprise repo for your code, enter `3`.  When you are prompted, authorize your GitHub Enterprise account with the bl-command line interface.
+ If you are creating a project from scratch or from code that is on your computer, a Git repo that is hosted on Bluemix will be created for your code.
 
- If you are creating a project and already have code in a GitHub repo, you are prompted to authenticate with your GitHub user name and password.
+ If you are creating a project and already have code in a Git repo, you are prompted if you would like to fork the repo for your new project.
  
-After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project, sets up and populates the repo that your selected, and deploys the code to bluemix.
+After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project, sets up and populates the repo, and deploys the code to bluemix.
 
 For more information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/cli/bl_cli.html)
 
