@@ -72,9 +72,9 @@ If you want to use only the traditional planning feature, which uses tasks and i
 
 6. Start the project creation process by entering `bl create` and then follow the prompts on the command line.
 
- If you are creating a project from scratch or from code that is on your computer, a Git repo that is hosted on Bluemix will be created for your code.
+ * If you are creating a project from scratch or from code that is on your computer, a Git repo that is hosted on Bluemix will be created for your code.
 
- If you are creating a project and already have code in a Git repo, you are prompted if you would like to fork the repo for your new project.
+ * If you are creating a project and already have code in a Git repo, you are prompted if you would like to fork the repo for your new project.
  
 After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project, sets up and populates the repo, and deploys the code to bluemix.
 
