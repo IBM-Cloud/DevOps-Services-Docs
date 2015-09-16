@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last updated: 15 September 2015
+###### Last updated: 16 September 2015
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
@@ -59,9 +59,9 @@ If you want to use only the traditional planning feature, which uses tasks and i
 
 2. Open a command-line window.
 
-3. Navigate to a new directory or a directory that already contains code.
+3. Navigate to a new directory or a directory that already contains code or a cloned Git repo.
 
- **Tip:** To work with code that is already stored in a Git repo, `git clone` the repo to a local directory.
+ **Tip:** To work with code that is already stored in a GitHub or similar repo, `git clone` the repo to a local directory.
 
 4. Log in to Bluemix:
  ```
@@ -74,9 +74,9 @@ If you want to use only the traditional planning feature, which uses tasks and i
 
  * If you are creating a project from scratch or from code that is on your computer, a Git repo that is hosted on Bluemix will be created for your code.
 
- * If you are creating a project and already have code in a Git repo, you are prompted if you would like to fork the repo for your new project.
+ * If you are creating a project and already have code in a GitHub repo, your new DevOps Services project will be linked with your existing repo.
  
-After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project, sets up and populates the repo, and deploys the code to bluemix.
+After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project.  During project creation, a new DevOps hosted Git repo will be set up and populated with your code or the project will be linked to your existing Git repo.  Finally, the code is deployed to Bluemix.  Once complete, committing changes to your Git repo, reguardless of where it is hosted, will trigger a new build from the DevOps Services Pipeline.
 
 For more information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/cli/bl_cli.html)
 
