@@ -1,6 +1,6 @@
-#Develop a Node.js app from Bluemix
+#Develop and deploy a Node.js app
 
-###### Last updated: 24 August 2015
+###### Last updated: 9 September 2015
 
 Time: 15 minutes
 
