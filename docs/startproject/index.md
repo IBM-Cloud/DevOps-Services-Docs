@@ -1,15 +1,16 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last updated: 18 August 2015
+###### Last updated: 16 September 2015
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
 
 * [Projects](#projects)
-* [Creating a project](#starting_a_devops_services_project)
-* [Forking a project](#forking_a_devops_services_project)
-* [Creating a project for a Bluemix app](#creating_a_devops_services_project_for_your_bluemix_app)
-* [Cloning an existing app using the Deploy to Bluemix button](#deploy_to_bluemix_button)
+* [Creating a project from DevOps Services](#starting_a_devops_services_project)
+* [Creating a project from the command-line](#create_project_bl_create)
+* [Forking a project from DevOps Services](#forking_a_devops_services_project)
+* [Creating a project from Bluemix](#creating_a_devops_services_project_for_your_bluemix_app)
+* [Cloning an app by using the Deploy to Bluemix button](#deploy_to_bluemix_button)
 
 
 <a name='projects'></a>
@@ -18,14 +19,14 @@ When you configure a DevOps Services project to deploy to Bluemix, the project i
 
 When you deploy your project to Bluemix, the project becomes a Bluemix app that you can enable services for, such as the Track & Plan service or the Delivery Pipeline service. Because the use of services can generate charges, you must set up a Bluemix account for your project.
 
-You can start a project four ways. If you want to start by using new code or an existing Git repository, [create a project](#starting_a_devops_services_project). If you want to start from a copy of the code in a DevOps Services project, [fork the code](#forking_a_devops_services_project).  You can also [create a DevOps Services project from an IBM&reg; Bluemix&trade; app](#creating_a_devops_services_project_for_your_bluemix_app).  Finally, you can clone a fully functioning app by using the [Deploy to Bluemix](#deploy_to_bluemix_button) button.
+You can start a project in several ways. If you want to start by using new code or an existing Git repository, create a project.  You can create a project from DevOps Services or from the command line.  If you want to start from a copy of the code in another project, fork the code.  If you already have an app in IBM Bluemix, you can create a DevOps Services project from the app.  You can olso clone a fully functioning app by using the Deploy to Bluemix button.
 
 ## Before you begin
 * [Register for DevOps Services](https://hub.jazz.net). 
 * If you plan to deploy your project to Bluemix, which is a cloud-based software hosting and deployment service, [register for Bluemix](http://bluemix.net/). 
 
 <a name='starting_a_devops_services_project'></a>
-##Creating a project
+##Creating a project from DevOps Services
 
 1. [Log in to DevOps Services](https://hub.jazz.net). The My Projects page opens.
 
@@ -48,10 +49,40 @@ If you want to use only the traditional planning feature, which uses tasks and i
 7. To deploy the project code to Bluemix, select the **Make this a Bluemix Project** check box.  
 **Important**: Building and deploying apps can result in charges to your Bluemix billing account. For more information about pricing, [see the Bluemix Pricing page](https://console.ng.bluemix.net/?ace_base=true/#/pricing).
 
-8. Click **CREATE**.  
+8. Click **CREATE**.
+
+
+<a name='create_project_bl_create'></a>
+##Creating a project from the command-line
+
+1. [Download and install the Bluemix Live Sync command-line application](http://livesyncdownload.ng.bluemix.net/).
+
+2. Open a command-line window.
+
+3. Navigate to a new directory or a directory that already contains code or a cloned Git repo.
+
+ **Tip:** To work with code that is already stored in a GitHub or similar repo, `git clone` the repo to a local directory.
+
+4. Log in to Bluemix:
+ ```
+ bl login
+ ```
+
+5. When you are prompted for credentials, enter your IBM id and password.
+
+6. Start the project creation process by entering `bl create` and then follow the prompts on the command line.
+
+ * If you are creating a project from scratch or from code that is on your computer, a Git repo that is hosted on Bluemix will be created for your code.
+
+ * If you are creating a project and already have code in a GitHub repo, your new DevOps Services project will be linked with your existing repo.
+ 
+After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project.  During project creation, a new DevOps hosted Git repo will be set up and populated with your code or the project will be linked to your existing Git repo.  Finally, the code is deployed to Bluemix.  Once complete, committing changes to your Git repo, reguardless of where it is hosted, will trigger a new build from the DevOps Services Pipeline.
+
+For more information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/cli/bl_cli.html)
+
 
 <a name='forking_a_devops_services_project'></a>
-## Forking a project
+## Forking a project from DevOps Services
 
 When you fork a project, the original project's source is copied into a new DevOps Services project that you own.  You might fork a project for these purposes:
  * To implement a feature by following a different process or plan
@@ -87,7 +118,7 @@ To change the org or space:
 
 
 <a name='creating_a_devops_services_project_for_your_bluemix_app'></a>
-## Creating a project for your Bluemix app
+## Creating a project from Bluemix
 
 1. [Log in to Bluemix][3].
 
