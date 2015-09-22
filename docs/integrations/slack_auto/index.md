@@ -59,9 +59,9 @@ Before you can configure the Slack integration, you must enable the Beta feature
 2. Click **SLACK**.
 ![Slack integration page][4]
 
-3. Enter the authentication token for your Slack account.
+3. Enter the authentication token for your Slack account. For instructions about how to locate this token, see [Authentication](https://api.slack.com/docs/oauth).
 
-4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipeline.
+4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipeline. You can use an existing, archived, or new channel.
 
 5. Click **SAVE**.
 

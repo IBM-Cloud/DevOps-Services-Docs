@@ -44,6 +44,7 @@ The tool chain also integrates Slack communications into the DevOps Services pip
 *If you don't already have a Sauce Labs account, [register for one].(https://saucelabs.com/) Sauce Labs offers 14-day trials for new accounts.
 *If you don't already have a Slack account, [register for one].(https://slack.com/)
 *Read [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1) for guidance and a tool chain recommendation for IBM Bluemix. The tool chain recommendation includes a Build and Deploy Delivery Pipeline, Sauce Labs or SpeedCurve, GitHub, the DevOps Services web integrated development environment (Web IDE), and Track and Plan.
+
 <a name='clone'></a>
 ## Clone the sample app
 
@@ -62,11 +63,11 @@ A clone of the sample application is deployed on Bluemix, with a pre-configured 
 2. Open the slack.yml file.
 3. In the parameters section, update the following parameter values to use your own Slack account.
 
-	 a. **auth-token** - The authentication token for your Slack account.
+	 a. **auth-token** - The authentication token for your Slack account. For instructions about how to locate this token, see [Authentication](https://api.slack.com/docs/oauth).
 	
-	 b. **channelName** - The name of the Slack channel to send notifications to about build results from your delivery pipeline.
+	 b. **channelName** - The name of the Slack channel to send notifications to about build results from your delivery pipeline. You can use an existing, archived, or new channel.
 
-4. In the App details page in Bluemix, review the information in the MESSAGING (SLACK) section. The values in the **AUTH-TOKEN and **CHANNELNAME** fields should match the parameter values that you set in the Slack.yml file.
+4. In the App details page in Bluemix, review the information in the MESSAGING (SLACK) section. The values in the **AUTH-TOKEN** and **CHANNELNAME** fields should match the parameter values that you set in the Slack.yml file.
 ![SLACK section of the App details page][3]
 
 
@@ -105,7 +106,7 @@ A clone of the sample application is deployed on Bluemix, with a pre-configured 
    
 2. To view your running application in Bluemix, click **VIEW YOUR APP**.
 
-3. TO view the overview page for the project, click **VIEW TOOLCHAIN**.
+3. To view the overview page for the project, click **VIEW TOOLCHAIN**.
 
 4. To view or modify the code for the sample that you just deployed, click **EDIT CODE**. Your new project opens in the DevOps Services Web IDE.
  
