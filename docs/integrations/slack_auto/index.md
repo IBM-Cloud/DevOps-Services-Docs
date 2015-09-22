@@ -1,6 +1,6 @@
 # Integrating Slack with Bluemix DevOps Services 
 
-###### Last updated: 21 September 2015
+###### Last updated: 22 September 2015
 
 You can integrate Slack communications into the IBM&reg; Bluemix&trade; DevOps Services pipeline. When configured, you can use Slack to send notifications about build results from your delivery pipeline to your Slack channels. 
 
@@ -12,11 +12,14 @@ You can integrate Slack communications into the IBM&reg; Bluemix&trade; DevOps S
 
 ## Before you begin
 * [Register for DevOps Services](https://hub.jazz.net). 
+* [Register for Bluemix](http://bluemix.net/). 
 * [Register for a Slack account](https://slack.com/) if you don't already have one.
-* Ensure that you have at least one existing DevOps Services project. Otherwise, click the **Deploy to Bluemix** button from within a sample to deploy sample code and create a tool chain that does not already integrate with Slack.
+* Ensure that you have at least one existing DevOps Services project with a pipeline set up that you can use to deploy your app. Otherwise, click the **Deploy to Bluemix** button from within a sample to deploy sample code and create a tool chain that does not already integrate with Slack.
 
 <a name='forking_a_devops_services_project'></a>
 ##Forking a project
+
+The Slack integration is a Beta feature. You can fork an existing DevOps Services project to test the Slack integration in a copy of your project without changing the original version.
 
 1. [Log in to DevOps Services](https://hub.jazz.net). The My Projects page opens.
 
@@ -35,7 +38,7 @@ You can integrate Slack communications into the IBM&reg; Bluemix&trade; DevOps S
 
 Before you can configure the Slack integration, you must enable the Beta features for your project.
 
-1. Click EXPLORE to find the original DevOps Services project that you forked. Open the original project (not the forked version).
+1. Open the forked version of the project that you just created.
 
 2. On the project's Overview page, click the **Settings** icon.
 ![Project settings icon][2]
@@ -62,7 +65,7 @@ Before you can configure the Slack integration, you must enable the Beta feature
 
 5. Click **SAVE**.
 
-6. Notify your team about the new Slack feature available for your project.
+**Tip**: To open the configured Slack channel at any time, in the project’s Overview page click **MORE** > **Slack**.
 
 
 
