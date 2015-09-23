@@ -1,8 +1,10 @@
 # Integrating Slack with Bluemix DevOps Services 
 
-###### Last updated: 22 September 2015
+###### Last updated: 23 September 2015
 
 You can integrate Slack communications into the IBM&reg; Bluemix&trade; DevOps Services pipeline. When configured, you can use Slack to send notifications about build results from your delivery pipeline to your Slack channels. 
+
+**Important**: The Slack integration is a Beta feature. After you [enable this Beta feature](#enabling_the_beta_features), you cannot disable or modify it. To test the Slack integration in a copy of your project without changing the original version, [fork an existing DevOps Services project](#forking_a_devops_services_project). Otherwise, click the **Deploy to Bluemix** button from within a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) to deploy sample code and create a tool chain that you can test the Slack integration in.
 
 
 * [Forking a project](#forking_a_devops_services_project)
@@ -14,12 +16,12 @@ You can integrate Slack communications into the IBM&reg; Bluemix&trade; DevOps S
 * [Register for DevOps Services](https://hub.jazz.net). 
 * [Register for Bluemix](http://bluemix.net/). 
 * [Register for a Slack account](https://slack.com/) if you don't already have one.
-* Ensure that you have at least one existing DevOps Services project with a pipeline set up that you can use to deploy your app. Otherwise, click the **Deploy to Bluemix** button from within a sample to deploy sample code and create a tool chain that does not already integrate with Slack.
+* Ensure that you have at least one existing DevOps Services project with a pipeline set up that you can use to deploy your app. Otherwise, you can click the **Deploy to Bluemix** button from within a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) to deploy sample code and create a tool chain that does not already integrate with Slack.
 
 <a name='forking_a_devops_services_project'></a>
 ##Forking a project
 
-The Slack integration is a Beta feature. You can fork an existing DevOps Services project to test the Slack integration in a copy of your project without changing the original version.
+You can fork an existing DevOps Services project to test the Slack integration in a copy of your project without changing the original version.
 
 1. [Log in to DevOps Services](https://hub.jazz.net). The My Projects page opens.
 
@@ -59,9 +61,9 @@ Before you can configure the Slack integration, you must enable the Beta feature
 2. Click **SLACK**.
 ![Slack integration page][4]
 
-3. Enter the authentication token for your Slack account. For instructions about how to locate this token, see [Authentication](https://api.slack.com/docs/oauth).
+3. Enter the authentication token for your Slack account. For instructions about how to locate this token, see [Slack authentication](https://api.slack.com/docs/oauth).
 
-4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipeline. You can use an existing, archived, or new channel.
+4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipeline. You can use an existing, archived, or new channel. If the specified Slack channel doesn't already exist, it is created. If the specified Slack channel is currently archived, it is reactivated.
 
 5. Click **SAVE**.
 
