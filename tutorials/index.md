@@ -33,6 +33,11 @@ Track and plan the work for a project by creating work items, tracking a backlog
 <a href="/tutorials/basicbuild"><strong>Set up a pipeline and deploy an app</strong></a> (30 minutes)</h4>
 <h6><em>A tutorial about a build and deployment pipeline that you can use to deploy to Bluemix</em></h6>
 In a sample project that you fork to your space, create a pipeline that you can use to build and deploy a Java app to Bluemix.
+<hr style="border-width:1px;margin-top:1em;margin-bottom:0em">
+<h4>
+<a href="/tutorials/integrations_ui"><strong>Integrate Sauce Labs and Slack with Bluemix DevOps Services  BETA </strong></a> (15 minutes)</h4>
+<h6><em>A tutorial about automatically configuring Sauce Labs and Slack with you DevOps Services project </em></h6>
+You create your own version of a sample IBM&reg; Bluemix&trade; DevOps Services project by cloning it in your space and then you use the automated features to configure Sauce Labs and Slack to integrate with your DevOps Services project. When you deploy the project to IBM&reg; Bluemix&trade;, a pre-configured DevOps tool chain is set up.
 </div></div>
 
 
