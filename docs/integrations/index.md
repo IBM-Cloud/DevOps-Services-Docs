@@ -1,5 +1,5 @@
 # Integrations 
-###### Last updated: 22 September 2015
+###### Last updated: 23 September 2015
 
 
 The IBM Bluemix DevOps Services supports integration with many popular tools.
@@ -27,9 +27,7 @@ The Sauce Labs test suite provides automated functional tests that run Java or J
 
 Speed Curve provides continuous monitoring of the front-end performance and build of your website.
 
-* [Link to automated configuration](/docs/integrations/speedcurve_auto)
-
-* [Link to manual configuration](/docs/integrations/speedcurve)
+[Link to manual configuration](/docs/integrations/speedcurve)
 
 <a name='slack'></a>
 ### Slack
