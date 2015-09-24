@@ -36,8 +36,9 @@ In a sample project that you fork to your space, create a pipeline that you can 
 <hr style="border-width:1px;margin-top:1em;margin-bottom:0em">
 <h4>
 <a href="/tutorials/integrations_ui"><strong>Integrate Sauce Labs and Slack with Bluemix DevOps Services  BETA </strong></a> (15 minutes)</h4>
-<h6><em>A tutorial about automatically configuring Sauce Labs and Slack with you DevOps Services project </em></h6>
-You create your own version of a sample IBM&reg; Bluemix&trade; DevOps Services project by cloning it in your space and then you use the automated features to configure Sauce Labs and Slack to integrate with your DevOps Services project. When you deploy the project to IBM&reg; Bluemix&trade;, a pre-configured DevOps tool chain is set up.
+<h6><em>A tutorial about configuring Sauce Labs and Slack integrations with your DevOps Services project </em></h6>
+Create your own version of a sample application in your IBM&reg; Bluemix&trade; account that is managed by an IBM&reg; Bluemix&trade; DevOps Services tool chain. Configure Sauce Labs and Slack to integrate with your DevOps Services project. When you deploy the project to Bluemix, a pre-configured DevOps tool chain is set up. 
+
 </div></div>
 
 
