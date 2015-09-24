@@ -1,8 +1,8 @@
 # Integrations 
-###### Last updated: 23 September 2015
+###### Last updated: 24 September 2015
 
 
-The IBM Bluemix DevOps Services supports integration with many popular tools.
+IBM&reg; Bluemix&trade; DevOps Services supports integrations with many popular tools.
 
 You can configure integrations in two ways: automated or manual.
 
@@ -14,7 +14,7 @@ You can configure integrations in two ways: automated or manual.
 * [Lint](#lint)
 
 <a name='saucelabs'></a>
-### SauceLabs
+### Sauce Labs
 
 The Sauce Labs test suite provides automated functional tests that run Java or JavaScript tests against your web or mobile application as part of your continuous delivery process. These tests can provide valuable flow control for your projects, acting as gates to prevent the deployment of bad code.
 

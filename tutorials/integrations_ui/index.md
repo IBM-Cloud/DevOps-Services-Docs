@@ -10,16 +10,16 @@ This DevOps Services tool chain integrates automated functional tests run on Sau
 
 The tool chain also integrates Slack messaging into the DevOps Services pipeline. You can send notifications about build and deploy activities to your Slack channels. 
 
-**Important**: This is a Beta feature. After you [deploy your app](#deploy_app), you cannot remove or modify the configured integrations in the generated project.
+**Important**: This is a Beta feature. After you [deploy your app](#deploy_app), you cannot modify or remove the configured integrations from the generated project.
 
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="8"><h4>Summary of steps</h4></td>
+     <td colspan="6"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
-     <td><a href="#app_details">Specify app details</a></td>
+     <td><a href="#app_details">Specify the app details</a></td>
      <td><a href="#configure_slack">Configure the Slack integration</a></td>
      <td><a href="#configure_sauce_labs">Configure the Sauce Labs integration</a></td>
      <td><a href="#deploy_app">Deploy your app</a></td>
@@ -65,7 +65,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
 2. Expand the **SLACK (MESSAGING)** section.
 3. Enter the authentication token for your Slack account. For instructions about how to locate this token, see [Slack authentication](https://api.slack.com/web#authentication).
 4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipleine. You can use an existing, archived, or new channel.
-5. Select the type of notifications that you want to receive. 
+5. Select the type of notifications that you want to receive.
 	
 
 <a name='configure_sauce_labs'></a>
@@ -121,8 +121,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
 <a name='summary'></a>
 ## Summary
 
-
-
+You created your own version of a sample application in your Bluemix account that is managed by a DevOps Services tool chain. The tool chain was automatically pre-configured with Sauce Labs and Slack integrations. You configured Sauce Labs and Slack to integrate with your DevOps Services project, deployed the app, and then viewed logs and test results.
 
 
 <a name='next_steps'></a>
