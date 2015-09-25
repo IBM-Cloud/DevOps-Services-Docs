@@ -95,7 +95,7 @@ You created a Git repository, populated it with the example code, and deployed t
 2. In the Web IDE, enable Live Edit mode.  You  can now make changes to your code in the Web IDE and see the changes reflected in the running app.
 
  The Web IDE deployment uses files in the project's cloud workspace. 
-![Run bar with Live Edit turned on](images/live-edit-demo.gif)
+![Run bar with Live Edit turned on](images/live-edit-demo.png)
  
 4. To see your updated static files, refresh the deployed app in the browser.  
 
@@ -184,7 +184,7 @@ Members of the team can develop code independently and share changes when the ch
 ### Start working on a task
 
 1. Click **TRACK & PLAN** to plan  your work.
-2. Click**SPRINT PLANNING**.  In the Sprint 1 lane, see the three work items.  The work item about updating the title is unassigned; assign it to yourself by clicking the question mark icon and selecting your name from the list. 
+2. Click **SPRINT PLANNING**.  In the Sprint 1 lane, see the three work items.  The work item about updating the title is unassigned; assign it to yourself by clicking the question mark icon and selecting your name from the list. 
 
 3. For the same work item, set the status:  click the right arrow icon next to the owner and select **Start Working**.  This work item is **In progress** because you are going to start working on it now.
 
