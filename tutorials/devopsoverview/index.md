@@ -1,6 +1,6 @@
 #Get started: Create, edit, and deploy an app
 
-######Last updated: 9 September 2015
+######Last updated: 25 September 2015
 
 Time: 30 minutes
 
@@ -57,7 +57,7 @@ For example, if `bob@example.com` logs in to Bluemix for the first time, the act
 is `bob@example.com`.
 If you create more organizations or spaces in Bluemix, use the same ones as you follow the tutorials. Use the default selections. -->
 
-1. Click **CREATE AN APP** and then click **WEB**.  
+1. Click **CREATE APP** and then click **WEB**.  
 
 2. Click **SDK for Node.js** and then click **CONTINUE**.
 
@@ -75,8 +75,9 @@ Now that your app is running, you can see and modify the code by using DevOps Se
 
 When you add DevOps Services (**ADD GIT**), you get a DevOps Services project with capabilities, including a Git repository that is fully configured to deploy on commit. 
 
-1. Go to your app's Overview page on the Bluemix Dashboard and click **ADD GIT**.  You might be prompted to enter your password to verify that DevOps Services can act on your behalf.
-<!--![Add Git button](/tutorials/jazzeditor/images/bm-add-git-integration_NEW.png) -->
+1. From your app's Overview page on the Bluemix Dashboard, click **ADD GIT**.  A Git repository is created and is populated with example code and a deployed app. You might be prompted to enter your password to verify that DevOps Services can act on your behalf.
+
+ ![Add Git button](/tutorials/jazzeditor/images/bm-add-git-integration_NEW.png)
 
 2. Make sure that the **Populate the repository with the starter application package and enable build and deploy** check box is selected; then click **CONTINUE**.
 
