@@ -69,22 +69,20 @@ After a moment, the app starts. The app's Dashboard  opens and displays the star
 Now that your app is running, you can see and modify the code by using DevOps Services.-->
 
 <a name='git_integration_and_autodeployment'></a>
-### Add DevOps Services
+###Set up Git integration and auto-deploy in DevOps Services
 
-<!--You can work with your app's code in many ways. For example, with auto-deploy, you can modify the code that runs in your app by pushing your changes to a Git repository. You can auto-deploy your code if you use the Build & Deploy capabilities of DevOps Services. -->
+You can work with your app's code in many ways. For example, with auto-deploy, you can modify the code that runs in your app by pushing your changes to a Git repository. You can auto-deploy your code if you use the Build & Deploy capabilities of DevOps Services.
 
-When you add DevOps Services (**ADD GIT**), you get a DevOps Services project with capabilities, including a Git repository that is fully configured to deploy on commit. 
+1. To enable auto-deploy, go to your app's Overview page on the Bluemix Dashboard and click **ADD GIT**. A Git repository is created and is populated with example code and a deployed app. You might be prompted to enter your password to verify that DevOps Services can act on your behalf. 
+![Add Git button](/tutorials/jazzeditor/images/bm-add-git-integration_NEW.png)
 
-1. From your app's Overview page on the Bluemix Dashboard, click **ADD GIT**.  A Git repository is created and is populated with example code and a deployed app. You might be prompted to enter your password to verify that DevOps Services can act on your behalf.
-
- ![Add Git button](/tutorials/jazzeditor/images/bm-add-git-integration_NEW.png)
-
-2. Make sure that the **Populate the repository with the starter application package and enable build and deploy** check box is selected; then click **CONTINUE**.
-
+2. Make sure that the **Populate the repository with the starter application package and enable build and deploy** check box is selected.
 ![Create Git repo dialog](/tutorials/jazzeditor/images/bm-create-git-repo_NEW.png)
-
 You created a Git repository, populated it with the example code, and deployed the app.
 ![Git repo success message dialog](/tutorials/jazzeditor/images/bm-git-repo-success-msg_NEW.png)
+
+3. Go to the app's Overview page and click **EDIT CODE**. Your new project opens in the web integrated development environment (Web IDE).  
+![CODE button](/tutorials/jazzeditor/images/bm-code-button_NEW.png)
 
 
 ### Edit the app in Live Edit mode
@@ -103,7 +101,7 @@ You created a Git repository, populated it with the example code, and deployed t
 
  <img class="inline"  src="images/key_info.png" alt="Key information icon">  If you update a node module, use the **Quick Restart** icon to restart the node run time in seconds, without redeploying the app.
  
-5. To try out Live Edit mode, in the directory, click `public/index.html`.  Change "Hi there!" to "Hi there! More title text!". You can see the changes in the deployed app.  
+5. To try out Live Edit mode, in the file directory, click `public/index.html`.  Change "Hi there!" to "Hi there! More title text!". When you refresh the browser, you can see the changes in the deployed app.  
 
 **Note** In the video, Adam edits the views/body.jade file.  However, because that file is no longer in the starter pack, you'll edit the index.html file to get the same results.
 
