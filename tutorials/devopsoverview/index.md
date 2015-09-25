@@ -76,7 +76,7 @@ You can work with your app's code in many ways. For example, with auto-deploy, y
 1. To enable auto-deploy, go to your app's Overview page on the Bluemix Dashboard and click **ADD GIT**. A Git repository is created and is populated with example code and a deployed app. You might be prompted to enter your password to verify that DevOps Services can act on your behalf. 
 ![Add Git button](/tutorials/jazzeditor/images/bm-add-git-integration_NEW.png)
 
-2. Make sure that the **Populate the repository with the starter application package and enable build and deploy** check box is selected.
+2. Make sure that the **Populate the repo with the starter app package and enable the Build & Deploy pipeline** check box is selected.
 ![Create Git repo dialog](/tutorials/jazzeditor/images/bm-create-git-repo_NEW.png)
 You created a Git repository, populated it with the example code, and deployed the app.
 ![Git repo success message dialog](/tutorials/jazzeditor/images/bm-git-repo-success-msg_NEW.png)
