@@ -4,7 +4,7 @@
 
 Time: 30 minutes
 
-Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, first watch the related video created by a DevOps Services expert, Adam Archer. 
+Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, first watch the related video, which was created by a DevOps Services expert, Adam Archer.
  
 <img  class="inline" src="images/video_icon.png" alt="Video icon">&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank">An Overview of IBM Bluemix DevOps Services</a>
 
@@ -63,7 +63,7 @@ If you create more organizations or spaces in Bluemix, use the same ones as you 
 
 3. Name your app and then click **FINISH**. The name is a unique URL where you access your app. 
 
-After a moment, the app starts. The app's Dashboard  opens and displays the start coding page. You can see the app running by clicking **Overview** in the left navigation bar.
+After a moment, the app starts. The app's Dashboard opens. You can see the app running by clicking **Overview** in the left navigation bar.
 
 <!--![Bluemix Application tile](/tutorials/jazzeditor/images/bm-app-panel_NEW.png) 
 Now that your app is running, you can see and modify the code by using DevOps Services.-->
@@ -89,7 +89,7 @@ You created a Git repository, populated it with the example code, and deployed t
 
 <img class="inline"  src="images/key_info.png" alt="Key information icon">  For Node.js apps, you can make changes to static files, such as HTML or CSS, and immediately propagate the changes to the deployed app by using Bluemix Live Sync.
 
-1. Go to the app's Overview page in Bluemix and click **EDIT CODE** (When you clicked **ADD GIT**, that link was replaced by **EDIT CODE**). Your new project opens in the web integrated development environment (Web IDE).  
+1. Go to the app's Overview page in Bluemix and click **EDIT CODE**. When you clicked **ADD GIT**, that link was replaced by **EDIT CODE**. Your new project opens in the Web IDE.  
 <!--![CODE button](/tutorials/jazzeditor/images/bm-code-button_NEW.png) -->
 
 2. In the Web IDE, enable Live Edit mode.  You  can now make changes to your code in the Web IDE and see the changes reflected in the running app.
@@ -101,9 +101,9 @@ You created a Git repository, populated it with the example code, and deployed t
 
  <img class="inline"  src="images/key_info.png" alt="Key information icon">  If you update a node module, use the **Quick Restart** icon to restart the node run time in seconds, without redeploying the app.
  
-5. To try out Live Edit mode, in the file directory, click `public/index.html`.  Change "Hi there!" to "Hi there! More title text!". When you refresh the browser, you can see the changes in the deployed app.  
+5. To try Live Edit mode, in the file directory, click `public/index.html`.  Change "Hi there!" to "Hi there! More title text!". When you refresh the browser, you can see the changes in the deployed app.  
 
-**Note** In the video, Adam edits the views/body.jade file.  However, because that file is no longer in the starter pack, you'll edit the index.html file to get the same results.
+**Note:** In the video, Adam edits the `views/body.jade` file.  However, because that file is no longer in the starter pack, you'll edit the `public/index.html` file to get the same results.
 
 
 <!-- You can use the Debug feature to create breakpoints and inspect variables in your node modules so you can isolate problem areas as you work. -->
@@ -122,7 +122,7 @@ Bluemix Live Sync](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#
 	
 	b. In the Working Directory Changes section, select the changed files.
 
-	c. Add a commit message that explains your changes; then click **Commit** to put the changes in the local master branch.
+	c. Type a commit message that explains your changes. Click **Commit** to put the changes in the local master branch.
 	
 	d. Put these changes in the origin/master branch by clicking **Push**.
 
@@ -144,14 +144,14 @@ Grow the app into a robust project that has members, sprints, and a backlog. Thi
 ### Create a task backlog
 1. In the upper-right corner,  click **TRACK & PLAN**.
 
-2. If you need to turn on Track and Plan for this project, click the **Settings** icon in the upper-right corner.
+2. If you need to enable the Track & Plan feature for this project, click the **Settings** icon in the upper-right corner.
 
 3. Click **OPTIONS**.  Select the **Enable Track & Plan** check box and then click **SAVE**.
 
 4. Click **TRACK & PLAN** again. In the left navigation bar, 
 click **SPRINT PLANNING**.
 
-5. In the backlog lane, add a few work items.  In the **Type a a work item summary**  field, tyoe a summary, and then press Enter.  Click **CREATE**.
+5. In the backlog lane, add a few work items.  In the **Type a a work item summary**  field, type a summary, and then press Enter.  Click **CREATE**.
 Create three work items to get the team started:
 
    * Update the title of the page
@@ -194,18 +194,18 @@ You can make changes to your code and see them in your personal space before you
 
 1. Click **EDIT CODE**. A clone of the project is created in your project cloud workspace.
 
-2. On the run bar, create your own launch configuration. From the **Create new launch configuration** list, click the create icon which looks like a plus sign.
+2. On the run bar, create your own launch configuration. From the **Create new launch configuration** list, click the create icon, which looks like a plus sign.
 Because you want to deploy to the same account as the original project, get the ID and password for the for the project owner's Bluemix account.
 
 3. In the Edit Launch Configuration window, change the host to be a unique name.
 
-4. Because Live Edit mode is on, when you change the code your changes are deployed automatically to your personal space while the original deployed app is unchanged.  For example, in the public/index.html, change `Hi there` to `Hello`.  To see your version of the deployed app, on the run bar, click on the **Open the URL** icon.
+4. Because Live Edit mode is on, when you change the code, your changes are deployed automatically to your personal space while the original deployed app is unchanged.  For example, in the `public/index.html` file, change `Hi there` to `Hello`.  To see your version of the deployed app, on the run bar, click the **Open the URL** icon.
 
 ### Deliver your changes to the deployed app
 
-Contribute your changes and make sure the rest of your team can view your changes.
+Contribute your changes and make sure that the rest of your team can view your changes.
 
-1. Click **EDIT CODE** to open the Web IDE. From the Web IDE menu, click the Git Repositry icon.
+1. Click **EDIT CODE** to open the Web IDE. From the Web IDE menu, click the **Git Repository** icon.
 2. In the **Commit** field, add a comment and include the task ID to link to the work item.
 3. Select the file to commit.
 4. Click **COMMIT**.
@@ -214,28 +214,28 @@ Contribute your changes and make sure the rest of your team can view your change
 	1. Click **TRACK & PLAN** and then click the work item.
 	1. Click the **LINKS** tab.  In the Change Sets section, verify that you see the commit information.
 8. Because you committed the change for this work item, change the status to **Complete** and click **SAVE**.
-9. Verify your latest change is on the official version of the deployed app.  
+9. Verify that your latest change is on the official version of the deployed app.  
 
 <a name='deploy'></a>
 ## Deploy to production
 
 It's time to deploy your app! This section of the tutorial corresponds to Part 4 of the related video.
 
-1. As the project owner, click **BUILD & DEPLOY**.  You can see a simple pipeline with two stages.
+1. Make sure that you are logged in as the project owner, and click **BUILD & DEPLOY**.
 
 2. Click **ADD STAGE** and name the stage `Production`.
 
-3. Turn off autodeploy by clicking **Run jobs only when this stage is run manually** in the Stage Trigger field.
+3. Turn off auto-deploy by clicking **Run jobs only when this stage is run manually** in the **Stage Trigger** field.
 
 4. Click the **JOBS** tab and then click **ADD JOB**. For the job type, select **Deploy**. 
 
-5. Enter a new Bluemix space name:  in the **Space** field, click the arrow and then click ** **Create new space**. Type the new name and click **CREATE**. 
+5. Enter a new Bluemix space name:  in the **Space** field, click the arrow and then click **Create new space**. Type the new name and click **CREATE**. 
 
-6. Give this deployment a unique host name by changing the deployment script.  Change the name parameter -n so it is now `cf push "${CF_APP}" -n "new-name"`.  Click **SAVE**.
+6. Give this deployment a unique host name by changing the deployment script.  Change the name parameter `-n` so that it is now `cf push "${CF_APP}" -n "new-name"`.  Click **SAVE**.
 
-6. On the Production stage tile, trigger the first production deployment by clicking the **Run Stage** icon.
+7. On the Production stage tile, trigger the first production deployment by clicking the **Run Stage** icon.
 
-7. When the app has deployed on the Production stage tile, click the deployed app URL to see the app running in production.
+8. When the app is deployed, view the app running on production by clicking the deployed app URL on the Production stage tile.
 
 <a name='summary'></a>
 ## Summary
@@ -246,8 +246,8 @@ You saw how to create and run a Node.js web app by using Bluemix and DevOps Serv
 With one click, you created a Git repository, populated it with example code, and automatically 
 deployed the app.  You then made a change and saw that the change was automatically deployed in Live Edit mode.
 
-You grew your project by inviting another member, created a backlog of work items, and planned a sprint. Acting as a new project member, you accepted the invitation, started working on a a task, made changes and deployed to a separate Bluemix URL.  Then, you pushed the changed code and resolved the work item.  
+You grew your project by inviting another member, created a backlog of work items, and planned a sprint. Acting as a new project member, you accepted the invitation, started working on a task, made changes, and deployed to a separate Bluemix URL.  Then, you pushed the changed code and resolved the work item.  
 
-Finally, as the project owner, you crated a production stage and deployed to a production URL.
+Finally, as the project owner, you created a production stage and deployed to a production URL.
 
 [1]: /tutorials/jazzeditor/images/runbar_green.png
