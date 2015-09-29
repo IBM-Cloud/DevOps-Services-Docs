@@ -1,4 +1,4 @@
-#Integrate Sauce Labs and Slack with Bluemix DevOps Services
+#Integrate Sauce Labs and Slack with a Bluemix DevOps Services project
 
 ######Last modified: 29 September 2015
 
