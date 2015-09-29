@@ -1,6 +1,6 @@
 #Get started: Create, edit, and deploy an app
 
-######Last updated: 25 September 2015
+######Last updated: 29 September 2015
 
 Time: 30 minutes
 
@@ -81,8 +81,8 @@ You can work with your app's code in many ways. For example, with auto-deploy, y
 You created a Git repository, populated it with the example code, and deployed the app.
 ![Git repo success message dialog](/tutorials/jazzeditor/images/bm-git-repo-success-msg_NEW.png)
 
-3. Go to the app's Overview page and click **EDIT CODE**. Your new project opens in the web integrated development environment (Web IDE).  
-![CODE button](/tutorials/jazzeditor/images/bm-code-button_NEW.png)
+3. Click the URL under your apps name to view the deployed app, or click **EDIT CODE** to start working with your code.  Your new project opens in the web integrated development environment (Web IDE).  
+![CODE button](images/edit-code_view-url.png)
 
 
 ### Edit the app in Live Edit mode
@@ -236,6 +236,7 @@ It's time to deploy your app! This section of the tutorial corresponds to Part 4
 7. On the Production stage tile, trigger the first production deployment by clicking the **Run Stage** icon.
 
 8. When the app is deployed, view the app running on production by clicking the deployed app URL on the Production stage tile.
+![Deploy Stage Success](images/deploy_stage.png)
 
 <a name='summary'></a>
 ## Summary
