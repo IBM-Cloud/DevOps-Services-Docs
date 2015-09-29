@@ -11,7 +11,6 @@ This DevOps Services toolchain integrates automated functional tests that are ru
 The toolchain also integrates Slack messaging into the DevOps Services pipeline. For example, your team can get notifications about build and deploy activities through a Slack channel. 
 
 **Important:** This integration capability is beta quality. After you [deploy your app](#deploy_app), you cannot modify or remove the configured integrations from the generated project.
-<!--LWH: Is it important to say "generated project"? If not, I'd just say "project."-->
 
 <div class="table-of-contents">
  <table>
