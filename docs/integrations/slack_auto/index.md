@@ -1,6 +1,6 @@
 # Integrating Slack with Bluemix DevOps Services 
 
-###### Last updated: 23 September 2015
+###### Last updated: 29 September 2015
 
 You can integrate Slack communications into the IBM&reg; Bluemix&trade; DevOps Services pipeline. When configured, you can use Slack to send notifications about build results from your delivery pipeline to your Slack channels. 
 
@@ -26,11 +26,11 @@ You can fork an existing DevOps Services project to test the Slack integration i
 1. [Log in to DevOps Services](https://hub.jazz.net). The My Projects page opens.
 
 2. Click **EXPLORE**, find the project to start from, and click its name.
-![Bluemix DevOps Services new user landing page][1]
 
 3. Click **FORK PROJECT**. When you fork a project, the original project's source is copied into a new DevOps Services project that you own.
 
-4. In the Fork Project window that opens, type your project name, review the contents of the window, and specify options as needed. For more information about the options, [see Starting a Bluemix DevOps Services project](#starting_a_devops_services_project).
+4. In the Fork Project window that opens, type your project name, review the contents of the window, and specify options as needed. For more information about the options, [see Starting a Bluemix DevOps Services project](/docs/startproject#starting_a_devops_services_project).
+![Bluemix DevOps Services new user landing page][1]
  
 5. Click **CREATE**.
 
@@ -47,7 +47,7 @@ Before you can configure the Slack integration, you must enable the Beta feature
 
 3. Click **BETA FEATURES**.
 
-4. Select the **Enable integration features** check box.
+4. Select the **Enable this project to integrate with more tools** check box.
 
 5. Click **SAVE**.
 
@@ -61,7 +61,7 @@ Before you can configure the Slack integration, you must enable the Beta feature
 2. Click **SLACK**.
 ![Slack integration page][4]
 
-3. Enter the authentication token for your Slack account. For instructions about how to locate this token, see [Slack authentication](https://api.slack.com/docs/oauth).
+3. Enter the authentication token for your Slack account. For instructions about how to locate this token, see [Slack authentication](https://api.slack.com/web#authentication).
 
 4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipeline. You can use an existing, archived, or new channel. If the specified Slack channel doesn't already exist, it is created. If the specified Slack channel is currently archived, it is reactivated.
 
