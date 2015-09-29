@@ -6,7 +6,7 @@ Time: 15 minutes
 
 In this tutorial, you learn how to deploy a copy of a sample app that is managed by an IBM&reg; Bluemix&trade; DevOps Services toolchain. The toolchain is preconfigured with Sauce Labs and Slack integrations and with DevOps Services features, such as the Track &amp; Plan feature, the web integrated development environment (Web IDE), the Build &amp; Deploy pipeline, and Git for source control.
 
-This DevOps Services toolchain integrates automated functional tests that are run on Sauce Labs into the DevOps Services pipeline. These tests can provide valuable flow control for your projects, as they act as gates to prevent the deployment of bad code.
+This DevOps Services toolchain integrates automated functional tests that are run on Sauce Labs into the DevOps Services pipeline. These tests can provide valuable flow control for your project as they act as gates to prevent the deployment of bad code.
 
 The toolchain also integrates Slack messaging into the DevOps Services pipeline. For example, your team can get notifications about build and deploy activities through a Slack channel. 
 
