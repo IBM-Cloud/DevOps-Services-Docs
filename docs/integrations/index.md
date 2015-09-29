@@ -1,7 +1,9 @@
 # Integrations 
 ###### Last updated: 29 September 2015
 
-IBM&reg; Bluemix&trade; DevOps Services supports integrations with many popular tools. You can configure integrations in two ways: automated or manual.
+IBM&reg; Bluemix&trade; DevOps Services supports integrations with Sauce Labs and Slack. 
+
+**Important:** This integration capability is currently beta quality.
 
 <a name='saucelabs'></a>
 ### Sauce Labs
