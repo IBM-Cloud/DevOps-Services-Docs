@@ -65,10 +65,7 @@ Before you can configure the Sauce Labs integration, you must enable the Beta fe
 
 4. Enter the user name for your Sauce Labs account. You can [locate your user name in the welcome message at the top of your Sauce Labs account page](https://saucelabs.com/account).
 
-5. Configure a test Sauce Labs job. You can run, build, and deploy test Sauce Labs jobs to Bluemix. Use either of the following methods to configure the test job:
-
-   a. Select the **Add a Sauce Labs test job in my Build & Deploy pipeline** check box to automatically configure a test Sauce Labs job.
-   b. On the project's Overview page, click **BUILD & DEPLOY**, and then navigate to the Build & Deploy Pipeline page to add jobs to a specific stage. 
+5. Configure a test Sauce Labs job. Select the **Add a Sauce Labs test job in my Build & Deploy pipeline** check box to automatically configure a test Sauce Labs job. Otherwise, on the project's Overview page, click **BUILD & DEPLOY**, and then navigate to the Build & Deploy Pipeline page to add jobs to a specific stage. You can run, build, and deploy test Sauce Labs jobs to Bluemix.
    
 6. Click **SAVE**.
 
@@ -77,12 +74,8 @@ Before you can configure the Sauce Labs integration, you must enable the Beta fe
 8. On the Build Stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and then is deployed to Bluemix.
 ![The project's configured pipeline][5]
 
-9. View the Sauce Labs test results to verify that they are green. You can use either of the following methods to view the results:
-
-   a. After the Deploy Stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name.
-   b. In the project's Overview page, click **MORE** > **Sauce Labs**.
+9. View the Sauce Labs test results to verify that they are green. After the Deploy Stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name. Otherwise, in the project's Overview page, click **MORE** > **Sauce Labs**.
   
-
 **Tip**: To view the Sauce Labs test results at any time, in the project’s Overview page click **MORE** > **Sauce Labs**.
 
 
