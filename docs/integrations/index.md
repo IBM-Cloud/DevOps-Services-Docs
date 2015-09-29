@@ -8,7 +8,7 @@ IBM&reg; Bluemix&trade; DevOps Services supports integrations with Sauce Labs an
 <a name='saucelabs'></a>
 ### Sauce Labs
 
-Sauce Labs provides automated functional tests that run Java&trade; or JavaScript tests against your web or mobile app as part of a continuous delivery process. These tests can provide valuable flow control for your project as they act as gates to prevent the deployment of bad code.
+Sauce Labs provides automated functional tests that run Java&trade; or JavaScript tests against your web or mobile app as part of a continuous delivery process. These tests can act as gates to prevent the deployment of bad code.
 
 * [Integrating Sauce Labs with Bluemix DevOps Services](/docs/integrations/saucelabs_auto)
 
