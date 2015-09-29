@@ -31,7 +31,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
 <a name='prereq'></a>
 ## Before you begin
 
-*To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
 <h5> </h5>
 <div class="container-fluid small_bottom_space">
    <div class="row pbl button-links" id="overview-links">
@@ -42,9 +42,11 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
    </div>
 </div>
 
-*If you don't already have a Sauce Labs account, [register for one](https://saucelabs.com/). Sauce Labs offers 14-day trials for new accounts.
-*If you don't already have a Slack account, [register for one](https://slack.com/).
-*Review [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1) for guidance and a tool chain recommendation for IBM Bluemix. The tool chain recommendation includes a Build and Deploy Delivery Pipeline, Sauce Labs, Git, Web IDE, and Track and Plan.
+If you don't already have a Sauce Labs account, [register for one](https://saucelabs.com/). Sauce Labs offers 14-day trials for new accounts.
+
+If you don't already have a Slack account, [register for one](https://slack.com/).
+
+Review [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1) for guidance and a tool chain recommendation for IBM Bluemix. The tool chain recommendation includes a Build and Deploy Delivery Pipeline, Sauce Labs, Git, Web IDE, and Track and Plan.
 
 <a name='app_details'></a>
 ## Specify the app details
@@ -103,7 +105,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
 ## View logs and test results
 
 1. On the project's Overview page in DevOps Services, click **MORE**. 
-![MORE button][2]
+![MORE button][3]
 
 2. From the list of available integrations, select any of the following options:  
 
