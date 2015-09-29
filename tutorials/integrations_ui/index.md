@@ -80,7 +80,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 <a name='deploy_app'></a>
 ## Deploy your app
 
-1. On the App Details page, click **DEPLOY**. The following steps run to set up the automated tool chain:
+1. On the App Details page, click **DEPLOY**. The following steps run to set up the automated toolchain:
 
    a. Create the project.
    
