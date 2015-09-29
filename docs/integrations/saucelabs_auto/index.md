@@ -1,6 +1,6 @@
 # Integrating Sauce Labs with Bluemix DevOps Services 
 
-###### Last updated: 23 September 2015
+###### Last updated: 29 September 2015
 
 You can integrate automated functional tests that run on Sauce Labs into the IBM&reg; Bluemix&trade; DevOps Services pipeline. When configured as a test job in a pipeline, a Sauce Labs test suite can run Java or JavaScript tests against your web or mobile application as part of your continuous delivery process. These tests can provide valuable flow control for your projects, acting as gates to prevent the deployment of bad code.
 
@@ -26,11 +26,11 @@ You can fork an existing DevOps Services project to test the Sauce Labs integrat
 1. [Log in to DevOps Services](https://hub.jazz.net). The My Projects page opens.
 
 2. Click **EXPLORE**, find the project to start from, and click its name.
-![Bluemix DevOps Services new user landing page][1]
 
 3. Click **FORK PROJECT**. When you fork a project, the original project's source is copied into a new DevOps Services project that you own.
 
-4. In the Fork Project window that opens, type your project name, review the contents of the window, and specify options as needed. For more information about the options, [see Starting a Bluemix DevOps Services project](#starting_a_devops_services_project).
+4. In the Fork Project window that opens, type your project name, review the contents of the window, and specify options as needed. For more information about the options, [see Starting a Bluemix DevOps Services project](/docs/startproject#starting_a_devops_services_project).
+![Bluemix DevOps Services new user landing page][1]
  
 5. Click **CREATE**.
 
@@ -47,7 +47,7 @@ Before you can configure the Sauce Labs integration, you must enable the Beta fe
 
 3. Click **BETA FEATURES**.
 
-4. Select the **Enable integration features** check box.
+4. Select the **Enable this project to integrate with more tools** check box.
 
 5. Click **SAVE**.
 
@@ -61,9 +61,9 @@ Before you can configure the Sauce Labs integration, you must enable the Beta fe
 2. Click **SAUCE LABS**.
 ![Sauce Labs integration page][4]
 
-3. Enter the user name for your Sauce Labs account. You can [locate your user name in the welcome message at the top of your Sauce Labs account page](https://saucelabs.com/account).
+3. Enter the API key for your Sauce Labs account. You can [locate this key in the bottom-left corner of your Sauce Labs account page](https://saucelabs.com/account).
 
-4. Enter the API key for your Sauce Labs account. You can [locate this key in the bottom-left corner of your Sauce Labs account page](https://saucelabs.com/account).
+4. Enter the user name for your Sauce Labs account. You can [locate your user name in the welcome message at the top of your Sauce Labs account page](https://saucelabs.com/account).
 
 5. Configure a test Sauce Labs job. You can run, build, and deploy test Sauce Labs jobs to Bluemix. Use either of the following methods to configure the test job:
 
@@ -74,7 +74,7 @@ Before you can configure the Sauce Labs integration, you must enable the Beta fe
 
 7. On the project's Overview page, click **BUILD & DEPLOY**, and then navigate to the Build & Deploy Pipeline page to verify that the test job was created.
 
-8. On the Build Stage tile, click the **Run Stage** icon <img  class="inline" src="/sidecar/images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and then is deployed to Bluemix.
+8. On the Build Stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and then is deployed to Bluemix.
 ![The project's configured pipeline][5]
 
 9. View the Sauce Labs test results to verify that they are green. You can use either of the following methods to view the results:
@@ -82,6 +82,7 @@ Before you can configure the Sauce Labs integration, you must enable the Beta fe
    a. After the Deploy Stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name.
    b. In the project's Overview page, click **MORE** > **Sauce Labs**.
   
+
 **Tip**: To view the Sauce Labs test results at any time, in the project’s Overview page click **MORE** > **Sauce Labs**.
 
 

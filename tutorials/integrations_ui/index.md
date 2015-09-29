@@ -1,6 +1,6 @@
 #Integrate Sauce Labs and Slack with Bluemix DevOps Services
 
-######Last modified: 28 September 2015
+######Last modified: 29 September 2015
 
 Time: 15 minutes 
 
@@ -51,9 +51,8 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
 
 1. In the [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1), click <img class="inline" src="./images/deploy-button.png"  alt="Deploy to Bluemix"> to fork the sample into DevOps Services. 
 2. [Log in to or sign up for Bluemix](http://bluemix.net/) to start the Deploy to Bluemix flow.
-![Prompt to log in or sign up for Bluemix][1]
 3. Click **App Details**. 
-![App Details page][2]
+![App Details page][1]
 4. Review the default information for the APP NAME and destination (REGION, ORGANIZATION, and SPACE). Change these settings, as required.
 5. The Integrations section shows information that is specific to the Slack and Sauce Labs integrations. For information about configuring these integrations, see [Configure the Slack integration](#configure_slack) and [Configure the Sauce Labs integation](#configure_sauce_labs).
 
@@ -64,7 +63,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
 1. In the App Details page, navigate to the Integrations section. 
 2. Expand the **SLACK** section.
 3. Enter the authentication token for your Slack account. For instructions about how to locate this token, see [Slack authentication](https://api.slack.com/web#authentication).
-4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipleine. You can use an existing, archived, or new channel.
+4. Enter the name of the Slack channel to send notifications to about build results from your delivery pipleine. You can use an existing, archived, or new channel. If the specified Slack channel doesn't already exist, it is created. If the specified Slack channel is currently archived, it is reactivated.
 	
 
 <a name='configure_sauce_labs'></a>
@@ -92,7 +91,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
    e. Configure the Slack integration to send notifications to the channel that you configured in Slack. These notifications indicate the progress of the deployment, such as "Connected with Project XYZ", "Pipeline Configured", and "Stage 'build" started".
    
    f. Deploy the app to Bluemix.
-   ![Deploy success dialog][3] 
+   ![Deploy success dialog][2] 
    
 2. To view your running application in Bluemix, click **VIEW YOUR APP**. 
 
@@ -104,7 +103,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
 ## View logs and test results
 
 1. On the project's Overview page in DevOps Services, click **MORE**. 
-![MORE button][4]
+![MORE button][2]
 
 2. From the list of available integrations, select any of the following options:  
 
@@ -113,7 +112,7 @@ The tool chain also integrates Slack messaging into the DevOps Services pipeline
   b. Click **Slack** to view all of your activity in the configured channel, including notification messages for the build that just ran.
     
 3. On the project's Overview page, click **BUILD & DEPLOY**, and then navigate to the Sauce Labs job to examine the logs and test results for the pipeline that you ran.
-![Sauce Labs job][5]
+![Sauce Labs job][4]
 
 
 <a name='summary'></a>
@@ -130,8 +129,7 @@ DevOps Services supports integrations with many popular tools. To learn more abo
 
 
 
-[1]: /tutorials/integrations_ui/images/bm_login.png
-[2]: /tutorials/integrations_ui/images/app_details_page.png
-[3]: /tutorials/integrations_ui/images/deploy_success.png
-[4]: /tutorials/integrations_ui/images/more.png
-[5]: /tutorials/integrations_ui/images/sauce_labs_job.png
+[1]: /tutorials/integrations_ui/images/app_details_page.png
+[2]: /tutorials/integrations_ui/images/deploy_success.png
+[3]: /tutorials/integrations_ui/images/more.png
+[4]: /tutorials/integrations_ui/images/sauce_labs_job.png
