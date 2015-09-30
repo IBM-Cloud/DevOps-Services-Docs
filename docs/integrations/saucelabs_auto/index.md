@@ -2,7 +2,7 @@
 
 ###### Last updated: 30 September 2015
 
-Sauce Labs provides automated functional tests that run Java™ or JavaScript tests against your web or mobile app as part of a continuous delivery process. You can integrate Sauce Labs with your IBM&reg; Bluemix&trade; DevOps Services project so that a Sauce Labs test suite can run as a test job in your Build &amp; Deploy pipeline. Those tests can provide act as gates to prevent the deployment of bad code.
+Sauce Labs provides automated functional tests that run Java™ or JavaScript tests against your web or mobile app as part of a continuous delivery process. You can integrate Sauce Labs with your IBM&reg; Bluemix&trade; DevOps Services project so that a Sauce Labs test suite can run as a test job in your Build &amp; Deploy pipeline. These tests can provide valuable flow control for your project as they act as gates to prevent the deployment of bad code..
 
 **Important:** This integration feature is currently beta quality. After you [enable your project to use the integration feature](#enabling_the_beta_features), you cannot disable or modify it. To test the Sauce Labs integration in a copy of your project, [fork another DevOps Services project](#forking_a_devops_services_project). Otherwise, open a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) and click the **Deploy to Bluemix** button to deploy sample code and create a toolchain that you can test the Sauce Labs integration in.
 
@@ -16,7 +16,7 @@ Sauce Labs provides automated functional tests that run Java™ or JavaScript te
 * You must have accounts with these services and tools:
    * [DevOps Services](https://hub.jazz.net). 
    * [IBM Bluemix](http://bluemix.net/).
-   * [Sauce Labs](https://slack.com/). Sauce Labs offers 14-day trials for new accounts. If you want to learn how to use Sauce Labs, [see the official Sauce Labs documentation](https://docs.saucelabs.com/). 
+   * [Sauce Labs](https://saucelabs.com/). Sauce Labs offers 14-day trials for new accounts. If you want to learn how to use Sauce Labs, [see the official Sauce Labs documentation](https://docs.saucelabs.com/). 
 * You must have at least one DevOps Services project with a pipeline that you can use to deploy your app. Otherwise, open a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) and click the **Deploy to Bluemix** button to deploy sample code and create a toolchain that does not already integrate with Sauce Labs.
 
 <a name='forking_a_devops_services_project'></a>
@@ -75,7 +75,7 @@ Before you can configure the Sauce Labs integration, you must enable your projec
 8. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and is deployed to Bluemix.
 ![The project's configured pipeline][5]
 
-9. View the Sauce Labs test results to verify that they are green. When the Deploy stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name. Otherwise, on the project's Overview page, click **MORE** &gt; **Sauce Labs**.
+9. View the Sauce Labs test results to verify that they are green. When the Deploy stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name.
   
 **Tip:** To view the Sauce Labs test results at any time, on the project's Overview page, click **MORE** &gt; **Sauce Labs**.
 

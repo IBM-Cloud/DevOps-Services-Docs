@@ -1,6 +1,6 @@
 #Integrate Sauce Labs and Slack with a Bluemix DevOps Services project
 
-######Last modified: 29 September 2015
+######Last modified: 30 September 2015
 
 Time: 15 minutes 
 
@@ -10,7 +10,7 @@ This DevOps Services toolchain integrates automated functional tests that are ru
 
 The toolchain also integrates Slack messaging into the DevOps Services pipeline. For example, your team can get notifications about build and deploy activities through a Slack channel. 
 
-**Important:** This integration capability is beta quality. After you [deploy your app](#deploy_app), you cannot modify or remove the configured integrations from the generated project.
+**Important:** This integration capability is beta quality. After you [deploy your app](#deploy_app), you cannot modify or remove the configured integrations from the project.
 
 <div class="table-of-contents">
  <table>
@@ -19,7 +19,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
-     <td><a href="#app_details">Fork the app</a></td>
+     <td><a href="#app_details">Fork and set up the app</a></td>
      <td><a href="#configure_slack">Configure the Slack integration</a></td>
      <td><a href="#configure_sauce_labs">Configure the Sauce Labs integration</a></td>
      <td><a href="#deploy_app">Deploy your app</a></td>
@@ -49,7 +49,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 * Review [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1) for guidance and a toolchain for Bluemix. The toolchain includes a Build &amp; Deploy pipeline, Sauce Labs, Git, Web IDE, and Track and Plan.
 
 <a name='app_details'></a>
-## Fork the app
+## Fork and set up the app
 
 1. In the [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1), click <img class="inline" src="./images/deploy-button.png"  alt="Deploy to Bluemix"> to fork the sample into DevOps Services. 
 2. [Log in to Bluemix](http://bluemix.net/) to start the Deploy to Bluemix flow.
