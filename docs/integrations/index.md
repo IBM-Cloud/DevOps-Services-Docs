@@ -1,5 +1,5 @@
-# Integrations 
-###### Last updated: 29 September 2015
+# Integrations <em><span style="color: #35b2d5">BETA</span></em>
+###### Last updated: 01 October 2015
 
 IBM&reg; Bluemix&trade; DevOps Services supports integrations with Sauce Labs and Slack. 
 

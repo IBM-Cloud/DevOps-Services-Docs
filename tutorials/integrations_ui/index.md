@@ -1,6 +1,6 @@
-#Integrate Sauce Labs and Slack with a Bluemix DevOps Services project
+#Integrate Sauce Labs and Slack with a Bluemix DevOps Services project <em><span style="color: #35b2d5">BETA</span></em>
 
-######Last modified: 30 September 2015
+######Last modified: 01 October 2015
 
 Time: 15 minutes 
 
