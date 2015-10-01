@@ -1,6 +1,6 @@
-# Integrating Sauce Labs with Bluemix DevOps Services 
+# Integrating Sauce Labs with Bluemix DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
 
-###### Last updated: 30 September 2015
+###### Last updated: 01 October 2015
 
 Sauce Labs provides automated functional tests that run Java™ or JavaScript tests against your web or mobile app as part of a continuous delivery process. You can integrate Sauce Labs with your IBM&reg; Bluemix&trade; DevOps Services project so that a Sauce Labs test suite can run as a test job in your Build &amp; Deploy pipeline. These tests can provide valuable flow control for your project as they act as gates to prevent the deployment of bad code..
 
@@ -66,9 +66,9 @@ Before you can configure the Sauce Labs integration, you must enable your projec
 
 4. Type the user name for your Sauce Labs account. You can [find your user name in the welcome message at the top of your Sauce Labs account page](https://saucelabs.com/account).
 
-5. Configure a test Sauce Labs job. Select the **Add a Sauce Labs test job in my Build & Deploy pipeline** check box to automatically configure a test Sauce Labs job. Otherwise, on the project's Overview page, click **BUILD &amp; DEPLOY**, and then add jobs to a specific stage. You can run and build Sauce Labs jobs, and you can deploy them to Bluemix.
-   
-6. Click **SAVE**.
+5. Click **SAVE**.
+
+6. Click **ADD JOB** to automatically configure a test Sauce Labs job. You can run and build Sauce Labs jobs, and you can deploy them to Bluemix.
 
 7. On the project's Overview page, click **BUILD &amp; DEPLOY**, and then verify that the test job was created.
 
