@@ -1,6 +1,6 @@
 #Integrate Sauce Labs and Slack with a Bluemix DevOps Services project <em><span style="color: #35b2d5">BETA</span></em>
 
-######Last modified: 01 October 2015
+######Last modified: 06 October 2015
 
 Time: 15 minutes 
 
@@ -51,7 +51,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 <a name='app_details'></a>
 ## Fork and set up the app
 
-1. In the [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1), click <img class="inline" src="./images/deploy-button.png"  alt="Deploy to Bluemix"> to fork the sample into DevOps Services. 
+1. In the [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-2), click <img class="inline" src="./images/deploy-button.png"  alt="Deploy to Bluemix"> to fork the sample into DevOps Services. 
 2. [Log in to Bluemix](http://bluemix.net/) to start the Deploy to Bluemix flow.
 3. Click **App Details**. 
 ![App Details page][1]
