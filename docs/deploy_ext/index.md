@@ -160,7 +160,7 @@ You can send notifications about IBM Container Service, IBM Security Static Anal
 
 Before you begin, create or copy a Slack WebHook URL:
 
-1. Open the Slack Integration page for your project: https://_project_name_.slack.com/services
+1. Open the Slack Integration page for your team: https://_project_name_.slack.com/services
 2. In the list of integrations, locate **Incoming WebHooks** and click **Add**.
 3. Select a channel and click **Add Incoming WebHooks Integration**.
 4. Add a **WebHook URL** or copy an existing one.
@@ -226,7 +226,7 @@ You can send notifications about IBM Container Service, IBM Security Static Anal
 
 Before you begin, create or copy and existing HipChat token:
 
-1. Go to you HipChat Account page for your project: https://_project_name_.hipchat.com/account/api
+1. Go to you HipChat Account page for your team: https://_project_name_.hipchat.com/account/api
 2. Create a new token, or use an existing one.
 
 To create HipChat notifications:
