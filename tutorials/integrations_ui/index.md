@@ -1,6 +1,6 @@
 #Integrate Sauce Labs and Slack with a Bluemix DevOps Services project <em><span style="color: #35b2d5">BETA</span></em>
 
-######Last modified: 08 October 2015
+######Last modified: 13 October 2015
 
 Time: 15 minutes 
 
@@ -64,7 +64,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 
 1. On the App Details page, go to the Integrations section. 
 2. Expand the **SLACK** section.
-3. Type the API authentication token for your Slack account. For instructions about how to find the token, see [Slack authentication](https://api.slack.com/web#authentication). 
+3. Type the API authentication token for your Slack account. You must use a generated full-access token to authenticate with Slack. For instructions about how to find the token, see [Slack authentication](https://api.slack.com/web#authentication). 
 4. Type the name of the Slack channel that you want pipeline notifications to be sent to. You can use an existing, archived, or new channel. If the specified Slack channel doesn't exist, it is created. If the specified Slack channel is currently archived, it is reactivated.
 	
 
