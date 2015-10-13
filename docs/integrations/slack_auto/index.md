@@ -1,6 +1,6 @@
 # Integrating Slack with Bluemix DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
 
-###### Last updated: 07 October 2015
+###### Last updated: 13 October 2015
 
 Slack provides real-time messaging for team communications. You can integrate Slack with your IBM&reg; Bluemix&trade; DevOps Services project so that notifications about build results from your Build &amp; Deploy pipeline are posted on a Slack channel. 
 
@@ -62,7 +62,7 @@ Before you can configure the Slack integration, you must enable your project to 
 2. Click **SLACK**.
 ![Slack integration page][4]
 
-3. Type the API authentication token for your Slack account. For instructions about how find this token, see [Slack authentication](https://api.slack.com/web#authentication).
+3. Type the API authentication token for your Slack account. You must use a generated full-access token to authenticate with Slack. For instructions about how find this token, see [Slack authentication](https://api.slack.com/web#authentication).
 
 4. Type the name of the Slack channel that you want pipeline notifications to be sent to. You can use an existing, archived, or new channel. If the specified Slack channel doesn't exist, it is created. If the specified Slack channel is currently archived, it is reactivated.
 
