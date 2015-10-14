@@ -1,6 +1,6 @@
 # Integrating Slack with Bluemix DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
 
-###### Last updated: 13 October 2015
+###### Last updated: 14 October 2015
 
 Slack provides real-time messaging for team communications. You can integrate Slack with your IBM&reg; Bluemix&trade; DevOps Services project so that notifications about build results from your Build &amp; Deploy pipeline are posted on a Slack channel. 
 
