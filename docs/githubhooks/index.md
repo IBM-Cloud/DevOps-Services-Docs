@@ -56,9 +56,8 @@ If you want to switch your DevOps Services Git repo to use a GitHub repo that yo
 **Note**: GitHub is the only option.  
 5. Select a GitHub repo from the list.
 ![List of available GitHub repos][18]
-6. Select **I agree**.   
-**Note**: Make sure all code changes are committed. Pending changes and your Git repo are deleted when the process is complete.
-7. Click **SUBMIT**. 
+6. Select **I agree** and then click **SUBMIT**. 
+**Important**: Make sure all code changes are committed before you click **SUBMIT**. Pending changes and your Git repo are deleted when the process completes.
 
 You can verify the repo change by clicking **Git URL** on the project overview page. The URL includes `github.com`.
 
