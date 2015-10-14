@@ -1,6 +1,6 @@
-#Develop a Java app from Bluemix
+#Develop and deploy a Java app
 
-###### Last updated: 24 August 2015
+###### Last updated: 9 September 2015
 
 Time: 30 minutes
 
