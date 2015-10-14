@@ -17,7 +17,7 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
 <a name='create_project'></a>
 ##Creating a DevOps Services project and a GitHub repo
 
-If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github).   
+If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github).  If you already have a DevOps Git repo and you want to move it to a GitHub repo, skip to [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo).
 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.
 2. If this project is your first project, click **Start coding**. Otherwise, click **CREATE PROJECT**.   
@@ -47,13 +47,12 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 
 If you want to switch your DevOps Services Git repo to use a GitHub repo that you already set up, complete the following steps:
 1. Sign in to [DevOps Services][1]. The My Projects page opens.
-2. Click the project settings icon for the Git project that you want to change.  
+2. Click the project settings icon for the Git project that you want to change.
 ![My Project page with project settings icon][15]  
 3. On the General page, click **UPDATE**.  
 ![Update button on the General page of project settings][16]  
-4. Select the new location and then click **SELECT REPO**.  
+4. Select the new location and then click **SELECT REPO**.
 ![Select Repo button on the update to a GitHub repo panel][17]  
-**Note**: GitHub is the only option.  
 5. Select a GitHub repo from the list.
 ![List of available GitHub repos][18]
 6. Select **I agree** and then click **SUBMIT**. 
