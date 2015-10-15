@@ -73,9 +73,9 @@ Before you can configure the Sauce Labs integration, you must enable your projec
 7. On the project's Overview page, click **BUILD &amp; DEPLOY**, and then verify that the test job was created.
 
 8. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and is deployed to Bluemix.
-![The project's configured pipeline][5]
 
 9. View the Sauce Labs test results to verify that they are green. When the Deploy stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name.
+![The project's configured pipeline][5]
   
 **Tip:** To view the Sauce Labs test results at any time, on the project's Overview page, click **MORE** &gt; **Sauce Labs**.
 
