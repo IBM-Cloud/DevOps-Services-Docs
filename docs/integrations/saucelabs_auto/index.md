@@ -64,7 +64,7 @@ Before you can configure the Sauce Labs integration, you must enable your projec
 
 3. Type the user name for your Sauce Labs account. You can [find your user name in the welcome message at the top of your Sauce Labs account page](https://saucelabs.com/account).
 
-4. Type the access token for your Sauce Labs account. You can [find the token in the lower-left corner of your Sauce Labs account page](https://saucelabs.com/account).
+4. Type the access key for your Sauce Labs account. You can [find the key in the lower-left corner of your Sauce Labs account page](https://saucelabs.com/account).
 
 5. Click **SAVE**.
 
