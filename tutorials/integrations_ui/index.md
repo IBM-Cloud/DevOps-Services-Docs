@@ -74,7 +74,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 1. On the App Details page, go to the Integrations section. 
 2. Expand the **SAUCE LABS** section.
 3. Type the user name that is associated with your Sauce Labs account. You can [find your user name in the welcome message at the top of your Sauce Labs account page](https://saucelabs.com/account).
-4. Type the access token for your Sauce Labs account. You can [find this token in the lower-left corner of your Sauce Labs account page](https://saucelabs.com/account).
+4. Type the access key for your Sauce Labs account. You can [find this key in the lower-left corner of your Sauce Labs account page](https://saucelabs.com/account).
 
 
 <a name='deploy_app'></a>
