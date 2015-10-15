@@ -46,12 +46,12 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 
 * If you don't already have a Slack account, [register for one](https://slack.com/).
 
-* Review [DevOps Tutorial Application](https://github.com/oneibmcloud/devops-tutorial-1) for guidance and a toolchain for Bluemix. The toolchain includes a Build &amp; Deploy pipeline, Sauce Labs, Git, Web IDE, and Track and Plan.
+* Review [DevOps toolchain sample app](https://github.com/oneibmcloud/devops-tutorial-1) for guidance and a toolchain for Bluemix. The toolchain includes a Build &amp; Deploy pipeline, Sauce Labs, Git, Web IDE, and Track and Plan.
 
 <a name='app_details'></a>
 ## Fork and set up the app
 
-1. In the [DevOps toolchain sample app](https://github.com/oneibmcloud/devops-tutorial-2), click <img class="inline" src="./images/deploy-button.png"  alt="Deploy to Bluemix"> to fork the sample into DevOps Services. 
+1. In the [DevOps automated toolchain sample app](https://github.com/oneibmcloud/devops-tutorial-2), click <img class="inline" src="./images/deploy-button.png"  alt="Deploy to Bluemix"> to fork the sample into DevOps Services. 
 2. [Log in to Bluemix](http://bluemix.net/) to start the Deploy to Bluemix flow.
 3. Click **App Details**. 
 ![App Details page][1]
