@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 03 September 2015
+##### Last updated: 21 October 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -9,6 +9,7 @@ ____
 -   [What help resources are available?](#q17)
 -   [Why can't I accept an invitation?](#invite)
 -   [How do I change the email address of the DevOps Services account that is associated with my IBM id? ](#changeemail)
+-   [Why am I asked to register for Bluemix account when I log in to DevOps Services?](#BluemixReg)
 -   [Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client?](#rtcgit)
 -   [Can I connect my project to a GitHub repository?](#git)
 -   [Can I remove DevOps Services access from my GitHub account?](#github_revoke)
@@ -63,6 +64,11 @@ If you try to accept a project invitation but get a message that states `A probl
 1. Go to your [DevOps Services profile](https://hub.jazz.net/account/profile). 
 2. On the left, click **PERSONAL INFORMATION**, and then update your email address.
 
+<a name="BluemixReg"></a>
+
+###  Why am I asked to register for Bluemix account when I log in to DevOps Services?
+
+As we add new features, DevOps Services and Bluemix are streamlining the registration and project-creation processes.  In the future, you will use your Bluemix account to access DevOps Services. Many DevOps Services users have already registered with Bluemix to deploy apps and use other Bluemix features. If you haven't registered with Bluemix yet, doing so is nearly automatic. All we need is a phone number to create your Bluemix account and you're done! Currently, this step is optional, but soon you will be required to register with Bluemix in order to use DevOps Services.
 
 <a name="rtcgit"></a>
 
