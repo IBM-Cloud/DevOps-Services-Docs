@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 20 October 2015
+##### Last updated: 22 October 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -63,7 +63,7 @@ If you try to accept a project invitation but get a message that states `A probl
 1. Go to your [DevOps Services profile](https://hub.jazz.net/account/profile). 
 2. On the left, click **PERSONAL INFORMATION**, and then update your email address.
 
-**Important**: When you change the email address of your DevOps Services account, the email address of the linked IBM id is not automatically updated. To synchronize these two accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If the email addresses of these linked accounts are not the same, you are prompted to synchronize them the next time that you log in to DevOps Services.
+**Important**: When you update the email address of your DevOps Services account, the email address of the associated IBM id isn’t automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you will be prompted to synchronize them.
 
 
 <a name="rtcgit"></a>
