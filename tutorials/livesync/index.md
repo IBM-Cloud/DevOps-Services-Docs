@@ -1,6 +1,6 @@
 #Test and debug a Node.js app with Bluemix Live Sync
 
-###### Last updated: 24 August 2015
+###### Last updated: 22 October 2015
 
 Testing and debugging are critical to ensure that your app performs without unexpected results. In IBM&reg; Bluemix&trade; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and make changes to your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app while having all of the benefits of deploying with Bluemix.
 
@@ -101,7 +101,8 @@ Another benefit of Live Edit mode is the Debug feature.  You can edit code dynam
 
 1. On the run bar, click the debug icon <img class="inline"  src="./images/debug_icon.png"  alt="The debug tools icon">.
 ![Debug tools console](images/debug_console.png)
-2. Select an option to manage the runtime of your app or begin debugging.
+2. Click **Suspend** to temporarily suspend the app so that the debugger can connect to it.
+3. Select an option to continue.
 
  * If you click **Open Shell**, a Bash shell is displayed.  In the shell, you can access the container that your app is running in. You can remotely run diagnostic shell commands to administer your app.
 
