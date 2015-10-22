@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 21 October 2015
+##### Last updated: 22 October 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -68,7 +68,7 @@ If you try to accept a project invitation but get a message that states `A probl
 
 ###  Why am I asked to register for Bluemix account when I log in to DevOps Services?
 
-As we add new features, DevOps Services and Bluemix are streamlining the registration and project-creation processes.  In the future, you will use your Bluemix account to access DevOps Services. Many DevOps Services users have already registered with Bluemix to deploy apps and use other Bluemix features. If you haven't registered with Bluemix yet, doing so is nearly automatic. All we need is a phone number to create your Bluemix account and you're done! Currently, this step is optional, but soon you will be required to register with Bluemix in order to use DevOps Services.
+As we add new features, DevOps Services and Bluemix are streamlining the registration and project-creation processes. In the future, you will use your Bluemix account to access DevOps Services. Many DevOps Services users have already registered with Bluemix to deploy apps and use other Bluemix features. If you haven't registered with Bluemix yet, doing so is nearly automatic. All we need is a phone number to create your Bluemix account and you're done! Currently, this step is optional, but soon you will be required to register with Bluemix in order to use DevOps Services.
 
 <a name="rtcgit"></a>
 
