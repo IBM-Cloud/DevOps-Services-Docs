@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 14 October 2015
+###### Last updated: 26 October 2015
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
@@ -54,8 +54,10 @@ If you want to switch your DevOps Services Git repo to use a GitHub repo that yo
 4. Select the new location and then click **SELECT REPO**.  
 ![Select Repo button on the update to a GitHub repo panel][17]    
 5. Select a GitHub repo from the list.    
-![List of available GitHub repos][18]    
-6. Select **I agree** and then click **SUBMIT**.     
+![List of available GitHub repos][18]  
+**Tip**: Repos that are grayed out on the list are not available because they are used by another project. If you select an unavailable repo you can determine which project is using it if the project is public or if it's private and you are a member. 
+6. If you are prompted to authorize with or log in to GitHub, do so and then return to DevOps Services.  
+7. Select **I agree** and then click **SUBMIT**.     
 **Important**: Make sure all code changes are committed before you click **SUBMIT**. Pending changes and your Git repo are deleted when the process completes.
 
 You can verify the repo change by clicking **Git URL** on the project overview page. The URL includes `github.com`, for example: `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`.
