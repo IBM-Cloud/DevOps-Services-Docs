@@ -63,9 +63,12 @@ If you try to accept a project invitation but get a message that states `A probl
 1. Go to your [DevOps Services profile](https://hub.jazz.net/account/profile). 
 2. On the left, click **PERSONAL INFORMATION**, and then update your email address.
 
+<<<<<<< HEAD
 **Important**: When you update the email address of your DevOps Services account, the email address of the associated IBM id isn’t automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you will be prompted to synchronize them.
 
 
+=======
+>>>>>>> 8c175bd04ab38c90db4638f60744394cee5d20b9
 <a name="rtcgit"></a>
 
 ### Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client? 
