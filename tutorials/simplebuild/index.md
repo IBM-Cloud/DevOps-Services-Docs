@@ -1,6 +1,6 @@
 #Creating a basic pipeline
 
-Last modified: 1 April 2015
+###### Last updated: 1 April 2015
 
 Time: 30 minutes
 
@@ -13,7 +13,6 @@ Follow the steps in this tutorial to create a simple Build & Deploy pipeline for
 * [Summary](#summary)
 * [Next steps](#nextsteps)
 
----
 
 <a name='objectives'></a>
 ##Learning objectives
@@ -22,7 +21,6 @@ Follow the steps in this tutorial to create a simple Build & Deploy pipeline for
 * Create a build and deployment pipeline by using the Build & Deploy feature.
 
 
----
 
 
 <a name='before_begin'></a>
@@ -40,7 +38,6 @@ Follow the steps in this tutorial to create a simple Build & Deploy pipeline for
 
 
 
----
 
 <a name='fork_app'></a>
 ##Fork a sample project
@@ -55,7 +52,6 @@ To quickly get started developing, fork a sample project named WordCounter. Word
 
 A new project is created with a copy of the code from the sample project. You're ready to build and deploy.
 
----
 <a name='deploy_app'></a>
 ##Create build and deployment stages
 
@@ -117,12 +113,10 @@ A new project is created with a copy of the code from the sample project. You're
 
 
 
----
 <a name='summary'></a>
 ##Summary
 You created a basic build and deployment pipeline for a project. You are ready to create builds and deployments for your projects. 
 
----
 <a name='nextsteps'></a>
 ##Next steps
 

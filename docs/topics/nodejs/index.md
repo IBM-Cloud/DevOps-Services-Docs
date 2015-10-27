@@ -1,17 +1,25 @@
-### Tutorial: [Getting Started with Bluemix and Bluemix DevOps Services using Node.js](/tutorials/jazzeditor)  
+# Node.js
+
+### Tutorial: [Develop and deploy a Node.js app](/tutorials/jazzeditor)  
 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, git, web_ide, pipeline, cloud_foundry
 
-### Tutorial: [Developing Bluemix apps in Node.js with the Web IDE](/tutorials/jazzweb)  
-<img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide, git, pipeline, manifest
+### Article: [Develop a public transportation system simulator with Node.js and the dashDB service](http://www.ibm.com/developerworks/analytics/library/ba-bluemix-pub-transport/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 8 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, bootstrap, dashdb, jquery_api, nodejs
+
+### Article: [Move a toy car with your mind](http://www.ibm.com/developerworks/analytics/library/ba-muse-toycar-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 8 May 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, cloudant_nosql, dashdb, nodejs, python, wearable
+
+### Article: [Develop Node.js apps without leaving your browser](http://www.ibm.com/developerworks/web/library/wa-develop-deploy-debug-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
+Last updated: 8 April 2015 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
+bluemix, bluemix_debugger, bluemix_live_sync, bluemix_shell, live_edit, nodejs
+
 
 
 ### Article: [Set up an agile team environment to build an Ionic app](http://www.ibm.com/developerworks/mobile/library/mo-ionic-framework-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 05 December 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> 
 ionic, bluemix, nodejs, mobile, git, pipeline, mobile-cloud, mobile-quality-assurance
-
-### Article: [Move a toy car with your mind](http://www.ibm.com/developerworks/analytics/library/ba-muse-toycar-app/index.html) <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 13 November 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, arduino, muse, python, cloudant
-
 
 ### Article: [Create a natural language question answering system with IBM Watson and Bluemix Services](http://www.ibm.com/developerworks/cloud/library/cl-watson-films-bluemix-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 29 September 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, watson, eclipse, git, nodejs, pipeline
@@ -27,9 +35,6 @@ Last updated: 29 July 2014 <img src="../all/images/tag.png"  align="bottom" styl
 
 ### Article: [Build your first Node.js website, Part 3](http://www.ibm.com/developerworks/web/library/wa-simplenode3-app/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
 Last updated: 29 July 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, web_ide, redis
-
-### Article: [Develop a public transportation system simulator with Node.js and Analytics Warehouse on IBM Bluemix](http://www.ibm.com/developerworks/analytics/library/ba-bluemix-pub-transport/index.html?ca=drs-)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">
-Last updated: 01 July 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, nodejs, bootstrap, web_ide, jquery
 
 ### Article: [Jump-start your hackathon efforts with DevOps Services and Bluemix](http://www.ibm.com/developerworks/cloud/library/cl-hackathon-app/index.html)  <img src="../all/images/sout.gif"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;">  
 Last updated: 29 June 2014 <img src="../all/images/tag.png"  align="bottom" style="display: inline; margin: 0px; border-style: none; margin-bottom: 5px;"> bluemix, mongodb, nodejs, pipeline, jade, git, web_ide

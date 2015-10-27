@@ -1,7 +1,5 @@
 # Features
 
-Last modified: 19 February 2015
-
 ## See what IBM® Bluemix™ DevOps Services can do for you:
 * [Easy to find What's New](#whatsnew)
 * [Git hosting](#githosting)

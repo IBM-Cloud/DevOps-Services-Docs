@@ -1,49 +1,51 @@
-#Get started with Bluemix and Bluemix DevOps Services using Node.js
+#Develop and deploy a Node.js app
 
-Last modified: 21 April 2015
+###### Last updated: 9 September 2015
 
-Time: 30 minutes
+Time: 15 minutes
 
-* [Learning objectives](#objectives)
-* [Before you begin](#prereq)
-* [Create an app with Bluemix](#create_bluemix_app)
-* [Set up Git integration and auto-deploy](#git_integration_and_autodeployment)
-* [Push changes to the Git repository by using the Web IDE](#push)
-* [Summary](#summary)
-* [Next steps](#nextsteps)
+IBM&reg; Bluemix&trade; is an open-standards, cloud-based platform where you can build, manage, and run all types
+of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, app monitoring, and features from ecosystem partners and open source, all through an as-a-service model in the cloud.
+
+In this tutorial, you create an app in Bluemix by using the SDK for Node.js starter pack. You then create a Git repository for the app and push changes to that repo from the IBM&reg; Bluemix&trade; DevOps Services Web IDE.
+
+If you want more information about Bluemix, see [Getting Started with Bluemix](https://www.ng.bluemix.net/docs/#) and [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview).
+
+If you're ready to try Bluemix, start this tutorial!
+
+<div class="table-of-contents">
+ <table>
+   <tr>
+     <td colspan="6"><h4>Summary of steps</h4></td>
+   </tr>
+   <tr>
+     <td><a href="#prereq">Before you begin</a></td>
+     <td><a href="#create_bluemix_app">Create an app with Bluemix</a></td>
+     <td><a href="#git_integration_and_autodeployment">Set up Git integration and auto-deploy</a></td>
+     <td><a href="#push">Push changes to the Git repository by using the Web IDE</a></td>
+     <td><a href="#summary">Summary</a></td>
+     <td><a href="#nextsteps">Next steps</a></td>
+   </tr>
+ </table>
+</div>
+
  
- 
- ---
-<a name='objectives'></a>
-##Learning objectives
-
-* Create an app in IBM&reg; Bluemix&trade; by using the SDK for Node.js starter pack.
-* Create a Git repository for the app.
-* Push changes to the Git repository from the IBM&reg; Bluemix&trade; DevOps Services Web IDE.
-
----
-
 <a name='prereq'></a>
 ##Before you begin
 
-[Sign up for DevOps Services](https://hub.jazz.net/register). When you sign up, you'll create an IBM id, create an alias, and register with Bluemix. 
+To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
 
----
- 
+<h5> </h5>
+<div class="container-fluid small_bottom_space">
+   <div class="row pbl button-links" id="overview-links">
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
+			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			</div>
+		</a>
+   </div>
+</div>
 <a name='create_bluemix_app'></a>
-##Create an app with IBM Bluemix
-
-Bluemix is an open-standards, cloud-based platform where you can build, manage, and run all types
-of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, 
-app monitoring, and features from ecosystem partners and open source, 
-all through an as-a-service model in the cloud.
-
-You can find helpful information on the Bluemix website:
-
-* [Getting Started with Bluemix](https://www.ng.bluemix.net/docs/#)
-* [Bluemix Overview](https://www.ng.bluemix.net/docs/#overview/overview.html#overview)
-
-To get started now, try this tutorial. You'll create an app and deploy it.
+##Create an app in Bluemix
 
 1. Sign in to Bluemix. The Dashboard opens:
 ![Bluemix Dashboard](/tutorials/jazzeditor/images/bm-home_NEW.png)
@@ -53,7 +55,7 @@ For example, if `bob@example.com` logs in to Bluemix for the first time, the act
 is `bob@example.com`.
 If you create more organizations or spaces in Bluemix, use the same ones as you follow the tutorials. Use the default selections.
 
-2. Click **CREATE AN APP**. For the kind of app that you are creating, click **Web**.  
+2. Click **CREATE AN APP**. For the kind of app that you are creating, click **WEB**.  
 
 3. For your starter, click **SDK for Node.js**. Review the docs and details, and then click **CONTINUE**.
 
@@ -63,7 +65,6 @@ After a moment, the app starts. The app's Overview page opens and shows that the
 
 Now that your app is running, you can see and modify its code by using DevOps Services.
 
----
 <a name='git_integration_and_autodeployment'></a>
 ##Set up Git integration and auto-deploy in DevOps Services
 
@@ -80,7 +81,6 @@ You created a Git repository, populated it with the example code, and deployed t
 3. Go to the app's Overview page and click **EDIT CODE**. Your new project opens in the web integrated development environment (Web IDE).  
 ![CODE button](/tutorials/jazzeditor/images/bm-code-button_NEW.png)
 
----
 <a name='push'></a>
 ##Push changes to the Git repository by using the Web IDE
 
@@ -90,34 +90,35 @@ based on [the Eclipse Orion open-source project](http://orion.eclipse.org/).
 
 You can edit files with syntax coloring support for multiple languages, including HTML, 
 CSS, JavaScript, Ruby, and Python. For some languages, such as JavaScript, the Web IDE also supports 
-syntax checking and code completion, both for standard language constructs and for the services that Bluemix provides. To use content assist, press Ctrl+Space. For example, this image shows code completion for the standard Node.js express module:
+syntax checking and code completion, both for standard language constructs and for the services that Bluemix provides. To use content assist, press Ctrl+Space. For example, this image shows code completion for the standard Node.js express module.
 ![Orion showing express completions](/tutorials/jazzeditor/images/completion.png)
 
-4. In the directory, find a file to modify; for example, `views/body.jade`. 
+To make a change to a file and then push the change, follow these steps:
+
+1. In the directory, find a file to modify; for example, `public/index.html`. 
 
 5. Edit the file in the editor.
 ![Orion editing index](/tutorials/jazzeditor/images/orion-really-cool_NEW.png)
 
 6. Push the change by using the integrated Git support. 
 
-	a. From the leftmost menu, click the **Git Repository** icon.
+	a. From the leftmost menu, click the **Git Repository** icon <img  class="inline" src="/tutorials/jazzeditor/images/git.gif" alt="Git Repository icon">.
 	
-	b. Select the changed file:
+	b. Select check box for the changed file.
 ![Orion Git staging](/tutorials/jazzeditor/images/orion-git-stage_NEW.png)
-	c. Add a commit message and commit the changes:
+	c. Type a commit message, and then click **Commit**.
 ![Orion Git commit](/tutorials/jazzeditor/images/orion-commit_NEW.png)
-	d. Push the changes:
+	d. In the Outgoing section on the left, click **Push**.
 ![Orion Git push](/tutorials/jazzeditor/images/orion-push_NEW.png)
 
 7. To verify that your code was deployed, 
 click **BUILD & DEPLOY** and wait until you see an indication that the 
-app was deployed again. In the Deploy stage, under LAST EXECUTION RESULT, click the URL link that is below the app's name.
+app was deployed again. On the Deploy stage, in the LAST EXECUTION RESULT section, click the URL link under the app's name.
 ![Clicking the web app's URL](/tutorials/jazzeditor/images/click-webapp-url.png)
 
 Your update is shown.
 ![Our really cool app](/tutorials/jazzeditor/images/really-cool_NEW.png)
 
----
 <a name='summary'></a>
 ##Summary
 
@@ -132,6 +133,6 @@ and verified your changes.
 <a name='nextsteps'></a>
 ##Next steps
 
-After you have completed this tutorial, [learn more about testing your application as you develop by using Bluemix Live Sync](/tutorials/livesync). 
+[Learn more about testing your app as you develop by using Bluemix Live Sync](/tutorials/livesync). 
 
 [1]: /tutorials/jazzeditor/images/runbar_green.png
