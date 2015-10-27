@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 22 October 2015
+##### Last updated: 27 October 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -9,6 +9,7 @@ ____
 -   [What help resources are available?](#q17)
 -   [Why can't I accept an invitation?](#invite)
 -   [How do I change the email address of the DevOps Services account that is associated with my IBM id? ](#changeemail)
+-   [Why am I asked to register for a Bluemix account when I log in to DevOps Services?](#BluemixReg)
 -   [Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client?](#rtcgit)
 -   [Can I connect my project to a GitHub repository?](#git)
 -   [Can I remove DevOps Services access from my GitHub account?](#github_revoke)
@@ -63,12 +64,14 @@ If you try to accept a project invitation but get a message that states `A probl
 1. Go to your [DevOps Services profile](https://hub.jazz.net/account/profile). 
 2. On the left, click **PERSONAL INFORMATION**, and then update your email address.
 
-<<<<<<< HEAD
-**Important**: When you update the email address of your DevOps Services account, the email address of the associated IBM id isn’t automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you will be prompted to synchronize them.
+**Important**: When you update the email address of your DevOps Services account, the email address of the associated IBM id isn’t automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you will be prompted to synchronize them.  
 
+<a name="BluemixReg"></a>
 
-=======
->>>>>>> 8c175bd04ab38c90db4638f60744394cee5d20b9
+###  Why am I asked to register for a Bluemix account when I log in to DevOps Services?
+
+The DevOps Services and Bluemix teams are streamlining their registration and project-creation processes. Soon, to access DevOps Services, you'll use your Bluemix account. Many DevOps Services users have already registered with Bluemix to deploy apps and use other Bluemix features. If you don't have a Bluemix account yet, registering is easy: all you need to do is provide a phone number. Register today to ensure that you can access DevOps Services without interruption as it integrates more closely with Bluemix.
+
 <a name="rtcgit"></a>
 
 ### Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client? 
