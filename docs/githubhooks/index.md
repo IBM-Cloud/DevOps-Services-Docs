@@ -8,9 +8,7 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
 
  * [Creating a DevOps Services project and a GitHub repo](#create_project)
  * [Connecting a DevOps Services project to a GitHub repo](#existing_github)
- <!---
- * [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo)
--->
+ <!--- * [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo) -->
  * [Setting up the GitHub hook](#github_hook)
  * [Testing the hook](#create_work_item)
  * [Adding a link after a change is pushed](#post_push)
@@ -44,8 +42,7 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 7. Make sure that the **Add features for Scrum development** check box is selected.
 8. Click **CREATE**.  
 
- <!---
-<a name='change_repo'></a>
+<!--- <a name='change_repo'></a>
 ##Changing from a DevOps Services Git repo to a GitHub repo
 
 If you want to switch your DevOps Services Git repo to use a GitHub repo that you already set up, complete the following steps:
@@ -64,8 +61,8 @@ If you want to switch your DevOps Services Git repo to use a GitHub repo that yo
 7. Select **I agree** and then click **SUBMIT**.     
 **Important**: Make sure all code changes are committed before you click **SUBMIT**. Pending changes and your Git repo are deleted when the process completes.
 
-You can verify the repo change by clicking **Git URL** on the project overview page. The URL includes `github.com`, for example: `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`.
--->
+You can verify the repo change by clicking **Git URL** on the project overview page. The URL includes `github.com`, for example: `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. -->
+
 <a name='github_hook'></a>
 ## Setting up the GitHub hook
 
