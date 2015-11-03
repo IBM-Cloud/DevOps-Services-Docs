@@ -29,7 +29,9 @@ Project admins can do the tasks that project members can do as well as these tas
 * Configure Build and Deploy
 * Update these project settings: 
 
-	a. Change the project photo and description
+	a. Update the project repository type and location to use GitHub
+	
+	b. Change the project photo and description
 	
 	b. Enable or disable project privacy
 	
@@ -41,7 +43,6 @@ Project admins can do the tasks that project members can do as well as these tas
 	
 	b. Force pushes
 	
-* Update the project repository type and location to use GitHub
 
 <a name='project_member_privileges'></a>
 ##Project member privileges
