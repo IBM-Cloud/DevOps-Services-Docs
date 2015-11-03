@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 02 November 2015
+###### Last updated: 03 November 2015
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
@@ -56,14 +56,11 @@ Complete these steps if you are using a GitHub repo that you already have:
 ![Update button on the General page of project settings][16]  
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
 ![Authorize with GitHub option on update to a GitHub repository page][19]
-5. Select the new location and then click **SELECT REPO**.  
-![Select Repo button on the update to a GitHub repo panel][17]    
-6. Select a GitHub repo from the list.    
-![List of available GitHub repos][18]  
+5. Click **SELECT AN EXISTING REPO**.  
 **Tip**: Repos that are grayed out on the list are not available because they are used by another project. If you select an unavailable repo you can determine which project is using it if the project is public or if it's private and you are a member. 
-7. Select **I agree** and then click **SUBMIT**.     
+6. Follow the prompts to select a repo. When you are finished, click **SUBMIT**.
 
-
+  
 Complete these steps if you are creating a new GitHub repo:
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
 **Important**: Make sure all code changes are committed before you click **SUBMIT**. Pending changes and your Git repo are deleted when the process completes.
@@ -73,7 +70,8 @@ Complete these steps if you are creating a new GitHub repo:
 ![Update button on the General page of project settings][16]  
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
 ![Authorize with GitHub option on update to a GitHub repository page][19]
-5.   More steps go here .... 
+5. Click **CREATE A NEW REPO**.
+6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
 
