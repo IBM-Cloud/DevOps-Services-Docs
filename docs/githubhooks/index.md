@@ -45,7 +45,7 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 <a name='change_repo'></a>
 ##Changing from a DevOps Services Git repo to a GitHub repo
 
-If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also create a GitHub repo to associate with your project.](#new_ghrepo).
+If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also create a GitHub repo to associate with your project.](#new_ghrepo)
 
 <a name='existing_ghrepo'></a>
 ###	To configure your project to work with a GitHub repo that you already have, follow these steps:
