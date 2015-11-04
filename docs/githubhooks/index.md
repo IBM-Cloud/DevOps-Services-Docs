@@ -45,12 +45,12 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 <a name='change_repo'></a>
 ##Changing from a DevOps Services Git repo to a GitHub repo
 
-If you’re using a DevOps Services Git repo but want to use a GitHub repo instead, follow these steps. You can either configure your project to [work with a GitHub repo that you already have](#existing_ghrepo), or [create a GitHub repo to associate with your project](#new_ghrepo).
+If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also create a GitHub repo to associate with your project.](#new_ghrepo).
 
 <a name='existing_ghrepo'></a>
 ###	To configure your project to work with a GitHub repo that you already have, follow these steps:
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
-**Important**: To avoid losing your work, make sure all code changes are committed before you continue. Pending changes and your Git repo are deleted when the process completes.
+**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
 3. On the General page, click **UPDATE**.  
@@ -64,7 +64,7 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo inste
 <a name='new_ghrepo'></a>  
 ###To create a GitHub repo to associate with your project, follow these steps: 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
-**Important**: To avoid losing your work, make sure that all code changes for this project are committed before you continue. Pending changes and your Git repo are deleted when the process completes.
+**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
 3. On the General page, click **UPDATE**.  
