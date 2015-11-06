@@ -165,10 +165,12 @@ In addition to job logs, you can view unit test results, generated artifacts, an
 ##Controlling access
 
 You can restrict who is able to run or modify a pipeline from the Pipeline Settings page. To open the Pipeline Settings page, click the gear icon at the top of the Pipeline: All Stages page. 
+![The pipeline settings gear icon][22]
 
 Select the first checkbox, **Restrict deployments**, to restrict manual stage runs to project members who have developer permissions in targeted Bluemix orgs and spaces. 
 
 Select the second checkbox, **Restrict pipeline modifications**, to restrict pipeline modifications to project administrators. 
+![The Pipeline Settings page with both checkboxes selected][23]
 
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline
@@ -197,3 +199,5 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [19]: #add_stage
 [20]: #add_job
 [21]: ../deploy_ext
+[22]: ./images/pipeline_settings_icon.png
+[23]: ./images/pipeline_settings.png
