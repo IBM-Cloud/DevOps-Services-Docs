@@ -28,7 +28,7 @@ projects), or with the world.  Edit your source, push commits, and
 automatically deploy changes to	the cloud, all without leaving your
 browser. And, don't worry, your favorite Git client is supported too.
  
-![Integrated source code editor](/features/images/git-hosting.png)		
+![Integrated source code editor](/features/images/git-hosting1.png)		
 
 <a name='gitrepo'></a>
 ## Connect with your GitHub repository
@@ -38,7 +38,7 @@ tools to code, and manage your project with  DevOps Services.  You
 can reference a work item in the GitHub comments before you push 
 code changes, and the work item is updated with the new commit information.
 
-![User interface](/features/images/GitIntegration1.png)		
+![User interface](/features/images/GitIntegration.png)		
 
 <a name='yourwork'></a>
 ## Your work in one place
