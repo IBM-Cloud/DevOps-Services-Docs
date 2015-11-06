@@ -2,7 +2,7 @@
 
 ###### Last updated: 6 November 2015
 
-The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
+The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
 * [Stages](#stages)
 * [Jobs](#jobs)
@@ -164,13 +164,9 @@ In addition to job logs, you can view unit test results, generated artifacts, an
 <a name="access"></a>
 ##Controlling access
 
-You can restrict who is able to run or modify a pipeline from the Pipeline Settings page. To open the Pipeline Settings page, click the gear icon at the top of the Pipeline: All Stages page. 
+You can restrict who is able to run stages or modify a pipeline. To do so, go to the Pipeline Settings page, which you can reach by clicking the **Stage Configuration** icon on the Pipeline: All Stages page. 
 ![The pipeline settings gear icon][22]
 
-Select the first checkbox, **Restrict deployments**, to restrict manual stage runs to project members who have developer permissions in targeted Bluemix orgs and spaces. 
-
-Select the second checkbox, **Restrict pipeline modifications**, to restrict pipeline modifications to project administrators. 
-![The Pipeline Settings page with both checkboxes selected][23]
 
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline
