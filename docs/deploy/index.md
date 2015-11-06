@@ -1,8 +1,8 @@
 #Build and deploy
 
-###### Last updated: 7 August 2015
+###### Last updated: 6 November 2015
 
-The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
+The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
 * [Stages](#stages)
 * [Jobs](#jobs)
@@ -13,6 +13,7 @@ The IBM® Bluemix™ DevOps Services Build & Deploy feature, also known as the p
 * [Running a stage](#run_stage)
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
+* [Controlling access](#access)
 * [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
@@ -160,6 +161,13 @@ To view the runtime log, click **View runtime log**.
 
 In addition to job logs, you can view unit test results, generated artifacts, and code changes for any build job.
 
+<a name="access"></a>
+##Controlling access
+
+You can restrict who is able to run stages or modify a pipeline. To do so, go to the Pipeline Settings page, which you can reach by clicking the **Stage Configuration** icon on the Pipeline: All Stages page. 
+![The pipeline settings gear icon][22]
+
+
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
@@ -187,3 +195,5 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [19]: #add_stage
 [20]: #add_job
 [21]: ../deploy_ext
+[22]: ./images/pipeline_settings_icon.png
+[23]: ./images/pipeline_settings.png
