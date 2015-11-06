@@ -38,7 +38,7 @@ tools to code, and manage your project with  DevOps Services.  You
 can reference a work item in the GitHub comments before you push 
 code changes, and the work item is updated with the new commit information.
 
-![User interface](/features/images/GitIntegration.png)		
+![User interface](/features/images/GitIntegration1.png)		
 
 <a name='yourwork'></a>
 ## Your work in one place
