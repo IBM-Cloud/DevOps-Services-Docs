@@ -58,6 +58,7 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
 <!--- ![Authorize with GitHub option on update to a GitHub repository page][19] -->
 5. Click **SELECT AN EXISTING REPO**.  
+![Select an existing repo button on the change repository page][20]
 **Tip**: If a repo in the list is being used by another project, that repo is unavailable. To determine which project is using a repo, select the repo. You can see the associated project if it is public or if you are a member of it.
 6. Follow the prompts to select a repo. When you are finished, click **SUBMIT**.
 
@@ -72,6 +73,7 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
 <!--- ![Authorize with GitHub option on update to a GitHub repository page][19] -->
 5. Click **CREATE A NEW REPO**.
+![Create a new repo button on the change repository page][21]
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
@@ -176,4 +178,5 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 [17]: images/switchRepo2.png
 [18]: images/switchRepo3.png
 [19]: images/authorize_existingGH.png
-
+[20]: images/repo_select.png
+[21]: images/repo_createNew.png
