@@ -78,7 +78,8 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 ![Create a new repo button on the change repository page][21]
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
-You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. -->
+You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
+-->
 
 <a name='github_hook'></a>
 ## Setting up the GitHub hook
