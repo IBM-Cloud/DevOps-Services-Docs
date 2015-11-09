@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 04 November 2015
+###### Last updated: 09 November 2015
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
@@ -53,11 +53,12 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 **Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
-3. On the General page, click **UPDATE**.  
-![Update button on the General page of project settings][16]  
+3. On the General page, click **CHANGE REPOSITORY**.  
+![CHANGE REPOSITORY button on the General page of project settings][16]  
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
-![Authorize with GitHub option on update to a GitHub repository page][19]
+<!--- ![Authorize with GitHub option on update to a GitHub repository page][19] -->
 5. Click **SELECT AN EXISTING REPO**.  
+![Select an existing repo button on the change repository page][20]
 **Tip**: If a repo in the list is being used by another project, that repo is unavailable. To determine which project is using a repo, select the repo. You can see the associated project if it is public or if you are a member of it.
 6. Follow the prompts to select a repo. When you are finished, click **SUBMIT**.
 
@@ -67,11 +68,12 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 **Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
-3. On the General page, click **UPDATE**.  
-![Update button on the General page of project settings][16]  
+3. On the General page, click **CHANGE REPOSITORY**.  
+![CHANGE REPOSITORY button on the General page of project settings][16]  
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
-![Authorize with GitHub option on update to a GitHub repository page][19]
+<!--- ![Authorize with GitHub option on update to a GitHub repository page][19] -->
 5. Click **CREATE A NEW REPO**.
+![Create a new repo button on the change repository page][21]
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
@@ -176,4 +178,5 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 [17]: images/switchRepo2.png
 [18]: images/switchRepo3.png
 [19]: images/authorize_existingGH.png
-
+[20]: images/repo_select.png
+[21]: images/repo_createNew.png
