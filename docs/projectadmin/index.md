@@ -28,8 +28,8 @@ Project admins can do the tasks that project members can do as well as these tas
 * Edit Track & Plan sprints
 * Configure Build and Deploy
 * Update these project settings: 
-
-	a. Update the project repository type and location to use GitHub
+<!--- commented  out until feature goes live 11/12/2015 -->
+	<!--- a. Update the project repository type and location to use GitHub -->
 	
 	b. Change the project photo and description
 	
