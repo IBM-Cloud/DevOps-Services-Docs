@@ -58,7 +58,6 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 3. On the General page, click **CHANGE REPOSITORY**.  
 ![CHANGE REPOSITORY button on the General page of project settings][16]  
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
-<!--- ![Authorize with GitHub option on update to a GitHub repository page][19] -->
 5. Click **SELECT AN EXISTING REPO**.  
 ![Select an existing repo button on the change repository page][20]
 **Tip**: If a repo in the list is being used by another project, that repo is unavailable. To determine which project is using a repo, select the repo. You can see the associated project if it is public or if you are a member of it.
@@ -73,7 +72,6 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 3. On the General page, click **CHANGE REPOSITORY**.  
 ![CHANGE REPOSITORY button on the General page of project settings][16]  
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
-<!--- ![Authorize with GitHub option on update to a GitHub repository page][19] -->
 5. Click **CREATE A NEW REPO**.
 ![Create a new repo button on the change repository page][21]
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
