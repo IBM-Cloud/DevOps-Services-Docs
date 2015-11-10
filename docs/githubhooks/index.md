@@ -107,11 +107,11 @@ You can verify that your project is associated with your GitHub repo by clicking
   ```
   where `new-origin` is the remote name and `existing_repo_url` is the URL for your existing GitHub repo.  
   
-  c. Clone all remote branches locally:
+  c. List all branches:
   ```
   git branch -a
   ```
-  d. Fetch a local copy of the branch:
+  d. Fetch a local copy of the remote branches (branches in the list that include `remotes/origin/branch_name`):
   ```
   git checkout -b branch origin/branch
   ```
