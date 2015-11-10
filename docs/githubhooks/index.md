@@ -92,18 +92,21 @@ You can verify that your project is associated with your GitHub repo by clicking
 5. Click **CREATE A NEW REPO**.
 ![Create a new repo button on the change repository page][21]
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
-7. To move content from your existing GitHub repo to your new GitHub repo, complete the following steps from a command-line window:
+7. To move content from your existing GitHub repo to your new GitHub repo, complete the following steps from a command-line window:  
+
   a. Clone your existing repo by entering the these commands:  
   ```
   git clone existing_repo_url
   git fetch origin
   ```
-  where `existing_repo_url` is the URL for your existing GitHub repo.
+  where `existing_repo_url` is the URL for your existing GitHub repo.  
+  
   b. Add the new repo as a remote repo:
   ```
   git remote add new-origin new_repo_url
   ```
-  where `new-origin` is the remote name and `existing_repo_url` is the URL for your existing GitHub repo.
+  where `new-origin` is the remote name and `existing_repo_url` is the URL for your existing GitHub repo.  
+  
   c. Clone all remote branches locally:
   ```
   git branch -a
