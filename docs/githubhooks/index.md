@@ -96,36 +96,36 @@ You can verify that your project is associated with your GitHub repo by clicking
 
   a. Clone your existing repo by entering the these commands:  
   ```
-  git clone existing_repo_url
+  git clone <existing_repo_url>
   git fetch origin
   ```
   where `existing_repo_url` is the URL for your existing GitHub repo.  
   
   b. Add the new repo as a remote repo:
   ```
-  git remote add new-origin new_repo_url
+  git remote add new-origin <new_repo_url>
   ```
-  where `new-origin` is the remote name and `new_repo_url` is the URL for your new GitHub repo.  
+  where `new-origin` is the remote name of the new GitHub repo and `new_repo_url` is the URL for your new GitHub repo.  
   
-  c. List all branches:
+  c. Clone all remote branches locally by first listing all branches:
   ```
   git branch -a
   ```
-  d. Fetch a local copy of the remote branches (branches in the list that include `remotes/origin/branch_name`):
+  and then fetch a local copy of the remote branches (branches in the list that include   `remotes/origin/<branch_name>`):
   ```
   git checkout -b branch origin/branch
   ```
-  e. Push all branches and tags to the new repo:
+  d. Push all branches and tags to the new repo:
   ```
   git push --all new-origin
   git push --tags new-origin
   ```
-  f. **Optional:** Update the local repo to only use the new repo:
+  e. **Optional:** Update the local repo to only use the new repo:
   ```
   git remote rm origin 
   git remote rename new-origin origin
   ```
-  where `origin` is the default remote name (`remote_name`) of the original repo.
+  where `origin` is the remote name of the original repo.
 
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
