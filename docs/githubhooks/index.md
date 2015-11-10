@@ -1,6 +1,8 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 28 October 2015
+###### Last updated: 09 November 2015
+
+<!--- Commented out change_repo content in 3 places until feature is deployed 11/12/2015 -->
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
@@ -17,7 +19,7 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
 <a name='create_project'></a>
 ##Creating a DevOps Services project and a GitHub repo
 
-If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github).   <!--- If you already have a DevOps Git repo and you want to move it to a GitHub repo, skip to [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo). -->
+If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github). <!--- If you already have a DevOps Git repo and you want to move it to a GitHub repo, skip to [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo). -->
 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.
 2. If this project is your first project, click **Start coding**. Otherwise, click **CREATE PROJECT**.   
@@ -45,23 +47,37 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 <!--- <a name='change_repo'></a>
 ##Changing from a DevOps Services Git repo to a GitHub repo
 
-If you want to switch your DevOps Services Git repo to use a GitHub repo that you already set up, complete the following steps:
-1. Sign in to [DevOps Services][1]. The My Projects page opens.
-2. Click the project settings icon for the Git project that you want to change.    
-![My Project page with project settings icon][15]  
-3. On the General page, click **UPDATE**.  
-![Update button on the General page of project settings][16]  
-4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
-![Authorize with GitHub option on update to a GitHub repository page][19]
-5. Select the new location and then click **SELECT REPO**.  
-![Select Repo button on the update to a GitHub repo panel][17]    
-6. Select a GitHub repo from the list.    
-![List of available GitHub repos][18]  
-**Tip**: Repos that are grayed out on the list are not available because they are used by another project. If you select an unavailable repo you can determine which project is using it if the project is public or if it's private and you are a member. 
-7. Select **I agree** and then click **SUBMIT**.     
-**Important**: Make sure all code changes are committed before you click **SUBMIT**. Pending changes and your Git repo are deleted when the process completes.
+If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also create a GitHub repo to associate with your project.](#new_ghrepo)
 
-You can verify the repo change by clicking **Git URL** on the project overview page. The URL includes `github.com`, for example: `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. -->
+<a name='existing_ghrepo'></a>
+###	To configure your project to work with a GitHub repo that you already have, follow these steps:
+1. Sign in to [DevOps Services][1]. The My Projects page opens.  
+**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
+2. For the project that you want to change, click the project settings icon.    
+![My Project page with project settings icon][15]  
+3. On the General page, click **CHANGE REPOSITORY**.  
+![CHANGE REPOSITORY button on the General page of project settings][16]  
+4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
+5. Click **SELECT AN EXISTING REPO**.  
+![Select an existing repo button on the change repository page][20]
+**Tip**: If a repo in the list is being used by another project, that repo is unavailable. To determine which project is using a repo, select the repo. You can see the associated project if it is public or if you are a member of it.
+6. Follow the prompts to select a repo. When you are finished, click **SUBMIT**.
+
+<a name='new_ghrepo'></a>  
+###To create a GitHub repo to associate with your project, follow these steps: 
+1. Sign in to [DevOps Services][1]. The My Projects page opens.  
+**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
+2. For the project that you want to change, click the project settings icon.    
+![My Project page with project settings icon][15]  
+3. On the General page, click **CHANGE REPOSITORY**.  
+![CHANGE REPOSITORY button on the General page of project settings][16]  
+4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
+5. Click **CREATE A NEW REPO**.
+![Create a new repo button on the change repository page][21]
+6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
+
+You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
+-->
 
 <a name='github_hook'></a>
 ## Setting up the GitHub hook
@@ -163,4 +179,5 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 [17]: images/switchRepo2.png
 [18]: images/switchRepo3.png
 [19]: images/authorize_existingGH.png
-
+[20]: images/repo_select.png
+[21]: images/repo_createNew.png

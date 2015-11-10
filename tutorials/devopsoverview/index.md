@@ -1,6 +1,6 @@
 #Get started: Create, edit, and deploy an app
 
-######Last updated: 29 September 2015
+######Last updated: 06 November 2015
 
 Time: 30 minutes
 
@@ -14,7 +14,7 @@ Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, a
      <td colspan="5"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
-     <td><a href="#prereq>">Before you begin</a></td>
+     <td><a href="#prereq">Before you begin</a></td>
      <td><a href="#grow">Grow your project</a></td>
      <td><a href="#team">Work as a team</a></td>
      <td><a href="#deploy">Deploy to production</a></td>
