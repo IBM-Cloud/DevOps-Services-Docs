@@ -94,7 +94,7 @@ You can verify that your project is associated with your GitHub repo by clicking
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
 <a name='manual_GH_steps'></a> 
-To move content from your existing GitHub repo to your new GitHub repo, complete the following steps from a command-line window:  
+####To move content from your existing GitHub repo to your new GitHub repo, complete the following steps from a command-line window:  
 
 1. Either clone your repo or update it to the latest.
   * If you don't have a local clone of the repo you want to move, enter this command: 
