@@ -83,7 +83,7 @@ You can verify that your project is associated with your GitHub repo by clicking
 <a name='ghrepo_to_new_ghrepo'></a>  
 ###To change from one GitHub repo to a new GitHub repo, follow these steps: 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
-**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
+**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a new GitHub repo, your existing GitHub repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
 3. On the General page, click **CHANGE REPOSITORY**.  
