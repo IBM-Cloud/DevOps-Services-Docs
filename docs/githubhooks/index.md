@@ -105,7 +105,7 @@ You can verify that your project is associated with your GitHub repo by clicking
   ```
   git remote add new-origin new_repo_url
   ```
-  where `new-origin` is the remote name and `existing_repo_url` is the URL for your existing GitHub repo.  
+  where `new-origin` is the remote name and `new_repo_url` is the URL for your new GitHub repo.  
   
   c. List all branches:
   ```
