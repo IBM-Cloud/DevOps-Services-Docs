@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 09 November 2015
+###### Last updated: 12 November 2015
 
 <!--- Commented out change_repo content in 3 places until feature is deployed 11/12/2015 -->
 
@@ -47,9 +47,7 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 <a name='change_repo'></a>
 ##Changing a repo type or location
 
-You can move your GitHub or DevOps Services Git repo to another GitHub repo.
-
-If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also change from a DevOps Services Git repo to a new GitHub repo](#new_ghrepo), or [change from one GitHub repo to a new GitHub repo](#ghrepo_to_new_ghrepo)
+You can move your GitHub or DevOps Services Git repo to another GitHub repo. If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also change from a DevOps Services Git repo to a new GitHub repo](#new_ghrepo), or [change from one GitHub repo to a new GitHub repo](#ghrepo_to_new_ghrepo).
 
 <a name='existing_ghrepo'></a>
 ###	To configure your project to work with a GitHub repo that you already have, follow these steps:
