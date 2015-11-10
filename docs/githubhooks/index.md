@@ -92,41 +92,46 @@ You can verify that your project is associated with your GitHub repo by clicking
 5. Click **CREATE A NEW REPO**.
 ![Create a new repo button on the change repository page][21]
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
-7. To move content from your existing GitHub repo to your new GitHub repo, complete the following steps from a command-line window:  
 
-  a. Clone your existing repo by entering the these commands:  
+<a name='manual_GH_steps'></a> 
+To move content from your existing GitHub repo to your new GitHub repo, complete the following steps from a command-line window:  
+
+1. Either clone your repo or update it to the latest.
+  * If you don't have a local clone of the repo you want to move, enter this command: 
   ```
   git clone <existing_repo_url>
-  git fetch origin
   ```
   where `existing_repo_url` is the URL for your existing GitHub repo.  
-  
-  b. Add the new repo as a remote repo:
+  * If you have a local clone, fetch to get the latest content:
+  ```
+  git fetch origin
+  ```  
+2. Add the new repo as a remote repo:
   ```
   git remote add new-origin <new_repo_url>
   ```
   where `new-origin` is the remote name of the new GitHub repo and `new_repo_url` is the URL for your new GitHub repo.  
   
-  c. Clone all remote branches locally by first listing all branches:
-  ```
-  git branch -a
-  ```
-  and then fetch a local copy of the remote branches (branches in the list that include   `remotes/origin/<branch_name>`):
-  ```
-  git checkout -b branch origin/branch
-  ```
-  d. Push all branches and tags to the new repo:
-  ```
-  git push --all new-origin
-  git push --tags new-origin
-  ```
-  e. **Optional:** Update the local repo to only use the new repo:
-  ```
-  git remote rm origin 
-  git remote rename new-origin origin
-  ```
-  where `origin` is the remote name of the original repo.
-
+3. Clone all remote branches locally by first listing all branches:
+```
+git branch -a
+```
+and then fetch a local copy of the remote branches (branches in the list that include `remotes/origin/<branch>`):
+```
+git checkout -b <branch> origin/<branch>
+```
+where `branch` is the remote branch to fetch.
+3. Push all branches and tags to the new repo:
+```
+git push --all new-origin
+git push --tags new-origin
+```
+4. **Optional:** Update the local repo to only use the new repo:
+```
+git remote rm origin 
+git remote rename new-origin origin
+```
+where `origin` is the remote name of the original repo.
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
 
