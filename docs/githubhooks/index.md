@@ -1,8 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 09 November 2015
-
-<!--- Commented out change_repo content in 3 places until feature is deployed 11/12/2015 -->
+###### Last updated: 12 November 2015
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
@@ -10,7 +8,7 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
 
  * [Creating a DevOps Services project and a GitHub repo](#create_project)
  * [Connecting a DevOps Services project to a GitHub repo](#existing_github)
- <!--- * [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo) -->
+ * [Changing a repo type or location](#change_repo)
  * [Setting up the GitHub hook](#github_hook)
  * [Testing the hook](#create_work_item)
  * [Adding a link after a change is pushed](#post_push)
@@ -19,7 +17,7 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
 <a name='create_project'></a>
 ##Creating a DevOps Services project and a GitHub repo
 
-If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github). <!--- If you already have a DevOps Git repo and you want to move it to a GitHub repo, skip to [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo). -->
+If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github). 
 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.
 2. If this project is your first project, click **Start coding**. Otherwise, click **CREATE PROJECT**.   
@@ -44,10 +42,10 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 7. Make sure that the **Add features for Scrum development** check box is selected.
 8. Click **CREATE**.  
 
-<!--- <a name='change_repo'></a>
-##Changing from a DevOps Services Git repo to a GitHub repo
+<a name='change_repo'></a>
+##Changing a repo type or location
 
-If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also create a GitHub repo to associate with your project.](#new_ghrepo)
+You can move your GitHub or DevOps Services Git repo to another GitHub repo. If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also change from a DevOps Services Git repo to a new GitHub repo](#new_ghrepo), or [change from one GitHub repo to a new GitHub repo](#ghrepo_to_new_ghrepo).
 
 <a name='existing_ghrepo'></a>
 ###	To configure your project to work with a GitHub repo that you already have, follow these steps:
@@ -61,12 +59,14 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 5. Click **SELECT AN EXISTING REPO**.  
 ![Select an existing repo button on the change repository page][20]
 **Tip**: If a repo in the list is being used by another project, that repo is unavailable. To determine which project is using a repo, select the repo. You can see the associated project if it is public or if you are a member of it.
-6. Follow the prompts to select a repo. When you are finished, click **SUBMIT**.
+6. Follow the prompts to select a repo. When you are finished, click **SUBMIT**.  
+
+You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
 
 <a name='new_ghrepo'></a>  
-###To create a GitHub repo to associate with your project, follow these steps: 
+###To change from a DevOps Services Git repo to a new GitHub repo, follow these steps: 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
-**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
+**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a new GitHub repo, your current Git repo contents are automatically transferred to the new GitHub repo and then the Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
 3. On the General page, click **CHANGE REPOSITORY**.  
@@ -77,7 +77,60 @@ If you’re using a DevOps Services Git repo but want to use a GitHub repo that 
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
--->
+
+<a name='ghrepo_to_new_ghrepo'></a>  
+###To change from one GitHub repo to a new GitHub repo, follow these steps: 
+1. Sign in to [DevOps Services][1]. The My Projects page opens.  
+**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a new GitHub repo, your existing GitHub repo and any pending changes in it are deleted.
+2. For the project that you want to change, click the project settings icon.    
+![My Project page with project settings icon][15]  
+3. On the General page, click **CHANGE REPOSITORY**.  
+![CHANGE REPOSITORY button on the General page of project settings][16]  
+4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
+5. Click **CREATE A NEW REPO**.
+![Create a new repo button on the change repository page][21]
+6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
+
+<a name='manual_GH_steps'></a> 
+####To move content from your existing GitHub repo to your new GitHub repo, complete the following steps:
+
+Moving content from one GitHub repo to a new GitHub repo requires extra steps from a command-line window. For more details about these commands, see [the official Git reference](https://git-scm.com/docs).  
+
+1. Either clone your repo or update it to the latest.
+  * If you don't have a local clone of the repo you want to move, enter this command: 
+  ```
+  git clone <existing_repo_url>
+  ```
+  * If you have a local clone, fetch to get the latest content:
+  ```
+  git fetch origin
+  ```  
+2. Add the new repo as a remote repo:
+```
+git remote add new-origin <new_repo_url>
+```
+3. Clone all remote branches locally by first listing all branches:
+```
+git branch -a
+```
+and then fetch a local copy of the remote branches (branches in the list that include `remotes/origin/<branch>`):
+```
+git checkout -b <branch> origin/<branch>
+```
+where `branch` is the remote branch to fetch.
+3. Push all branches and tags to the new repo:
+```
+git push --all new-origin
+git push --tags new-origin
+```
+4. **Optional:** Update the local repo to only use the new repo:
+```
+git remote rm origin 
+git remote rename new-origin origin
+```  
+
+You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
+
 
 <a name='github_hook'></a>
 ## Setting up the GitHub hook

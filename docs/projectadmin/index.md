@@ -1,6 +1,6 @@
 # Administering a project
 
-###### Last updated: 03 November 2015
+###### Last updated: 12 November 2015
 
 To administer IBM&reg; Bluemix&trade; DevOps Services projects, you must be a project admin or a project owner. A project can have multiple admins, but it can only have one owner. 
 
@@ -28,13 +28,14 @@ Project admins can do the tasks that project members can do as well as these tas
 * Edit Track & Plan sprints
 * Configure Build and Deploy
 * Update these project settings: 
-<!--- commented  out until feature goes live 11/12/2015 -->
-	<!--- a. Update the project repository type and location to use GitHub -->	
-	a. Change the project photo and description
+
+	a. Update the project repository type and location to use GitHub 
 	
-	b. Enable or disable project privacy
+	b. Change the project photo and description
 	
-	c. Enable or disable the Track & Plan feature
+	c. Enable or disable project privacy
+	
+	d. Enable or disable the Track & Plan feature
 	
 * Manage these functions for Git projects:
 
