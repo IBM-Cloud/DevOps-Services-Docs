@@ -45,10 +45,15 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 <a name='change_repo'></a>
 ##Changing a repo type or location
 
-You can move your GitHub or DevOps Services Git repo to another GitHub repo. If you’re using a DevOps Services Git repo but want to use a GitHub repo that you already have, follow these steps. [You can also change from a DevOps Services Git repo to a new GitHub repo](#new_ghrepo), or [change from one GitHub repo to a new GitHub repo](#ghrepo_to_new_ghrepo).
+You can move your GitHub or DevOps Services Git repo to another GitHub repo. 
+
+* [Change from a DevOps Services repo to a GitHub repo that you already have](#existing_ghrepo)
+* [Change from a DevOps Services Git repo to a new GitHub repo](#new_ghrepo) 
+* [Change from a GitHub repo to a new GitHub repo](#ghrepo_to_new_ghrepo)
 
 <a name='existing_ghrepo'></a>
-###	To configure your project to work with a GitHub repo that you already have, follow these steps:
+###	Change from a DevOps Services repo to a GitHub repo that you already have 
+
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
 **Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
@@ -64,9 +69,10 @@ You can move your GitHub or DevOps Services Git repo to another GitHub repo. If 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
 
 <a name='new_ghrepo'></a>  
-###To change from a DevOps Services Git repo to a new GitHub repo, follow these steps: 
+###Change from a DevOps Services Git repo to a new GitHub repo 
+
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
-**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a new GitHub repo, your current Git repo contents are automatically transferred to the new GitHub repo and then the Git repo and any pending changes in it are deleted.
+**Important**: To avoid losing your work, make sure that all code changes are committed before you continue. When you update your project to use a new GitHub repo, the contents of your current Git repo are automatically transferred to the new GitHub repo and then the Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
 3. On the General page, click **CHANGE REPOSITORY**.  
@@ -79,9 +85,13 @@ You can verify that your project is associated with your GitHub repo by clicking
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
 
 <a name='ghrepo_to_new_ghrepo'></a>  
-###To change from one GitHub repo to a new GitHub repo, follow these steps: 
+###Change from a GitHub repo to a new GitHub repo
+
+To change from a GitHub repo to a new GitHub repo, you first configure your project to use the new GitHub repo and then move the contents from the older repo to the new one.
+
+####Configure your project to use a new GitHub repo
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
-**Note**: When you change from a GitHub repo to a new GitHub repo, you must take [additional steps to move your content after the new repo is created](#manual_GH_steps).    
+2. For the project that you want to change, click the project settings icon.   
 ![My Project page with project settings icon][15]  
 3. On the General page, click **CHANGE REPOSITORY**.  
 ![CHANGE REPOSITORY button on the General page of project settings][16]  
@@ -91,37 +101,38 @@ You can verify that your project is associated with your GitHub repo by clicking
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
 <a name='manual_GH_steps'></a> 
-####To move content from your existing GitHub repo to your new GitHub repo, complete the following steps:
+####Move the content from your older GitHub repo to your new GitHub repo
 
-Moving content from one GitHub repo to a new GitHub repo requires extra steps from a command-line window. For more details about these commands, see [the official Git reference](https://git-scm.com/docs).  
+To move the content from one GitHub repo to another, you must use the command line. For more details about the commands to use, see [the official Git reference](https://git-scm.com/docs).  
 
-1. Either clone your repo or update it to the latest.
-  * If you don't have a local clone of the repo you want to move, enter this command: 
+1. Either clone your older repo or update it to the latest.
+  * If you don't have a local clone of the older repo, enter this command: 
   ```
-  git clone <existing_repo_url>
+  git clone *existing_repo_url*
   ```
-  * If you have a local clone, fetch to get the latest content:
+  * If you have a local clone of the older repo, fetch to get the latest content:
   ```
   git fetch origin
   ```  
 2. Add the new repo as a remote repo:
 ```
-git remote add new-origin <new_repo_url>
+git remote add new-origin *new_repo_url*
 ```
-3. Clone all remote branches locally by first listing all branches:
-```
-git branch -a
-```
-and then fetch a local copy of the remote branches (branches in the list that include `remotes/origin/<branch>`):
-```
-git checkout -b <branch> origin/<branch>
-```
+3. Clone all of the remote branches locally:  
+  a. List all of the branches:
+  ```
+  git branch -a
+  ```  
+  b. Fetch a local copy of the remote branches, which are branches in the list that include `remotes/origin/*branch*`):
+  ```
+  git checkout -b *branch* origin/*branch*
+  ```
 3. Push all branches and tags to the new repo:
 ```
 git push --all new-origin
 git push --tags new-origin
 ```
-4. **Optional:** Update the local repo to only use the new repo:
+4. **Optional:** Update the local repo to use only the new repo:
 ```
 git remote rm origin 
 git remote rename new-origin origin
