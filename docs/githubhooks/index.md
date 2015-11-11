@@ -2,8 +2,6 @@
 
 ###### Last updated: 12 November 2015
 
-<!--- Commented out change_repo content in 3 places until feature is deployed 11/12/2015 -->
-
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
 
  For a complete GitHub reference, [see the official Git documentation](https://help.github.com/).
@@ -19,7 +17,7 @@ If you have source code in a GitHub repository, or if you plan to, you can conne
 <a name='create_project'></a>
 ##Creating a DevOps Services project and a GitHub repo
 
-If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github). <!--- If you already have a DevOps Git repo and you want to move it to a GitHub repo, skip to [Changing from a DevOps Services Git repo to a GitHub repo](#change_repo). -->
+If you already have a GitHub repo, skip to [Connecting a DevOps Services project to a GitHub repo](#existing_github). 
 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.
 2. If this project is your first project, click **Start coding**. Otherwise, click **CREATE PROJECT**.   
@@ -94,24 +92,23 @@ You can verify that your project is associated with your GitHub repo by clicking
 6. Follow the prompts to create a repo. When you are finished, click **SUBMIT**.
 
 <a name='manual_GH_steps'></a> 
-####To move content from your existing GitHub repo to your new GitHub repo, complete the following steps from a command-line window:  
+####To move content from your existing GitHub repo to your new GitHub repo, complete the following steps:
+
+Moving content from one GitHub repo to a new GitHub repo requires extra steps from a command-line window. For more details about these commands, see [the official Git reference](https://git-scm.com/docs).  
 
 1. Either clone your repo or update it to the latest.
   * If you don't have a local clone of the repo you want to move, enter this command: 
   ```
   git clone <existing_repo_url>
   ```
-  where `existing_repo_url` is the URL for your existing GitHub repo.  
   * If you have a local clone, fetch to get the latest content:
   ```
   git fetch origin
   ```  
 2. Add the new repo as a remote repo:
-  ```
-  git remote add new-origin <new_repo_url>
-  ```
-  where `new-origin` is the remote name of the new GitHub repo and `new_repo_url` is the URL for your new GitHub repo.  
-  
+```
+git remote add new-origin <new_repo_url>
+```
 3. Clone all remote branches locally by first listing all branches:
 ```
 git branch -a
@@ -130,8 +127,7 @@ git push --tags new-origin
 ```
 git remote rm origin 
 git remote rename new-origin origin
-```
-where `origin` is the remote name of the original repo.
+```  
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
 
