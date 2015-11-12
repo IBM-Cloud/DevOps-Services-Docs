@@ -107,16 +107,16 @@ To move the content from one GitHub repo to another, you must use the command li
 
 1. Either clone your older repo or update it to the latest.
   * If you don't have a local clone of the older repo, enter this command: 
-  <pre>
-  git clone <i>existing_repo_url<i>
-  </pre>
+  ```
+  git clone existing_repo_url
+  ```
   * If you have a local clone of the older repo, fetch to get the latest content:
   ```
   git fetch origin
   ```  
 2. Add the new repo as a remote repo:
 ```
-git remote add new-origin *new_repo_url*
+git remote add new-origin new_repo_url
 ```
 3. Clone all of the remote branches locally:  
   a. List all of the branches:
@@ -125,7 +125,7 @@ git remote add new-origin *new_repo_url*
   ```  
   b. Fetch a local copy of the remote branches, which are branches in the list that include `remotes/origin/*branch*`):
   ```
-  git checkout -b *branch* origin/*branch*
+  git checkout -b branch_name origin/branch_name
   ```
 3. Push all branches and tags to the new repo:
 ```
