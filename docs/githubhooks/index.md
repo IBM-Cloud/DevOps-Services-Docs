@@ -107,9 +107,9 @@ To move the content from one GitHub repo to another, you must use the command li
 
 1. Either clone your older repo or update it to the latest.
   * If you don't have a local clone of the older repo, enter this command: 
-  ```
-  git clone *existing_repo_url*
-  ```
+  <pre>
+  git clone <i>existing_repo_url<i>
+  </pre>
   * If you have a local clone of the older repo, fetch to get the latest content:
   ```
   git fetch origin
