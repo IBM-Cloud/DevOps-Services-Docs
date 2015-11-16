@@ -135,7 +135,7 @@ If you have a DevOps Services project with an initialized Git repo and you want 
 
 #### Adding a Git submodule
 
-1. Expand the Repository drop down menu.
+1. Expand the **Repository** drop down menu.
 2. Click the **Add Git Submodule** icon next to the repo you want to add a submodule too.
 3. Enter the repository URL of the new submodule.
 4. Click **Submit**
@@ -144,23 +144,23 @@ A cloned version of the submodule will be placed in a subdirectory of your initi
 
 #### Initalizing a submodule
 
-When you add a submodule that has nested submodules to your project, the nested submodules won't be initalized at first.  They will display as an unknown repository in the repository drop down menu, and as an empty folder in the Web IDE.  To initalize a submodule:
+When you add a submodule that has nested submodules to your project, the nested submodules won't be initalized at first.  They will display as an unknown repository in the **Repository** drop down menu, and as an empty folder in the Web IDE.  To initalize a submodule:
 
-1. Expand the Repository drop down menu.
+1. Expand the **Repository** drop down menu.
 2. Locate the parent of the submodule.
 3. Click the **sync**, then **update** icons to initalize the repository.
 
-#### Committing and Pushing submodule changes
+#### Committing and pushing submodule changes
 
 When a change is made to a submodule, the change needs to be pushed to the submodule as well as all parent repositories.
 
-1. Select the Reference drop down and checkout the branch you wish to commit to, as the submodule will initially be in Detached Head state.
+1. Select the **Reference** drop down and checkout the branch you wish to commit too.  The submodule will initially be in Detached Head state.
 2. Commit and push the changes. These changes will then be reflected in the parent repository.
  Note: There may be working directory changes reflected in parents other than the immediate parent of the changed submodule, but these cannot be committed until the changes are committed bottom up from the submodule.
 
 #### Removing submodules
 
-To remove a submodules, expand the repository drop down menu and click the remove submodule icon associated with the submodule you wish to remove.
+To remove a submodules, expand the **Repository** drop down menu and click the **Remove submodule** icon associated with the submodule you wish to remove.
 
 [Back to top](#top)
 
