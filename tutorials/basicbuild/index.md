@@ -1,6 +1,6 @@
-#Deploy an app from a basic pipeline in Bluemix DevOps Services
+#Set up a pipeline and deploy an app
 
-###### Last updated: 24 August 2015
+###### Last updated: 9 September 2015
 
 Time: 30 minutes
 
@@ -38,14 +38,14 @@ To do this tutorial, you need a DevOps Services account and a Bluemix account. T
 </div>
 <h5> </h5>
 
-If you want to use the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service) beyond the free monthly build time, add the service to your Bluemix space:  
+<!--If you want to use the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service) beyond the free monthly build time, add the service to your Bluemix space:  
 
    a. [Open the Bluemix Catalog](https://console.ng.bluemix.net/?ace_base=true/#/store/cloudOEPaneId=store). From the **Category** list, select **DevOps**.
 
    b. Click **Delivery Pipeline**.
 
    c. Leave the default settings as they are; then, click **CREATE**.
-
+-->
 
 
 <a name='fork_app'></a>
@@ -64,8 +64,6 @@ A new project is created with a copy of the code from the sample project. You're
 <a name='build_stage'></a>
 ##Create a build stage
 The goal is to set up the pipeline so that every time a change is delivered to the project, a build runs. The Java source files are built and stored in an output directory. By creating the build as the first in a sequence of stages, the build will run first. Later, you will create a deployment stage that will begin after the build completes successfully.
-
-**Important:** You can complete this tutorial for free because a project is granted 60 minutes of free build time per month. If you exceed those 60 minutes, you might generate charges to your Bluemix account. For more information about Bluemix, DevOps Services, and charges, [see Configuring Bluemix billing for Bluemix DevOps Services](/docs/reference/billing/).
 
 
 1. Click **BUILD & DEPLOY**. 

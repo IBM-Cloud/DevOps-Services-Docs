@@ -1,7 +1,6 @@
 # Features
 
 ## See what IBM® Bluemix™ DevOps Services can do for you:
-* [Easy to find What's New](#whatsnew)
 * [Git hosting](#githosting)
 * [Connect with your GitHub repository](#gitrepo)
 * [Your work in one place](#yourwork)
@@ -14,10 +13,6 @@
 * [Work items to track and plan project activities](#wis)
 * [Dashboard charts for project status](#dashboard)
 
-<a name='whatsnew'></a>
-## Easy to find What's New
-Check out the latest IBM® Bluemix™ DevOps Services enhancements, features and capabilities at our [What's New blog](https://developer.ibm.com/devops-services/category/whats-new/).							
-
 <a name='githosting'></a>
 ## Git hosting
 
@@ -28,7 +23,7 @@ projects), or with the world.  Edit your source, push commits, and
 automatically deploy changes to	the cloud, all without leaving your
 browser. And, don't worry, your favorite Git client is supported too.
  
-![Integrated source code editor](/features/images/git-hosting.png)		
+![Integrated source code editor](/features/images/git-hosting1.png)		
 
 <a name='gitrepo'></a>
 ## Connect with your GitHub repository

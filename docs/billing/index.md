@@ -1,15 +1,15 @@
 #Managing your Bluemix DevOps Services account
 
-###### Last updated: 26 August 2015
+###### Last updated: 13 November 2015
 
 Without signing up for an account in IBM® Bluemix™ DevOps Services, you can explore projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
 * [DevOps Services accounts](#idsaccounts)
 * [Setting up a DevOps Services account](#idssetup)
 * [Bluemix accounts](#bmaccounts)
-* [Table: Free allowance details](#table)
-* [Setting up a billing account](#setup)
-* [Monitoring your usage](#monitor)
+<!--* [Table: Free allowance details](#table)-->
+<!--* [Setting up a billing account](#setup)-->
+<!--* [Monitoring your usage](#monitor)-->
 
 <a name='idsaccounts'></a>
 ##DevOps Services accounts
@@ -35,17 +35,18 @@ After you sign up for a DevOps Services account and set it up, you can do these 
 	* To log in from a Rational Team Concert client, use your alias and IBM ID password.
 	* To access a Git repository from your local Git client, use your alias and IBM id password.
 
-**Tip:** If you have authentication problems or if you are linked to the wrong account, you can request support by sending an email to <idslogin@jazz.net>. To change the email address of the DevOps Services account that is associated with your IBM id, open your profile, click **PERSONAL INFORMATION**, and update your email address.
-
+**Tips:**
+* If you have authentication problems or if you are linked to the wrong account, you can request support by sending an email to [idslogin@jazz.net](mailto:idslogin@jazz.net). To change the email address of the DevOps Services account that is associated with your IBM id, open your profile, click PERSONAL INFORMATION, and update your email address.
+* When you update the email address of your DevOps Services account, the email address of the associated IBM id isn’t automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you will be prompted to synchronize them.
 
 <a name='bmaccounts'></a>
 ##Bluemix accounts
 
-All DevOps Services projects include an allowance of free services. If you exceed your allowances, your work is interrupted. To avoid interruptions, set up a Bluemix billing account and configure your services. By configuring your Bluemix account, you also get advanced features for monitoring your builds, deployments, and the status of your projects. 
+<!--All DevOps Services projects include an allowance of free services. If you exceed your allowances, your work is interrupted. To avoid interruptions, set up a Bluemix billing account and configure your services. By configuring your Bluemix account, you also get advanced features for monitoring your builds, deployments, and the status of your projects.--> 
 
-If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan services beyond the free allowance, configure both services. Each service requires a separate billing configuration.
+<!--If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan services beyond the free allowance, configure both services. Each service requires a separate billing configuration.-->
 
-<a name='table'></a>
+<!--<a name='table'></a>
 ### Table: Free allowance details
 <table border="1" summary="" width="100%">
 	<tbody>
@@ -75,9 +76,9 @@ If you plan to use the Delivery Pipeline (Build & Deploy) and Track & Plan servi
 			<td>Public project: Unlimited users</td>
 		</tr>
 	</tbody>
-</table> 
+</table> -->
 
-<a name='setup'></a>
+<!--<a name='setup'></a>
 ##Setting up a billing account
 
 Before you set up your billing account, determine what the best plan for your project is. [Learn more about billing accounts](https://www.ng.bluemix.net/docs/#acctmgmt/billing.html#bil_plan).
@@ -90,14 +91,14 @@ To set up your billing account, complete these steps:
 3. From the DevOps section, select either **Delivery Pipeline** or **Track & Plan**.
 4. In the "Add Service" section, make sure that the space that corresponds to your  DevOps Services project is selected.
 5. From the **Selected Plan** list, select a billing plan. 
-6. Click **CREATE.**
+6. Click **CREATE.**-->
 
-<a name='monitor'></a>
-##Monitoring your usage
+<!--<a name='monitor'></a>
+##Monitoring your usage-->
 
 You can monitor the usage details for your Bluemix account. For more information, [see the billing and usage documentation](https://www.ng.bluemix.net/docs/#acctmgmt/index-gentopic1.html#genTopProcId2). To determine costs, [see the Bluemix Pricing page](https://bluemix.net/#/pricing).
 
-The Delivery Pipeline and Track & Plan services use metered pricing, where you pay based on consumption. However, they also include a free monthly allowance.
+<!--The Delivery Pipeline and Track & Plan services use metered pricing, where you pay based on consumption. However, they also include a free monthly allowance.-->
 
 To help monitor monthly usage, [see the Bluemix cost estimator](https://ace.ng.bluemix.net/#/pricing/paneId=pricingSheet).
 

@@ -1,6 +1,6 @@
-#Clone, edit, and deploy an app from Bluemix
+#Clone, edit, and deploy an app
 
-######Last modified: 24 August 2015
+######Last updated: 13 November 2015
 
 Time: 60 minutes 
 
@@ -148,7 +148,7 @@ When you clone a project by clicking the **Deploy to Bluemix** button, a pipelin
 
 A pipeline is formed by its stages. The pipeline for your Sentiment Analysis app has two stages: a build stage and a deployment stage. The purpose of the build stage is to run a build job on the included `Gruntfile.js` to validate your code. The purpose of the deployment stage is to run a deploy job that deploys your code to Bluemix.
 
-**Important:** You can complete this tutorial for free because a project is granted 60 minutes of free build time per month. However, the pipeline is a feature of the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). When you use the Delivery Pipeline service with Bluemix, you can generate charges to your Bluemix account. For more information about Bluemix, DevOps Services, and charges, [see Configuring Bluemix billing for Bluemix DevOps Services][39].
+<!--**Important:** You can complete this tutorial for free because a project is granted 60 minutes of free build time per month. However, the pipeline is a feature of the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). When you use the Delivery Pipeline service with Bluemix, you can generate charges to your Bluemix account. For more information about Bluemix, DevOps Services, and charges, [see Configuring Bluemix billing for Bluemix DevOps Services][39].-->
 
 ###Explore the build stage
 1. On the top navigation bar, click **BUILD & DEPLOY**. 

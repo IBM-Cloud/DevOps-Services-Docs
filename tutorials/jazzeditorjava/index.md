@@ -1,6 +1,6 @@
-#Develop a Java app from Bluemix
+#Develop and deploy a Java app
 
-###### Last updated: 24 August 2015
+###### Last updated: 12 November 2015
 
 Time: 30 minutes
 
@@ -86,7 +86,6 @@ You can work with your app code in many ways. For example, with auto-deploy, you
 3. Click **CONTINUE**, and then click **CLOSE**. A message states that you created a Git repository and loaded it with the app starter code.
 
 ###Optional: Add the Delivery Pipeline service to your space
-If you want to use the Delivery Pipeline service beyond the free monthly build time, add it to your Bluemix space.  
 
 1.	On the app’s Overview page, click **ADD A SERVICE OR API**.
 2.	Select the DevOps category, and then click **Delivery Pipeline**. 
@@ -171,9 +170,6 @@ Your sample project is configured to automatically build and deploy the Liberty 
 ### Explore the preconfigured stages
 
 The Delivery Pipeline configuration for your app has two stages: a build stage and a deploy stage. These stages form a pipeline. The build stage runs a build job on the included `build.xml`. Then, the deploy stage runs a deploy job to deploy your code to Bluemix.
-
-**Important:** When you use the Build & Deploy feature with Bluemix, you can generate charges to your Bluemix account. However, you can complete this tutorial for free because a project is granted 60 minutes of free build time per month. For more information about Bluemix, DevOps Services, and charges, [see Configuring Bluemix billing for Bluemix DevOps Services][58].
-
 
 ####Explore the build stage
 
