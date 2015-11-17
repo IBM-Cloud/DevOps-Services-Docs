@@ -131,36 +131,35 @@ When you work in the Web IDE, both your local and remote repos are hosted on the
 <a name="git_submodules"></a>
 ###Work with Git submodules
 
-If you have a DevOps Services project with an initialized Git repo and you want to add an additional repo to the project, you can add a git submodule.  A submodule allows you to keep another Git repository in a subdirectory of your existing repository.  Submodules can be used to include plug-ins or any external dependencies to your project.
+If you have a DevOps Services project with an initialized Git repo and you want to add or use an additional repo within the project, you can add a Git submodule. A submodule allows you to clone a Git repository within a subdirectory of your existing repository. Submodules can be used to include projects developed by third parties or other projects that you are developing separately.
 
 #### Adding a Git submodule
 
 1. Expand the **Repository** drop down menu.
-2. Click the **Add Git Submodule** icon next to the repo you want to add a submodule too.
+2. Click the **Add Git Submodule** <img class="inline" src="./images/addsubmodule.png" alt="Add Git Submodule"> icon next to the repo you want to add a submodule too.
 3. Enter the repository URL of the new submodule.
-4. Click **Submit**
+4. Click **Submit**.
 
 A cloned version of the submodule will be placed in a subdirectory of your initial repo.
 
-#### Initalizing a submodule
+#### Initalizing submodules
 
-When you add a submodule that has nested submodules to your project, the nested submodules won't be initalized at first.  They will display as an unknown repository in the **Repository** drop down menu, and as an empty folder in the Web IDE.  To initalize a submodule:
+If you add a submodule that contains nested submodules, the nested submodules won't be initalized at first.  All nested submodules will display as unknown repositories in the **Repository** drop down menu and as an empty folders in the Web IDE.  To initalize a submodule:
 
 1. Expand the **Repository** drop down menu.
-2. Locate the parent of the submodule.
-3. Click the **sync**, then **update** icons to initalize the repository.
+2. Locate the submodules parent repo.
+3. Click the **Sync** <img class="inline" src="./images/syncsubmodule.png" alt="Sync Submodule">, then **Update** <img class="inline" src="./images/updatesubmodule.png" alt="Update Submodule"> icons to initalize the submodule.
 
 #### Committing and pushing submodule changes
 
-When a change is made to a submodule, the change needs to be pushed to the submodule as well as all parent repositories.
+When a submodule is updated, the changes needs to be pushed to the submodule as well as all parent repositories.
 
 1. Select the **Reference** drop down and checkout the branch you wish to commit too.  The submodule will initially be in Detached Head state.
 2. Commit and push the changes. These changes will then be reflected in the parent repository.
- Note: There may be working directory changes reflected in parents other than the immediate parent of the changed submodule, but these cannot be committed until the changes are committed bottom up from the submodule.
 
 #### Removing submodules
 
-To remove a submodules, expand the **Repository** drop down menu and click the **Remove submodule** icon associated with the submodule you wish to remove.
+To remove a submodules, expand the **Repository** drop down menu and click the **Remove submodule** <img class="inline" src="./images/deletesubmodule.png" alt="Delete Submodule"> icon associated with the submodule you wish to remove.
 
 [Back to top](#top)
 
