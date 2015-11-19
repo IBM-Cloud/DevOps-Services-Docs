@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 6 November 2015
+###### Last updated: 19 November 2015
 
 The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
@@ -140,6 +140,7 @@ You can also request on-demand builds and deployments from the build history pag
 
 A properly configured deploy job deploys your app to your target whenever the job is run. To manually run a deploy job, click the **Run Stage** icon of the stage that the job is in.
 
+###Input revisions
 When you run a stage manually, or if it runs because the stage before it is completed, the running stage selects its input revision. Usually, the input revision is a build number. To select the input revision, the stage follows this process:
 
 1. If a specific revision is selected, use it.
@@ -147,6 +148,10 @@ When you run a stage manually, or if it runs because the stage before it is comp
 3. If a specific revision is not specified and no other stages use the specified source as input, use the latest revision of the input.
 
 **Tip:** To deploy a previous build of an app, from the Stage History menu, select the build. Click SEND TO, and select a target.
+
+###Creating and binding services
+
+You can create and bind Bluemix and user-provided services for your apps. You can manage services from your Bluemix dashboard, or the Cloud Foundry command-line interface. You can issue Cloud Foundry CLI commands in scripts for DevOps Services pipeline jobs. For example, you might create and bind a service to an app in a deploy job script. For more information on creating and binding services, [see Adding a service to your application][24].
 
 <a name="logs"></a>
 ##Viewing logs
@@ -197,3 +202,4 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [21]: ../deploy_ext
 [22]: ./images/pipeline_settings_icon.png
 [23]: ./images/pipeline_settings.png
+[24]: https://www.ng.bluemix.net/docs/services/reqnsi.html
