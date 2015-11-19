@@ -1,6 +1,6 @@
 #Test and debug a Node.js app with Bluemix Live Sync
 
-###### Last updated: 22 October 2015
+###### Last updated: 19 November 2015
 
 Testing and debugging are critical to ensure that your app performs without unexpected results. In IBM&reg; Bluemix&trade; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and make changes to your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app while having all of the benefits of deploying with Bluemix.
 
@@ -27,12 +27,12 @@ In this tutorial, you create a launch configuration that you use to deploy a Nod
 
 <a name='prereq'></a>
 ##Before you begin 
-* To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
+* To do this tutorial, you need a Bluemix account and a DevOps Services alias. The account provides access to everything you need to develop, track, plan, and deploy apps. 
    <h5> </h5>
    <div class="container-fluid small_bottom_space">
       <div class="row pbl button-links" id="overview-links">
 		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
-			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			<div class="hollowButton">SIGN UP<div class="extra-title">for Bluemix </div>
 			</div>
 		</a>
    </div>
