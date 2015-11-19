@@ -151,7 +151,7 @@ When you run a stage manually, or if it runs because the stage before it is comp
 
 ###Creating and binding services
 
-You can create and bind Bluemix and user-provided services for your apps. You can manage services from your Bluemix dashboard, or the Cloud Foundry command-line interface. You can issue Cloud Foundry CLI commands in scripts for DevOps Services pipeline jobs. For example, you might create and bind a service to an app in a deploy job script. For more information on creating and binding services, [see Adding a service to your application][24].
+You can create and bind Bluemix and user-provided services for your apps. You can manage services from your Bluemix dashboard or the Cloud Foundry command-line interface. You can issue Cloud Foundry CLI commands in scripts for DevOps Services pipeline jobs. For example, you might create and bind a service to an app in a deploy job script. For more information on creating and binding services, [see Adding a service to your application][24].
 
 <a name="logs"></a>
 ##Viewing logs
