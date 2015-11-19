@@ -147,11 +147,10 @@ When you run a stage manually, or if it runs because the stage before it is comp
 2. If a specific revision is not specified, search previous stages until a stage is found that uses the same input. Find and use the last successfully run revision of that input.
 3. If a specific revision is not specified and no other stages use the specified source as input, use the latest revision of the input.
 
-**Tip:** To deploy a previous build of an app, from the Stage History menu, select the build. Click SEND TO, and select a target.
+**Tip:** You can deploy a previous build. On the stage that contains the build, click **View logs and history**. On the page that opens, select the build. Click **SEND TO**, and select a target.
 
-###Creating and binding services
-
-You can create and bind Bluemix and user-provided services for your apps. You can manage services from your Bluemix dashboard or the Cloud Foundry command-line interface. You can issue Cloud Foundry CLI commands in scripts for DevOps Services pipeline jobs. For example, you might create and bind a service to an app in a deploy job script. For more information on creating and binding services, [see Adding a service to your application][24].
+###Adding services to apps
+You can add services to your apps and manage those services from your Bluemix Dashboard or the Cloud Foundry command line interface (CLI). You can also issue Cloud Foundry CLI commands in scripts for DevOps Services pipeline jobs. For example, you can add a service to an app in the script of a deploy job. For more information about adding services, see [see Adding a service to your application][24].
 
 <a name="logs"></a>
 ##Viewing logs
