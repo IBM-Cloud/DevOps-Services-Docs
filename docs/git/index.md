@@ -1,6 +1,6 @@
 #Git source control 
 
-###### Last updated: 02 September 2015
+###### Last updated: 19 November 2015
 
 If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. You can also use GitHub source control with DevOps Services projects. If you work on a local workstation, you can use Git terminal commands to edit the contents of your Git repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
@@ -17,6 +17,7 @@ No matter where you code, you can use this quick reference to do common tasks.
 * [Use an existing Git repo with DevOps Services projects](#existing_git_repository)
 * [Replace your origin repo](#replace_your_origin_repository)
 * [Integrate local commits in the Web IDE](#integrate_local_commits_in_the_web_IDE)
+* [Work with Git submodules](#git_submodules)
 
 ##[Branches](#branches)
 * [Create a local branch](#create_a_local_branch)
@@ -125,6 +126,39 @@ If you have a DevOps Services project with an initialized Git repo and you want 
 When you work in the Web IDE, both your local and remote repos are hosted on the cloud. To view the changes that you made in a local repo that is stored outside of DevOps Services, you must sync to your remote repo.
 
 1. Click **SYNC**. Sync combines the fetch, rebase, and push commands.
+
+
+<a name="git_submodules"></a>
+###Work with Git submodules
+
+If your DevOps Services project uses a Git repo and you want to add or use another repo in the project, add a Git submodule. A submodule is a Git repo's clone that is within a subdirectory of another repo. You can use submodules to include projects that are developed by third parties or projects that you are developing separately.
+
+#### Add a Git submodule
+
+1. In the Web IDE, click the **Repository** menu.
+2. Next to the repo to add a submodule to, click the **Add Git Submodule** icon <img class="inline" src="./images/addsubmodule.png" alt="Add Git Submodule">.
+3. Type the repository URL of the new submodule.
+4. Click **Submit**.
+
+The submodule is placed in a subdirectory of your initial repo.
+
+#### Initialize nested submodules
+
+If you add a submodule that contains nested submodules, they are shows as unknown repositories in the **Repository** menu and as empty folders in the Web IDE.  You must initialize the nested submodules:
+
+1. From the **Repository** menu, find the parent repo of the submodules..
+2. Click the **Sync** icon <img class="inline" src="./images/syncsubmodule.png" alt="Sync Submodule">, and then click the **Update** icon <img class="inline" src="./images/updatesubmodule.png" alt="Update Submodule">.
+
+#### Commit and push submodule changes
+
+When you update a submodule, you must push the changes to the submodule and to all parent repos.
+
+1. From the **Reference** menu, check out the branch to commit to.  The submodule is initially in Detached Head state.
+2. Commit and push the changes. These changes are reflected in the parent repo.
+
+#### Remove a submodule
+
+To remove a submodule, click the **Repository** menu.  Next to the submodule to remove, click the **Remove submodule** icon <img class="inline" src="./images/deletesubmodule.png" alt="Delete Submodule">.
 
 [Back to top](#top)
 
