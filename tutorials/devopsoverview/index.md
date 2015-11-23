@@ -1,6 +1,6 @@
 #Get started: Create, edit, and deploy an app
 
-######Last updated: 19 November 2015
+######Last updated: 23 November 2015
 
 Time: 30 minutes
 
@@ -26,7 +26,7 @@ Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, a
 <a name='prereq'></a>
 ##Before you begin
 
-To do this tutorial, you need a Bluemix account and a DevOps Services alias. The account provides access to everything you need to develop, track, plan, and deploy apps. 
+To do this tutorial, you need a Bluemix account and a DevOps Services alias. Bluemix accounts provide access to everything you need to develop, track, plan, and deploy apps. When you sign up for a Bluemix account, if you don't already have a DevOps Services alias, you'll create one.
 
 <h5> </h5>
 <div class="container-fluid small_bottom_space">
