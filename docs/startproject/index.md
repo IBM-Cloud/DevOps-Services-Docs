@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last updated: 19 November 2015
+###### Last updated: 23 November 2015
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
@@ -23,7 +23,7 @@ You can start a project in several ways. If you want to start by using new code 
 
 ## Before you begin 
 
-To create a DevOps Services project, you need a Bluemix account and a DevOps Services alias. The account provides access to everything you need to develop, track, plan, and deploy apps. 
+To create a DevOps Services project, you need a Bluemix account and a DevOps Services alias. Bluemix accounts provide access to everything you need to develop, track, plan, and deploy apps. When you sign up for a Bluemix account, if you don't already have a DevOps Services alias, you'll create one.
 * [Sign up for a Bluemix account](https://hub.jazz.net). 
 
 <a name='starting_a_devops_services_project'></a>
