@@ -19,7 +19,7 @@ When you configure a DevOps Services project to deploy to Bluemix, the project i
 
 When you deploy your project to Bluemix, the project becomes a Bluemix app that you can enable services for, such as the Track & Plan service or the Delivery Pipeline service. <!--Because the use of services can generate charges, you must set up a Bluemix account for your project.-->
 
-You can start a project in several ways. If you want to start by using new code or an existing Git repository, create a project.  You can create a project from DevOps Services or from the command line.  If you want to start from a copy of the code in another project, fork the code.  If you already have an app in IBM Bluemix, you can create a DevOps Services project from the app.  You can olso clone a fully functioning app by using the Deploy to Bluemix button.
+You can start a project in several ways. If you want to start by using new code or an existing Git repository, create a project.  You can create a project from DevOps Services or from the command line.  If you want to start from a copy of the code in another project, fork the code.  If you already have an app in IBM Bluemix, you can create a DevOps Services project from the app.  You can also clone a fully functioning app by using the Deploy to Bluemix button.
 
 ## Before you begin
 * [Register for DevOps Services](https://hub.jazz.net). 
