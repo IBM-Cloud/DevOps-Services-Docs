@@ -1,6 +1,6 @@
 #Clone, edit, and deploy an app
 
-######Last updated: 13 November 2015
+######Last updated: 23 November 2015
 
 Time: 60 minutes 
 
@@ -31,13 +31,13 @@ When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you cr
 <a name='prereq'></a>
 ## Before you begin
 
-To do this tutorial, you need a DevOps Services account and a Bluemix account. The accounts are free and provide access to everything you need to develop, track, plan, and deploy apps. Signing up is simple: when you sign up for DevOps Services, you can also sign up for a trial of Bluemix.
+To do this tutorial, you need a Bluemix account and a DevOps Services alias. Bluemix accounts provide access to everything you need to develop, track, plan, and deploy apps. When you sign up for a Bluemix account, if you don't already have a DevOps Services alias, you'll create one. 
 
 <h5> </h5>
 <div class="container-fluid small_bottom_space">
    <div class="row pbl button-links" id="overview-links">
 		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"> 
-			<div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services </div>
+			<div class="hollowButton">SIGN UP<div class="extra-title">for Bluemix </div>
 			</div>
 		</a>
    </div>
