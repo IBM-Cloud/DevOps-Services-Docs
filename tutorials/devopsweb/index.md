@@ -1,6 +1,6 @@
 #Clone, edit, and deploy an app
 
-######Last updated: 23 November 2015
+######Last updated: 01 December 2015
 
 Time: 60 minutes 
 
@@ -29,9 +29,9 @@ When you're ready to deploy your updated code to IBM&reg; Bluemix&trade;, you cr
 </div>
 
 <a name='prereq'></a>
-## Before you begin
+## Before you begin 
 
-To do this tutorial, you need a Bluemix account and a DevOps Services alias. Bluemix accounts provide access to everything you need to develop, track, plan, and deploy apps. When you sign up for a Bluemix account, if you don't already have a DevOps Services alias, you'll create one. 
+To do this tutorial, you need a Bluemix account. Bluemix accounts provide access to everything you need to develop, track, plan, and deploy apps. You can sign up for a free 30-day trial.   
 
 <h5> </h5>
 <div class="container-fluid small_bottom_space">
