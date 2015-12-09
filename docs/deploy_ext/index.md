@@ -9,7 +9,7 @@ You can extend the capabilities of your Build & Deploy pipeline by configuring y
 * [Creating Slack notifications for builds in the pipeline](#slack)
 * [Creating HipChat notifications for builds in the Delivery Pipeline](#hipchat)
 
-<a name="scan"></a>
+<a name="scan">&nbsp;</a>
 ##Running static code scans by using the pipeline
 Want to find security issues in your code before you deploy it? When you use the IBM® Static Analyzer for Bluemix™ as part of your pipeline, you can run automated checks against your  Java™ app's static `.war`, `.ear`, `.jar`, or `.class` build binary files.
 
@@ -90,21 +90,21 @@ Before you begin, [review the Terms of Use for the service][4].
 
 For more information about using the Static Analyzer service from the Bluemix Dashboard, [see the Static Analyzer service docs][6].
     
-<a name="globalize"></a>
+<a name="globalize">&nbsp;</a>
 ##Globalizing strings by using the pipeline
 
-You can translate strings automatically into other languages when you use the IBM Globalization service with your pipeline. The Globalization service uses machine translation to translate your source files as part of the pipeline's build and deployment process.
+You can translate strings automatically into other languages when you use the IBM Globalization Pipeline service with your pipeline. Globalization Pipeline uses machine translation to translate your source files as part of the pipeline's build and deployment process.
 
-You can also update the machine-translated strings within the globalization project. A translator can then review the machine-translated strings to ensure that they are high quality.
+You can also update the machine-translated strings within the globalization project. A translator or person fimilar with the language can then review the machine-translated strings to ensure that they are of a high quality.
 
-To see an example of a typical pipeline that uses the Globalization service, watch this video:
+To see an example of a typical pipeline that uses the Globalization Pipeline service, watch this video:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/UToj7FIomCg?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 
 ###Creating a globalization stage and job
 Before you begin:
 
-1. Put all of your English-translatable strings in one or more `filename_en.properties` or `filename_en.json` files that all have the same name. For example: `messages_en.properties`.
+1. Put all of your English-translatable strings in one or more Java .properties, AMD I18N, or JSON files that all have the same name. For example: `messages_en.properties`.
 
 2. If your messages are in `.json` files, remove the depth from the structure by removing any subkeys. To remove the subkeys, change instances of `{key: {subkey: value, subkey:value}}` to `{key:value, key:value}`. 
 
@@ -124,7 +124,7 @@ To create the globalization stage and job:
 
   b. For the job type, select **Build**.
   
-  c. For the builder type, select **IBM Globalization**.
+  c. For the builder type, select **IBM Globalization Delivery**.
   
   d. For the organization and space, verify the values and update them if needed.
   
@@ -153,7 +153,7 @@ After the stage is completed, you can review the translated files from the conso
 For more information about using the Globalization service from the Bluemix Dashboard, [see the Globalization service documentation][10].
 
 
-<a name="slack"></a>
+<a name="slack">&nbsp;</a>
 ## Creating Slack notifications for builds in the pipeline
 
 You can send notifications about IBM Container Service, IBM Security Static Analyzer, and IBM Globalization build results from your Delivery Pipeline to your Slack channels.
@@ -219,7 +219,7 @@ To create Slack notifications:
 The build notification that is displayed in Slack includes a link to the DevOps Services project and sometimes to the project's dashboard. For a Slack user to open these links, the user must be registered with DevOps Services and be a member of the project that the pipeline is configured in.
 
 
-<a name="hipchat"></a>
+<a name="hipchat">&nbsp;</a>
 ## Creating HipChat notifications for builds in the pipeline
 
 You can send notifications about IBM Container Service, IBM Security Static Analyzer, and IBM Globalization build results from your Delivery Pipeline to your HipChat rooms.
