@@ -1,8 +1,8 @@
 #Managing your Bluemix DevOps Services account
 
-###### Last updated: 13 November 2015
+###### Last updated: 19 November 2015
 
-Without signing up for an account in IBM® Bluemix™ DevOps Services, you can explore projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
+Without signing up for an IBM® Bluemix™ account, you can explore Bluemix DevOps Services projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
 * [DevOps Services accounts](#idsaccounts)
 * [Setting up a DevOps Services account](#idssetup)
@@ -14,7 +14,7 @@ Without signing up for an account in IBM® Bluemix™ DevOps Services, you can e
 <a name='idsaccounts'></a>
 ##DevOps Services accounts
 
-After you sign up for a DevOps Services account and set it up, you can do these tasks:
+After you sign up for a Bluemix account and set up a DevOps Services project, you can do these tasks:
 
 * Develop and deploy software in the cloud
 * Host your source code by using built-in source code management tools
@@ -28,7 +28,7 @@ After you sign up for a DevOps Services account and set it up, you can do these 
 <a name='idssetup'></a>
 ##Setting up a DevOps Services account
 
-1.	[Sign up for DevOps services](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your IBM id with an alias. If you have a Jazz ID, that is used as your alias.
+1.	[Sign up for an account](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your IBM id with an alias. If you have a Jazz ID, that is used as your alias.
 2.	After your IBM id and alias are linked, you can log in to DevOps Services from a web browser or an IBM® Rational Team Concert™ client. In addition, you can access a Git repository from your local Git client.
 
 	* To log in from a web browser, use your IBM id credentials. 
