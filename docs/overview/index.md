@@ -9,7 +9,7 @@ From your projects, you can access everything that you need to build all kinds o
 <h5> </h5>
 <div class="container-fluid small_bottom_space">
    <div class="row pbl button-links" id="overview-links">
-		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"><div class="hollowButton">SIGN UP<div class="extra-title">for DevOps Services</div></div></a>&nbsp;
+		<a href="https://login.jazz.net/psso/proxy/jazzregister?redirect_uri=https%3A%2F%2Fhub.jazz.net%2F" target="_blank" alt-text="Sign up"><div class="hollowButton">SIGN UP<div class="extra-title">for Bluemix</div></div></a>&nbsp;
 		<a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank"><div class="hollowButton">WATCH A VIDEO<div class="extra-title">to see what you can do</div></div></a>&nbsp;
 		<a href="/tutorials/devopsweb"><div class="hollowButton">DO A TUTORIAL<div class="extra-title">on clone and deploy an app</div></div></a>
    </div>
