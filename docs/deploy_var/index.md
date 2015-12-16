@@ -1,10 +1,21 @@
-#Delivery pipeline environment variables
+#Delivery pipeline environment variables and resources
 
-###### Last updated: 11 December 2015
+###### Last updated: 16 December 2015
 
-You can use any of the following environment variables to interact with the delivery pipeline environment. For example, you might use them in a job script or test command. 
+You can use any of the following environment variables and pre-installed resources to interact with the delivery pipeline environment. For example, you might use them in a job script or test command. 
 
-##General purpose variables
+##Contents
+* Environment variables
+    * General purpose variables
+    * Runtime and tool variables
+    * Deployment variables
+* Pre-installed resources
+    * Runtimes and tools
+    * Node modules
+
+## Environment variables
+
+###General purpose variables
 
 | Environment variable | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -30,7 +41,7 @@ You can use any of the following environment variables to interact with the deli
 | TMPDIR | A directory location where temporary files are stored. |
 | WORKSPACE | The path for the current working directory. |
 
-##Variables for runtimes and tools
+###Runtime and tool variables
 
 | Environment variable | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -42,7 +53,7 @@ You can use any of the following environment variables to interact with the deli
 | MAVEN_HOME | The path to Apache Maven 3.2.1. |
 | NODE_HOME | The path to Node.js 0.10.29. |
 
-##Variables for use in deployments
+###Deployment variables
 
 | Environment variable | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -53,5 +64,47 @@ You can use any of the following environment variables to interact with the deli
 | CF_SPACE_ID | For deployments, the ID of the space to deploy to.  |
 | CF_TARGET_URL | For deployments, the URL of Bluemix/Cloud Foundry. |
 | IDS_VERSION | For deployments, the version of the app that is being deployed or the source identifier. |
+
+##Pre-installed resources
+
+Several runtimes, tools, and Node modules are pre-installed in every pipeline. 
+
+###Runtimes and tools
+
+*Note:* All links are in the home directory. 
+
+| Resource | Link name | Path |
+|----------|-----------|-----------|
+|Apache Ant 1.9.2|ant |/opt/IBM/ant |
+|Cloud Foundry CLI 6.7 |cf | /opt/IBM/cf |
+|Gradle 1.12|gradle |/opt/IBM/gradle |
+|Gradle 2.9 |gradle2 |/opt/IBM/gradle2 |
+|IBM Java (default)|java |/opt/IBM/java |
+|IBM Java 7 x86_64-71 |java7 |/opt/IBM/java7 |
+|IBM Java 8 x86_64-80|java8 |/opt/IBM/java8 |
+|Apache Maven 3.2.1 |maven |/opt/IBM/maven |
+|IBM Node |node |/opt/IBM/node |
+|RTM SCM Tools |RTM-SCM-Tools |/opt/IBM/RTC-SCM-Tools |
+
+*Note:* 64-bit versions of IBM Node 0.10.40, 0.12.7, and 4.2.2 are available by default in the pipeline environment. 
+
+###Node modules
+
+The following Node modules are globally installed in the pipeline environment:
+
+* grunt@0.4.5
+* grunt-cli@0.1.13
+* grunt-contrib-concat@0.4.0
+* grunt-contrib-jshint@0.10.0
+* grunt-contrib-nodeunit@0.4.1
+* grunt-contrib-qunit@0.5.1
+* grunt-contrib-uglify@0.5.0
+* grunt-contrib-watch@0.6.1
+* karma@0.12.23
+* karma-cli@0.0.4
+* karma-jasmine@0.1.5
+* karma-phantomjs-launcher@0.1.4
+* phantomjs@1.9.10
+
 
 <!--<a href="#" target="_blank">Back to the Build & Deploy reference page</a>-->
