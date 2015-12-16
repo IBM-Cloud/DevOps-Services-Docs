@@ -1,6 +1,6 @@
 #Get started: Create, edit, and deploy an app
 
-######Last updated: 01 December 2015
+######Last updated: 16 December 2015
 
 Time: 30 minutes
 
@@ -99,7 +99,7 @@ You created a Git repository, populated it with the example code, and deployed t
  
 4. To see your updated static files, refresh the deployed app in the browser.  
 
- <img class="inline"  src="images/key_info.png" alt="Key information icon">  If you update a node module, use the **Quick Restart** icon to restart the node run time in seconds, without redeploying the app.
+ <img class="inline"  src="images/key_info.png" alt="Key information icon">  If you update a node module, use the **Restart the App Without Redeploying** icon to restart the node run time in seconds, without redeploying the app.
  
 5. To try Live Edit mode, in the file directory, click `public/index.html`.  Change "Hi there!" to "Hi there! More title text!". When you refresh the browser, you can see the changes in the deployed app.  
 
@@ -109,7 +109,7 @@ You created a Git repository, populated it with the example code, and deployed t
 <!-- You can use the Debug feature to create breakpoints and inspect variables in your node modules so you can isolate problem areas as you work. -->
  
 <img  class="inline" src="images/key_info.png" alt="Key information icon"> You can also do this kind of live editing and quick refresh by using the Desktop Sync feature. [For more information, see 
-Bluemix Live Sync](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#bluemixlive).
+Bluemix Live Sync](https://www.ng.bluemix.net/docs/develop/bluemixlive.html).
 
 
 <a name='push'></a>
@@ -127,8 +127,7 @@ Bluemix Live Sync](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#
 	d. Put these changes in the origin/master branch by clicking **Push**.
 
 2. To verify that your new code was deployed, 
-go to the Build & Deploy Pipeline page and wait until you see an indication that the 
-app was deployed again. Then, click the URL link that is next to "Deploy to." Your update is shown.
+go to the **Build & Deploy** Pipeline page and wait until you see that the deploy stage has completed successfully. Then, click the URL link located in the *Last Execution Result* section of the Deploy stage. Your update app is shown.
 
 <a name='grow'></a>
 ## Grow your project
