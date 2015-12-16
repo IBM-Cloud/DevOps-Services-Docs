@@ -127,7 +127,7 @@ Bluemix Live Sync](https://www.ng.bluemix.net/docs/develop/bluemixlive.html).
 	d. Put these changes in the origin/master branch by clicking **Push**.
 
 2. To verify that your new code was deployed, 
-go to the **Build & Deploy** Pipeline page and wait until you see that the deploy stage has completed successfully. Then, click the URL link located in the *Last Execution Result* section of the Deploy stage. Your update app is shown.
+go to the **Build & Deploy** Pipeline page and wait until you see that the deploy stage has completed successfully. Then, click the URL link located in the *Last Execution Result* section of the Deploy stage. Your updated app is shown.
 
 <a name='grow'></a>
 ## Grow your project
