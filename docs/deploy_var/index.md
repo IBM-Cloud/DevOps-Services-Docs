@@ -86,7 +86,13 @@ Several runtimes, tools, and Node modules are pre-installed in every pipeline.
 |IBM Node |node |/opt/IBM/node |
 |RTM SCM Tools |RTM-SCM-Tools |/opt/IBM/RTC-SCM-Tools |
 
-*Note:* 64-bit versions of IBM Node 0.10.40, 0.12.7, and 4.2.2 are available by default in the pipeline environment. 
+*Note:* 64-bit versions of IBM Node 0.10.40, 0.12.7, and 4.2.2 are available in the pipeline environment. You can choose the version that is used by using the export command. 
+
+For example, to use Node 0.12.7:
+`export PATH=/opt/IBM/node-v0.12/bin:$PATH`
+
+And to use Node 4.2.2:
+`export PATH=/opt/IBM/node-v4.2/bin:$PATH`
 
 ###Node modules
 
