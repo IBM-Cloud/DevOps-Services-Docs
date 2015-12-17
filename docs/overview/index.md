@@ -72,7 +72,7 @@ In DevOps Services, you can develop software for any language or buildpack. You 
 </li><li> cfignore </li>
 </ul>
 </div></div>
-In addition, DevOps Services supports deployment to Bluemix with predefined buildpacks for Java, Node.js&trade;, Go, PHP, Python, and Ruby apps.
+In addition, DevOps Services supports deployment to Bluemix with predefined buildpacks for Java&trade;, Node.js, Go, PHP, Python, and Ruby apps.
  
 If you are building a Node.js app, you can make quick updates as you develop and debug by using 
 [Bluemix Live Sync](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html). 
