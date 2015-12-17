@@ -1,6 +1,6 @@
 #Extending the capabilities of your Build & Deploy pipeline
 
-###### Last updated: 19 August 2015
+###### Last updated: 17 December 2015
 
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
@@ -93,18 +93,18 @@ For more information about using the Static Analyzer service from the Bluemix Da
 <a name="globalize"></a>
 ##Globalizing strings by using the pipeline
 
-You can translate strings automatically into other languages when you use the IBM Globalization service with your pipeline. The Globalization service uses machine translation to translate your source files as part of the pipeline's build and deployment process.
+You can translate strings automatically into other languages when you use the IBM Globalization Pipeline service with your pipeline. IBM Globalization Pipeline uses machine translation to translate your source files as part of the pipeline's build and deployment process.
 
-You can also update the machine-translated strings within the globalization project. A translator can then review the machine-translated strings to ensure that they are high quality.
+You can also update the machine-translated strings within the globalization project. A translator or native speaker of the language can then review the machine-translated strings to ensure that they are of a high quality.
 
-To see an example of a typical pipeline that uses the Globalization service, watch this video:
+To see an example of a typical pipeline that uses the Globalization Pipeline service, watch this video:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/UToj7FIomCg?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 
 ###Creating a globalization stage and job
 Before you begin:
 
-1. Put all of your English-translatable strings in one or more `filename_en.properties` or `filename_en.json` files that all have the same name. For example: `messages_en.properties`.
+1. All English-translatable strings should be included in one or more `filename_en.properties` or `filename_en.json` files that all use the same name. For example: `messages_en.properties`.
 
 2. If your messages are in `.json` files, remove the depth from the structure by removing any subkeys. To remove the subkeys, change instances of `{key: {subkey: value, subkey:value}}` to `{key:value, key:value}`. 
 
@@ -124,11 +124,11 @@ To create the globalization stage and job:
 
   b. For the job type, select **Build**.
   
-  c. For the builder type, select **IBM Globalization**.
+  c. For the builder type, select **IBM Globalization Pipeline**.
   
   d. For the organization and space, verify the values and update them if needed.
   
-  e. In the **Source file name** field, type the name and extension of the `.properties` or `.json` input file. If you have files in different subdirectories and all of the files have the same name, you can type the name only one time. For example, if you have a `messages_en.properties` file in three directories, type `messages_en.properties` for the source file name so that all of them are translated.
+  e. In the **Source file name** field, type the name and extension of the `.properties` or `.json` input file. If you have files in different subdirectories, but they all have the same name, you only need to type the file name once. For example, if you have a `messages_en.properties` file in three directories, type `messages_en.properties` for the source file name, and all files with that name will be translated.
   
   f. Determine whether to select the **Set up service and space for me** check box.
   
@@ -136,21 +136,21 @@ To create the globalization stage and job:
     
     * If you configured the service and bound app in your Bluemix space already or if you want to [configure these requirements manually][9], leave this check box cleared.
     
-  g. For the Globalization project prefix, enter a prefix for the project name, which is structured in this format: `<globalization_project_prefix>.path.to.source.file`. The pipeline job creates this Globalization project for you in the Globalization service.
+  g. For the Globalization bundle prefix, enter a prefix for the bundle name, which is structured in this format: `<globalization_bundle_prefix>.path.to.source.file`. The pipeline job creates this Globalization bundle for you in the Globalization Pipeline service.
   
-    **Tip:** Use the DevOps Services project name in the prefix so that the project can be identified easily in the Globalization service.
+    **Tip:** Use the DevOps Services project name in the prefix so that the project can be identified easily in the Globalization Pipeline service.
   
   h. Click **SAVE**. 
   
-3. Create another stage to package your app. For the input of the job in this stage, use the Globalization job from the previous stage. Do not use the source as the input. The Globalization job augments the source files with machine-translated content. 
+3. Create another stage to package your app. For the input of the job in this stage, use the IBM Globalization Pipeline job from the previous stage. Do not use the source as the input. The Globalization Pipeline job augments the source files with the machine-translated strings.
 
-4. To ensure that the machine-translated content is included in the packaged app, create another stage to package the app in. For the input to that stage, include the Globalization job. 
+4. To ensure that the machine-translated content is included in the packaged app, create another stage to package the app in. For the input to that stage, include the Globalization Pipeline job. 
 
 The machine translated files are placed in the same directory as the source `.properties` or `.json` file. To view the files, click **Job > Artifacts**.
 
 After the stage is completed, you can review the translated files from the console output. You can also direct translators to the files so that they can review the machine-translation output and provide revisions to improve quality. The revisions are stored in a Cloudant™ database and take precedence over any future machine translations of the same strings.
 
-For more information about using the Globalization service from the Bluemix Dashboard, [see the Globalization service documentation][10].
+For more information about using the Globalization Pipeline service from the Bluemix Dashboard, [see the Globalization service documentation][10].
 
 
 <a name="slack"></a>
@@ -312,4 +312,4 @@ To create HipChat notifications:
 [7]: ./images/analyzer_success.png
 [8]: ./images/analyzer_pending.png
 [9]: https://www.ng.bluemix.net/docs/containers/container_group_pipeline_ov.html#container_binding_pipeline
-[10]: https://www.ng.bluemix.net/docs/services/Globalization/index.html
+[10]: https://www.ng.bluemix.net/docs/services/GlobalizationPipeline/index.html
