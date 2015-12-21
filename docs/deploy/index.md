@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 19 November 2015
+###### Last updated: 21 December 2015
 
 The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
@@ -134,6 +134,8 @@ You can also request on-demand builds and deployments from the build history pag
 * Drag a build to the box that is under a configured stage.
 * Next to a build, click the **Execute stage with this build** icon and then select a space to deploy to.
   ![The Execute stage with this build icon][9]
+
+To cancel a running stage, on the Pipeline: All Stages page, click **View logs and history**. Click the stage number above the running jobs, and then click **CANCEL**. You can also cancel jobs individually by clicking the job and then **CANCEL**, or by clicking the stop icon next to a job while it's running on the Pipeline: All Stages page. 
   
 <a name="deploy"></a>
 ##Deploying an app
