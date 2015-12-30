@@ -1,6 +1,6 @@
 #Set up a pipeline and deploy an app
 
-###### Last updated: 01 December 2015
+###### Last updated: 30 December 2015
 
 Time: 30 minutes
 
@@ -148,5 +148,5 @@ You created a basic build and deployment pipeline for a sample project. You are 
 ##Next steps
 
 * To learn more about the pipeline, [see Build & Deploy](/docs/reference/deploy/). 
-* To learn about IBM Containers, [see the Containers documentation on Bluemix](https://www.stage1.ng.bluemix.net/docs/starters/index-gentopic3.html#container_ov).
+* To learn about IBM Containers, [see the Containers documentation on Bluemix](https://www.ng.bluemix.net/docs/containers/container_index.html).
 * To learn about using the Delivery Pipeline service with containers, [see How to set up continuous delivery for IBM Containers](https://developer.ibm.com/bluemix/docs/set-up-continuous-delivery-ibm-containers/).

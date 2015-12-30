@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 19 November 2015
+###### Last updated: 30 December 2015
 
 The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
@@ -201,4 +201,4 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [21]: ../deploy_ext
 [22]: ./images/pipeline_settings_icon.png
 [23]: ./images/pipeline_settings.png
-[24]: https://www.ng.bluemix.net/docs/services/reqnsi.html
+[24]: https://www.ng.bluemix.net/docs/services/reqnsi.html#add_service
