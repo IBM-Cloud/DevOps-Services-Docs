@@ -1,8 +1,8 @@
 #Build and deploy
 
-###### Last updated: 21 December 2015
+###### Last updated: 4 January 2016
 
-The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
+The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
 * [Stages](#stages)
 * [Jobs](#jobs)
@@ -126,7 +126,7 @@ The simplest possible pipeline contains two stages. First, there is a stage that
 <a name="run_stage"></a>
 ##Running a stage
 
-You can manually run a stage by clicking the **Run Stage** icon on the Build & Deploy Pipeline page. 
+You can manually run a stage by clicking the **Run Stage** icon on the Build &amp; Deploy Pipeline page. 
 
 ![Clicking the Run Stage icon on a stage][16]
 
@@ -135,7 +135,7 @@ You can also request on-demand builds and deployments from the build history pag
 * Next to a build, click the **Execute stage with this build** icon and then select a space to deploy to.
   ![The Execute stage with this build icon][9]
 
-To cancel a running stage, on the Pipeline: All Stages page, click **View logs and history**. Click the stage run number above the active jobs, and then click **CANCEL**. You can also cancel jobs individually by clicking the job and then **CANCEL**, or by clicking the stop icon next to a job while it's running on the Pipeline: All Stages page.
+To cancel a running stage, on the stage, click **View logs and history**. In the list on the left, click the running job's number and then click **CANCEL**. You can also cancel jobs individually by clicking a job and then clicking **CANCEL**, or by clicking the **Stop** icon next to a job on its stage.
   
 <a name="deploy"></a>
 ##Deploying an app
