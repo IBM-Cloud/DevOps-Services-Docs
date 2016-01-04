@@ -1,8 +1,8 @@
-#Delivery pipeline environment variables and resources
+#Environment variables and resources for the Build &amp; Deploy pipeline
 
-###### Last updated: 16 December 2015
+###### Last updated: 4 January 2016
 
-You can use any of the following environment variables and pre-installed resources to interact with the delivery pipeline environment. For example, you might use them in a job script or test command. 
+You can use environment variables and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might use them in a job script or test command. 
 
 ##Contents
 * Environment variables
@@ -19,25 +19,25 @@ You can use any of the following environment variables and pre-installed resourc
 
 | Environment variable | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| ARCHIVE_DIR | The directory that will be archived or that archives are downloaded into. |
+| ARCHIVE_DIR | The directory to archive or to download archives into. |
 | BUILD_ID | The unique ID for the current job execution.  |
-| BUILD_DISPLAY_NAME | The BUILD_ID value prefixed with "#". |
-| BUILD_NUMBER | The incremental stage ID that appears in the pipeline UI.  |
-| GIT_BRANCH | The Git branch used as input by the job. Only available in jobs that use a Git repository as input. |
-| GIT_COMMIT | The Git commit used as input by the job. Only available in jobs that use a Git repository as input. |
-| GIT_PREVIOUS_COMMIT | The Git commit value of the last successful execution of the job. Only available in jobs that use a Git repository as input. |
-| GIT_URL | The Git repository URL used as input by the job. Only available in jobs that use a Git repository as input. |
+| BUILD_DISPLAY_NAME | The BUILD_ID value, prefixed with "#". |
+| BUILD_NUMBER | The incremental stage ID that is shown in the pipeline UI.  |
+| GIT_BRANCH | The Git branch that the job uses as input. This variable is available only in jobs that use a Git repository as input. |
+| GIT_COMMIT | The Git commit that the job uses as input. This variable is available only in jobs that use a Git repository as input. |
+| GIT_PREVIOUS_COMMIT | The Git commit value of the job's last successful run. This variable is available only in jobs that use a Git repository as input. |
+| GIT_URL | The Git repository URL that the job uses as input. This variable is available only in jobs that use a Git repository as input. |
 | IDS_JOB_ID | The unique ID of the job's configuration. |
 | IDS_JOB_NAME | The name of the job's configuration. |
 | IDS_OUTPUT_PROPS | Comma-separated names of your stage environment properties. |
-| IDS_PROJECT_NAME | The name of the project, e.g. <code>Owner &#124; Project Name</code>. |
+| IDS_PROJECT_NAME | The name of the project; for example, <code>Owner &#124; Project Name</code>. |
 | IDS_STAGE_NAME | The name of the current stage. |
 | IDS_URL | The URL for the current pipeline. |
 | JOB_NAME | The unique job ID in the context of the current pipeline. |
 | PIPELINE_STAGE_INPUT_JOB_ID | The ID of the job that is input for the current stage. |
 | PIPELINE_STAGE_INPUT_REV | The revision of the input for the current stage. |
 | PIPELINE_INITIAL_STAGE_EXECUTION_ID | The unique ID for the run of the pipeline. |
-| TASK_ID | The unique ID of the current job execution. |
+| TASK_ID | The unique ID of the job's current run. |
 | TMPDIR | A directory location where temporary files are stored. |
 | WORKSPACE | The path for the current working directory. |
 
@@ -47,7 +47,7 @@ You can use any of the following environment variables and pre-installed resourc
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | ANT_HOME | The path to Apache Ant 1.9.2. |
 | GRADLE_HOME | The path to Gradle 1.11. |
-| JAVA_HOME | The path to IBM Java 7. |
+| JAVA_HOME | The path to IBM&reg; Java&trade; 7. |
 | JAVA7_HOME | The path to IBM Java 7. |
 | JAVA8_HOME | The path to IBM Java 8. |
 | MAVEN_HOME | The path to Apache Maven 3.2.1. |
@@ -57,12 +57,12 @@ You can use any of the following environment variables and pre-installed resourc
 
 | Environment variable | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| CF_APP | For deployments, the name of the application to deploy. |
-| CF_ORG | For deployments, the name of the organization to deploy to. |
-| CF_ORGANIZATION_ID | For deployments, the ID of the organization to deploy to. |
+| CF_APP | For deployments, the name of the app to deploy. |
+| CF_ORG | For deployments, the name of the organization (org) to deploy to. |
+| CF_ORGANIZATION_ID | For deployments, the ID of the org to deploy to. |
 | CF_SPACE | For deployments, the name of the space to deploy to. |
 | CF_SPACE_ID | For deployments, the ID of the space to deploy to.  |
-| CF_TARGET_URL | For deployments, the URL of Bluemix/Cloud Foundry. |
+| CF_TARGET_URL | For deployments, the URL of IBM Bluemix&reg; or Cloud Foundry. |
 | IDS_VERSION | For deployments, the version of the app that is being deployed or the source identifier. |
 
 ##Pre-installed resources
@@ -84,14 +84,14 @@ Several runtimes, tools, and Node modules are pre-installed in every pipeline.
 |IBM Java 8 x86_64-80|java8 |/opt/IBM/java8 |
 |Apache Maven 3.2.1 |maven |/opt/IBM/maven |
 |IBM Node |node |/opt/IBM/node |
-|RTM SCM Tools |RTM-SCM-Tools |/opt/IBM/RTC-SCM-Tools |
+|IBM Rational Team Concert&trade; SCM Tools |RTC-SCM-Tools |/opt/IBM/RTC-SCM-Tools |
 
-*Note:* 64-bit versions of IBM Node 0.10.40, 0.12.7, and 4.2.2 are available in the pipeline environment. You can choose the version that is used by using the export command. 
+64-bit versions of IBM Node 0.10.40, 0.12.7, and 4.2.2 are available in the pipeline environment. To choose a version, use the export command. 
 
-For example, to use Node 0.12.7:
+For example, to use Node 0.12.7, enter this command:
 `export PATH=/opt/IBM/node-v0.12/bin:$PATH`
 
-And to use Node 4.2.2:
+To use Node 4.2.2, enter this command:
 `export PATH=/opt/IBM/node-v4.2/bin:$PATH`
 
 ###Node modules
