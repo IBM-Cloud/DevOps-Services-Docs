@@ -102,7 +102,7 @@ Use the Debugger to create breakpoints and inspect variables in your node module
 
 ![Bluemix Live Edit](/features/images/live_edit.png)	
 
-For more information about Bluemix Live Sync, [see the documentation for IBM&reg; Bluemix&trade;](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html#bluemixlive).
+For more information about Bluemix Live Sync, [see the documentation for IBM&reg; Bluemix&trade;](https://www.ng.bluemix.net/docs/develop/bluemixlive.html).
 
 
 <a name='scm'></a>

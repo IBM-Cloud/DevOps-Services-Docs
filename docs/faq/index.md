@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 27 October 2015
+##### Last updated: 30 December 2015
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -137,7 +137,7 @@ For more information, see [Setting up GitHub for Bluemix DevOps Services project
 
 ### Why can't I use the ADD GIT link from the Bluemix console?
 
-See [Cannot add Git repository](https://www.ng.bluemix.net/docs/#troubleshoot/index-gentopic4.html#cannot_addgit).
+See [Cannot add Git repository](https://www.ng.bluemix.net/docs/troubleshoot/index.html#ts_cannot_addgit).
 
 
 <a name="protocols"></a>

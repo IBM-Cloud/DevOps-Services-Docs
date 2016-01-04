@@ -1,8 +1,9 @@
 #Build and deploy
 
-###### Last updated: 6 November 2015
+###### Last updated: 4 January 2016
 
-The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
+
+The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
 * [Stages](#stages)
 * [Jobs](#jobs)
@@ -126,7 +127,7 @@ The simplest possible pipeline contains two stages. First, there is a stage that
 <a name="run_stage"></a>
 ##Running a stage
 
-You can manually run a stage by clicking the **Run Stage** icon on the Build & Deploy Pipeline page. 
+You can manually run a stage by clicking the **Run Stage** icon on the Build &amp; Deploy Pipeline page. 
 
 ![Clicking the Run Stage icon on a stage][16]
 
@@ -134,19 +135,25 @@ You can also request on-demand builds and deployments from the build history pag
 * Drag a build to the box that is under a configured stage.
 * Next to a build, click the **Execute stage with this build** icon and then select a space to deploy to.
   ![The Execute stage with this build icon][9]
+
+To cancel a running stage, on the stage, click **View logs and history**. In the list on the left, click the running job's number and then click **CANCEL**. You can also cancel jobs individually by clicking a job and then clicking **CANCEL**, or by clicking the **Stop** icon next to a job on its stage.
   
 <a name="deploy"></a>
 ##Deploying an app
 
 A properly configured deploy job deploys your app to your target whenever the job is run. To manually run a deploy job, click the **Run Stage** icon of the stage that the job is in.
 
+###Input revisions
 When you run a stage manually, or if it runs because the stage before it is completed, the running stage selects its input revision. Usually, the input revision is a build number. To select the input revision, the stage follows this process:
 
 1. If a specific revision is selected, use it.
 2. If a specific revision is not specified, search previous stages until a stage is found that uses the same input. Find and use the last successfully run revision of that input.
 3. If a specific revision is not specified and no other stages use the specified source as input, use the latest revision of the input.
 
-**Tip:** To deploy a previous build of an app, from the Stage History menu, select the build. Click SEND TO, and select a target.
+**Tip:** You can deploy a previous build. On the stage that contains the build, click **View logs and history**. On the page that opens, select the build. Click **SEND TO**, and select a target.
+
+###Adding services to apps
+You can add services to your apps and manage those services from your Bluemix Dashboard or the Cloud Foundry command line interface (CLI). You can also issue Cloud Foundry CLI commands in scripts for DevOps Services pipeline jobs. For example, you can add a service to an app in the script of a deploy job. For more information about adding services, see [see Adding a service to your application][24].
 
 <a name="logs"></a>
 ##Viewing logs
@@ -197,3 +204,4 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [21]: ../deploy_ext
 [22]: ./images/pipeline_settings_icon.png
 [23]: ./images/pipeline_settings.png
+[24]: https://www.ng.bluemix.net/docs/services/reqnsi.html#add_service
