@@ -1,10 +1,10 @@
 #Get started: Create, edit, and deploy an app
 
-######Last updated: 16 December 2015
+######Last updated: 4 January 2016
 
 Time: 30 minutes
 
-Learn how to use IBM&reg; Bluemix&trade; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&trade; platform in an agile, integrated way. To get the most out of this tutorial, first watch the related video, which was created by a DevOps Services expert, Adam Archer.
+Learn how to use IBM&reg; Bluemix&reg; DevOps Services to plan, code, build, and deploy to the IBM&reg; Bluemix&reg; platform in an agile, integrated way. To get the most out of this tutorial, first watch the related video, which was created by a DevOps Services expert, Adam Archer.
  
 <img  class="inline" src="images/video_icon.png" alt="Video icon">&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=VJesera9jR0" target="_blank">An Overview of IBM Bluemix DevOps Services</a>
 
@@ -127,7 +127,7 @@ Bluemix Live Sync](https://www.ng.bluemix.net/docs/develop/bluemixlive.html).
 	d. Put these changes in the origin/master branch by clicking **Push**.
 
 2. To verify that your new code was deployed, 
-go to the **Build & Deploy** Pipeline page and wait until you see that the deploy stage has completed successfully. Then, click the URL link located in the *Last Execution Result* section of the Deploy stage. Your updated app is shown.
+go to the Build & Deploy Pipeline page and wait until you see that the deploy stage completed successfully. Then, on the Deploy stage, click the URL link in the Last Execution Result section. Your updated app is shown.
 
 <a name='grow'></a>
 ## Grow your project
@@ -150,7 +150,7 @@ Grow the app into a robust project that has members, sprints, and a backlog. Thi
 4. Click **TRACK & PLAN** again. In the left navigation bar, 
 click **SPRINT PLANNING**.
 
-5. In the backlog lane, add a few work items.  In the **Type a a work item summary**  field, type a summary, and then press Enter.  Click **CREATE**.
+5. In the backlog lane, add a few work items.  In the **Type a a work item summary**  field, type a summary, and then press Enter. Click **CREATE**.
 Create three work items to get the team started:
 
    * Update the title of the page
@@ -183,7 +183,7 @@ Members of the team can develop code independently and share changes when the ch
 ### Start working on a task
 
 1. Click **TRACK & PLAN** to plan  your work.
-2. Click **SPRINT PLANNING**.  In the Sprint 1 lane, see the three work items.  The work item about updating the title is unassigned; assign it to yourself by clicking the question mark icon and selecting your name from the list. 
+2. Click **SPRINT PLANNING**.  In the Sprint 1 lane, see the three work items. The work item about updating the title is unassigned; assign it to yourself by clicking the question mark icon and selecting your name from the list. 
 
 3. For the same work item, set the status:  click the right arrow icon next to the owner and select **Start Working**.  This work item is **In progress** because you are going to start working on it now.
 
@@ -224,11 +224,11 @@ It's time to deploy your app! This section of the tutorial corresponds to Part 4
 
 2. Click **ADD STAGE** and name the stage `Production`.
 
-3. Turn off auto-deploy by clicking **Run jobs only when this stage is run manually** in the **Stage Trigger** field.
+3. Turn off auto-deploy by clicking **Run jobs only when this stage is run manually** in the Stage Trigger section.
 
 4. Click the **JOBS** tab and then click **ADD JOB**. For the job type, select **Deploy**. 
 
-5. Enter a new Bluemix space name:  in the **Space** field, click the arrow and then click **Create new space**. Type the new name and click **CREATE**. 
+5. Enter a new Bluemix space name:  from the **Space** list, select **Create a New Space**. Type the new name and click **CREATE**. 
 
 6. Give this deployment a unique host name by changing the deployment script.  Change the name parameter `-n` so that it is now `cf push "${CF_APP}" -n "new-name"`.  Click **SAVE**.
 
@@ -244,9 +244,9 @@ You now have a good overview of how to get started with DevOps Services.
 
 You saw how to create and run a Node.js web app by using Bluemix and DevOps Services.
 With one click, you created a Git repository, populated it with example code, and automatically 
-deployed the app.  You then made a change and saw that the change was automatically deployed in Live Edit mode.
+deployed the app. You then made a change and saw that the change was automatically deployed in Live Edit mode.
 
-You grew your project by inviting another member, created a backlog of work items, and planned a sprint. Acting as a new project member, you accepted the invitation, started working on a task, made changes, and deployed to a separate Bluemix URL.  Then, you pushed the changed code and resolved the work item.  
+You grew your project by inviting another member, created a backlog of work items, and planned a sprint. Acting as a new project member, you accepted the invitation, started working on a task, made changes, and deployed to a separate Bluemix URL. Then, you pushed the changed code and resolved the work item.  
 
 Finally, as the project owner, you created a production stage and deployed to a production URL.
 
