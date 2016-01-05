@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 4 January 2016
+###### Last updated: 5 January 2016
 
 
 The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
@@ -15,6 +15,7 @@ The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
 * [Controlling access](#access)
+* [Environment variables and resources](#env)
 * [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
@@ -174,10 +175,14 @@ In addition to job logs, you can view unit test results, generated artifacts, an
 You can restrict who is able to run stages or modify a pipeline. To do so, go to the Pipeline Settings page, which you can reach by clicking the **Stage Configuration** icon on the Pipeline: All Stages page. 
 ![The pipeline settings gear icon][22]
 
+<a name="env"></a>
+##Environment variables and resources
+
+You can use environment variables and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might incorporate them into a job script or test command. For more information, [see Environment variables and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline
-You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
+You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example, test jobs can run static code scans and build jobs can globalize strings.
 
 For more information on extending pipeline capabilities, [see Extending the capabilities of your Build & Deploy pipeline][21].
  
@@ -205,3 +210,4 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [22]: ./images/pipeline_settings_icon.png
 [23]: ./images/pipeline_settings.png
 [24]: https://www.ng.bluemix.net/docs/services/reqnsi.html#add_service
+[25]: ../deploy_var
