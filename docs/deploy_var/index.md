@@ -5,16 +5,18 @@
 You can use environment variables and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might use them in a job script or test command. 
 
 ##Contents
-* Environment variables
-    * General purpose variables
-    * Runtime and tool variables
-    * Deployment variables
-* Pre-installed resources
-    * Runtimes and tools
-    * Node modules
+* [Environment variables](#env)
+    * [General purpose variables](#gen)
+    * [Runtime and tool variables](#runtime)
+    * [Deployment variables](#deployment)
+* [Pre-installed resources](#resources)
+    * [Runtimes and tools](#tools)
+    * [Node modules](#node)
 
+<a name="env"></a>
 ## Environment variables
 
+<a name="gen"></a>
 ###General purpose variables
 
 | Environment variable | Description |
@@ -41,6 +43,7 @@ You can use environment variables and pre-installed resources to interact with t
 | TMPDIR | A directory location where temporary files are stored. |
 | WORKSPACE | The path for the current working directory. |
 
+<a name="runtime"></a>
 ###Runtime and tool variables
 
 | Environment variable | Description |
@@ -53,6 +56,7 @@ You can use environment variables and pre-installed resources to interact with t
 | MAVEN_HOME | The path to Apache Maven 3.2.1. |
 | NODE_HOME | The path to Node.js 0.10.29. |
 
+<a name="deployment"></a>
 ###Deployment variables
 
 | Environment variable | Description |
@@ -65,10 +69,12 @@ You can use environment variables and pre-installed resources to interact with t
 | CF_TARGET_URL | For deployments, the URL of IBM Bluemix&reg; or Cloud Foundry. |
 | IDS_VERSION | For deployments, the version of the app that is being deployed or the source identifier. |
 
+<a name="resources"></a>
 ##Pre-installed resources
 
 Several runtimes, tools, and Node modules are pre-installed in every pipeline. 
 
+<a name="tools"></a>
 ###Runtimes and tools
 
 *Note:* All links are in the home directory. 
@@ -94,6 +100,7 @@ For example, to use Node 0.12.7, enter this command:
 To use Node 4.2.2, enter this command:
 `export PATH=/opt/IBM/node-v4.2/bin:$PATH`
 
+<a name="node"></a>
 ###Node modules
 
 The following Node modules are globally installed in the pipeline environment:
