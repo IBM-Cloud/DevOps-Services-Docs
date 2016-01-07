@@ -1,8 +1,9 @@
 #Build and deploy
 
-###### Last updated: 30 December 2015
+###### Last updated: 5 January 2016
 
-The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
+
+The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
 * [Stages](#stages)
 * [Jobs](#jobs)
@@ -14,6 +15,7 @@ The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also kno
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
 * [Controlling access](#access)
+* [Environment variables and resources](#env)
 * [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
@@ -126,7 +128,7 @@ The simplest possible pipeline contains two stages. First, there is a stage that
 <a name="run_stage"></a>
 ##Running a stage
 
-You can manually run a stage by clicking the **Run Stage** icon on the Build & Deploy Pipeline page. 
+You can manually run a stage by clicking the **Run Stage** icon on the Build &amp; Deploy Pipeline page. 
 
 ![Clicking the Run Stage icon on a stage][16]
 
@@ -134,6 +136,8 @@ You can also request on-demand builds and deployments from the build history pag
 * Drag a build to the box that is under a configured stage.
 * Next to a build, click the **Execute stage with this build** icon and then select a space to deploy to.
   ![The Execute stage with this build icon][9]
+
+To cancel a running stage, on the stage, click **View logs and history**. In the list on the left, click the running job's number and then click **CANCEL**. You can also cancel jobs individually by clicking a job and then clicking **CANCEL**, or by clicking the **Stop** icon next to a job on its stage.
   
 <a name="deploy"></a>
 ##Deploying an app
@@ -171,10 +175,14 @@ In addition to job logs, you can view unit test results, generated artifacts, an
 You can restrict who is able to run stages or modify a pipeline. To do so, go to the Pipeline Settings page, which you can reach by clicking the **Stage Configuration** icon on the Pipeline: All Stages page. 
 ![The pipeline settings gear icon][22]
 
+<a name="env"></a>
+##Environment variables and resources
+
+You can use environment variables and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might incorporate them into a job script or test command. For more information, [see Environment variables and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline
-You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
+You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example, test jobs can run static code scans and build jobs can globalize strings.
 
 For more information on extending pipeline capabilities, [see Extending the capabilities of your Build & Deploy pipeline][21].
  
@@ -202,3 +210,4 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [22]: ./images/pipeline_settings_icon.png
 [23]: ./images/pipeline_settings.png
 [24]: https://www.ng.bluemix.net/docs/services/reqnsi.html#add_service
+[25]: ../deploy_var
