@@ -12,6 +12,7 @@ ____
 -   [Can I change my alias?](#alias_change)
 -   [Why am I asked to register for a Bluemix account when I log in to DevOps Services?](#BluemixReg)
 -   [Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client?](#rtcgit)
+-   [Can I customize the process definitions for my DevOps Services project?](#custom_project)
 -   [Can I connect my project to a GitHub repository?](#git)
 -   [Can I remove DevOps Services access from my GitHub account?](#github_revoke)
 -   [I set up a GitHub hook for my project, but it isn't working. What can I do?](#github_trouble)
@@ -67,6 +68,8 @@ If you try to accept a project invitation but get a message that states `A probl
 
 **Important**: When you update the email address of your DevOps Services account, the email address of the associated IBM id isn’t automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you will be prompted to synchronize them.  
 
+<a name="alias_change"></a>
+
 ### Can I change my alias? 
 
 Aliases are permanent and cannot be changed. However, you can create another alias and link to it from your DevOps Services account. 
@@ -106,7 +109,13 @@ After your IBM id and alias are linked, you can log in to DevOps Services from a
 * To log in from your Rational Team Concert client, use your alias and IBM password.
 * To access a Git repository from your local Git client, use your alias and IBM password.      
    For example: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`     
-   For more information, see [Git source control](/docs/git).
+   For more information, see [Git source control](/docs/git).  
+
+<a name="custom_project"></a>  
+
+### Can I customize the process definitions for my DevOps Services project if I use my project with a Rational Team Concert client?  
+
+No. DevOps Services projects are designed for teams that want to start a project quickly, with little to no process customization. If you are a project owner or admin, you can create sprints and team areas, add users, and organize your team's work.  
 
 <a name="git"></a>
 
