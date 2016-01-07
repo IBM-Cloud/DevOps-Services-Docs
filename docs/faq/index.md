@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 30 December 2015
+##### Last updated: 6 January 2016
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
 ____
@@ -9,6 +9,7 @@ ____
 -   [What help resources are available?](#q17)
 -   [Why can't I accept an invitation?](#invite)
 -   [How do I change the email address of the DevOps Services account that is associated with my IBM id? ](#changeemail)
+-   [Can I change my alias?](#alias_change)
 -   [Why am I asked to register for a Bluemix account when I log in to DevOps Services?](#BluemixReg)
 -   [Can I log in to DevOps Services from my Rational Team Concert desktop client or Git client?](#rtcgit)
 -   [Can I connect my project to a GitHub repository?](#git)
@@ -22,7 +23,7 @@ ____
 -   [How can I report abuse?](#q18)
 -   [How can I see what's new?](#q19)
 -   [When I try to deploy an app from the run bar, why does it fail in a yellow, "not synchronized" state?](#yellowrunbar)
--	[Where is the run bar?](#missingrunbar)
+-	  [Where is the run bar?](#missingrunbar)
 -   [Which browser should I be using?](#q20)
 
 ____
@@ -65,6 +66,27 @@ If you try to accept a project invitation but get a message that states `A probl
 2. On the left, click **PERSONAL INFORMATION**, and then update your email address.
 
 **Important**: When you update the email address of your DevOps Services account, the email address of the associated IBM id isn’t automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you will be prompted to synchronize them.  
+
+### Can I change my alias? 
+
+Aliases are permanent and cannot be changed. However, you can create another alias and link to it from your DevOps Services account. 
+
+Create a new alias:  
+1. Log in to [DevOps Services](https://hub.jazz.net), click the **Profile Settings** icon, and click  **Profile**.
+2. On your profile page, click **EDIT PROFILE**.
+3. Click **PERSONAL INFORMATION** and change your email address to another email address that is not associated with your IBM id.
+  **Note:** To verify which email address is associated with your IBM id, click [here](https://www.ibm.com/account/profile/us?page=signinview).
+
+Unlink your email address:  
+1. Log in to [DevOps Services](https://hub.jazz.net) by using your IBM id.
+2. Go to the [Unlink your Jazz ID and IBM id page](https://login.jazz.net/psso/proxy/unlink?redirect_uri=https://hub.jazz.net/) and click **Unlink Accounts**.
+3. After your accounts are unlinked, log out of DevOps Services.
+
+Create another alias and associated it with your IBM id:  
+1. Log in to [DevOps Services](https://hub.jazz.net) by using your IBM id.
+2. Enter your new alias, accept the DevOps Services terms of use, and click **Finish**.
+3. On the Success page, click **Continue**. Then, click the Profile Settings icon and click  **Profile**.
+4. Verify that your new alias is listed with your name.    
 
 <a name="BluemixReg"></a>
 
