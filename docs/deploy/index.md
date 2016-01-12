@@ -161,7 +161,7 @@ You can add services to your apps and manage those services from your Bluemix Da
 <a name="logs"></a>
 ##Viewing logs
 
-You can view the logs for your jobs on the Stage History page. 
+You can view the logs for jobs and view stages as they are running on the Stage History page. 
 
 To view a job's log, click the job. Alternatively, on a stage, click **View logs and history**.
 
@@ -170,6 +170,10 @@ To view the runtime log, click **View runtime log**.
 ![Areas in a stage tile that can be clicked to open relevant logs][10]
 
 In addition to job logs, you can view unit test results, generated artifacts, and code changes for any build job.
+
+You can also run, cancel, or configure a stage from the Stage History page. At the top of the page, click **RUN** to run a stage or **CONFIGURE** to configure a stage. While a stage is running, you can cancel it by clicking the run number and then clicking CANCEL.
+
+![Clicking a stage run number to select it on the Stage History page][26]
 
 <a name="access"></a>
 ##Controlling access
@@ -213,3 +217,4 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [23]: ./images/pipeline_settings.png
 [24]: https://www.ng.bluemix.net/docs/services/reqnsi.html#add_service
 [25]: ../deploy_var
+[26]: ./images/click_stage_run_number.png
