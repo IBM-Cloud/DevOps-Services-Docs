@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 5 January 2016
+###### Last updated: 12 January 2016
 
 
 The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
@@ -15,7 +15,7 @@ The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
 * [Controlling access](#access)
-* [Environment variables and resources](#env)
+* [Environment properties and resources](#env)
 * [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
@@ -55,13 +55,8 @@ Jobs that take input from build jobs must reference build artifacts in the same 
 **Note**: If you select the **Simple** builder type for a build job, you skip the build process. In that case, your code is not compiled, but is sent to the deployment stage as is. To both build and deploy, select a builder type other than **Simple**. 
 
 <a name="builds_var"></a>
-####Environment variables for build scripts
-You can include environment variables within a build job's build shell commands. The variables provide access to information about the job's execution environment.
-
-| Environment variable  | Description  |
-|---|---|
-| BUILD_NUMBER  | The current build job number.  |
-| ARCHIVE_DIR  | The current build job's build artifact directory.   |
+####Environment properties for build scripts
+You can include environment properties within a build job's build shell commands. The variables provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="deploys"></a>
 ###Deploy jobs
@@ -71,11 +66,11 @@ Deploy jobs upload your project to Bluemix as an app and are accessible from a U
 Deploy jobs can deploy new apps or update existing apps. Even if you first deployed an app by using another method, such as the Cloud Foundry command line interface or the run bar in the Web IDE, you can update the app by using a deploy job. To update an app, in the deploy job, use that app's name.
 
 <a name="deploys_var"></a>
-####Environment variables for deployment scripts
+####Environment properties for deployment scripts
 
-You can include environment variables within a deploy job's deployment script. These variables provide access to information about the job's execution environment.
+You can include environment properties within a deploy job's deployment script. These properties provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
-| Environment variable  | Description  |
+| Environment property  | Description  |
 |---|---|
 | BUILD_NUMBER  | The current deploy job number.  |
 | CF_APP  | The app name. This is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file.  |
@@ -176,9 +171,9 @@ You can restrict who is able to run stages or modify a pipeline. To do so, go to
 ![The pipeline settings gear icon][22]
 
 <a name="env"></a>
-##Environment variables and resources
+##Environment properties and resources
 
-You can use environment variables and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might incorporate them into a job script or test command. For more information, [see Environment variables and resources for the Build &amp; Deploy pipeline][25].
+You can use environment properties and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might incorporate them into a job script or test command. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline

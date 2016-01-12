@@ -1,34 +1,34 @@
-#Environment variables and resources for the Build &amp; Deploy pipeline
+#Environment properties and resources for the Build &amp; Deploy pipeline
 
 ###### Last updated: 4 January 2016
 
-You can use environment variables and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might use them in a job script or test command. 
+You can use environment properties and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might use them in a job script or test command. 
 
 ##Contents
-* [Environment variables](#env)
-    * [General purpose variables](#gen)
-    * [Runtime and tool variables](#runtime)
-    * [Deployment variables](#deployment)
+* [Environment properties](#env)
+    * [General purpose properties](#gen)
+    * [Runtime and tool properties](#runtime)
+    * [Deployment properties](#deployment)
 * [Pre-installed resources](#resources)
     * [Runtimes and tools](#tools)
     * [Node modules](#node)
 
 <a name="env"></a>
-## Environment variables
+## Environment properties
 
 <a name="gen"></a>
-###General purpose variables
+###General purpose properties
 
-| Environment variable | Description |
+| Environment property | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | ARCHIVE_DIR | The directory to archive or to download archives into. |
 | BUILD_ID | The unique ID for the current job execution.  |
 | BUILD_DISPLAY_NAME | The BUILD_ID value, prefixed with "#". |
 | BUILD_NUMBER | The incremental stage ID that is shown in the pipeline UI.  |
-| GIT_BRANCH | The Git branch that the job uses as input. This variable is available only in jobs that use a Git repository as input. |
-| GIT_COMMIT | The Git commit that the job uses as input. This variable is available only in jobs that use a Git repository as input. |
-| GIT_PREVIOUS_COMMIT | The Git commit value of the job's last successful run. This variable is available only in jobs that use a Git repository as input. |
-| GIT_URL | The Git repository URL that the job uses as input. This variable is available only in jobs that use a Git repository as input. |
+| GIT_BRANCH | The Git branch that the job uses as input. This property is available only in jobs that use a Git repository as input. |
+| GIT_COMMIT | The Git commit that the job uses as input. This property is available only in jobs that use a Git repository as input. |
+| GIT_PREVIOUS_COMMIT | The Git commit value of the job's last successful run. This property is available only in jobs that use a Git repository as input. |
+| GIT_URL | The Git repository URL that the job uses as input. This property is available only in jobs that use a Git repository as input. |
 | IDS_JOB_ID | The unique ID of the job's configuration. |
 | IDS_JOB_NAME | The name of the job's configuration. |
 | IDS_OUTPUT_PROPS | Comma-separated names of your stage environment properties. |
@@ -44,9 +44,9 @@ You can use environment variables and pre-installed resources to interact with t
 | WORKSPACE | The path for the current working directory. |
 
 <a name="runtime"></a>
-###Runtime and tool variables
+###Runtime and tool properties
 
-| Environment variable | Description |
+| Environment property | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | ANT_HOME | The path to Apache Ant 1.9.2. |
 | GRADLE_HOME | The path to Gradle 1.11. |
@@ -57,11 +57,11 @@ You can use environment variables and pre-installed resources to interact with t
 | NODE_HOME | The path to Node.js 0.10.29. |
 
 <a name="deployment"></a>
-###Deployment variables
+###Deployment properties
 
-| Environment variable | Description |
+| Environment property | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| CF_APP | For deployments, the name of the app to deploy. |
+| CF_APP | For deployments, the name of the app to deploy. This is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file. |
 | CF_ORG | For deployments, the name of the organization (org) to deploy to. |
 | CF_ORGANIZATION_ID | For deployments, the ID of the org to deploy to. |
 | CF_SPACE | For deployments, the name of the space to deploy to. |
