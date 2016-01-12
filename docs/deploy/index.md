@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 5 January 2016
+###### Last updated: 12 January 2016
 
 
 The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
@@ -42,6 +42,8 @@ A job is an execution unit within a stage. A stage can contain multiple jobs, an
 ![Build and test jobs within a stage][15]
 
 Jobs run in discrete working directories that are created by the pipeline. Before a job is run, its working directory is populated with input that is defined at the stage level. For example, you might have a stage that contains a test job and a deploy job. If you install dependencies on one job, the dependencies are not available to the other job. However, if you make the dependencies available in the stage's input, they are available to both jobs.
+
+**Note**: Jobs have a 60-minute run time limit. When they exceed this limit, they fail. If you find that a job in a pipeline is exceeding this limit, considering breaking the tasks it performs up into multiple jobs. 
 
 To learn how to add a job to a stage, [see Adding a job to a stage][20].
 
