@@ -43,7 +43,7 @@ A job is an execution unit within a stage. A stage can contain multiple jobs, an
 
 Jobs run in discrete working directories that are created by the pipeline. Before a job is run, its working directory is populated with input that is defined at the stage level. For example, you might have a stage that contains a test job and a deploy job. If you install dependencies on one job, the dependencies are not available to the other job. However, if you make the dependencies available in the stage's input, they are available to both jobs.
 
-**Note**: Jobs have a 60-minute run time limit. When they exceed this limit, they fail. If you find that a job in a pipeline is exceeding this limit, considering breaking the tasks it performs up into multiple jobs. 
+**Note**: Jobs can run for up to 60 minutes. When jobs exceed that limit, they fail. If a job is exceeding the limit, break it into multiple jobs. For example, if a job performs three tasks, you might break it into three jobs: one for each task.
 
 To learn how to add a job to a stage, [see Adding a job to a stage][20].
 
