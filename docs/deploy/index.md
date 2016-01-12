@@ -70,13 +70,6 @@ Deploy jobs can deploy new apps or update existing apps. Even if you first deplo
 
 You can include environment properties within a deploy job's deployment script. These properties provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
-| Environment property  | Description  |
-|---|---|
-| BUILD_NUMBER  | The current deploy job number.  |
-| CF_APP  | The app name. This property is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file.  |
-| CF_ORG  | The targeted organization (org).  |
-| CF_SPACE  | The targeted space within the supplied org.  |
-
 <a name="tests"></a>
 ###Test jobs
 If you want to require that certain conditions are met, include test jobs before or after your build and deploy jobs. Test jobs are highly customizable. For example, you might run tests on your project code and a deployed instance of your app. 
