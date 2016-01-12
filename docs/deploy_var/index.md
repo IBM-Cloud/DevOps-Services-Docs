@@ -1,6 +1,6 @@
 #Environment properties and resources for the Build &amp; Deploy pipeline
 
-###### Last updated: 4 January 2016
+###### Last updated: 12 January 2016
 
 You can use environment properties and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might use them in a job script or test command. 
 
