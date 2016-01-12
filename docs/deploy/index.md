@@ -56,7 +56,7 @@ Jobs that take input from build jobs must reference build artifacts in the same 
 
 <a name="builds_var"></a>
 ####Environment properties for build scripts
-You can include environment properties within a build job's build shell commands. The variables provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
+You can include environment properties within a build job's build shell commands. The properties provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="deploys"></a>
 ###Deploy jobs
@@ -73,7 +73,7 @@ You can include environment properties within a deploy job's deployment script. 
 | Environment property  | Description  |
 |---|---|
 | BUILD_NUMBER  | The current deploy job number.  |
-| CF_APP  | The app name. This is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file.  |
+| CF_APP  | The app name. This property is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file.  |
 | CF_ORG  | The targeted organization (org).  |
 | CF_SPACE  | The targeted space within the supplied org.  |
 

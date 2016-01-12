@@ -61,7 +61,7 @@ You can use environment properties and pre-installed resources to interact with 
 
 | Environment property | Description |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| CF_APP | For deployments, the name of the app to deploy. This is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file. |
+| CF_APP | For deployments, the name of the app to deploy. This property is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file. |
 | CF_ORG | For deployments, the name of the organization (org) to deploy to. |
 | CF_ORGANIZATION_ID | For deployments, the ID of the org to deploy to. |
 | CF_SPACE | For deployments, the name of the space to deploy to. |
