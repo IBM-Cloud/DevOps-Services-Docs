@@ -1,6 +1,6 @@
 #Build and deploy
 
-###### Last updated: 12 January 2016
+###### Last updated: 18 January 2016
 
 
 The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
@@ -173,6 +173,14 @@ You can restrict who is able to run stages or modify a pipeline. To do so, go to
 ##Environment properties and resources
 
 You can use environment properties and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might incorporate them into a job script or test command. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
+
+You can add your own environment properties to a stage from its Environment Properties tab. Environment properties are available to every job in a stage.
+
+You can add four types of property from the Environment Properties tab:
+* **Text**: A property key with a single-line value.
+* **Text Area**: A property key with a multi-line value.
+* **Secure**: A property key with a single-line value. The value will display as asterisks.
+* **Properties**: A file in the DevOps Services project's repository. This file can contain multiple properties. Each property must be on its own line. Separate key-value pairs using the equals sign (=). 
 
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline
