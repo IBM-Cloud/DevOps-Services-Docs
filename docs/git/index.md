@@ -298,11 +298,11 @@ If you push a commit and want to link it to work items later, you can link them 
 ####DevOps Services Web IDE
 1. In the Active Branch section, expand **History** to see the commit history for that branch.
 
- The commit history can also be viewed as a connected visual graph.
+The commit history can also be viewed as a connected visual graph.
 
 1. In the Active Branch section, click the graphical representation toggle icon <img  class="inline" src="./images/graphicalhistoryicon.png" alt="Graphical history icon">.
 
- Once toggled, the commit history for the active branch is drawn as a connected graph showing a visual representation of commits and the branches they were made on.
+Once toggled, the commit history for the active branch is drawn as a connected graph showing a visual representation of commits and the branches they were made on.
  <img class="screen-shot" src="./images/visualhistoryexample.png" alt="Visual commit histroy">
 
 ####Git terminal
