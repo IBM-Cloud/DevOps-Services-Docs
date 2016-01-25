@@ -60,6 +60,8 @@ The project must use a Jazz Source Control Management (SCM) repository.
 
 2. Click **Window > Show View > Other > Team Artifacts**.
 
+   **Note:** Depending on which version of Eclipse you are using, the menu options to open the Team Artifacts view might differ.
+
 3. Click the **Manage IBM DevOps Services Projects** icon.
  ![Manage JazzHub Projects button within the Team Artifacts View](./images/jazzhubfeature.png)
 
