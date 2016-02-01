@@ -1,6 +1,6 @@
 #Creating a basic pipeline
 
-###### Last updated: 1 April 2015
+###### Last updated: 1 February 2016
 
 Time: 30 minutes
 
@@ -120,4 +120,5 @@ You created a basic build and deployment pipeline for a project. You are ready t
 <a name='nextsteps'></a>
 ##Next steps
 
-For more information about builds and deployments, [see the Build & Deploy reference](/docs/reference/deploy/).
+* For more information about builds and deployments, [see the Build & Deploy reference](/docs/reference/deploy/).
+* To learn more about built-in environment properties and tools in the pipeline, [see Environment properties and resources for the Build & Deploy pipeline](/docs/deploy_var).
