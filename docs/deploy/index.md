@@ -1,8 +1,9 @@
 #Build and deploy
 
-###### Last updated: 19 November 2015
+###### Last updated: 5 February 2016
 
-The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
+
+The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
 * [Stages](#stages)
 * [Jobs](#jobs)
@@ -14,6 +15,7 @@ The IBM&reg; Bluemix&trade; DevOps Services Build &amp; Deploy feature, also kno
 * [Deploying an app](#deploy)
 * [Viewing logs](#logs)
 * [Controlling access](#access)
+* [Environment properties and resources](#env)
 * [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
@@ -41,6 +43,8 @@ A job is an execution unit within a stage. A stage can contain multiple jobs, an
 
 Jobs run in discrete working directories that are created by the pipeline. Before a job is run, its working directory is populated with input that is defined at the stage level. For example, you might have a stage that contains a test job and a deploy job. If you install dependencies on one job, the dependencies are not available to the other job. However, if you make the dependencies available in the stage's input, they are available to both jobs.
 
+**Note**: Jobs can run for up to 60 minutes. When jobs exceed that limit, they fail. If a job is exceeding the limit, break it into multiple jobs. For example, if a job performs three tasks, you might break it into three jobs: one for each task.
+
 To learn how to add a job to a stage, [see Adding a job to a stage][20].
 
 <a name="builds"></a>
@@ -53,13 +57,8 @@ Jobs that take input from build jobs must reference build artifacts in the same 
 **Note**: If you select the **Simple** builder type for a build job, you skip the build process. In that case, your code is not compiled, but is sent to the deployment stage as is. To both build and deploy, select a builder type other than **Simple**. 
 
 <a name="builds_var"></a>
-####Environment variables for build scripts
-You can include environment variables within a build job's build shell commands. The variables provide access to information about the job's execution environment.
-
-| Environment variable  | Description  |
-|---|---|
-| BUILD_NUMBER  | The current build job number.  |
-| ARCHIVE_DIR  | The current build job's build artifact directory.   |
+####Environment properties for build scripts
+You can include environment properties within a build job's build shell commands. The properties provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="deploys"></a>
 ###Deploy jobs
@@ -69,16 +68,9 @@ Deploy jobs upload your project to Bluemix as an app and are accessible from a U
 Deploy jobs can deploy new apps or update existing apps. Even if you first deployed an app by using another method, such as the Cloud Foundry command line interface or the run bar in the Web IDE, you can update the app by using a deploy job. To update an app, in the deploy job, use that app's name.
 
 <a name="deploys_var"></a>
-####Environment variables for deployment scripts
+####Environment properties for deployment scripts
 
-You can include environment variables within a deploy job's deployment script. These variables provide access to information about the job's execution environment.
-
-| Environment variable  | Description  |
-|---|---|
-| BUILD_NUMBER  | The current deploy job number.  |
-| CF_APP  | The app name. This is required for deployment and can be specified in the script itself, the deploy job configuration interface, or the project's `manifest.yml` file.  |
-| CF_ORG  | The targeted organization (org).  |
-| CF_SPACE  | The targeted space within the supplied org.  |
+You can include environment properties within a deploy job's deployment script. These properties provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="tests"></a>
 ###Test jobs
@@ -126,14 +118,16 @@ The simplest possible pipeline contains two stages. First, there is a stage that
 <a name="run_stage"></a>
 ##Running a stage
 
-You can manually run a stage by clicking the **Run Stage** icon on the Build & Deploy Pipeline page. 
+You can manually run a stage by clicking the **Run Stage** icon on the Build &amp; Deploy Pipeline page. 
 
 ![Clicking the Run Stage icon on a stage][16]
 
 You can also request on-demand builds and deployments from the build history page in one of two ways:
 * Drag a build to the box that is under a configured stage.
-* Next to a build, click the **Execute stage with this build** icon and then select a space to deploy to.
+* Next to a build, click the **Send to** icon and then select a space to deploy to.
   ![The Execute stage with this build icon][9]
+
+To cancel a running stage, on the stage, click **View logs and history**. In the list on the left, click the running job's number and then click **CANCEL**. You can also cancel jobs individually by clicking a job and then clicking **CANCEL**, or by clicking the **Stop** icon next to a job on its stage.
   
 <a name="deploy"></a>
 ##Deploying an app
@@ -155,7 +149,7 @@ You can add services to your apps and manage those services from your Bluemix Da
 <a name="logs"></a>
 ##Viewing logs
 
-You can view the logs for your jobs on the Stage History page. 
+You can view the logs for jobs and view stages as they are running on the Stage History page. 
 
 To view a job's log, click the job. Alternatively, on a stage, click **View logs and history**.
 
@@ -165,16 +159,32 @@ To view the runtime log, click **View runtime log**.
 
 In addition to job logs, you can view unit test results, generated artifacts, and code changes for any build job.
 
+You can also run, cancel, or configure a stage from the Stage History page. At the top of the page, click **RUN** to run a stage or **CONFIGURE** to configure a stage. While a stage is running, you can cancel it by clicking the run number and then clicking CANCEL.
+
+![Clicking a stage run number to select it on the Stage History page][26]
+
 <a name="access"></a>
 ##Controlling access
 
 You can restrict who is able to run stages or modify a pipeline. To do so, go to the Pipeline Settings page, which you can reach by clicking the **Stage Configuration** icon on the Pipeline: All Stages page. 
 ![The pipeline settings gear icon][22]
 
+<a name="env"></a>
+##Environment properties and resources
+
+You can use environment properties and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might incorporate them into a job script or test command. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
+
+You can add your own environment properties to a stage from its **ENVIRONMENT PROPERTIES** tab. Environment properties are available to every job in a stage.
+
+You can add four types of properties from the Environment Properties tab:
+* **Text**: A property key with a single-line value.
+* **Text Area**: A property key with a multi-line value.
+* **Secure**: A property key with a single-line value. The value is displayed as asterisks.
+* **Properties**: A file in the project's repository. This file can contain multiple properties. Each property must be on its own line. To separate key-value pairs, use the equals sign (=). 
 
 <a name="ext"></a>
 ##Extending the capabilities of your pipeline
-You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
+You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example, test jobs can run static code scans and build jobs can globalize strings.
 
 For more information on extending pipeline capabilities, [see Extending the capabilities of your Build & Deploy pipeline][21].
  
@@ -201,4 +211,6 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [21]: ../deploy_ext
 [22]: ./images/pipeline_settings_icon.png
 [23]: ./images/pipeline_settings.png
-[24]: https://www.ng.bluemix.net/docs/services/reqnsi.html
+[24]: https://www.ng.bluemix.net/docs/services/reqnsi.html#add_service
+[25]: ../deploy_var
+[26]: ./images/click_stage_run_number.png

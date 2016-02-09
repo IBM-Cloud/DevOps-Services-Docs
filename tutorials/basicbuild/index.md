@@ -1,6 +1,6 @@
 #Set up a pipeline and deploy an app
 
-###### Last updated: 01 December 2015
+###### Last updated: 5 February 2016
 
 Time: 30 minutes
 
@@ -87,7 +87,7 @@ The goal is to set up the pipeline so that every time a change is delivered to t
     
 9. Select the **Enable unit tests** check box so that you can review test cases after a build. In the `tests` directory, the WordCounter app contains the com.ibm.ids.example.tests.WordCountFinderTest unit test.
     
-10. Click **Save**. ![Add Builder](/tutorials/jazzrtc/images/configure_builder.png "Add Builder")
+10. Click **Save**. ![Add Builder](/tutorials/basicbuild/images/configure_builder.png "Add Builder")
 
 <a name='deploy_stage'></a>
 ##Create a deployment stage
@@ -117,14 +117,14 @@ Next, create a stage that deploys your app to Bluemix, so that after a successfu
 
 5. Click **SAVE**.
  
-![Add Deployer](/tutorials/jazzrtc/images/configure_deployer.png "Add Deployer")
+![Add Deployer](/tutorials/basicbuild/images/configure_deployer.png "Add Deployer")
 
 <a name='deploy_app'></a>
 ##Run the stages
 Build and deploy your project for the first time to test them. You don't have to wait for someone to deliver code changes to trigger the builds, though they are set up to automatically run.
 
 1. At the top of the Build stage, click the **Run Stage** icon. Watch how the Deploy stage begins after the Build stage completes. The build and deploy process might take a couple of minutes. When you see a green circle by the app link, the app is live.  
-![Successful Build](/tutorials/jazzrtc/images/build1_success.png "Successful Build")
+![Successful Build](/tutorials/basicbuild/images/build1_success.png "Successful Build")
 
 2. Verify that the app is running by clicking the app link. 
 ![Application](/tutorials/jazzrtc/images/app.png "Application")
@@ -148,5 +148,6 @@ You created a basic build and deployment pipeline for a sample project. You are 
 ##Next steps
 
 * To learn more about the pipeline, [see Build & Deploy](/docs/reference/deploy/). 
-* To learn about IBM Containers, [see the Containers documentation on Bluemix](https://www.stage1.ng.bluemix.net/docs/starters/index-gentopic3.html#container_ov).
+* To learn more about built-in environment properties and tools in the pipeline, [see Environment properties and resources for the Build & Deploy pipeline](/docs/deploy_var).
+* To learn about IBM Containers, [see the Containers documentation on Bluemix](https://www.ng.bluemix.net/docs/containers/container_index.html).
 * To learn about using the Delivery Pipeline service with containers, [see How to set up continuous delivery for IBM Containers](https://developer.ibm.com/bluemix/docs/set-up-continuous-delivery-ibm-containers/).
