@@ -1,6 +1,6 @@
 #Automate integrations with DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
 
-######Last modified: 15 October 2015
+######Last modified: 9 February 2015
 
 Time: 15 minutes 
 
@@ -55,7 +55,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 2. [Log in to Bluemix](http://bluemix.net/) to start the Deploy to Bluemix flow.
 3. Click **App Details**. 
 ![App Details page][1]
-4. Review the default information for the APP NAME and destination (REGION, ORGANIZATION, and SPACE). Change these settings as needed.
+4. Review the default information for the app's name and its destination, which includes the information in the **REGION**, **ORGANIZATION**, and **SPACE** fields. The values in the following image are examples for the purposes of this tutorial. When you start the Deploy to Bluemix flow, those settings are populated with a default name and with the org, region, and space that you are currently using. If needed, you can change those settings.
 5. The Integrations section shows information that is specific to the Slack and Sauce Labs integrations. For information about configuring those integrations, see [Configure the Slack integration](#configure_slack) and [Configure the Sauce Labs integration](#configure_sauce_labs).
 
 
