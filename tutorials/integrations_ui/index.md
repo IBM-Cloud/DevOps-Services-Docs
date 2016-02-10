@@ -51,7 +51,7 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 <a name='app_details'></a>
 ## Fork and set up the app
 
-1. To fork the sample into DevOps Services, click the **Deploy to Bluemix** button: <a target="_blank" href="https://bluemix.net/deploy?repository=https://github.com/oneibmcloud/devops-tutorial-2.git"><img class="button" src="images/bigButton.png" alt="Deploy to Bluemix"></a>. 
+1. To fork the sample into DevOps Services, click the **Deploy to Bluemix** button: <a target="_blank" href="https://bluemix.net/deploy?repository=https://github.com/oneibmcloud/devops-tutorial-2.git"><img class="button" src="images/bigButton.png" alt="Deploy to Bluemix"></a> 
 2. [Log in to Bluemix](http://bluemix.net/) to start the Deploy to Bluemix flow.
 3. Click **App Details**. 
 4. Review the default information for the app's name and its destination, which includes the information in the **REGION**, **ORGANIZATION**, and **SPACE** fields. The values in the following image are examples for the purposes of this tutorial. When you start the Deploy to Bluemix flow, those settings are populated with a default name and with the org, region, and space that you are currently using. If needed, you can change those settings.
