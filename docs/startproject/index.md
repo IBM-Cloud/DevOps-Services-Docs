@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last updated: 01 December 2015
+###### Last updated: 5 December 2016
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
@@ -80,7 +80,7 @@ If you want to use only the traditional planning feature, which uses tasks and i
  
 After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project.  During project creation, a new DevOps hosted Git repo will be set up and populated with your code or the project will be linked to your existing Git repo.  Finally, the code is deployed to Bluemix.  Once complete, committing changes to your Git repo, reguardless of where it is hosted, will trigger a new build from the DevOps Services Pipeline.
 
-For more information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/cli/bl_cli.html)
+For more information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/develop/bluemixlive.html#bl-commands)
 
 
 <a name='forking_a_devops_services_project'></a>
@@ -142,7 +142,7 @@ To change the org or space:
 <a name='deploy_to_bluemix_button'></a>
 ## Cloning an app by using the Deploy to Bluemix button
 
-App developers can embed the **Deploy to Bluemix** button in many kinds of content, including readme files, blogs, articles, and web pages.  The button is useful when you want to set up a cloned version of an app that is publicly available from a Git repository, such as DevOps Services or GitHub. For more information about the button, see [Creating a Deploy to Bluemix button](https://www.ng.bluemix.net/docs/#manageapps/deployingapps.html#deploy_button).
+App developers can embed the **Deploy to Bluemix** button in many kinds of content, including readme files, blogs, articles, and web pages.  The button is useful when you want to set up a cloned version of an app that is publicly available from a Git repository, such as DevOps Services or GitHub. For more information about the button, see [Creating a Deploy to Bluemix button](https://www.ng.bluemix.net/docs/develop/deploy_button.html).
 
 When you click the button, Bluemix opens, the app is cloned, any necessary build tools are set up, and the Cloud Foundry script to deploy the app to your Bluemix account is provided. With the **Deploy to Bluemix** button, you can confidently clone and deploy apps to Bluemix.
 

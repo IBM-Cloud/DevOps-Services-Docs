@@ -1,6 +1,6 @@
 # IBM Bluemix DevOps Services overview
 
-###### Last updated: 14 August 2015
+###### Last updated: 30 December 2015
 
 IBM&reg; Bluemix&trade; DevOps Services is software as a service (SaaS) on the cloud that supports continuous delivery. With DevOps Services, you can develop, track, plan, and deploy software in one place.
 
@@ -75,7 +75,7 @@ In DevOps Services, you can develop software for any language or buildpack. You 
 In addition, DevOps Services supports deployment to Bluemix with predefined buildpacks for Java&trade;, Node.js, Go, PHP, Python, and Ruby apps.
  
 If you are building a Node.js app, you can make quick updates as you develop and debug by using 
-[Bluemix Live Sync](https://www.ng.bluemix.net/docs/#manageapps/bluemixlive.html). 
+[Bluemix Live Sync](https://www.ng.bluemix.net/docs/develop/bluemixlive.html). 
 Bluemix Live Sync works on the command line and in the Web IDE. 
 
 <a id="agile"></a>

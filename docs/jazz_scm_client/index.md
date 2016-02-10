@@ -1,6 +1,6 @@
 # Setting up local Eclipse clients to work with Jazz source control
 
-###### Last updated: 10 August 2015
+###### Last updated: 25 January 2016
 
 If you use Jazz Source Control Management (SCM) for your IBM&reg; Bluemix&trade; DevOps Services project, you can either work locally and deliver changes through Eclipse or work by using the integrated Web IDE. If you work locally and deliver changes through Eclipse, you can install the IBM&reg; Rational Team Concert&trade; plug-in for version control.
 
@@ -59,6 +59,8 @@ The project must use a Jazz Source Control Management (SCM) repository.
 1. In Eclipse, click **Window > Preferences > General > Workspaces**. In the Text file encoding field, click **Other** and from the list, select **UTF-8**.
 
 2. Click **Window > Show View > Other > Team Artifacts**.
+
+   **Note:** Depending on which version of Eclipse you are using, the menu options to open the Team Artifacts view might differ.
 
 3. Click the **Manage IBM DevOps Services Projects** icon.
  ![Manage JazzHub Projects button within the Team Artifacts View](./images/jazzhubfeature.png)
