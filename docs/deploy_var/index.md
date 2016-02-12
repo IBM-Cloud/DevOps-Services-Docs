@@ -35,6 +35,7 @@ You can use environment properties and pre-installed resources to interact with 
 | IDS_PROJECT_NAME | The name of the project; for example, <code>Owner &#124; Project Name</code>. |
 | IDS_STAGE_NAME | The name of the current stage. |
 | IDS_URL | The URL for the current pipeline. |
+| IDS_VERSION | The number for the build being deployed or the scm identifier.  This property is available only for deploy jobs.
 | JOB_NAME | The unique job ID in the context of the current pipeline. |
 | PIPELINE_STAGE_INPUT_JOB_ID | The ID of the job that is input for the current stage. |
 | PIPELINE_STAGE_INPUT_REV | The revision of the input for the current stage. |
