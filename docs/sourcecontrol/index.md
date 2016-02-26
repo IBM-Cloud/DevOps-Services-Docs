@@ -1,11 +1,12 @@
 # Source control in Bluemix DevOps Services
 
-###### Last updated: 02 September 2015
+###### Last updated: 26 February 2016
 
 For your project's repository, you can choose one of three source control systems: a GitHub repo, a Git repo that is hosted on IBM&reg; Bluemix&trade;, or a Jazz source control management (SCM) repo that is hosted on Bluemix. You select a source control system when you create your project. 
 * [GitHub](#github)
 * [Git](#hostedgit)
 * [Jazz SCM](#jazzscm)
+* [Link a source control repository to an existing Bluemix app](#bluemix)
 
 <a name='github'></a>
 ## GitHub
@@ -32,3 +33,6 @@ For more information about using Git with DevOps Services projects, see these to
 ## Jazz SCM
 Jazz SCM works well with Eclipse and IBM Rational Team Concert&trade;. For information about using a Jazz SCM repo that is hosted on Bluemix, [see Setting up local Eclipse clients to work with Jazz SCM](/docs/jazz_scm_client).
 
+## Create a source control repository for an existing Bluemix app
+
+You can create a new source control repository and link it to an existing Bluemix app. From the Bluemix app's Overview page, click **ADD GIT** and follow the instructions. This does not populate the new repository with the running app's code. After the repository is created, check your source code into it. 
