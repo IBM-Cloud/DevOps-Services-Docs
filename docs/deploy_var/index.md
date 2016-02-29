@@ -1,6 +1,6 @@
 #Environment properties and resources for the Build &amp; Deploy pipeline
 
-###### Last updated: 12 February 2016
+###### Last updated: 29 February 2016
 
 You can use environment properties and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might use them in a job script or test command. 
 
@@ -83,7 +83,7 @@ Several runtimes, tools, and Node modules are pre-installed in every pipeline.
 | Resource | Link name | Path |
 |----------|-----------|-----------|
 |Apache Ant 1.9.2|ant |/opt/IBM/ant |
-|Cloud Foundry CLI 6.7 |cf | /opt/IBM/cf |
+|Cloud Foundry CLI 6.14 |cf | /opt/IBM/cf |
 |Gradle 1.12|gradle |/opt/IBM/gradle |
 |Gradle 2.9 |gradle2 |/opt/IBM/gradle2 |
 |IBM Java (default)|java |/opt/IBM/java |
