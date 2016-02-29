@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last updated: 30 December 2015
+###### Last updated: 10 February 2016
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
@@ -80,7 +80,7 @@ If you want to use only the traditional planning feature, which uses tasks and i
  
 After you define all of your project details, the Bluemix Live Sync command-line interface creates a DevOps Services project.  During project creation, a new DevOps hosted Git repo will be set up and populated with your code or the project will be linked to your existing Git repo.  Finally, the code is deployed to Bluemix.  Once complete, committing changes to your Git repo, reguardless of where it is hosted, will trigger a new build from the DevOps Services Pipeline.
 
-For more information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/cli/reference/bl/index.html)
+For more information about the bl command line, see [bl commands](https://www.ng.bluemix.net/docs/develop/bluemixlive.html#bl-commands)
 
 
 <a name='forking_a_devops_services_project'></a>

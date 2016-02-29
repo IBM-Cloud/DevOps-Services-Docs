@@ -1,6 +1,6 @@
 #Develop and deploy a Java app
 
-###### Last updated: 01 December 2015
+###### Last updated: 1 February 2016
 
 Time: 30 minutes
 
@@ -239,6 +239,8 @@ In this tutorial, you learned to create and run a Java web app by using Bluemix.
 To learn how to configure Eclipse or other desktop clients to work with your Git repository, [see Working locally with Bluemix DevOps Services projects][26].
 
 To learn how to integrate unit testing into your DevOps Services projects, [see Setting up local Eclipse clients to work with Jazz source control][40].
+
+To learn more about built-in environment properties and tools in the pipeline, [see Environment properties and resources for the Build & Deploy pipeline](/docs/deploy_var).
 
    [1]: https://bluemix.net/ (Bluemix)
    [2]: images/bm-join.png
