@@ -75,8 +75,11 @@ Before you can configure the Sauce Labs integration, you must enable your projec
 8. Customize the test job for your app:
 
  a. On the Build stage tile, click the **Stage Configuration** icon.
+ 
  b. Click **Configure Stage**.
+ 
  c. Click **ENVIRONMENT PROPERTIES**.
+ 
  d. Create an environment property named CF_*APP_NAME* where *APP_NAME* is the name of the app to be tested.
 
 9. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and is deployed to Bluemix.
