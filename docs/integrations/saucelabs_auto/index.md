@@ -82,13 +82,11 @@ Before you can configure the Sauce Labs integration, you must enable your projec
  
  d. Create an environment property named CF_*APP_NAME*, where *APP_NAME* is the name of the app to test. Make sure that the test uses the URL from the environment property. For example, use the following URL in Javascript: url = process.env.*APP_URL*;
  
- e. Type the values for the Sauce Labs account environment properties:
+ e. Type the values for the Sauce Labs account environment properties. For **SAUCE_USERNAME**, type the user name for your Sauce Labs account. For **SAUCE_ACCESS_KEY**, type the access key for your Sauce Labs account.
+   
+ f. Click **JOBS**. 
  
-   *For **SAUCE_USERNAME**, type the user name for your Sauce Labs account.
-   
-   *For **SAUCEACCESSKEY**, type the access key for your Sauce Labs account.
-   
- f. Select the command that executes your tests from the dropdown, or select custom and enter the commands in the shell window below.
+ g. Select the command that runs your tests or select **Custom** and enter the commands for the UNIX shell script to run for the tests.
  
  h. Click **SAVE**.
 
