@@ -80,7 +80,13 @@ Before you can configure the Sauce Labs integration, you must enable your projec
  
  c. Click **ENVIRONMENT PROPERTIES**.
  
- d. Create an environment property named CF_*APP_NAME*, where *APP_NAME* is the name of the app to test.
+ d. Create an environment property named CF_*APP_NAME*, where *APP_NAME* is the name of the app to test. Make sure that the test uses the URL from the environment property. For example, use the following URL in Javascript: url = process.env.*APP_URL*;
+ 
+ e. Type the values for the Sauce Labs account environment properties:
+ 
+  *For the SAUCE_USERNAME value, type your Sauce Labs user name, not your email address.
+  *For SAUCEACCESSKEY, enter your Sauce Labs access key.
+
 
 9. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and is deployed to Bluemix.
 
