@@ -18,7 +18,7 @@ No matter where you code, you can use this quick reference to do common tasks.
 * [Replace your origin repo](#replace_your_origin_repository)
 * [Integrate local commits in the Web IDE](#integrate_local_commits_in_the_web_IDE)
 * [Work with Git submodules](#git_submodules)
-* [View and work with GitHub pull requests](#github_pull_requests)
+* [Work with GitHub pull requests](#github_pull_requests)
 
 ##[Branches](#branches)
 * [Create a local branch](#create_a_local_branch)
@@ -163,22 +163,22 @@ To remove a submodule, click the **Repository** menu.  Next to the submodule to 
 
 
 <a name="github_pull_requests"></a>
-### View and work with GitHub pull requests
+### Work with GitHub pull requests
 
-If your DevOps Services project was cloned from a GitHub repository, you can view and work with pull requests associated with the GitHub repo from the Web IDE repositories view.
+If your DevOps Services project was cloned from a GitHub repository, you can work with the pull requests that are associated with the GitHub repo.
 
-1. In the Web IDE, click the **References** menu.
-2. In the pull-down menu, click the **Pull requests** entry.
-3. Provide the user name and password or a private key associated with your GitHub account.
+1. In the Web IDE, open the Git repository page. 
+2. From the **References** list, select **Pull requests**.
+3. Type the user name and password or a private key that is associated with your GitHub account.
 
  <img class="screen-shot" src="./images/pullrequestlogin.png" alt="Pull request authentication window">
  
-4. Click the **References** menu once more and expand the **Pull requests** section.
+4. Click the **References** list again and expand the **Pull requests** section.
 
-All of the available pull requests are displayed in the menu.  For each pull request displayed, you have two options:
+All of the available pull requests are displayed. For each pull request, you have two options:
 
-1. Click the **checkout** icon <img class="inline" src="./images/checkoutpullrequest.png" alt="Checkout Pull Request"> to checkout the change into a new remote branch, where you can review and merge the pull request.
-2. Click the **GitHub link** icon <img class="inline" src="./images/openpullrequest.png" alt="Open Pull Request"> to open the GitHub page associated with the pull request in a new browser tab.
+1. Check out the change into a new remote branch, where you can review and merge the pull request. To check out the change, click the **checkout** icon <img class="inline" src="./images/checkoutpullrequest.png" alt="Checkout Pull Request">.
+2. Open the GitHub page that is associated with the pull request in a new browser tab. To open the GitHub page, click the **GitHub link** icon <img class="inline" src="./images/openpullrequest.png" alt="Open Pull Request">.
 
 [Back to top](#top)
 
