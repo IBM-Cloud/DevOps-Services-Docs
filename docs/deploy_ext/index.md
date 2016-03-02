@@ -8,6 +8,7 @@ You can extend the capabilities of your Build & Deploy pipeline by configuring y
 * [Globalizing strings by using the pipeline](#globalize)
 * [Creating Slack notifications for builds in the pipeline](#slack)
 * [Creating HipChat notifications for builds in the Delivery Pipeline](#hipchat)
+* [Using Active Deploy for zero downtime deployment in the pipeline](#activedeploy)
 
 <a name="scan"></a>
 ##Running static code scans by using the pipeline
@@ -301,6 +302,76 @@ To create HipChat notifications:
 5. Click **Save**.
 
 6. Repeat these steps to send HipChat notifications for other stages that include IBM Container Service, IBM Security Static Analyzer, and IBM Globalization jobs.
+
+<a name="activedeploy"></a>
+## Using Active Deploy for zero downtime deployment in the pipeline
+
+You can update running apps with zero downtime when you use the IBM Active Deploy service in your pipeline. Active Deploy provides you a continual update process where the new version of your app is finalized only when it proves to work properly in production. You can automate Active Deploy by integrating the service into your pipeline, which enables faster continuous delivery.
+
+A pipeline using Active Deploy would typically include these stages:
+
+  - A **Build** stage where you compile your project
+  - A **Test** stage where you would evaluate the newly built app
+  - A **Deploy** stage that includes these jobs:
+    - A **Deploy Single Instance** job that creates a single, un-routed instance of the new version of the app
+    - The **Active Deploy-Begin** job that contains a script that starts the deployment process and increases the instances of your new app until both versions of your app are live in production
+    - **Test** jobs that you can use to test your new app in production
+    - The **Active Deploy-Complete** job that ends the deployment process and decreases the original version of your app if the test phase was successful. Otherwise, a rollback will occur and your app will revert to the original version
+
+### Creating the Active Deploy stage of the pipeline
+To set up Active Deploy in your pipeline, configure the jobs and environmental variables of the **Deploy** stage.
+
+##### Before you begin:
+- You will need a running application with an existing pipeline.
+  - For information on how to get started with the pipeline, [see the Build and deploy documentation](https://hub.jazz.net/docs/deploy/).
+
+##### To add jobs:
+
+1. Click **ADD STAGE** and name the stage **Active Deploy**.
+2. Go to the **JOBS** tab and click **ADD JOB**. Select **Deploy Single Instance** as the job type and name it **Deploy to prod**.
+  - You must edit the default command script to export either *NAME* or *CF_APP_NAME* and deploy as a single instance with no mapped routes. *NAME* should be the equivalent to the name of the deployed app and should be unique each time the job is run. For example:
+  ```
+    #!/bin/bash
+    NAME="${CF_APP}_${BUILD_NUMBER}"
+    cf push "${NAME}" --no-route -i 1
+    export NAME
+  ```
+3. Add another job and select **Active Deploy - Begin** from the **Deployer type** menu.
+4. Click **ADD JOB** and select **Test**.
+5. In the **Test Command** section, insert the code for any tests you want to run.
+ - In order for the test to complete successfully the result must be 0. A return code of anything else causes the job to fail and a rollback occurs.
+ - You must uncheck **Stop running this stage if this job fails** in all test jobs to allow the **Active Deploy - Complete** job to run. If **Active Deploy - Begin** executes successfully, the **Active Deploy - Complete** job must execute to avoid a scenario in which an update of the original app remains in progress preventing alternative updates.
+6. Click **ADD JOB** and select **Active Deploy - Complete** from the **Deployer type** menu.
+
+
+##### To configure your environmental variables:
+
+1. In the **ENVIRONMENTAL PROPERTIES** tab, click **ADD PROPERTY**.
+2. Select **TEXT PROPERTY**.
+3. Enter the name and value for each of the variables below. Repeat to add more variables and then click **SAVE** to complete your stage.
+
+| **Name** | **Required** | **Default** | **Description** |
+|:--------:|:------------:|:-----------:|:---------------:|
+| NAME or CF_APP_NAME | Yes | Leave blank, this will be filled out in the **Deploy Single Instance** job | The name of the new version of the app and takes the form *AppName_BuildNumber*, with the build number increasing |
+| GROUP_SIZE | Yes | 1 | The desired number of instances of an app |
+| TEST_RESULT_FOR_AD | Yes | Leave blank, this will be set in your **Test** jobs | All test jobs need to be set to return a 0 for a successful execution |
+| ROUTE_HOSTNAME | No | The name of your app | The host name in the route, that is mapped the current version of the app |
+| ROUTE_DOMAIN | No | *.mybluemix.net | The domain in the route, that is mapped to the current version of the app |
+| CONCURRENT_VERSIONS | No | 2 | The number of versions kept of the app, including at least 1 successful deploy |
+
+**Important:**
+- The first time the pipeline is run, the Active Deploy service will not be invoked. When the pipeline runs, the **Deploy Single Instance** job exports the *NAME* of the new version of the app. The **Active Deploy - Begin** job uses the *NAME* to find the *App_Name* and then searches the space for any earlier versions of the app with a route. If an original app can't be found, **Active Deploy - Begin** will scale the app to *GROUP_SIZE* instances and map the route to *ROUTE_HOSTNAME.ROUTE_DOMAIN*.
+
+
+##### View updates
+
+While the pipeline is running, you can view real-time updates in several ways:
+- Click **View logs and history** to see the code update
+- Click **LAST EXECUTION RESULT** to track progress by using the **ACTIVITY LOG** on your application dashboard
+- Go to the Active Deploy dashboard to see a history of your updates, including the current deploy
+
+
+For more information about the Active Deploy service, see the [Bluemix documentation](https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html).
 
 
 [1]: https://hub.jazz.net/docs/deploy
