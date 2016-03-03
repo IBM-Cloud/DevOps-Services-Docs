@@ -1,6 +1,6 @@
 #Git source control 
 
-###### Last updated: 19 November 2015
+###### Last updated: 03 March 2016
 
 If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. You can also use GitHub source control with DevOps Services projects. If you work on a local workstation, you can use Git terminal commands to edit the contents of your Git repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
@@ -18,6 +18,7 @@ No matter where you code, you can use this quick reference to do common tasks.
 * [Replace your origin repo](#replace_your_origin_repository)
 * [Integrate local commits in the Web IDE](#integrate_local_commits_in_the_web_IDE)
 * [Work with Git submodules](#git_submodules)
+* [Work with GitHub pull requests](#github_pull_requests)
 
 ##[Branches](#branches)
 * [Create a local branch](#create_a_local_branch)
@@ -160,6 +161,25 @@ When you update a submodule, you must push the changes to the submodule and to a
 
 To remove a submodule, click the **Repository** menu.  Next to the submodule to remove, click the **Remove submodule** icon <img class="inline" src="./images/deletesubmodule.png" alt="Delete Submodule">.
 
+
+<a name="github_pull_requests"></a>
+### Work with GitHub pull requests
+
+If your DevOps Services project was cloned from a GitHub repository, you can work with the pull requests that are associated with the GitHub repo.
+
+1. In the Web IDE, open the Git repository page. 
+2. From the **References** list, select **Pull requests**.
+3. Type the user name and password or a private key that is associated with your GitHub account.
+
+ <img class="screen-shot" src="./images/pullrequestlogin.png" alt="Pull request authentication window">
+ 
+4. Click the **References** list again and expand the **Pull requests** section.
+
+All of the available pull requests are displayed. For each pull request, you have two options:
+
+1. Check out the change into a new remote branch, where you can review and merge the pull request. To check out the change, click the **Checkout the pull request and make it active** icon <img class="inline" src="./images/checkoutpullrequest.png" alt="Checkout Pull Request">.
+2. Open the GitHub page that is associated with the pull request in a new browser tab. To open the GitHub page, click the **Open the GitHub page for this Pull Request** icon <img class="inline" src="./images/openpullrequest.png" alt="Open Pull Request">.
+
 [Back to top](#top)
 
 <a name="branches"></a>
@@ -296,7 +316,14 @@ If you push a commit and want to link it to work items later, you can link them 
 ### View the commit history
 
 ####DevOps Services Web IDE
-1. In the Active Branch section, expand **History**.
+1. In the Active Branch section, expand **History** to see the commit history for that branch.
+
+The commit history can also be viewed as a connected visual graph.
+
+1. Click the **graphical representation toggle** icon <img  class="inline" src="./images/graphicalhistoryicon.png" alt="Graphical history icon">.
+
+Once toggled, the commit history and any incoming or outgoing changes for the active branch are drawn as a connected graph.  The visual representation shows all of the commits and the branches they were made on.
+ <img class="screen-shot" src="./images/visualhistoryexample.png" alt="Visual commit histroy">
 
 ####Git terminal
 1. Type `git log` and press Enter. 
