@@ -178,7 +178,7 @@ If your DevOps Services project was cloned from a GitHub repository, you can wor
 All of the available pull requests are displayed. For each pull request, you have two options:
 
 1. Check out the change into a new remote branch, where you can review and merge the pull request. To check out the change, click the **Checkout the pull request and make it active** icon <img class="inline" src="./images/checkoutpullrequest.png" alt="Checkout Pull Request">.
-2. Open the GitHub page that is associated with the pull request in a new browser tab. To open the GitHub page, click the Open the GitHub page for this Pull Request icon <img class="inline" src="./images/openpullrequest.png" alt="Open Pull Request">.
+2. Open the GitHub page that is associated with the pull request in a new browser tab. To open the GitHub page, click the **Open the GitHub page for this Pull Request** icon <img class="inline" src="./images/openpullrequest.png" alt="Open Pull Request">.
 
 [Back to top](#top)
 
