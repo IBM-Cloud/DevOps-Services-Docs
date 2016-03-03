@@ -1,6 +1,6 @@
 #Git source control 
 
-###### Last updated: 29 February 2016
+###### Last updated: 03 March 2016
 
 If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. You can also use GitHub source control with DevOps Services projects. If you work on a local workstation, you can use Git terminal commands to edit the contents of your Git repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
@@ -177,8 +177,8 @@ If your DevOps Services project was cloned from a GitHub repository, you can wor
 
 All of the available pull requests are displayed. For each pull request, you have two options:
 
-1. Check out the change into a new remote branch, where you can review and merge the pull request. To check out the change, click the **checkout** icon <img class="inline" src="./images/checkoutpullrequest.png" alt="Checkout Pull Request">.
-2. Open the GitHub page that is associated with the pull request in a new browser tab. To open the GitHub page, click the **GitHub link** icon <img class="inline" src="./images/openpullrequest.png" alt="Open Pull Request">.
+1. Check out the change into a new remote branch, where you can review and merge the pull request. To check out the change, click the **Checkout the pull request and make it active** icon <img class="inline" src="./images/checkoutpullrequest.png" alt="Checkout Pull Request">.
+2. Open the GitHub page that is associated with the pull request in a new browser tab. To open the GitHub page, click the Open the GitHub page for this Pull Request icon <img class="inline" src="./images/openpullrequest.png" alt="Open Pull Request">.
 
 [Back to top](#top)
 
