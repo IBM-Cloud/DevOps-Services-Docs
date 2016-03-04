@@ -92,7 +92,6 @@ Before you can configure the Sauce Labs integration, you must enable your projec
  
  h. Click **SAVE**.
 
-
 9. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and is deployed to Bluemix.
 
 10. View the Sauce Labs test results to verify that they are green. When the Deploy stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name.
