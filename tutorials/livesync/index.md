@@ -1,6 +1,6 @@
 #Test and debug a Node.js app with Bluemix Live Sync
 
-###### Last updated: 30 December 2015
+###### Last updated: 5 February 2016
 
 Testing and debugging are critical to ensure that your app performs without unexpected results. In IBM&reg; Bluemix&trade; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and make changes to your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app while having all of the benefits of deploying with Bluemix.
 
@@ -41,7 +41,7 @@ In this tutorial, you create a launch configuration that you use to deploy a Nod
 * If you don't already have a Node.js project to work with, [create one](https://hub.jazz.net/tutorials/jazzeditor).
 * To develop locally from your desktop, download and install the Bluemix Live Sync command-line interface for [Windows](http://livesyncdownload.ng.bluemix.net/downloads/blive_setup.msi) or for [Mac OS X](http://livesyncdownload.ng.bluemix.net/downloads/BluemixLive.pkg).
 
- **Important:** The Live Sync command-line interface is available only for Windows 7 and 8 and Mac OS X version 10.9 or later. [Learn more about the Live Sync command-line interface](https://www.ng.bluemix.net/docs/cli/reference/bl/index.html).
+ **Important:** The Live Sync command-line interface is available only for Windows 7 and 8 and Mac OS X version 10.9 or later. [Learn more about the Live Sync command-line interface](https://www.ng.bluemix.net/docs/develop/bluemixlive.html#bl-commands).
 
 
 <a name='runbar'></a>

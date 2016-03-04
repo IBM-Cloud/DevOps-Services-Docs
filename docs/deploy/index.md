@@ -1,7 +1,6 @@
 #Build and deploy
 
-###### Last updated: 21 January 2016
-
+###### Last updated: 1 March 2016
 
 The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known as the pipeline, automates the continuous deployment of your projects. In a project's pipeline, sequences of stages retrieve input and run jobs, such as builds, tests, and deployments.
 
@@ -41,7 +40,9 @@ A job is an execution unit within a stage. A stage can contain multiple jobs, an
 
 ![Build and test jobs within a stage][15]
 
-Jobs run in discrete working directories that are created by the pipeline. Before a job is run, its working directory is populated with input that is defined at the stage level. For example, you might have a stage that contains a test job and a deploy job. If you install dependencies on one job, the dependencies are not available to the other job. However, if you make the dependencies available in the stage's input, they are available to both jobs.
+Jobs run in discrete working directories within Docker containers that are created for each pipeline run. Before a job is run, its working directory is populated with input that is defined at the stage level. For example, you might have a stage that contains a test job and a deploy job. If you install dependencies on one job, they are not available to the other job. However, if you make the dependencies available in the stage's input, they are available to both jobs.
+
+After a job runs, the container that was created for it is discarded. The results of a job run can persist, but the environment in which it ran does not. 
 
 **Note**: Jobs can run for up to 60 minutes. When jobs exceed that limit, they fail. If a job is exceeding the limit, break it into multiple jobs. For example, if a job performs three tasks, you might break it into three jobs: one for each task.
 
@@ -124,7 +125,7 @@ You can manually run a stage by clicking the **Run Stage** icon on the Build &am
 
 You can also request on-demand builds and deployments from the build history page in one of two ways:
 * Drag a build to the box that is under a configured stage.
-* Next to a build, click the **Execute stage with this build** icon and then select a space to deploy to.
+* Next to a build, click the **Send to** icon and then select a space to deploy to.
   ![The Execute stage with this build icon][9]
 
 To cancel a running stage, on the stage, click **View logs and history**. In the list on the left, click the running job's number and then click **CANCEL**. You can also cancel jobs individually by clicking a job and then clicking **CANCEL**, or by clicking the **Stop** icon next to a job on its stage.
