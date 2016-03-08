@@ -13,7 +13,7 @@ In this tutorial, you use Active Deploy to update a running app with an extensio
 <div class="table-of-contents">
  <table>
    <tr>
-     <td colspan="5"><h4>Summary of steps</h4></td>
+     <td colspan="4"><h4>Summary of steps</h4></td>
    </tr>
    <tr>
      <td><a href="#prereq">Before you begin</a></td>
