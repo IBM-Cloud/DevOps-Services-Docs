@@ -55,7 +55,7 @@ To do this tutorial, you need a Bluemix account. Bluemix accounts provide access
 3. Replace `Hello World` with `Hello Universe!`
 4. Click the **Git Repository** icon.
 5. On the right, type a message about the changes you made and click **Commit**.
-6. In the Active Branch section on the let, click **Push** to merge your changes.
+6. In the Active Branch section on the left, click **Push** to merge your changes.
 7. Return to your pipeline by clicking **BUILD &amp; DEPLOY**.
 8. Redeploy your pipeline by clicking the **Run Stage** icon.
 
