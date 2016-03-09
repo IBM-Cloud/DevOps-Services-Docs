@@ -1,6 +1,6 @@
 #Extending the capabilities of your Build & Deploy pipeline
 
-###### Last updated: 02 March 2016
+###### Last updated: 09 March 2016
 
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
@@ -310,25 +310,25 @@ You can update running apps with zero downtime when you use the IBM Active Deplo
 
 A pipeline using Active Deploy would typically include these stages:
 
-  - A **Build** stage where you compile your project
-  - A **Test** stage where you would evaluate the newly built app
+  - A **Build** stage where you compile your project.
+  - A **Test** stage where you would evaluate the newly built app.
   - A **Deploy** stage that includes these jobs:
-    - A **Deploy Single Instance** job that creates a single, un-routed instance of the new version of the app
-    - The **Active Deploy-Begin** job that contains a script that starts the deployment process and increases the instances of your new app until both versions of your app are live in production
-    - **Test** jobs that you can use to test your new app in production
-    - The **Active Deploy-Complete** job that ends the deployment process and decreases the original version of your app if the test phase was successful. Otherwise, a rollback will occur and your app will revert to the original version
+    - A **Cloud Foundry** build job that deploys a single, un-routed instance of the new version of the app.
+    - The **Active Deploy-Begin** job that contains a script that starts the deployment process and increases the instances of your new app until both versions of your app are live in production.
+    - **Test** jobs that you can use to test your new app in production.
+    - The **Active Deploy-Complete** job that ends the deployment process and decreases the original version of your app if the test phase was successful. Otherwise, a rollback will occur and your app will revert to the original version.
 
 ### Creating the Active Deploy stage of the pipeline
 To set up Active Deploy in your pipeline, configure the jobs and environmental variables of the **Deploy** stage.
 
-##### Before you begin:
+Before you begin:
 - You will need a running application with an existing pipeline.
-  - For information on how to get started with the pipeline, [see the Build and deploy documentation](https://hub.jazz.net/docs/deploy/).
+  - For information on how to get started with the pipeline, [see the Build &amp; deploy documentation](https://hub.jazz.net/docs/deploy/).
 
-##### To add jobs:
+To add jobs:
 
 1. Click **ADD STAGE** and name the stage **Active Deploy**.
-2. Go to the **JOBS** tab and click **ADD JOB**. Select **Deploy Single Instance** as the job type and name it **Deploy to prod**.
+2. Go to the **JOBS** tab and click **ADD JOB**. Select **Cloud Foundry** as the job type and name it **Deploy Single Instance**.
   - You must edit the default command script to export either *NAME* or *CF_APP_NAME* and deploy as a single instance with no mapped routes. *NAME* should be the equivalent to the name of the deployed app and should be unique each time the job is run. For example:
   ```
     #!/bin/bash
@@ -344,7 +344,7 @@ To set up Active Deploy in your pipeline, configure the jobs and environmental v
 6. Click **ADD JOB** and select **Active Deploy - Complete** from the **Deployer type** menu.
 
 
-##### To configure your environmental variables:
+To configure your environmental variables:
 
 1. In the **ENVIRONMENTAL PROPERTIES** tab, click **ADD PROPERTY**.
 2. Select **TEXT PROPERTY**.
@@ -355,20 +355,21 @@ To set up Active Deploy in your pipeline, configure the jobs and environmental v
 | NAME or CF_APP_NAME | Yes | Leave blank, this will be filled out in the **Deploy Single Instance** job | The name of the new version of the app and takes the form *AppName_BuildNumber*, with the build number increasing |
 | GROUP_SIZE | Yes | 1 | The desired number of instances of an app |
 | TEST_RESULT_FOR_AD | Yes | Leave blank, this will be set in your **Test** jobs | All test jobs need to be set to return a 0 for a successful execution |
-| ROUTE_HOSTNAME | No | The name of your app | The host name in the route, that is mapped the current version of the app |
+| ROUTE_HOSTNAME | No | The name of your app | The host name in the route, that is mapped to the current version of the app |
 | ROUTE_DOMAIN | No | *.mybluemix.net | The domain in the route, that is mapped to the current version of the app |
 | CONCURRENT_VERSIONS | No | 2 | The number of versions kept of the app, including at least 1 successful deploy |
 
 **Important:**
-- The first time the pipeline is run, the Active Deploy service will not be invoked. When the pipeline runs, the **Deploy Single Instance** job exports the *NAME* of the new version of the app. The **Active Deploy - Begin** job uses the *NAME* to find the *App_Name* and then searches the space for any earlier versions of the app with a route. If an original app can't be found, **Active Deploy - Begin** will scale the app to *GROUP_SIZE* instances and map the route to *ROUTE_HOSTNAME.ROUTE_DOMAIN*.
+- The first time the pipeline is run, the Active Deploy service will not be invoked. When the pipeline runs, the **Deploy Single Instance** job exports the *NAME* of the new version of the app. The **Active Deploy-Begin** job uses the *NAME* to find the *App_Name* and then searches the space for any earlier versions of the app with a route. If an original app can't be found, **Active Deploy-Begin** will scale the app to *GROUP_SIZE* instances and map the route to *ROUTE_HOSTNAME.ROUTE_DOMAIN*.
 
 
-##### View updates
+View updates
 
 While the pipeline is running, you can view real-time updates in several ways:
-- Click **View logs and history** to see the code update
-- Click **LAST EXECUTION RESULT** to track progress by using the **ACTIVITY LOG** on your application dashboard
-- Go to the Active Deploy dashboard to see a history of your updates, including the current deploy
+
+ * To see the code as it is updated, click **View logs and history**.
+ * To track progress by using the activity log on your app's Dashboard, click below the **LAST EXECUTION RESULT** heading.
+ * To see a history of your updates, including the current deployment, go to the Active Deploy dashboard.
 
 
 For more information about the Active Deploy service, see the [Bluemix documentation](https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html).
