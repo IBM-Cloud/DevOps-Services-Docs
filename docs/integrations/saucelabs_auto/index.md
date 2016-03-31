@@ -1,8 +1,8 @@
 # Integrating Sauce Labs with Bluemix DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
 
-###### Last updated: 16 October 2015
+###### Last updated: 3 March 2016
 
-Sauce Labs provides automated functional tests that run Java™ or JavaScript tests against your web or mobile app as part of a continuous delivery process. You can integrate Sauce Labs with your IBM&reg; Bluemix&trade; DevOps Services project so that a Sauce Labs test suite can run as a test job in your Build &amp; Deploy pipeline. These tests can provide valuable flow control for your project as they act as gates to prevent the deployment of bad code..
+Sauce Labs provides automated functional tests that run Java&trade; or JavaScript tests against your web or mobile app as part of a continuous delivery process. You can integrate Sauce Labs with your IBM&reg; Bluemix&reg; DevOps Services project so that a Sauce Labs test suite can run as a test job in your Build &amp; Deploy pipeline. These tests can provide valuable flow control for your project as they act as gates to prevent the deployment of bad code.
 
 **Important:** This integration feature is currently beta quality. After you [enable your project to use the integration feature](#enabling_the_beta_features), you cannot disable or modify it. To test the Sauce Labs integration in a copy of your project, [fork another DevOps Services project](#forking_a_devops_services_project). Otherwise, open a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) and click the **Deploy to Bluemix** button to deploy sample code and create a toolchain that you can test the Sauce Labs integration in.
 
@@ -26,11 +26,11 @@ You can test the Sauce Labs integration in a copy of your project without changi
 
 1. [Log in to DevOps Services](https://hub.jazz.net). The My Projects page opens.
 
-2. Click **EXPLORE**, find the project to start from, and click its name.
+2. Click **EXPLORE**, find the project to start from. Click its name.
 
 3. Click **FORK PROJECT**. When you fork a project, the original project's source is copied into a new DevOps Services project that you own.
 
-4. In the Fork Project window that opens, type your project name, review the project information, and specify options as needed. For more information, [see Creating a project from DevOps Services](/docs/startproject#starting_a_devops_services_project).
+4. In the Fork Project window, type your project name, review the project information, and specify options as needed. For more information, see [Creating a project from DevOps Services](/docs/startproject#starting_a_devops_services_project).
 ![Bluemix DevOps Services new user landing page][1]
  
 5. Click **CREATE**.
@@ -68,13 +68,33 @@ Before you can configure the Sauce Labs integration, you must enable your projec
 
 5. Click **SAVE**.
 
-6. Click **ADD JOB** to automatically configure a test Sauce Labs job. You can run and build Sauce Labs jobs, and you can deploy them to Bluemix.
+6. Click **ADD JOB** to automatically configure a test Sauce Labs job. You can run Sauce Labs jobs, build them, and deploy them to Bluemix.
 
 7. On the project's Overview page, click **BUILD &amp; DEPLOY**, and then verify that the test job was created.
 
-8. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and is deployed to Bluemix.
+8. Customize the test job for your app:
 
-9. View the Sauce Labs test results to verify that they are green. When the Deploy stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name.
+ a. On the Build stage tile, click the **Stage Configuration** icon.
+ 
+ b. Click **Configure Stage**.
+ 
+ c. Click **ENVIRONMENT PROPERTIES**.
+ 
+ d. Create an environment property named `CF_*APP_NAME*`, where *APP_NAME* is the name of the app to test. Make sure that the test uses the URL from the environment property. For example, use this URL in JavaScript: 
+ 
+ `url = process.env.*APP_URL*;`
+ 
+ e. Type the values for the Sauce Labs account environment properties. For **SAUCE_USERNAME**, type the user name for your Sauce Labs account. For **SAUCE_ACCESS_KEY**, type the access key for your Sauce Labs account.
+   
+ f. Click **JOBS**. 
+ 
+ g. Either select the command that runs your tests or select **Custom** and enter the commands for the UNIX shell script to run for the tests.
+ 
+ h. Click **SAVE**.
+
+9. On the Build stage tile, click the **Run Stage** icon <img  class="inline" src="./images/run_stage.png" alt="The Run Stage icon"> to manually run the stage. The build is added to the queue, is run, and is deployed to Bluemix.
+
+10. View the Sauce Labs test results to verify that they are green. When the Deploy stage tile indicates that your app is running, in the LAST EXECUTION RESULT section, click the URL that is under the app name.
 ![The project's configured pipeline][5]
   
 **Tip:** To view the Sauce Labs test results at any time, on the project's Overview page, click **MORE** &gt; **Sauce Labs**.
