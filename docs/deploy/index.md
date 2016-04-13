@@ -22,9 +22,7 @@ The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known
 
 Stages organize input and jobs as your code is built, deployed, and tested. Stages accept input from either source control repositories or build jobs in other stages. When you create your first stage, the default settings are set for you on the **INPUT** tab.
 
-A stage's input is passed to the jobs it contains, and each job is given a clean container to run in. The jobs in a stage can't pass artifacts to each other.
-
-You can define stage environment properties that can be used in all jobs. For example, you could define a `TEST_URL` property that passes a single URL to deploy and test jobs in a single stage. The deploy job would deploy to that URL, and the test job would test the running app at the URL. 
+Input from the stage is passed to its jobs, and each job runs in a clean container. The jobs in a stage can't pass artifacts to each other. However, stage environment properties can be used in all jobs. For example, you might define a `TEST_URL` property that passes a URL to deploy and test jobs in a stage. The deploy job deploys to that URL, and the test job tests the running app at that URL.
 
 To learn how to add a stage, [see Adding a stage][19].
 
@@ -94,17 +92,15 @@ To use the `cf push` command arguments, open the configuration settings for a de
 
 A simple pipeline might contain three stages:
 
-1. A Build stage that compiles and/or runs build processes on an app.
-2. A Test stage that deploys a instance of the app and then runs tests on it.
-3. A Prod stage that deploys a production instance of the tested app.
-
-This is shown in the following conceptual diagram:
+1. A build stage that compiles, runs, or compiles and runs build processes on an app.
+2. A test stage that deploys a instance of the app and then runs tests on it.
+3. A prod stage that deploys a production instance of the tested app.
 
 ![A conceptual diagram of stages and jobs in a pipeline][27]
 
 *A conceptual model of a three-stage pipeline*
 
-Stages take their input from repositories and build jobs, and jobs within a stage run sequentially and independently of each other. In the example pipeline, the stages will run sequentially, even though the Test and Prod stages both take the Build stage's output as their input. 
+Stages receive input from repositories and build jobs. The jobs in a stage run sequentially and independently of each other. In the example pipeline, the stages run sequentially even though the test and prod stages receive input from the build stage.
 
 <a name="add_stage"></a>
 ##Adding a stage
