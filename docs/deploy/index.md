@@ -101,6 +101,7 @@ A simple pipeline might contain three stages:
 This is shown in the following conceptual diagram:
 
 ![A conceptual diagram of stages and jobs in a pipeline][27]
+
 *A conceptual model of a three-stage pipeline*
 
 Stages take their input from repositories and build jobs, and jobs within a stage run sequentially and independently of each other. In the example pipeline, the stages will run sequentially, even though the Test and Prod stages both take the Build stage's output as their input. 
