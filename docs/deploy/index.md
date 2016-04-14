@@ -22,7 +22,7 @@ The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known
 
 Stages organize input and jobs as your code is built, deployed, and tested. Stages accept input from either source control repositories or build jobs in other stages. When you create your first stage, the default settings are set for you on the **INPUT** tab.
 
-A stage's input is passed to the jobs it contains, and each job is given a clean container to run in. The jobs in a stage can't pass artifacts to each other. However, you can define stage environment properties that can be used in all jobs. For example, you could define a `TEST_URL` property that passes a single URL to deploy and test jobs in a single stage. The deploy job would deploy to that URL, and the test job would test the running app at the URL. 
+Input from the stage is passed to its jobs, and each job runs in a clean container. The jobs in a stage can't pass artifacts to each other. However, stage environment properties can be used in all jobs. For example, you might define a `TEST_URL` property that passes a URL to deploy and test jobs in a stage. The deploy job deploys to that URL, and the test job tests the running app at that URL.
 
 To learn how to add a stage, [see Adding a stage][19].
 
@@ -90,9 +90,17 @@ To use the `cf push` command arguments, open the configuration settings for a de
 <a name="example"></a>
 ##An example pipeline
 
-The simplest possible pipeline contains two stages. First, there is a stage that contains a build job and takes input from a Git repository. When that build job runs, the app is built and sent to a build archive directory. If the first stage runs, a second stage that contains a deploy job runs. The second stage takes input from the earlier build job and deploys the app to Bluemix.
+A simple pipeline might contain three stages:
 
-![A two-stage pipeline][12]
+1. A build stage that compiles, runs, or compiles and runs build processes on an app.
+2. A test stage that deploys a instance of the app and then runs tests on it.
+3. A prod stage that deploys a production instance of the tested app.
+
+![A conceptual diagram of stages and jobs in a pipeline][27]
+
+*A conceptual model of a three-stage pipeline*
+
+Stages receive input from repositories and build jobs. The jobs in a stage run sequentially and independently of each other. In the example pipeline, the stages run sequentially even though the test and prod stages receive input from the build stage.
 
 <a name="add_stage"></a>
 ##Adding a stage
@@ -215,3 +223,4 @@ For more information on extending pipeline capabilities, [see Extending the capa
 [24]: https://www.ng.bluemix.net/docs/services/reqnsi.html#add_service
 [25]: ../deploy_var
 [26]: ./images/click_stage_run_number.png
+[27]: ./images/diagram.jpg
