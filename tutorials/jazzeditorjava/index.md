@@ -4,10 +4,9 @@
 
 Time: 30 minutes
 
-IBM&reg; Bluemix&trade; is an open-standards, cloud-based platform where you can build, manage, and run all types
-of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, app monitoring, and features from ecosystem partners and open source, all through an as-a-service model in the cloud.
+IBM&reg; Bluemix&reg; is an open-standards, cloud-based platform where you can build, manage, and run all types of apps: mobile, smart devices, web, and big data. The Bluemix capabilities include Java&trade;, mobile back-end development, app monitoring, and features from ecosystem partners and open source, all through an as-a-service model in the cloud.
 
-In this tutorial, you create an app in Bluemix by using the Liberty for Java&trade; starter pack. You then create a Git repository for the app and add the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). After you make a change or two to your code, you push the changes to the Git repo from the command line. Then, you build and deploy your app by using the Delivery Pipeline service.
+In this tutorial, you create an app in Bluemix by using the Liberty for Java&trade; starter pack. You then create a Git repository for the app and add the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). After you change your code, you push the changes to the Git repo from the command line. Then, you build and deploy your app by using the Delivery Pipeline service.
 
 
 <div class="table-of-contents">
@@ -62,7 +61,7 @@ If you create other organizations or spaces in Bluemix, be sure to use the defau
 
 4. Type a unique name for your app, such as `Liberty for Java Starter app tutorial <your initials>`.
 
-5. Click **Finish**. In a few moments, when the app is staged, you'll have a Java web server app running on Bluemix.
+5. Click **Finish**. In a few moments, when the app is staged, your Java web server app is running on Bluemix.
 ![Naming a Bluemix app][54]
 
 5. Click **Overview** to view information about your app:
@@ -81,7 +80,7 @@ You can work with your app code in many ways. For example, with auto-deploy, you
 ![Add Git][11]
 
 2. Select the **Populate the repository with the starter application package and enable Delivery Pipeline (Build & Deploy)** check box. 
-![Create Git repo dialog][13]
+![Create Git repo dialog box][13]
 
 3. Click **CONTINUE**, and then click **CLOSE**. A message states that you created a Git repository and loaded it with the app starter code.
 
@@ -91,7 +90,7 @@ You can work with your app code in many ways. For example, with auto-deploy, you
 2.	Select the DevOps category, and then click **Delivery Pipeline**. 
 3.	Select the space that your app is in. Use the default settings for the selected plan.
 4.	Click **CREATE**. The Delivery Pipeline service is added to your Bluemix space. You can view a list of the apps that include the service. 
-5. Click **Back to Dashboard** and click the app tile for the app you just created.
+5. Click **Back to Dashboard** and click the app tile for the app that you created.
 
 ###Start using DevOps Services
 
@@ -99,7 +98,7 @@ Click **EDIT CODE**.
 
 ![CODE button][15]
 
-Your project opens in the DevOps Services Web IDE (integrated development environment). When you clicked **ADD GIT** in Bluemix, a new Git repository was populated with sample code. When you clicked **EDIT CODE**, the sample code was loaded into this work area associated with the project, which is the project workspace.
+Your project opens in the DevOps Services Web IDE (integrated development environment). When you clicked **ADD GIT** in Bluemix, a new Git repository was populated with sample code. When you clicked **EDIT CODE**, the sample code was loaded into this project workspace.
 
 
 <a name='push'></a>
@@ -107,7 +106,7 @@ Your project opens in the DevOps Services Web IDE (integrated development enviro
 
 You now have a Git repository with sample code. You can use the command-line Git support to push files from your computer to the repository.
 
-If you don't have Git installed, [see Working locally with Bluemix DevOps Services projects][20]. To learn more about Git, [see the Git documentation](http://git-scm.com/doc).
+If Git isn't installed, [see Working locally with Bluemix DevOps Services projects][20]. To learn more about Git, [see the Git documentation](http://git-scm.com/doc).
 
 1. Clone from the project repository URL, which you can find on the Bluemix app's Overview page or the project's Overview page in DevOps Services:
 
@@ -121,7 +120,7 @@ If you don't have Git installed, [see Working locally with Bluemix DevOps Servic
     	Unpacking objects: 100% (49/49), done.
     	Checking connectivity... done. 
 
-2. To make changes to your app source code, change to the `WebContent` folder in the app's root directory, and open the file `index.html`. 
+2. Change to the `WebContent` folder in the app's root directory and open the `index.html` file. 
 
 3. Change some of the text in the body of the HTML.  
 
@@ -165,7 +164,7 @@ When the app is running, you can view it by clicking the URL on the Deploy Stage
 
 ![Bluemix DevOps Services autoconfigured Pipeline][17]
 
-Your sample project is configured to automatically build and deploy the Liberty for Java sample app. You can explore the preconfigured stages or make changes to the configurations.
+Your sample project is configured to automatically build and deploy the Liberty for Java sample app. You can explore the preconfigured stages or change the configurations.
 
 ### Explore the preconfigured stages
 
@@ -184,13 +183,13 @@ The Delivery Pipeline configuration for your app has two stages: a build stage a
   
   b. Click the **JOBS** tab and review the settings:
   
-    * The builder type is **Ant**. The ant command will find the default build script file, `build.xml`, which is provided in the sample at the root directory.
+    * The builder type is **Ant**. The Ant command finds the default build script file, `build.xml`, which is provided in the sample at the root directory.
     * Because the `build.xml` file is in the root of the project, you do not have to specify a working directory.
     * The build output will be saved in an `output` directory, as specified in the **Build Archive Directory** field. The files that are needed for deployment are copied into the build archive directory.
     * If the build is not completed, the stage stops running and any later jobs do not run.
   ![Configuring the Builder][18]
   
-  c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
+  c. Because you did not make changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
  
 3. At the top of the Build Stage tile, click the **Run Stage** icon <img  class="inline" src="images/run_stage.gif" alt="Run Stage icon">. After a moment, you have a successful build.
 
@@ -207,14 +206,14 @@ The Delivery Pipeline configuration for your app has two stages: a build stage a
   b. Click the **JOBS** tab and review the settings:
   
      * The app is set to deploy to your Bluemix organization and space.
-     * Bluemix is based on Cloud Foundry, so the deployment script uses the Cloud Foundry command-line interface command `cf push` to deploy your app. To learn more about configuring deployment scripts when using Cloud Foundry, [see the Cloud Foundry documentation][59].
+     * Bluemix is based on Cloud Foundry, so the deployment script uses the Cloud Foundry command-line interface command `cf push` to deploy your app. To learn more about how to configure deployment scripts when you use Cloud Foundry, [see the Cloud Foundry documentation][59].
   ![Configuring the Deployer with the Add Deployer Stage screen][19]
 
-  c. Because you did not make any changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
+  c. Because you did not make changes, click **DISCARD CHANGES** to return to the Build & Deploy Pipeline page.
   
   Because you clicked the **Automatically execute jobs when the previous stage completes successfully** option when you set up the deploy stage, builds of your app are deployed automatically.
 
-  **Tip**: In the future, if you do not click that option, you can start a deployment by dragging a build to a stage that has a deploy job. For example, you could drag the build from the LAST EXECUTION RESULT section of the build stage to the deploy stage, as shown here.  
+  **Tip**: In the future, if you do not click that option, you can start a deployment by dragging a build to a stage that has a deploy job. For example, you might drag the build from the LAST EXECUTION RESULT section of the build stage to the deploy stage, as shown here.  
 
   ![Dropping to deploy][49]
 
@@ -222,7 +221,7 @@ The Delivery Pipeline configuration for your app has two stages: a build stage a
 
 2. To view your app on the web, on the Deploy Stage tile, click the URL in the LAST EXECUTION RESULT section. If the app is already open in a browser window, refresh the page. To view your app’s Bluemix Dashboard, click the app's name above the URL. 
 
- ![Our really cool app][36]
+ ![Your cool app][36]
 
 
 <a name='Summary'></a>

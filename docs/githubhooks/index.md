@@ -2,7 +2,7 @@
 
 ###### Last updated: 6 January 2016
 
-If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&trade; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&trade;.
+If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&reg; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&reg;.
 
  For a complete GitHub reference, [see the official Git documentation](https://help.github.com/).
 
@@ -25,7 +25,7 @@ If you already have a GitHub repo, skip to [Connecting a DevOps Services project
 4. Click **Create a new repository**.   
 5. Click **Create a Git repo on GitHub**.
 6. If you are prompted to authorize with or log in to GitHub, do so and then return to DevOps Services.
-7. Optional: Add a README to describe your project, a `.gitignore` file, or a license. 
+7. Optional: Add a README file to describe your project, a `.gitignore` file, or a license. 
 7. Make sure that the **Add features for Scrum development** check box is selected.
 8. Click **CREATE**.   
 
@@ -55,7 +55,7 @@ You can move your GitHub or DevOps Services Git repo to another GitHub repo.
 ###	Change from a DevOps Services repo to a GitHub repo that you already have 
 
 1. Sign in to [DevOps Services][1]. The My Projects page opens.  
-**Important**: To avoid losing your work, make sure all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
+**Important**: To avoid losing your work, make sure that all code changes are committed before you continue. When you update your project to use a GitHub repo, your current Git repo and any pending changes in it are deleted.
 2. For the project that you want to change, click the project settings icon.    
 ![My Project page with project settings icon][15]  
 3. On the General page, click **CHANGE REPOSITORY**.  
@@ -63,7 +63,7 @@ You can move your GitHub or DevOps Services Git repo to another GitHub repo.
 4. If you are prompted to authorize with GitHub, do so and then return to DevOps Services.  
 5. Click **SELECT AN EXISTING REPO**.  
 ![Select an existing repo button on the change repository page][20]
-**Tip**: If a repo in the list is being used by another project, that repo is unavailable. To determine which project is using a repo, select the repo. You can see the associated project if it is public or if you are a member of it.
+**Tip**: If a repo in the list is being used by another project, that repo is not available. To determine which project is using a repo, select the repo. You can see the associated project if it is public or if you are a member of it.
 6. Follow the prompts to select a repo. When you are finished, click **SUBMIT**.  
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
@@ -103,7 +103,7 @@ To change from a GitHub repo to a new GitHub repo, you first configure your proj
 <a name='manual_GH_steps'></a> 
 ####Move the content from your older GitHub repo to your new GitHub repo
 
-To move the content from one GitHub repo to another, you must use the command line. For more details about the commands to use, see [the official Git reference](https://git-scm.com/docs).  
+To move the content from one GitHub repo to another, you must use the command line. For more information about the commands to use, see [the official Git reference](https://git-scm.com/docs).  
 
 1. Either clone your older repo or update it to the latest.
   * If you don't have a local clone of the older repo, enter this command: 
@@ -115,9 +115,9 @@ To move the content from one GitHub repo to another, you must use the command li
   git fetch origin
   ```  
 2. Add the new repo as a remote repo:
-```
-git remote add new-origin new_repo_url
-```
+  ```
+  git remote add new-origin new_repo_url
+  ```
 3. Clone all of the remote branches locally:  
   a. List all of the branches:
   ```
@@ -128,15 +128,15 @@ git remote add new-origin new_repo_url
   git checkout -b branch_name origin/branch_name
   ```
 3. Push all branches and tags to the new repo:
-```
-git push --all new-origin
-git push --tags new-origin
-```
+  ```
+  git push --all new-origin
+  git push --tags new-origin
+  ```
 4. **Optional:** Update the local repo to use only the new repo:
-```
-git remote rm origin 
-git remote rename new-origin origin
-```  
+  ```
+  git remote rm origin 
+  git remote rename new-origin origin
+  ```  
 
 You can verify that your project is associated with your GitHub repo by clicking **Git URL** on the project's Overview page. The URL includes `github.com`; for example, `https://github.com/IBM-Bluemix/DevOps-Services-Docs.git`. 
 
@@ -176,7 +176,7 @@ To test your hook, create a work item and commit a change to your code.
 2. In the **Create a work item** field, type a summary and any work item attributes that you need.
 3. Click **CREATE**.
 4. Note the task number so that you can add it to your comment when you commit your change.
-5. Make a change to one of the files in your GitHub repo. This example uses the DevOps Services Web IDE, but you can use any editor.
+5. Change one of the files in your GitHub repo. This example uses the DevOps Services Web IDE, but you can use any editor.
 6. Add a commit comment that includes a work-item keyword and number. 
 You can use these keywords for hooks:
    - `adoption item`
