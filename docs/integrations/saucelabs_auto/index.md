@@ -1,10 +1,10 @@
-# Integrating Sauce Labs with Bluemix DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
+# Integrating Sauce Labs with Bluemix DevOps Services <em><span style="color: #35b2d5">Beta</span></em>
 
 ###### Last updated: 3 March 2016
 
 Sauce Labs provides automated functional tests that run Java&trade; or JavaScript tests against your web or mobile app as part of a continuous delivery process. You can integrate Sauce Labs with your IBM&reg; Bluemix&reg; DevOps Services project so that a Sauce Labs test suite can run as a test job in your Build &amp; Deploy pipeline. These tests can provide valuable flow control for your project as they act as gates to prevent the deployment of bad code.
 
-**Important:** This integration feature is currently beta quality. After you [enable your project to use the integration feature](#enabling_the_beta_features), you cannot disable or modify it. To test the Sauce Labs integration in a copy of your project, [fork another DevOps Services project](#forking_a_devops_services_project). Otherwise, open a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) and click the **Deploy to Bluemix** button to deploy sample code and create a toolchain that you can test the Sauce Labs integration in.
+**Important:** This integration feature is beta quality. After you [enable your project to use the integration feature](#enabling_the_beta_features), you cannot disable or modify it. To test the Sauce Labs integration in a copy of your project, [fork another DevOps Services project](#forking_a_devops_services_project). Otherwise, open a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) and click the **Deploy to Bluemix** button to deploy sample code and create a toolchain that you can test the Sauce Labs integration in.
 
 
 * [Forking a project](#forking_a_devops_services_project)
@@ -41,7 +41,7 @@ You can test the Sauce Labs integration in a copy of your project without changi
 
 Before you can configure the Sauce Labs integration, you must enable your project to use the beta integration feature.
 
-1. Open the forked version of the project that you just created.
+1. Open the forked version of the project that you created.
 
 2. On the project's Overview page, in the upper-right corner, click the **Settings** icon.
 ![Project settings icon][2]
