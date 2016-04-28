@@ -412,7 +412,7 @@ To configure your environmental variables:
 <td>TARGET_PLATFORM</td>
 <td>Yes</td>
 <td>Cloud Foundry</td>
-<td>The default target platform is Cloud Foundry. To use Containers, you will need to set this variable to 'Container'.
+<td>The default target platform is Cloud Foundry. To use Containers, you will need to set this variable to IBM Containers on Bluemix.
 </tr>
 <tr>
 <td>ROUTE_HOSTNAME</td>
