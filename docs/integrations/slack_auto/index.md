@@ -1,10 +1,10 @@
-# Integrating Slack with Bluemix DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
+# Integrating Slack with Bluemix DevOps Services <em><span style="color: #35b2d5">Beta</span></em>
 
 ###### Last updated: 14 October 2015
 
 Slack provides real-time messaging for team communications. You can integrate Slack with your IBM&reg; Bluemix&trade; DevOps Services project so that notifications about build results from your Build &amp; Deploy pipeline are posted on a Slack channel. 
 
-**Important:** This integration feature is currently beta quality. After you [enable your project to use the integration feature](#enabling_the_beta_features), you cannot disable or modify it. To test the Slack integration in a copy of your project, [fork another DevOps Services project](#forking_a_devops_services_project). Otherwise, open a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) and click the **Deploy to Bluemix** button to deploy sample code and create a toolchain that you can test the Slack integration in.
+**Important:** This integration feature is beta quality. After you [enable your project to use the integration feature](#enabling_the_beta_features), you cannot disable or modify it. To test the Slack integration in a copy of your project, [fork another DevOps Services project](#forking_a_devops_services_project). Otherwise, open a [sample](https://hub.jazz.net/project/idsorg/sample-java-cloudant/overview) and click the **Deploy to Bluemix** button to deploy sample code and create a toolchain that you can test the Slack integration in.
 
 
 * [Forking a project](#forking_a_devops_services_project)
@@ -41,7 +41,7 @@ You can test the Slack integration in a copy of your project without changing th
 
 Before you can configure the Slack integration, you must enable your project to use the beta integration feature.
 
-1. Open the forked version of the project that you just created.
+1. Open the forked version of the project that you created.
 
 2. On the project's Overview page, in the upper-right corner, click the **Settings** icon.
 ![Project settings icon][2]
@@ -62,9 +62,9 @@ Before you can configure the Slack integration, you must enable your project to 
 2. Click **SLACK**.
 ![Slack integration page][4]
 
-3. Type the API authentication token for your Slack account. You must use a generated full-access token to authenticate with Slack. For instructions about how find this token, see [Slack authentication](https://api.slack.com/web#authentication).
+3. Type the API authentication token for your Slack account. You must use a generated full-access token to authenticate with Slack. For instructions about how to find this token, see [Slack authentication](https://api.slack.com/web#authentication).
 
-4. Type the name of the Slack channel that you want pipeline notifications to be sent to. You can use an existing, archived, or new channel. If the specified Slack channel doesn't exist, it is created. If the specified Slack channel is currently archived, it is reactivated.
+4. Type the name of the Slack channel that you want pipeline notifications to be sent to. You can use an existing, archived, or new channel. If the specified Slack channel doesn't exist, it is created. If the specified Slack channel is archived, it is reactivated.
 
 5. Click **SAVE**.
 
