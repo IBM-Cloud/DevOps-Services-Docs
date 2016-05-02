@@ -92,23 +92,24 @@ Before you begin, [review the Terms of Use for the service][4].
 
 For more information about using the Static Analyzer service from the Bluemix Dashboard, [see the Static Analyzer service docs][6].
 
-## Running dynamic app scans by using the pipeline
 
-Want to ensure security in your web applications? When you integrate IBM® AppScan Dynamic Analyzer for Bluemix® with your pipeline, you can automate security testing and identify issues in your apps before they become a problem. 
+<a name="appscan"></a>
+## Running dynamic app scans in the pipeline
+
+Want to ensure security in your web applications? When you integrate IBM® AppScan Dynamic Analyzer for Bluemix® with your pipeline, you can automate security testing and identify issues in your apps before they become a problem.
 
 A pipeline that uses the Dynamic Analyzer service typically includes these stages:
 
-  - A **Build** stage to build the source files.
-  - A **Deploy** stage where you deploy your Cloud Foundry Application.
-  - A **Test** stage where you run the Dynamic Analyzer.
+  - A **Build** stage to build the source files
+  - A **Deploy** stage where you deploy your Cloud Foundry Application
+  - A **Test** stage where you run the Dynamic Analyzer
 
-<a name="appscan"></a>
 ### Creating a Dynamic AppScan
 
 Before you begin:
 
-  - You will need a running Bluemix application. 
-  - Review the Terms of Use for the Dynamic Analyzer service.
+  - You will need a running Bluemix application.
+  - Review the [Terms of Use](http://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-7235-01) for IBM Application Security on Cloud.
 
 To set up the extension, configure the test stage of your pipeline.
 
@@ -118,17 +119,18 @@ To set up the extension, configure the test stage of your pipeline.
 4. Select your **Target**, **Organization**, and **Space**.
 5. If you do not already have the service in your space, check the **Set up service and space for me** box.
 6. Specify a **Target URL** for the scan. This URL must be fully qualified.
-7. (Optional) Provide the name of the **CF App** that the service and target route is bound too. This is used as a verification and if skipped, you will need to provide another method of verification.
+7. (Optional) Provide the name of the **CF App** that the service and target route is bound too. This is used as a verification and if skipped, you will need to provide an alternative method to scan the URL.
 8. Select a **Scan Type** from the drop down.
   - The staging scan will search for more issues and as a result, is more likely to be destructive. For a complete list of security vulnerabilities the scan searches for, [see the AppScan Dynamic Analyzer docs](https://new-console.ng.bluemix.net/docs/services/AppScanDynamicAnalyzer/index.html).
 9. In the **Minutes to wait for analysis to complete** field, specify the maximum amount of time an analysis should have to complete. The value must be a whole number between 0 and 59.
-  - When the analysis is running the pipeline will block other jobs. If the Dynamic Analyzer is not complete before the time you specified, the job fails. However, the scan continues to run and you can view updates on the Dynamic AppScan dashboard. After the scan is complete, if you rerun the job again and the scan request is not resubmitted and the pipeline job can be completed. Alternatively, you can configure the pipeline to continue even if the job is unsuccessful. 
+  - When the analysis is running the pipeline will block other jobs. If the Dynamic Analyzer is not complete before the time you specified, the job fails. However, the scan continues to run and you can view updates on the Dynamic AppScan dashboard. After the scan is complete, if you rerun the job again and the scan request is not resubmitted and the pipeline job can be completed. Alternatively, you can configure the pipeline to continue even if the job is unsuccessful.
 10. Select or clear the **Stop stage execution on job failure** check box depending on what you want to happen if this job times out or fails.
 11. Click **Save**.
 
 Viewing logs:
 
-Click on **View logs and history** when the job finishes to view the results. If the analysis succeeds or times out, a URL is shown in the scan results. If the scan is pending, wait until the scan is complete to see the full results. 
+Click on **View logs and history** when the job finishes to view the results. If the analysis succeeds or times out, a URL is shown in the scan results. If the scan is pending, wait until the scan is complete to see the full results.
+
 
     
 <a name="globalize"></a>
