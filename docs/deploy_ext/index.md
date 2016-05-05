@@ -5,6 +5,7 @@
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
 * [Running static code scans by using the pipeline](#scan)
+* [Running dynamic app scans by using the pipeline](#appscan)
 * [Globalizing strings by using the pipeline](#globalize)
 * [Creating Slack notifications for builds in the pipeline](#slack)
 * [Creating HipChat notifications for builds in the Delivery Pipeline](#hipchat)
@@ -90,6 +91,47 @@ Before you begin, [review the Terms of Use for the service][4].
 ![Example pending scan][8]
 
 For more information about using the Static Analyzer service from the Bluemix Dashboard, [see the Static Analyzer service docs][6].
+
+
+<a name="appscan"></a>
+## Running dynamic app scans in the pipeline
+
+Want to ensure security in your web applications? When you integrate IBM® AppScan Dynamic Analyzer for Bluemix® with your pipeline, you can automate security testing and identify issues in your apps before they become a problem.
+
+A pipeline that uses the Dynamic Analyzer service typically includes these stages:
+
+  - A **Build** stage to build the source files
+  - A **Deploy** stage where you deploy your Cloud Foundry Application
+  - A **Test** stage where you run the Dynamic Analyzer
+
+### Creating a Dynamic AppScan
+
+Before you begin:
+
+  - You will need a running Bluemix application.
+  - Review the [Terms of Use](http://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-7235-01) for IBM Application Security on Cloud.
+
+To set up the extension, configure the test stage of your pipeline.
+
+1. Click **ADD STAGE** and name the stage **Dynamic Scan**.
+2. Go to the **JOBS** tab and click **ADD JOB**. Select **Test** as the job type.
+3. For **Tester Type**, select **IBM AppScan Dynamic Analyzer** from the drop down menu.
+4. Select your **Target**, **Organization**, and **Space**.
+5. If you do not already have the service in your space, check the **Set up service and space for me** box.
+6. Specify a **Target URL** for the scan. This URL must be fully qualified.
+7. (Optional) Provide the name of the **CF App** that the service and target route is bound too. This is used as a verification and if skipped, you will need to provide an alternative method to scan the URL.
+8. Select a **Scan Type** from the drop down.
+  - The staging scan will search for more issues and as a result, is more likely to be destructive. For a complete list of security vulnerabilities the scan searches for, [see the AppScan Dynamic Analyzer docs](https://new-console.ng.bluemix.net/docs/services/AppScanDynamicAnalyzer/index.html).
+9. In the **Minutes to wait for analysis to complete** field, specify the maximum amount of time an analysis should have to complete. The value must be a whole number between 0 and 59.
+  - When the analysis is running the pipeline will block other jobs. If the Dynamic Analyzer is not complete before the time you specified, the job fails. However, the scan continues to run and you can view updates on the Dynamic AppScan dashboard. After the scan is complete, if you rerun the job again and the scan request is not resubmitted and the pipeline job can be completed. Alternatively, you can configure the pipeline to continue even if the job is unsuccessful.
+10. Select or clear the **Stop stage execution on job failure** check box depending on what you want to happen if this job times out or fails.
+11. Click **Save**.
+
+Viewing logs:
+
+Click on **View logs and history** when the job finishes to view the results. If the analysis succeeds or times out, a URL is shown in the scan results. If the scan is pending, wait until the scan is complete to see the full results.
+
+
     
 <a name="globalize"></a>
 ##Globalizing strings by using the pipeline
@@ -308,7 +350,7 @@ To create HipChat notifications:
 
 You can update running apps with zero downtime when you use the IBM® Active Deploy service in your pipeline. Active Deploy provides you an update process where the new version of your app is finalized only when it proves to work properly in production. You can automate Active Deploy and enable faster continuous delivery by integrating the service into your pipeline.
 
-A pipeline that uses Active Deploy must include these jobs:
+A pipeline using Active Deploy must include these jobs:
   - The **Active Deploy - Begin** job that contains a script that starts the deployment process to increase the instances of your new app until both versions of your app are live in production.
   - The **Active Deploy - Complete** job that ends the deployment process and decreases the original version of your app if the test phase was successful. Otherwise, a rollback will occur and your app will revert to the original version.
 
@@ -316,13 +358,13 @@ A pipeline that uses Active Deploy must include these jobs:
 To set up Active Deploy in your pipeline, configure the jobs and environmental variables of the **Deploy** stage.
 
 Before you begin:
-- You need a running application that has a pipeline. For information about getting started with the pipeline, [see the Build &amp; Deploy docs](https://hub.jazz.net/docs/deploy/).
+- You will need a running application with an existing pipeline. For information about getting started with the pipeline, [see the Build &amp; Deploy docs](https://hub.jazz.net/docs/deploy/).
 
 To add jobs:
 
 1. From your pipeline dashboard, click **ADD STAGE** and name the stage **Active Deploy**.
 2. Go to the **JOBS** tab and click **ADD JOB**. Select **Build** as the job type and name it **Deploy Single Instance**.
-  - You must edit the default command script to export either *NAME* or *CF_APP_NAME* and deploy as a single instance with no mapped routes. Make sure that *NAME* is the equivalent to the name of the deployed app and is unique each time the job is run. For example:
+  - You must edit the default command script to export *NAME*, *CF_APP_NAME*, or *CONTAINER_NAME* and deploy as a single instance with no mapped routes. *NAME* should be the equivalent to the name of the deployed app and should be unique each time the job is run. For example:
   ```
     #!/bin/bash
     NAME="${CF_APP}_${BUILD_NUMBER}"
@@ -331,18 +373,17 @@ To add jobs:
   ```
 3. Add a **Deploy** job and select **Active Deploy - Begin** from the **Deployer type** menu.
 4. Click **ADD JOB** and select **Test**.
-5. In the Test Command section, insert the code for any tests you want to run.
+5. In the **Test Command** section, insert the code for any tests you want to run.
  - In order for the test to complete successfully the result must be 0. A return code of anything else causes the job to fail and a rollback occurs.
-6. Clear the **Stop running this stage if this job fails** check box in all test jobs to allow the Active Deploy - Complete job to run. If the Active Deploy - Begin job is successful, the Active Deploy - Complete job must run or the update remains in progress and more updates are not possible.
-7. Click **ADD JOB**. From the **Deployer type** menu, select **Active Deploy - Complete**.
+6. Uncheck **Stop running this stage if this job fails** in all test jobs to allow the **Active Deploy - Complete** job to run. If the **Active Deploy - Begin** job is successful, the **Active Deploy - Complete** job must run, or the update will remain in progress and additional updates won't be possible.
+7. Click **ADD JOB** and select **Active Deploy - Complete** from the **Deployer type** menu.
 
 
 To configure your environmental variables:
 
-1. On the **ENVIRONMENT PROPERTIES** tab, click **ADD PROPERTY**.
+1. In the **ENVIRONMENT PROPERTIES** tab, click **ADD PROPERTY**.
 2. Select **TEXT PROPERTY**.
-3. Enter the name and value for each of the following variables. Repeat to add more variables and then click **SAVE** to complete your stage.
-
+3. Enter the name and value for each of the variables below. Repeat to add more variables and then click **SAVE** to complete your stage.
 
 <table>
 <tr>
@@ -352,9 +393,9 @@ To configure your environmental variables:
 <th>Description</th>
 </tr>
 <tr>
-<td>NAME or CF_APP_NAME</td>
+<td>NAME,  CF_APP_NAME, or CONTAINER_NAME</td>
 <td>Yes</td>
-<td>Leave this value blank. This value is filled out in the Deploy Single Instance job.</td>
+<td>Leave blank, this is filled out in the <b>Deploy Single Instance</b> job.</td>
 <td>The name of the new version of the app. Takes the form <i>AppName_BuildNumber</i>, with the build number increasing.</td>
 </tr>
 <tr>
@@ -366,31 +407,36 @@ To configure your environmental variables:
 <tr>
 <td>TEST_RESULT_FOR_AD</td>
 <td>Yes</td>
-<td>Leave this value blank. This value is set in the code for your Test jobs.</td>
-<td>All of your test jobs must be set to return a 0 to be successful.</td>
+<td>Leave blank, this will be set in the code for your <b>Test</b> jobs.</td>
+<td>All of your test jobs need to be set to return a 0 to be successful.</td>
+</tr>
+<tr>
+<td>TARGET_PLATFORM</td>
+<td>Yes</td>
+<td>Cloud Foundry</td>
+<td>The default target platform is Cloud Foundry. To use Containers, you will need to set this variable to IBM Containers on Bluemix.
 </tr>
 <tr>
 <td>ROUTE_HOSTNAME</td>
 <td>No</td>
 <td>The name of your app.</td>
-<td>As a default the <code>check_and_set_env.sh</code> script assigns the variable <i>NAME</i>. You can override this behavior by setting it now.</td>
+<td>As a default, the <code>check_and_set_env.sh</code> script assigns the variable <i>NAME</i>. You can override this behavior by setting it now.</td>
 </tr>
 <tr>
 <td>ROUTE_DOMAIN</td>
 <td>No</td>
 <td> *.mybluemix.net</td>
-<td>The domain that is used if one isn't specified.</td>
+<td>The domain that will be used if one isn't specified.</td>
 </tr>
 <tr>
 <td>CONCURRENT_VERSIONS</td>
 <td>No</td>
 <td>2</td>
-<td>The number of versions, including at least one successful deployment of the app that are kept.</td>
+<td>The number of versions, including at least 1 successful deploy, of the app that are kept.</td>
 </table>
 
-
 Important:
-- The first time the pipeline is run, the Active Deploy service is not invoked. When the pipeline runs, the **Deploy Single Instance** job exports the *NAME* of the new version of the app. The **Active Deploy - Begin** job uses the *NAME* to find the *App_Name* and then searches the space for any earlier versions of the app with a route. If an original app can't be found, **Active Deploy - Begin** scales the app to *GROUP_SIZE* instances and maps the route to *ROUTE_HOSTNAME.ROUTE_DOMAIN*.
+- The first time the pipeline is run, the Active Deploy service will not be invoked. When the pipeline runs, the **Deploy Single Instance** job exports the *NAME* of the new version of the app. The **Active Deploy - Begin** job uses the *NAME* to find the *App_Name* and then searches the space for any earlier versions of the app with a route. If an original app can't be found, **Active Deploy - Begin** will scale the app to *GROUP_SIZE* instances and map the route to *ROUTE_HOSTNAME.ROUTE_DOMAIN*.
 
 
 View updates:
@@ -402,7 +448,8 @@ While the pipeline is running, you can view real-time updates in several ways:
  * To see a history of your updates, including the current deployment, go to the Active Deploy dashboard.
 
 
-For more information about the Active Deploy service, see the [Bluemix Docs](https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html).
+For more information about the Active Deploy service, see the [Bluemix docs](https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html).
+
 
 
 
