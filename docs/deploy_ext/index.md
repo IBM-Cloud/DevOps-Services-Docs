@@ -363,7 +363,7 @@ Before you begin:
 To add jobs:
 
 1. From your pipeline dashboard, click **ADD STAGE** and name the stage **Active Deploy**.
-2. Go to the **JOBS** tab and click **ADD JOB**. Select **Build** as the job type and name it **Deploy Single Instance**.
+2. Go to the **JOBS** tab and click **ADD JOB**. Select **Deploy** as the job type and name it **Deploy Single Instance**.
   - You must edit the default command script to export *NAME*, *CF_APP_NAME*, or *CONTAINER_NAME* and deploy as a single instance with no mapped routes. *NAME* should be the equivalent to the name of the deployed app and should be unique each time the job is run. For example:
   ```
     #!/bin/bash
