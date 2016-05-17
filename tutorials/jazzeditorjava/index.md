@@ -106,7 +106,7 @@ Your project opens in the DevOps Services Web IDE (integrated development enviro
 
 You now have a Git repository with sample code. You can use the command-line Git support to push files from your computer to the repository.
 
-If Git isn't installed, [see Working locally with Bluemix DevOps Services projects][20]. To learn more about Git, [see the Git documentation](http://git-scm.com/doc).
+If Git isn't installed, [see Setting up local clients to work with Git source control][20]. To learn more about Git, [see the Git documentation](http://git-scm.com/doc).
 
 1. Clone from the project repository URL, which you can find on the Bluemix app's Overview page or the project's Overview page in DevOps Services:
 
@@ -149,7 +149,7 @@ If Git isn't installed, [see Working locally with Bluemix DevOps Services projec
 
 You can continue to modify the example and push your changes to the Git repository as often as needed. As the scope of the work grows and more people are added to the project, everyone can push changes to the repository. Standard repository operations and build and deploy are all that is required to ensure that the right bits are always running.
 
-If you want to configure desktop clients to work with your Git repository, [see Working locally with Bluemix DevOps Services projects][26].
+If you want to configure desktop clients to work with your Git repository, [see Setting up local clients to work with Git source control][26].
 
 
 
@@ -235,7 +235,7 @@ In this tutorial, you learned to create and run a Java web app by using Bluemix.
 
 [Learn more about Bluemix from the IBM Bluemix Docs][53]. 
 
-To learn how to configure Eclipse or other desktop clients to work with your Git repository, [see Working locally with Bluemix DevOps Services projects][26].
+To learn how to configure Eclipse or other desktop clients to work with your Git repository, [see Setting up local clients to work with Git source control][26].
 
 To learn how to integrate unit testing into your DevOps Services projects, [see Setting up local Eclipse clients to work with Jazz source control][40].
 
@@ -260,13 +260,13 @@ To learn more about built-in environment properties and tools in the pipeline, [
    [17]: images/simpledeploy2.png
    [18]: images/configbuilder.png 
    [19]: images/deployer.png 
-   [20]: /tutorials/clients (Setting up Eclipse, Git, and Rational Team Concert Desktop Clients for use with Bluemix DevOps Services)
+   [20]: /docs/gitclient/index.md (Setting up local clients to work with Git source control)
    [21]: images/cli-git-clone.gif 
    [22]: images/cli-stage-commit.gif 
    [23]: images/cli-push.gif 
    [24]: images/autodeploy.gif 
    [25]: images/app-new-title.png 
-   [26]: /tutorials/clients (Setting up Eclipse, Git, and Rational Team Concert Desktop Clients for use with Bluemix DevOps Services)
+   [26]: /docs/gitclient.index.md (Setting up local clients to work with Git source control)
    [27]: https://hub.jazz.net/learn (Bluemix DevOps Services introduction)
    [28]: http://orion.eclipse.org/ (The Eclipse Orion project)
    [29]: images/orion.png
@@ -282,7 +282,7 @@ To learn more about built-in environment properties and tools in the pipeline, [
    [39]: mailto:hub%40jazz.net
    [40]: /docs/jazz_scm_client/ (Setting up local Eclipse clients to work with Jazz source control)
    [41]: /tutorials/jazzeditor (Getting Started with Bluemix and Bluemix DevOps Services using Node.js)
-   [42]: /tutorials/clients (Setting up Eclipse, Git, and Rational Team Concert Desktop Clients to access Bluemix DevOps Services)
+   [42]: /docs/gitclient/index.md (Setting up local clients to work with Git source control)
    [43]: /tutorials/jazzweb (Developing Bluemix applications in Node.js with the Bluemix DevOps Services Web IDE)
    [44]: images/panel_gear.gif
    [45]: images/un-pipeline.png
