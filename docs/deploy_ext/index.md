@@ -1,6 +1,6 @@
 #Extending the capabilities of your Build & Deploy pipeline
 
-###### Last updated: 09 March 2016
+###### Last updated: 19 May 2016
 
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
@@ -346,13 +346,11 @@ To create HipChat notifications:
 6. Repeat these steps to send HipChat notifications for other stages that include IBM Container Service, IBM Security Static Analyzer, and IBM Globalization jobs.
 
 <a name="activedeploy"></a>
-## Using Active Deploy for zero downtime deployment in the pipeline
+## Using Active Deploy for zero-downtime deployment in the pipeline
 
-You can update running apps with zero downtime when you use the IBM® Active Deploy service in your pipeline. Active Deploy provides you an update process where the new version of your app is finalized only when it proves to work properly in production. You can automate Active Deploy and enable faster continuous delivery by integrating the service into your pipeline.
+You can update running apps with zero downtime when you use the IBM® Active Deploy service in your pipeline. The service provides you an update process where the new version of your app is finalized only when it proves to work properly in production. You can automate Active Deploy and enable faster continuous delivery by integrating the service into your pipeline.
 
-A pipeline using Active Deploy must include these jobs:
-  - The **Active Deploy - Begin** job that contains a script that starts the deployment process to increase the instances of your new app until both versions of your app are live in production.
-  - The **Active Deploy - Complete** job that ends the deployment process and decreases the original version of your app if the test phase was successful. Otherwise, a rollback will occur and your app will revert to the original version.
+The service is built into two separate jobs that you create in the same stage of your pipeline. This gives you the ability to insert test jobs that perform automated testing of the new release while roll-back is still possible. The **Active Deploy - Begin** job contains a script that starts the deployment process to increase instances of your new app until both versions of your app are live in production. **Active Deploy - Complete** ends that deployment process and decreases the original version of the app if the test phase was successful. After the Complete job finishes, it will be impossible to rollback to the previous release.
 
 ### Creating the Active Deploy stage of the pipeline
 To set up Active Deploy in your pipeline, configure the jobs and environmental variables of the **Deploy** stage.
@@ -360,10 +358,10 @@ To set up Active Deploy in your pipeline, configure the jobs and environmental v
 Before you begin:
 - You will need a running application with an existing pipeline. For information about getting started with the pipeline, [see the Build &amp; Deploy docs](https://hub.jazz.net/docs/deploy/).
 
-To add jobs:
+To add Jobs:
 
 1. From your pipeline dashboard, click **ADD STAGE** and name the stage **Active Deploy**.
-2. Go to the **JOBS** tab and click **ADD JOB**. Select **Deploy** as the job type and name it **Deploy Single Instance**.
+2. Go to the **JOBS** tab and click **ADD JOB**. Select **Deploy** as the **Job Type** and name it **Deploy Single Instance**.
   - You must edit the default command script to export *NAME*, *CF_APP_NAME*, or *CONTAINER_NAME* and deploy as a single instance with no mapped routes. *NAME* should be the equivalent to the name of the deployed app and should be unique each time the job is run. For example:
   ```
     #!/bin/bash
@@ -385,7 +383,8 @@ To configure your environmental variables:
 2. Select **TEXT PROPERTY**.
 3. Enter the name and value for each of the variables below. Repeat to add more variables and then click **SAVE** to complete your stage.
 
-<table>
+
+<table border="1" cellpadding="5" cellspacing="5">
 <tr>
 <th>Name</th>
 <th>Required</th>
@@ -395,7 +394,7 @@ To configure your environmental variables:
 <tr>
 <td>NAME,  CF_APP_NAME, or CONTAINER_NAME</td>
 <td>Yes</td>
-<td>Leave blank, this is filled out in the <b>Deploy Single Instance</b> job.</td>
+<td>Leave blank, this must be set and exported in the <b>Deploy Single Instance</b> job.</td>
 <td>The name of the new version of the app. Takes the form <i>AppName_BuildNumber</i>, with the build number increasing.</td>
 </tr>
 <tr>
@@ -407,14 +406,14 @@ To configure your environmental variables:
 <tr>
 <td>TEST_RESULT_FOR_AD</td>
 <td>Yes</td>
-<td>Leave blank, this will be set in the code for your <b>Test</b> jobs.</td>
+<td>Leave blank, this must be set in the code for your <b>Test</b> jobs.</td>
 <td>All of your test jobs need to be set to return a 0 to be successful.</td>
 </tr>
 <tr>
 <td>TARGET_PLATFORM</td>
 <td>Yes</td>
 <td>Cloud Foundry</td>
-<td>The default target platform is Cloud Foundry. To use Containers, you will need to set this variable to IBM Containers on Bluemix.
+<td>The default target platform is Cloud Foundry. To use Containers, you will need to set this variable to 'Container'.
 </tr>
 <tr>
 <td>ROUTE_HOSTNAME</td>
@@ -435,6 +434,7 @@ To configure your environmental variables:
 <td>The number of versions, including at least 1 successful deploy, of the app that are kept.</td>
 </table>
 
+
 Important:
 - The first time the pipeline is run, the Active Deploy service will not be invoked. When the pipeline runs, the **Deploy Single Instance** job exports the *NAME* of the new version of the app. The **Active Deploy - Begin** job uses the *NAME* to find the *App_Name* and then searches the space for any earlier versions of the app with a route. If an original app can't be found, **Active Deploy - Begin** will scale the app to *GROUP_SIZE* instances and map the route to *ROUTE_HOSTNAME.ROUTE_DOMAIN*.
 
@@ -449,6 +449,7 @@ While the pipeline is running, you can view real-time updates in several ways:
 
 
 For more information about the Active Deploy service, see the [Bluemix docs](https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html).
+
 
 
 
