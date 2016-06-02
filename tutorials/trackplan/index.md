@@ -52,11 +52,11 @@ To do this tutorial, you need a Bluemix account. Bluemix accounts provide access
 <a name='set_up_an_IBM_devops_services_project'></a>
 ##Set up a DevOps Services project
 
-1. [Sign in to DevOps Services][1].  Your Projects page opens.  
+1. [Sign in to DevOps Services][1]. Your Projects page opens.  
 ![Bluemix DevOps Services new user landing page][2]
 
 2. Start a new project by clicking the **Start coding** icon.  
-If you see a list of projects instead of this page, click **CREATE PROJECT**.
+If you see a list of projects, click **CREATE PROJECT**.
 
 3. Name the project `ChatPage`.
 
@@ -83,7 +83,7 @@ DevOps Services supports both public and private projects. Anyone can access you
 
 1. Click **TRACK & PLAN**. 
 
-2. Review the My Work view. From this view, you can see any project work items that are assigned to you. Because you're the only person working on this project, assign ownership of all work items to your alias. The fastest way to do this is to create your work items from this view.
+2. Review the My Work view. From this view, you can see any project work items that are assigned to you. Because you're the only person who is working on this project, assign ownership of all work items to your alias. The fastest way to assign all of the work items to your alias is to create your work items from this view.
 
 2. In the **Create a work item** field, type a summary for the first work item: `Create a simple chat page for our site.` Press **Enter** to create the task.  
 **Note**: The default work item type is **Task** <img class="inline"  src="images/task.gif"  alt="Task type icon">. 
@@ -109,7 +109,7 @@ You use these icons to set the work item attributes. Don't worry if you aren't s
 **Note**: You can assign severity only to defects.
  * Add a tag <img class="inline"  src="images/tag.gif" alt="Tag icon"> named `messages`. 
 
- * Set the priority <img class="inline"  src="images/priority.gif"  alt="Priority icon"> to **High**. Note that when you set an attribute, the text code for that attribute is added after the summary.  
+ * Set the priority <img class="inline"  src="images/priority.gif"  alt="Priority icon"> to **High**. When you set an attribute, the text code for that attribute is added after the summary.  
 ![Defect summary appended with attribute codes][7]
 
 5. When you're finished, click **CREATE**.  
@@ -117,7 +117,7 @@ You use these icons to set the work item attributes. Don't worry if you aren't s
 <!--- <iframe width="640" height="360" src="//www.youtube.com/embed/t5xJnL_jinc" frameborder="0" allowfullscreen></iframe>
 <div align = center>Video: Adding attributes while you create a work item</div> -->
 
-6. Click **Incoming Work** and evaluate your new work items. They are ranked by severity so that you know which tasks are most important. You can either send incoming work items to your backlog to be included in a sprint <img class="inline"  src="images/triagetobacklog.gif" alt="Send to backlog icon""> or you can delete <img class="inline"  src="images/trash.gif" alt="Delete work item icon"> them, which marks the work item as invalid and moves it to the **TRASHED** section.
+6. Click **Incoming Work** and evaluate your new work items. They are ranked by severity so that you know which tasks are most important. You can send incoming work items to your backlog to be included in a sprint <img class="inline"  src="images/triagetobacklog.gif" alt="Send to backlog icon""> or you can delete <img class="inline"  src="images/trash.gif" alt="Delete work item icon"> them, which marks the work item as invalid and moves it to the **TRASHED** section.
 
   ![Incoming Work][26]
 
@@ -132,7 +132,7 @@ You use these icons to set the work item attributes. Don't worry if you aren't s
 
   2. Type a summary for the next work item: `As a user, I'd like your site to have a chat page.`  
 
-  3. Use the icons to set the attributes. Make yourself the work item's owner <img  class="inline" src="images/owner.gif" alt="Make yourself the owner icon">, add a `website` tag <img class="inline" src="images/tag.gif" alt="Add a website icon">, and set the priority <img class="inline" src="images/priority.gif" alt="Set priority icon"> to **Medium**.  
+  3. Make yourself the work item's owner <img  class="inline" src="images/owner.gif" alt="Make yourself the owner icon"> and add a `website` tag <img class="inline" src="images/tag.gif" alt="Add a website icon">. Set the priority <img class="inline" src="images/priority.gif" alt="Set priority icon"> to **Medium**.  
 
   4. Confirm that the work item type is "Story." If the type is not story, click the **Task** icon <img  class="inline" src="images/task.gif" alt="Task icon"> and then click the **Story** icon <img class="inline"  src="images/story.gif" alt="Story icon">.
 
@@ -155,7 +155,7 @@ You use these icons to set the work item attributes. Don't worry if you aren't s
 
   6. Click in the **Type a work item summary** field and type `Configure a chat server using Node.js.` 
 
-  7. Slowly type `*task` to assign the task type. When you type the asterisk (` * `), notice how the **Type** drop-down menu appears.  
+  7. Slowly type `*task` to assign the task type. When you type the asterisk (` * `), notice how the **Type** menu is shown.  
 **Tip**: You can enter most of the attributes by typing their text code instead of using the mouse. 
 
   8. Enter these attributes:
@@ -171,12 +171,12 @@ You use these icons to set the work item attributes. Don't worry if you aren't s
 3. Add a few more work items to complete this project.
 
   1. Add the following work items and attributes by using the method that you like best. 
-    * `As a user, I'd like to be able to log into your chat with my Facebook or Google+ account. #login $high` 
+    * `As a user, I'd like to be able to log in to your chat with my Facebook or Google+ account. #login $high` 
     * `Integrate OAuth to the chat site. *task #login #website $high`
-  2.  Make the new task a child of the new story, "As a user, I'd like to be able to log into your chat with my Facebook or Google+ account."
+  2. Make the new task a child of the new story, "As a user, I'd like to be able to log in to your chat with my Facebook or Google+ account."
 
   3. Refresh your browser and then click the plus signs (+) next to your story summaries to expand your parent work items.
-Your backlog should look like this image:  
+Make sure that your backlog looks like this image:  
      ![Unranked work items in the backlog][10]
 
 <a name='triage_the_backlog'></a>
@@ -194,7 +194,7 @@ Your backlog should look like this image:
 
 2. Create time estimates to ensure that you assign an appropriate number of stories to a sprint.
 
-  1.  Click in the title field of the "Integrate OAuth to the chat site" item. For the menu that opens, click **Estimate: Unassigned**.  
+  1. Click in the title field of the "Integrate OAuth to the chat site" item. From the menu that opens, click **Estimate: Unassigned**.  
 **Tip**: When you create estimates, remember to review your story points and work item owners.
 
   2. Set the duration to 3 days and click **OK**.  
@@ -212,7 +212,7 @@ Your backlog should look like this image:
 4. Rank the rest of the work items in this order:  
      ![Ranked work items in the backlog][11]
      
-5. Assign story points to the stories.  In agile projects, story points are a team-determined scale that reflects the effort required to implement a story. Next to each story, click **0 pts** and select **20 pts** from the list.  
+5. Assign story points to the stories. In agile projects, story points are a team-determined scale that reflects the effort that is required to implement a story. Next to each story, click **0 pts** and select **20 pts** from the list.  
 **Note**: You can expand each story by clicking the plus sign (+) to review its child items.
 
 <a name='plan_sprint_1'></a>	
@@ -221,7 +221,7 @@ Your backlog should look like this image:
 1. To start creating sprints for your project, click **Sprint Planning** and then click **Add Sprints**. From the **Quantity** and **Duration** lists, select two 2-week sprints.  
 **Note**: Only a project owner or project admin can create and edit sprints.
 
-  ![Sprint creation menu showing two two-week sprints][27]
+  ![Sprint creation menu that shows two 2-week sprints][27]
 
 2. Click **Save**. Lanes for your backlog and for Sprint 1 are shown. Scroll to the right to see Sprint 2.
 
@@ -242,11 +242,11 @@ You set up your sprint and are ready to start work.
 1. To see the entire team's work for the current sprint, click **Team's Work**. This view is useful when you share work because work items are grouped by owner and you can see who owns which tasks.  
 **Tip**: To view another sprint, click **Sprint 1 (Current Sprint)** and select a sprint.   
 
-2. To see the number of hours worked, items resolved, and story points achieved, click **Team Progress**.
+2. To see the number of hours that were worked, items that were resolved, and story points that were achieved, click **Team Progress**.
 
      ![Team progress showing current hours worked, items resolved, and story points achieved][25]
      
-3. Click **My Work**. Because you own all of the tasks and haven't started working on them, you can see all of them in your Open lane.  
+3. Click **My Work**. Because you own all of the tasks and you haven't started to work on them, you can see all of them in your Open lane.  
 **Note**: If you do not see both the Open and In Progress lanes, click the **Display as Lanes** icon <img class="inline"  src="images/displaylanes.png" alt="Display as Lanes icon"> to switch from the list view.
 
 3. For the "Integrate OAuth to the chat site" task, click the **Status** icon <img class="inline"  src="images/statusnew.png" alt="Status icon"> and from the menu that opens, click **Start Working**.
@@ -262,11 +262,11 @@ You set up your sprint and are ready to start work.
 
   ![Location of open parent task breakdown icon][28]
 
-8. Review the contents of the task view.  You completed the only task that is associated with this story, so you can resolve the story.
+8. Review the contents of the task view. You completed the only task that is associated with this story, so you can resolve the story.
 
 9. Click **Back to My Work**.
 
-10. For the "As a user, I'd like to be able to log into your chat with my Facebook or Google+ account" story, click the Status icon.  Resolve the story by clicking **Set Done** from the menu. 
+10. For the "As a user, I'd like to be able to log in to your chat with my Facebook or Google+ account" story, click the Status icon.  Resolve the story by clicking **Set Done** from the menu. 
 
 11. Create work items and address them.
 
@@ -279,7 +279,7 @@ You set up your sprint and are ready to start work.
 
   3. Send all of the work items to the backlog by using the **Triage to Backlog** icon.
 
-  4. Take a second look at the work items that you just created. The defect seems pretty important. Click **Sprint Planning** and drag the defect from the Backlog lane into the Sprint 1 lane.  
+  4. Take a second look at the work items that you created. The defect seems important. Click **Sprint Planning** and drag the defect from the Backlog lane into the Sprint 1 lane.  
 **Tip**: If you are leading a team, you can triage new work items in the Incoming Work view and the Backlog view during your sprints.
 
 <a name='summary'></a> 

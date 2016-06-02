@@ -72,12 +72,12 @@ With the Track & Plan feature in DevOps Services, you can manage projects by usi
 ###Explore the Track & Plan views
 
 1. Near the top of the page, click **TRACK & PLAN**.
-2. If you don't see lanes labeled OPEN and IN PROGRESS, enter the Lanes view by clicking **Display as lanes**.
+2. If you don't see lanes that are labeled OPEN and IN PROGRESS, open the Lanes view by clicking **Display as lanes**.
 ![Click Display as lanes button][38]
 3. In the OPEN lane, click the **Create a work item** field. Work items are grouped into the OPEN, IN PROGRESS, and RESOLVED lanes based on their status.
 
 ###Create a task
-You can create different types of work items depending on what you're planning. For example, to describe a minor feature update, you might create a task item. To track the work to fix a problem, you might create a defect item. 
+Depending on what you're planning, you can create different types of work items. For example, to describe a minor feature update, you might create a task item. To track the work to fix a problem, you might create a defect item. 
 
 Describe a task to personalize the Sentiment Analysis App. You can assign attributes to the new work item by clicking the attribute icons under the **Create a work item** field, and you can use shorthand in the field:
 
@@ -91,7 +91,7 @@ Describe a task to personalize the Sentiment Analysis App. You can assign attrib
    
 2. Click **CREATE**. Your new work item is shown in the OPEN lane in the Recently Created section.
 
-![Creating a new task item][4]
+![Creating a task item][4]
     
 Your project now has one work item: a task to update the app's default search topic. The task has a high priority, so you need to do it soon.
 
@@ -125,7 +125,7 @@ Your change is saved and ready to be committed to the project's remote repositor
 
 For revision control and source code management, DevOps Services supports Git, Jazz SCM, and GitHub. Because the original Sentiment Analysis App project uses a Git repository that is hosted by IBM, your copy of the project uses a Git repository, too. 
 
-The code that you changed is currently in your workspace on the cloud. Push the changed code to your project's master branch and then deploy your app to Bluemix.
+The code that you changed is in your workspace on the cloud. Push the changed code to your project's master branch and then deploy your app to Bluemix.
 
 1. On the far left, click the **Git Repository** icon. 
 ![The Git Repository icon][14]
@@ -184,7 +184,7 @@ The next stage is the Deploy stage; it contains a deploy job. Deploy jobs deploy
 
   b. Click the **JOBS** tab and note this information:
   * The app is set to deploy to your Bluemix organization and space.
-  * Bluemix is based on Cloud Foundry, so the deployment script uses the Cloud Foundry command-line interface command `cf push` to deploy your app. To learn more about configuring deployment scripts when using Cloud Foundry, [see the Cloud Foundry documentation][29]. 
+  * Bluemix is based on Cloud Foundry, so the deployment script uses the Cloud Foundry command-line interface command `cf push` to deploy your app. To learn more about how to configure deployment scripts, [see the Cloud Foundry documentation][29]. 
 
 c. Because you did not make any changes, click **CANCEL** to return to the Build & Deploy Pipeline page.
 
@@ -204,7 +204,7 @@ It's time to see the stages in action. You can start a build without waiting for
 
 ![The project's configured Pipeline][10]
 
-Now that you’re familiar with the deployment process, return to the code editor, make another change, and push it to your project's repository. This practice is a good way to observe the automatic build and deployment capabilities in DevOps Services and become familiar with the interface. All you need to do is push a change. DevOps Services does the rest. To see the pipeline at work, click **BUILD & DEPLOY**.
+Now that you’re familiar with the deployment process, return to the code editor, make another change, and push it to your project's repository. This practice is a good way to observe the automatic build and deployment capabilities in DevOps Services and become familiar with the interface. All that you need to do is push a change. DevOps Services does the rest. To see the pipeline at work, click **BUILD & DEPLOY**.
 
 <a name='work_item'></a>
 ## Complete the work item
@@ -225,7 +225,7 @@ Well done! The Track & Plan service keeps administrative overheard to a minimum 
 <a name='summary'></a>
 ## Summary
 
-You cloned a Node.js app project, planned and tracked an update to the app, made the update, and deployed the updated app to Bluemix--all without leaving your browser. 
+You cloned a Node.js app project, planned and tracked an update to the app, made the update, and deployed the updated app to Bluemix, all without leaving your browser. 
 
 
 <a name='next_steps'></a>

@@ -1,8 +1,8 @@
 #Managing your Bluemix DevOps Services account
 
-###### Last updated: 19 November 2015
+###### Last updated: 27 April 2016
 
-Without signing up for an IBM® Bluemix™ account, you can explore Bluemix DevOps Services projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
+Without signing up for an IBM&reg; Bluemix&reg; account, you can explore IBM Bluemix DevOps Services projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
 * [DevOps Services accounts](#idsaccounts)
 * [Setting up a DevOps Services account](#idssetup)
@@ -96,7 +96,7 @@ To set up your billing account, complete these steps:
 <!--<a name='monitor'></a>
 ##Monitoring your usage-->
 
-You can monitor the usage details for your Bluemix account. For more information, [see the billing and usage documentation](https://www.ng.bluemix.net/docs/#acctmgmt/index-gentopic1.html#genTopProcId2). To determine costs, [see the Bluemix Pricing page](https://bluemix.net/#/pricing).
+You can monitor the usage details for your Bluemix account. For more information, [see the billing and usage documentation](https://console.ng.bluemix.net/docs/pricing/index.html#pricing). To determine costs, [see the Bluemix Pricing page](https://bluemix.net/#/pricing).
 
 <!--The Delivery Pipeline and Track & Plan services use metered pricing, where you pay based on consumption. However, they also include a free monthly allowance.-->
 

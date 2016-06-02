@@ -2,7 +2,7 @@
 
 ###### Last updated: 5 February 2016
 
-Testing and debugging are critical to ensure that your app performs without unexpected results. In IBM&reg; Bluemix&trade; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and make changes to your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app while having all of the benefits of deploying with Bluemix.
+Testing and debugging are critical to ensure that your app runs without unexpected results. In IBM&reg; Bluemix&reg; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and edit your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app and have all of the benefits of deploying with Bluemix.
 
 In this tutorial, you create a launch configuration that you use to deploy a Node.js app to a test environment. You enable Live Edit mode in the Web IDE, and then debug your app. If you prefer to work from the command line, you can set up the Bluemix Live Sync command-line tool.
 
@@ -46,23 +46,23 @@ In this tutorial, you create a launch configuration that you use to deploy a Nod
 
 <a name='runbar'></a>
 ##The run bar
-The run bar, which is located within the Web IDE, provides all of the controls for Bluemix Live Sync.  On the bar, you can see the deployed state of your app.  You can also deploy, stop, and open the app, open its Dashboard, and view logs.  If you're developing a Node.js app, the run bar contains additional icons to enable Live Edit mode, quickly restart the app, and open debugging tools.
+The run bar, which is located within the Web IDE, provides all of the controls for Bluemix Live Sync.  On the bar, you can see the deployed state of your app. You can also deploy, stop, and open the app, open its Dashboard, and view logs. If you're developing a Node.js app, the run bar contains icons to enable Live Edit mode, quickly restart the app, and open debugging tools.
 
 ![Run bar](images/runbar.png)
 
-You can use the run bar to quickly test and debug code in a personal environment before you push the code into production.  When you use the run bar to deploy your code, only the code that is currently in your workspace is deployed.  You have complete control to test and experiment before you check in any of your code.
+You can use the run bar to quickly test and debug code in a personal environment before you push the code into production. When you use the run bar to deploy your code, only the code that is in your workspace is deployed. You have complete control to test and experiment before you check in any of your code.
 
 
 <a name='launch_configuration'></a>
 ##Create a launch configuration
 
-Launch configurations define the settings that the Web IDE uses to deploy your app on Bluemix. By default, DevOps Services deploys to the bound Bluemix app that is associated with the DevOps Services project.  If you want to deploy your app locally, you first must create a launch configuration.
+Launch configurations define the settings that the Web IDE uses to deploy your app on Bluemix. By default, DevOps Services deploys to the bound Bluemix app that is associated with the DevOps Services project. If you want to deploy your app locally, you first must create a launch configuration.
 
 1. On the run bar, click the **Launch configuration** list and then click the **Create a new launch configuration** icon.
 ![Clicking Plus icon in the run bar](images/new_launch_config.png)
-2. In the Edit Launch Configuration window, indicate that this is a test version of your app by adding text to the app's name and host. In the following example, `–live` is added to the name and host.  DevOps Services provides an initial launch configuration name automatically, but you can change the name if needed.
+2. In the Edit Launch Configuration window, add text to the app's name and host to indicate that the app is a test version of your app. In the following example, `–live` is added to the name and host. DevOps Services provides an initial launch configuration name automatically, but you can change the name if needed.
 ![Edit Launch Configuration menu](images/edit_lc.png)
-3. Click **Next** to edit the manifest settings for the launch configuration.  The manifest file defines how your project is deployed.  The file includes information such as memory and instance allotments and is also where you can specify any services to bind to the app.  You can create several launch configurations to test different app setups.  For information about creating a manifest, [see the Bluemix documentation about application manifests](https://www.ng.bluemix.net/docs/manageapps/depapps.html#appmanifest).<br>
+3. Click **Next** to edit the manifest settings for the launch configuration. The manifest file defines how your project is deployed. The file includes information such as memory and instance allotments and is also where you can specify any services to bind to the app. You can create several launch configurations to test different app setups. For information about creating a manifest, [see the Bluemix documentation about application manifests](https://www.ng.bluemix.net/docs/manageapps/depapps.html#appmanifest).<br>
 ![Edit Launch Configuration menu](images/edit_lc_manifest.png)
 4. Click **SAVE**. 
 
@@ -72,7 +72,7 @@ You can now use your launch configuration to deploy the contents of your workspa
 <a name='deploy_app'></a>
 ##Deploy an app to a test environment
 
-1. To deploy your app, click the deploy icon <img class="inline"  src="./images/deploy_button.png"  alt="The deploy icon">  on the run bar. When you click the icon, an instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration.
+1. To deploy your app, click the deploy icon <img class="inline" src="./images/deploy_button.png" alt="The deploy icon"> on the run bar. When you click the icon, an instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration.
 2. After your app is deployed, you can also complete any of these actions:
 ![Run bar](images/runbar.png)
 
@@ -85,33 +85,33 @@ You can now use your launch configuration to deploy the contents of your workspa
 
 <a name='live_edit'></a>
 ##Turn on Live Edit mode
-Redeploying an app can waste valuable time when you are testing minor changes.  To save time, turn on Live Edit mode.  When Live Edit mode is on, you can quickly make changes to a Node.js app and preview the changes immediately.
+Redeploying an app can waste valuable time when you are testing minor changes. To save time, turn on Live Edit mode. When Live Edit mode is on, you can quickly edit a Node.js app and preview the changes immediately.
 
 1. On the run bar, select or create a launch configuration.
-2. Click **Live Edit**. If the app is currently deployed in your workspace, it is redeployed to enable Live Edit mode.  Otherwise, the contents of your workspace are deployed in Live Edit mode by using the specified launch configuration.
+2. Click **Live Edit**. If the app is deployed in your workspace, it is redeployed to enable Live Edit mode. Otherwise, the contents of your workspace are deployed in Live Edit mode by using the specified launch configuration.
 ![Clicking the Live Edit button](images/live_edit_off.png)
 3. When redeployment finishes, the deployment status icon turns green and the phrase `(running: live edit)` is shown beside your launch configuration on the run bar.
 ![Live Edit enabled](images/live_edit_on.png)
 
-When you work in Live Edit mode, changes to static files, such as HTML or CSS, can usually be seen immediately in the deployed app.  If you make changes that affect Node.js source files, you can restart the app quickly, without redeployment, by clicking the restart icon <img  class="inline" src="./images/live_edit_restart.png"  alt="The restart icon">.
+When you work in Live Edit mode, changes to static files, such as HTML or CSS, can usually be seen immediately in the deployed app. If you make changes that affect Node.js source files, you can restart the app quickly, without redeployment, by clicking the restart icon <img  class="inline" src="./images/live_edit_restart.png"  alt="The restart icon">.
 
 
 <a name='debug'></a>
 ##Debug Node.js apps
-Another benefit of Live Edit mode is the Debug feature.  You can edit code dynamically, insert breakpoints, step through code, restart the runtime, and more, while your app is running on Bluemix.
+Another benefit of Live Edit mode is the Debug feature. You can edit code dynamically, insert breakpoints, step through code, restart the runtime, and more, while your app is running on Bluemix.
 
-1. On the run bar, click the debug icon <img class="inline"  src="./images/debug_icon.png"  alt="The debug tools icon">.
+1. On the run bar, click the debug icon <img class="inline" src="./images/debug_icon.png" alt="The debug tools icon">.
 ![Debug tools console](images/debug_console.png)
 2. Click **Suspend** to temporarily suspend the app so that the debugger can connect to it.
 3. Select an option to continue.
 
- * If you click **Open Shell**, a Bash shell is displayed.  In the shell, you can access the container that your app is running in. You can remotely run diagnostic shell commands to administer your app.
+ * If you click **Open Shell**, a Bash shell is displayed. In the shell, you can access the container that your app is running in. You can remotely run diagnostic shell commands to administer your app.
 
  ![Bash shell](images/bash_shell.png)
 	
- * If you click **Open Debugger**, Node Inspector opens.  Node Inspector is a debugger interface for Node.js apps that uses the Blink Developer Tools (formerly WebKit Web Inspector).
+ * If you click **Open Debugger**, Node Inspector opens. Node Inspector is a debugger interface for Node.js apps that uses the Blink Developer Tools (formerly WebKit Web Inspector).
 
-    **Note:** Node Inspector is currently supported on Chrome and Opera browsers only.
+    **Note:** Node Inspector is supported on Chrome and Opera browsers only.
 
  ![Node Inspector](images/node_inspector.png)
 
@@ -131,7 +131,7 @@ Another benefit of Live Edit mode is the Debug feature.  You can edit code dynam
 <a name='local_edit'></a>
 ##Test and debug on the command line
 
-You can use Bluemix Live Sync for more than work in the Web IDE. You can also make changes in your local environment and preview them on Bluemix. To do so, use the Bluemix Live Sync command-line tool, "bl", which synchronizes your desktop with your project workspace.
+You can use Bluemix Live Sync for more than work in the Web IDE. You can also edit in your local environment and preview them on Bluemix. To do so, use the Bluemix Live Sync command-line tool, "bl", which synchronizes your desktop with your project workspace.
 
 **Before you begin**: [Download and install the Bluemix Live Sync command-line interface](http://livesyncdownload.ng.bluemix.net).
 
@@ -141,18 +141,24 @@ You can use Bluemix Live Sync for more than work in the Web IDE. You can also ma
 
 1. Open a command-line window.
 2. Sign in to Bluemix by typing your IBM id and password:
-```
-bl login
-```
+
+  ```
+  bl login
+  ```
+  
 3. View a list of your Bluemix projects: 
-```
-bl projects
-```
+
+  ```
+  bl projects
+  ```
+  
 4. Synchronize your local environment with your project on Bluemix:
-```
-bl sync projectName
-```
-where `projectName` is your Bluemix app's name.
+
+  ```
+  bl sync projectName
+  ```
+  
+  where `projectName` is your Bluemix app's name.
 
 By synchronizing your local environment with Bluemix, you populate `localDirectory` with the files from your Node.js project. When you are finished making changes, type `q` to end synchronization.
 
@@ -176,9 +182,9 @@ bl start
 <a name='summary'></a>
 ##Summary
 
-You learned how to create a launch configuration and deploy an app from the run bar. You also used Bluemix Live Sync to edit a Node.js project and preview changes both in the cloud and locally from the command-line.
+You learned how to create a launch configuration and deploy an app from the run bar. You also used Bluemix Live Sync to edit a Node.js project and preview changes both in the cloud and locally from the command line.
 
 <a name='nextsteps'></a>
 ##Next steps
 
-After you have tested and debugged your app, [learn more about setting up automated build and deploy processes](/docs/reference/deploy/). 
+After you test and debug your app, [learn more about setting up automated build and deploy processes](/docs/reference/deploy/). 
