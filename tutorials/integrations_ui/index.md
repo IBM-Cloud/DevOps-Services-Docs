@@ -62,6 +62,8 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 <a name='configure_slack'></a>
 ## Configure the Slack integration
 
+**Important**: Notifications that are posted to public Slack channels are visible to everyone on the team. You are responsible for the content that you post. 
+
 1. On the App Details page, go to the Integrations section. 
 2. Expand the **SLACK** section.
 3. Type the API authentication token for your Slack account. You must use a generated full-access token to authenticate with Slack. For instructions about how to find the token, see [Slack authentication](https://api.slack.com/web#authentication). 
