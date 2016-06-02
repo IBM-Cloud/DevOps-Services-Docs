@@ -56,6 +56,8 @@ Before you can configure the Slack integration, you must enable your project to 
 <a name='configuring_the_slack_integration'></a>
 ## Configuring the Slack integration
 
+**Important**: Notifications that are posted to public Slack channels are visible to the public. Remember that you are responsible for the content that you post.
+
 1. On the project's Overview page, in the Integrated Tools section, click **Integrate with a tool**. 
 ![Project Overview page integrations section][3]
 
