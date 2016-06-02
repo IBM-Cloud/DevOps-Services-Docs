@@ -1,6 +1,6 @@
 #Automate integrations with DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
 
-######Last modified: 10 February 2015
+######Last modified: 2 June 2015
 
 Time: 15 minutes 
 
