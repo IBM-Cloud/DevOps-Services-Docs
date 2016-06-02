@@ -1,10 +1,11 @@
 #Extending the capabilities of your Build & Deploy pipeline
 
-###### Last updated: 02 March 2016
+###### Last updated: 19 May 2016
 
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example,  test jobs can run static code scans and build jobs can globalize strings.
 
 * [Running static code scans by using the pipeline](#scan)
+* [Running dynamic app scans by using the pipeline](#appscan)
 * [Globalizing strings by using the pipeline](#globalize)
 * [Creating Slack notifications for builds in the pipeline](#slack)
 * [Creating HipChat notifications for builds in the Delivery Pipeline](#hipchat)
@@ -12,7 +13,7 @@ You can extend the capabilities of your Build & Deploy pipeline by configuring y
 
 <a name="scan"></a>
 ##Running static code scans by using the pipeline
-Want to find security issues in your code before you deploy it? When you use the IBM® Static Analyzer for Bluemix™ as part of your pipeline, you can run automated checks against your  Java™ app's static `.war`, `.ear`, `.jar`, or `.class` build binary files.
+Want to find security issues in your code before you deploy it? When you use the IBM&reg; Static Analyzer for Bluemix&reg; as part of your pipeline, you can run automated checks against your Java&trade; app's static `.war`, `.ear`, `.jar`, or `.class` build binary files.
 
 A pipeline that uses the Static Analyzer service typically includes these stages:
   
@@ -62,7 +63,7 @@ Before you begin, [review the Terms of Use for the service][4].
   
      If the Static Analyzer scan is not complete before the time that you specified, the job fails. However, the scan analysis continues to run and you can view it on the Static Analyzer dashboard. After the Static Analyzer scan is complete, if you rerun the job, the scan request is not resubmitted and the pipeline job can be completed. Alternatively, you can configure the pipeline not to be blocked on a successful scan result. For instructions, see the next step.
  
-  g. Select or clear the **Stop stage execution on job failure** check box depending on what you want to happen if this job fails or times out. Jobs can fail when vulnerabilities are high. 
+  g. Depending on what you want to happen if this job fails or times out, select or clear the **Stop stage execution on job failure** check box. Jobs can fail when vulnerabilities are high. 
 
     * If you select the check box and the job fails, later jobs in the stage and later stages do not run.
   
@@ -90,6 +91,47 @@ Before you begin, [review the Terms of Use for the service][4].
 ![Example pending scan][8]
 
 For more information about using the Static Analyzer service from the Bluemix Dashboard, [see the Static Analyzer service docs][6].
+
+
+<a name="appscan"></a>
+## Running dynamic app scans in the pipeline
+
+Want to ensure security in your web applications? When you integrate IBM® AppScan Dynamic Analyzer for Bluemix® with your pipeline, you can automate security testing and identify issues in your apps before they become a problem.
+
+A pipeline that uses the Dynamic Analyzer service typically includes these stages:
+
+  - A **Build** stage to build the source files
+  - A **Deploy** stage where you deploy your Cloud Foundry Application
+  - A **Test** stage where you run the Dynamic Analyzer
+
+### Creating a Dynamic AppScan
+
+Before you begin:
+
+  - You will need a running Bluemix application.
+  - Review the [Terms of Use](http://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-7235-01) for IBM Application Security on Cloud.
+
+To set up the extension, configure the test stage of your pipeline.
+
+1. Click **ADD STAGE** and name the stage **Dynamic Scan**.
+2. Go to the **JOBS** tab and click **ADD JOB**. Select **Test** as the job type.
+3. For **Tester Type**, select **IBM AppScan Dynamic Analyzer** from the drop down menu.
+4. Select your **Target**, **Organization**, and **Space**.
+5. If you do not already have the service in your space, check the **Set up service and space for me** box.
+6. Specify a **Target URL** for the scan. This URL must be fully qualified.
+7. (Optional) Provide the name of the **CF App** that the service and target route is bound too. This is used as a verification and if skipped, you will need to provide an alternative method to scan the URL.
+8. Select a **Scan Type** from the drop down.
+  - The staging scan will search for more issues and as a result, is more likely to be destructive. For a complete list of security vulnerabilities the scan searches for, [see the AppScan Dynamic Analyzer docs](https://new-console.ng.bluemix.net/docs/services/AppScanDynamicAnalyzer/index.html).
+9. In the **Minutes to wait for analysis to complete** field, specify the maximum amount of time an analysis should have to complete. The value must be a whole number between 0 and 59.
+  - When the analysis is running the pipeline will block other jobs. If the Dynamic Analyzer is not complete before the time you specified, the job fails. However, the scan continues to run and you can view updates on the Dynamic AppScan dashboard. After the scan is complete, if you rerun the job again and the scan request is not resubmitted and the pipeline job can be completed. Alternatively, you can configure the pipeline to continue even if the job is unsuccessful.
+10. Select or clear the **Stop stage execution on job failure** check box depending on what you want to happen if this job times out or fails.
+11. Click **Save**.
+
+Viewing logs:
+
+Click on **View logs and history** when the job finishes to view the results. If the analysis succeeds or times out, a URL is shown in the scan results. If the scan is pending, wait until the scan is complete to see the full results.
+
+
     
 <a name="globalize"></a>
 ##Globalizing strings by using the pipeline
@@ -105,7 +147,7 @@ To see an example of a typical pipeline that uses the Globalization Pipeline ser
 ###Creating a globalization stage and job
 Before you begin:
 
-1. All English-translatable strings should be included in one or more `filename_en.properties` or `filename_en.json` files that all use the same name. For example: `messages_en.properties`.
+1. Include all English-translatable strings in one or more `filename_en.properties` or `filename_en.json` files that all use the same name. For example: `messages_en.properties`.
 
 2. If your messages are in `.json` files, remove the depth from the structure by removing any subkeys. To remove the subkeys, change instances of `{key: {subkey: value, subkey:value}}` to `{key:value, key:value}`. 
 
@@ -129,7 +171,7 @@ To create the globalization stage and job:
   
   d. For the organization and space, verify the values and update them if needed.
   
-  e. In the **Source file name** field, type the name and extension of the `.properties` or `.json` input file. If you have files in different subdirectories, but they all have the same name, you only need to type the file name once. For example, if you have a `messages_en.properties` file in three directories, type `messages_en.properties` for the source file name, and all files with that name will be translated.
+  e. In the **Source file name** field, type the name and extension of the `.properties` or `.json` input file. If you have files in different subdirectories, but they all have the same name, you need to type the file name only once. For example, if you have a `messages_en.properties` file in three directories, type `messages_en.properties` for the source file name, and all files with that name will be translated.
   
   f. Determine whether to select the **Set up service and space for me** check box.
   
@@ -201,12 +243,12 @@ To create Slack notifications:
     <td><code>NOTIFY_FILTER</code></td>
     <td>To receive only a subset of the message types, enter one of the following values:
       <ul>
-      <li><code>good</code>: Get unknown, good and info messages only. Bad messages are not sent.</li>
+      <li><code>good</code>: Get unknown, good, and info messages only. Bad messages are not sent.</li>
       <li><code>bad</code>: Get all messages.</li>
       <li><code>info</code>: Get info messages only. Good, bad, and unknown messages are not sent.</li>
       <li><code>unknown</code>: Get all messages.</li></ul>
-      Example: If you set <code>NOTIFY_FILTER = bad</code>, error notifications are only  displayed in the Slack Channel.</td>
-    <td>Optional. Decide which type of messages to send notifications for. By default, good and bad messages are sent, but not informational messages.
+      Example: If you set <code>NOTIFY_FILTER = bad</code>, error notifications are displayed on the Slack channel only.</td>
+    <td>Optional. Decide which type of messages to send notifications for. By default, good, and bad messages are sent, but not informational messages.
       <ul><li><code>good</code>: Successful build results.</li>
       <li><code>bad</code>: Unsuccessful build results.</li>
       <li><code>info</code>: Informational messages about the build process.</li>
@@ -227,8 +269,8 @@ You can send notifications about IBM Container Service, IBM Security Static Anal
 
 Before you begin, create or copy and existing HipChat token:
 
-1. Go to you HipChat Account page for your team: https://_project_name_.hipchat.com/account/api
-2. Create a new token, or use an existing one.
+1. Go to the HipChat Account page for your team: https://_project_name_.hipchat.com/account/api
+2. Create a token or use an existing one.
 
 To create HipChat notifications:
 
@@ -247,7 +289,7 @@ To create HipChat notifications:
   <tr>
     <td><code>HIP_CHAT_TOKEN</code></td>
     <td>Alphanumeric String</td>
-    <td>Required. See above "Before you begin" for instructions on creating or copying an existing HipChat token.</td>
+    <td>Required. See the "Before you begin" section for instructions to create or copy a HipChat token.</td>
   </tr>
   <tr>
     <td><code>HIP_CHAT_ROOM_NAME</code></td>
@@ -264,7 +306,7 @@ To create HipChat notifications:
       <li><code>gray</code></li>
       <li><code>random</code></li></ul>
     </td>
-    <td>Optional: Specify the background color and the left-side border color of HipChat notifications. If you set <code>HIP_CHAT_COLOR</code>, you do not need to specify when you call the script below.
+    <td>Optional: Specify the background color and the left-side border color of HipChat notifications. If you set <code>HIP_CHAT_COLOR</code>, you do not need to specify when you call the following script.
      <p><code>-l notification_level</code></p> </td>
   </tr>
   <tr>
@@ -273,8 +315,8 @@ To create HipChat notifications:
       <ul><li><code>good</code></li>
       <li><code>danger</code></li>
       <li><code>info</code></li></ul>
-    This variable applies to both HipChat and Clack notification colors. If you specify <code>NOTIFICATION_COLOR</code>, you do not need to specify <code>HIP_CHAT_COLOR</code> or <code>SLACK_COLOR</code>.</td>
-    <td>Optional: Specify the background color and the left-side border color of both HipChat and Slack notifications. If you set <code>NOTIFICATION_COLOR</code>, you do not need to specify when you call the script below.
+    This variable applies to both HipChat and Slack notification colors. If you specify <code>NOTIFICATION_COLOR</code>, you do not need to specify <code>HIP_CHAT_COLOR</code> or <code>SLACK_COLOR</code>.</td>
+    <td>Optional: Specify the background color and the left-side border color of both HipChat and Slack notifications. If you set <code>NOTIFICATION_COLOR</code>, you do not need to specify when you call the following script.
      <p><code>-l notification_level</code></p> </td>
   </tr>
   <tr>
@@ -304,74 +346,112 @@ To create HipChat notifications:
 6. Repeat these steps to send HipChat notifications for other stages that include IBM Container Service, IBM Security Static Analyzer, and IBM Globalization jobs.
 
 <a name="activedeploy"></a>
-## Using Active Deploy for zero downtime deployment in the pipeline
+## Using Active Deploy for zero-downtime deployment in the pipeline
 
-You can update running apps with zero downtime when you use the IBM Active Deploy service in your pipeline. Active Deploy provides you a continual update process where the new version of your app is finalized only when it proves to work properly in production. You can automate Active Deploy by integrating the service into your pipeline, which enables faster continuous delivery.
+You can update running apps with zero downtime when you use the IBM® Active Deploy service in your pipeline. The service provides you an update process where the new version of your app is finalized only when it proves to work properly in production. You can automate Active Deploy and enable faster continuous delivery by integrating the service into your pipeline.
 
-A pipeline using Active Deploy would typically include these stages:
-
-  - A **Build** stage where you compile your project
-  - A **Test** stage where you would evaluate the newly built app
-  - A **Deploy** stage that includes these jobs:
-    - A **Deploy Single Instance** job that creates a single, un-routed instance of the new version of the app
-    - The **Active Deploy-Begin** job that contains a script that starts the deployment process and increases the instances of your new app until both versions of your app are live in production
-    - **Test** jobs that you can use to test your new app in production
-    - The **Active Deploy-Complete** job that ends the deployment process and decreases the original version of your app if the test phase was successful. Otherwise, a rollback will occur and your app will revert to the original version
+The service is built into two separate jobs that you create in the same stage of your pipeline. This gives you the ability to insert test jobs that perform automated testing of the new release while roll-back is still possible. The **Active Deploy - Begin** job contains a script that starts the deployment process to increase instances of your new app until both versions of your app are live in production. **Active Deploy - Complete** ends that deployment process and decreases the original version of the app if the test phase was successful. After the Complete job finishes, it will be impossible to rollback to the previous release.
 
 ### Creating the Active Deploy stage of the pipeline
 To set up Active Deploy in your pipeline, configure the jobs and environmental variables of the **Deploy** stage.
 
-##### Before you begin:
-- You will need a running application with an existing pipeline.
-  - For information on how to get started with the pipeline, [see the Build and deploy documentation](https://hub.jazz.net/docs/deploy/).
+Before you begin:
+- You will need a running application with an existing pipeline. For information about getting started with the pipeline, [see the Build &amp; Deploy docs](https://hub.jazz.net/docs/deploy/).
 
-##### To add jobs:
+To add Jobs:
 
-1. Click **ADD STAGE** and name the stage **Active Deploy**.
-2. Go to the **JOBS** tab and click **ADD JOB**. Select **Deploy Single Instance** as the job type and name it **Deploy to prod**.
-  - You must edit the default command script to export either *NAME* or *CF_APP_NAME* and deploy as a single instance with no mapped routes. *NAME* should be the equivalent to the name of the deployed app and should be unique each time the job is run. For example:
+1. From your pipeline dashboard, click **ADD STAGE** and name the stage **Active Deploy**.
+2. Go to the **JOBS** tab and click **ADD JOB**. Select **Deploy** as the **Job Type** and name it **Deploy Single Instance**.
+  - You must edit the default command script to export *NAME*, *CF_APP_NAME*, or *CONTAINER_NAME* and deploy as a single instance with no mapped routes. *NAME* should be the equivalent to the name of the deployed app and should be unique each time the job is run. For example:
   ```
     #!/bin/bash
     NAME="${CF_APP}_${BUILD_NUMBER}"
     cf push "${NAME}" --no-route -i 1
     export NAME
   ```
-3. Add another job and select **Active Deploy - Begin** from the **Deployer type** menu.
+3. Add a **Deploy** job and select **Active Deploy - Begin** from the **Deployer type** menu.
 4. Click **ADD JOB** and select **Test**.
 5. In the **Test Command** section, insert the code for any tests you want to run.
  - In order for the test to complete successfully the result must be 0. A return code of anything else causes the job to fail and a rollback occurs.
- - You must uncheck **Stop running this stage if this job fails** in all test jobs to allow the **Active Deploy - Complete** job to run. If **Active Deploy - Begin** executes successfully, the **Active Deploy - Complete** job must execute to avoid a scenario in which an update of the original app remains in progress preventing alternative updates.
-6. Click **ADD JOB** and select **Active Deploy - Complete** from the **Deployer type** menu.
+6. Uncheck **Stop running this stage if this job fails** in all test jobs to allow the **Active Deploy - Complete** job to run. If the **Active Deploy - Begin** job is successful, the **Active Deploy - Complete** job must run, or the update will remain in progress and additional updates won't be possible.
+7. Click **ADD JOB** and select **Active Deploy - Complete** from the **Deployer type** menu.
 
 
-##### To configure your environmental variables:
+To configure your environmental variables:
 
-1. In the **ENVIRONMENTAL PROPERTIES** tab, click **ADD PROPERTY**.
+1. In the **ENVIRONMENT PROPERTIES** tab, click **ADD PROPERTY**.
 2. Select **TEXT PROPERTY**.
 3. Enter the name and value for each of the variables below. Repeat to add more variables and then click **SAVE** to complete your stage.
 
-| **Name** | **Required** | **Default** | **Description** |
-|:--------:|:------------:|:-----------:|:---------------:|
-| NAME or CF_APP_NAME | Yes | Leave blank, this will be filled out in the **Deploy Single Instance** job | The name of the new version of the app and takes the form *AppName_BuildNumber*, with the build number increasing |
-| GROUP_SIZE | Yes | 1 | The desired number of instances of an app |
-| TEST_RESULT_FOR_AD | Yes | Leave blank, this will be set in your **Test** jobs | All test jobs need to be set to return a 0 for a successful execution |
-| ROUTE_HOSTNAME | No | The name of your app | The host name in the route, that is mapped the current version of the app |
-| ROUTE_DOMAIN | No | *.mybluemix.net | The domain in the route, that is mapped to the current version of the app |
-| CONCURRENT_VERSIONS | No | 2 | The number of versions kept of the app, including at least 1 successful deploy |
 
-**Important:**
+<table border="1" cellpadding="5" cellspacing="5">
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>NAME,  CF_APP_NAME, or CONTAINER_NAME</td>
+<td>Yes</td>
+<td>Leave blank, this must be set and exported in the <b>Deploy Single Instance</b> job.</td>
+<td>The name of the new version of the app. Takes the form <i>AppName_BuildNumber</i>, with the build number increasing.</td>
+</tr>
+<tr>
+<td>GROUP_SIZE</td>
+<td>Yes</td>
+<td>1</td>
+<td>The desired number of instances of your app.</td>
+</tr>
+<tr>
+<td>TEST_RESULT_FOR_AD</td>
+<td>Yes</td>
+<td>Leave blank, this must be set in the code for your <b>Test</b> jobs.</td>
+<td>All of your test jobs need to be set to return a 0 to be successful.</td>
+</tr>
+<tr>
+<td>TARGET_PLATFORM</td>
+<td>Yes</td>
+<td>Cloud Foundry</td>
+<td>The default target platform is Cloud Foundry. To use Containers, you will need to set this variable to 'Container'.
+</tr>
+<tr>
+<td>ROUTE_HOSTNAME</td>
+<td>No</td>
+<td>The name of your app.</td>
+<td>As a default, the <code>check_and_set_env.sh</code> script assigns the variable <i>NAME</i>. You can override this behavior by setting it now.</td>
+</tr>
+<tr>
+<td>ROUTE_DOMAIN</td>
+<td>No</td>
+<td> *.mybluemix.net</td>
+<td>The domain that will be used if one isn't specified.</td>
+</tr>
+<tr>
+<td>CONCURRENT_VERSIONS</td>
+<td>No</td>
+<td>2</td>
+<td>The number of versions, including at least 1 successful deploy, of the app that are kept.</td>
+</table>
+
+
+Important:
 - The first time the pipeline is run, the Active Deploy service will not be invoked. When the pipeline runs, the **Deploy Single Instance** job exports the *NAME* of the new version of the app. The **Active Deploy - Begin** job uses the *NAME* to find the *App_Name* and then searches the space for any earlier versions of the app with a route. If an original app can't be found, **Active Deploy - Begin** will scale the app to *GROUP_SIZE* instances and map the route to *ROUTE_HOSTNAME.ROUTE_DOMAIN*.
 
 
-##### View updates
+View updates:
 
 While the pipeline is running, you can view real-time updates in several ways:
-- Click **View logs and history** to see the code update
-- Click **LAST EXECUTION RESULT** to track progress by using the **ACTIVITY LOG** on your application dashboard
-- Go to the Active Deploy dashboard to see a history of your updates, including the current deploy
+
+ * To see the code as it is updated, click **View logs and history**.
+ * To track progress by using the activity log on your app's dashboard, click below the **LAST EXECUTION RESULT** heading.
+ * To see a history of your updates, including the current deployment, go to the Active Deploy dashboard.
 
 
-For more information about the Active Deploy service, see the [Bluemix documentation](https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html).
+For more information about the Active Deploy service, see the [Bluemix docs](https://www.ng.bluemix.net/docs/services/ActiveDeploy/index.html).
+
+
+
 
 
 [1]: https://hub.jazz.net/docs/deploy

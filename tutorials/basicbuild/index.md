@@ -55,9 +55,9 @@ To quickly get started developing, fork a sample project named WordCounter. Word
 
 1. [Open the WordCounter project in DevOps Services](https://hub.jazz.net/project/ibmdevopsservices/WordCounter/overview). 
 2. On the  Overview page, click **FORK PROJECT**. 
-![Click Fork Project](/tutorials/jazzrtc/images/click_fork_project.png "Click Fork Project")
+![Click Fork Project](/tutorials/basicbuild/images/click_fork_project.png "Click Fork Project")
 3. When you are prompted, enter a unique name for your project. Then, click **CREATE**.
-![Create Project Dialog](/tutorials/jazzrtc/images/create_project.png "Create Project Dialog")
+![Create Project Dialog](/tutorials/basicbuild/images/create_project.png "Create Project Dialog")
 
 A new project is created with a copy of the code from the sample project. You're ready to build and deploy.
 
@@ -69,7 +69,7 @@ The goal is to set up the pipeline so that every time a change is delivered to t
 1. Click **BUILD & DEPLOY**. 
 
 2. On the Build & Deploy Pipeline page, click **ADD STAGE**. The Stage Configuration page opens. A stage is a grouping of one or more jobs. 
-![Click Add A Builder](/tutorials/jazzrtc/images/add_builder.png "Click add a builder")
+![Click Add A Builder](/tutorials/basicbuild/images/add_builder.png "Click add a builder")
     
 3. Click the default **MyStage** name and change the name of the stage to `Build`. 
     
@@ -95,7 +95,7 @@ The goal is to set up the pipeline so that every time a change is delivered to t
 Next, create a stage that deploys your app to Bluemix, so that after a successful build stage runs, the deployment stage begins and deploys the build output to Bluemix. If the build stage does not complete successfully, the deployment stage does not run.
 
 1. Click **ADD STAGE**. The Stage Configuration page opens. Stages run sequentially, so this stage will run after the build stage
-![Click Add A New Stage](/tutorials/jazzrtc/images/add_deployer.png "Click add a new stage")
+![Click Add A New Stage](/tutorials/basicbuild/images/add_deployer.png "Click add a new stage")
    
 2. Click the default **MyStage** name and change the name of the stage to `Deploy to dev`.
     
@@ -127,7 +127,7 @@ Build and deploy your project for the first time to test them. You don't have to
 ![Successful Build](/tutorials/basicbuild/images/build1_success.png "Successful Build")
 
 2. Verify that the app is running by clicking the app link. 
-![Application](/tutorials/jazzrtc/images/app.png "Application")
+![Application](/tutorials/basicbuild/images/app.png "Application")
 
    Note: If you click the white area around the link, the dashboard for the app opens in Bluemix.
 3. Review the unit tests.
