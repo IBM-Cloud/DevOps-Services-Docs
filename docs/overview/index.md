@@ -53,8 +53,8 @@ In DevOps Services, you can develop software for any language or buildpack. You 
 </li><li> Jade 
 </li><li> Java 
 </li><li> JSON 
-</li><li> Lua  
 </li><li> Less  
+</li><li> Lua  
 </li><li> Objective-C
 </li><li> PHP 
 </li><li> Python</li></ul>
