@@ -55,11 +55,11 @@ In DevOps Services, you can develop software for any language or buildpack. You 
 </li><li> JSON 
 </li><li> Lua  
 </li><li> Less  
-</li><li> Objective-C</li></ul>
+</li><li> Objective-C
+</li><li> PHP 
+</li><li> Python</li></ul>
 </div><div class="jh-col-12-3 f_left prm">
-<ul><li>PHP 
-</li><li> Python 
-</li><li> Ruby 
+<ul><li> Ruby 
 </li><li> Sass/SCSS 
 </li><li> SQL 
 </li><li> Swift 
