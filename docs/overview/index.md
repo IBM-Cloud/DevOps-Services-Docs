@@ -44,8 +44,8 @@ In DevOps Services, you can develop software for any language or buildpack. You 
 </li><li> C 
 </li><li> C# 
 </li><li> C++ 
-</li><li> CSHTML 
 </li><li> CoffeeScript 
+</li><li> CSHTML 
 </li><li> Embedded JavaScript (ejs) 
 </li><li> Erlang 
 </li><li> Go 
