@@ -1,6 +1,6 @@
 # IBM Bluemix DevOps Services overview
 
-###### Last updated: 30 December 2015
+###### Last updated: 7 June 2016
 
 IBM&reg; Bluemix&trade; DevOps Services is software as a service (SaaS) on the cloud that supports continuous delivery. With DevOps Services, you can develop, track, plan, and deploy software in one place.
 
@@ -45,6 +45,7 @@ In DevOps Services, you can develop software for any language or buildpack. You 
 </li><li> C# 
 </li><li> C++ 
 </li><li> CSHTML 
+</li><li> CoffeeScript 
 </li><li> Embedded JavaScript (ejs) 
 </li><li> Erlang 
 </li><li> Go 
@@ -53,23 +54,28 @@ In DevOps Services, you can develop software for any language or buildpack. You 
 </li><li> Java 
 </li><li> JSON 
 </li><li> Lua  
+</li><li> Less  
 </li><li> Objective-C</li></ul>
 </div><div class="jh-col-12-3 f_left prm">
 <ul><li>PHP 
 </li><li> Python 
 </li><li> Ruby 
+</li><li> Sass/SCSS 
+</li><li> SQL 
 </li><li> Swift 
-</li><li> Virtual Basic (vb) 
+</li><li> TypeScript 
+</li><li> Visual Basic (vb) 
 </li><li> VMHTML
 </li><li> XHTML 
 </li><li> XML 
-</li><li> Xquery 
-</li><li> yaml 
+</li><li> XQuery 
+</li><li> YAML 
 </li><li> Launch file 	
 </li><li> Dockerfile 
 </li><li> gitignore 
 </li><li> git config 
-</li><li> cfignore </li>
+</li><li> cfignore
+</li><li> properties </li>
 </ul>
 </div></div>
 In addition, DevOps Services supports deployment to Bluemix with predefined buildpacks for Java&trade;, Node.js, Go, PHP, Python, and Ruby apps.
