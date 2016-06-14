@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 6 January 2016
+###### Last updated: 14 June 2016
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&reg; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&reg;.
 
@@ -152,7 +152,7 @@ The IBM Bluemix DevOps Services hook replaces the RationalJazzHub hook. If you c
 
 ### Configuring the service hook
 
-1. In your GitHub repo, on the right, click **Settings**.
+1. In your GitHub repo, click the **Settings** tab.
 ![GitHub settings link.][4]
 2. Click **Webhooks & services**.
 ![GitHub web hooks and services link.][5]
