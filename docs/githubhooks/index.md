@@ -225,7 +225,7 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 
 [1]: https://hub.jazz.net
 [2]: images/githubDevOpsProject.png
-[4]: images/githubSettings1.png
+[4]: images/githubSettings1_new.png
 [5]: images/githubHooks1.png
 [6]: images/githubServiceConfig2.png
 [7]: images/githubComment.png
