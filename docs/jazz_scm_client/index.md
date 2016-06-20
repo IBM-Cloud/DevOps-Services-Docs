@@ -1,6 +1,6 @@
 # Setting up local Eclipse clients to work with Jazz source control
 
-###### Last updated: 25 January 2016
+###### Last updated: 20 June 2016
 
 If you use Jazz Source Control Management (SCM) for your IBM&reg; Bluemix&trade; DevOps Services project, you can either work locally and deliver changes through Eclipse or work by using the integrated Web IDE. If you work locally and deliver changes through Eclipse, you can install the IBM&reg; Rational Team Concert&trade; plug-in for version control.
 
@@ -65,7 +65,10 @@ The project must use a Jazz Source Control Management (SCM) repository.
 3. Click the **Manage IBM DevOps Services Projects** icon.
  ![Manage JazzHub Projects button within the Team Artifacts View](./images/jazzhubfeature.png)
 
-4. In the **Manage IBM DevOps Services Projects** window, enter your alias and IBM id password to sign in to Bluemix DevOps Services, and then click **Next**
+4. In the **Manage IBM DevOps Services Projects** window, enter your alias and personal access token to sign in to Bluemix DevOps Services, and then click **Next**.     
+  
+    **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use a federated ID, to log in to your Eclipse client, you must use a personal access token instead of a password. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [Colleen's Blog  - fix URL](https://developer.ibm.com/devops-services/2016/06/16/whats-federated-authentication-and-how-does-it-affect-me/).
+
 
 5. Select the Bluemix DevOps Services projects to connect to and click **Finish**.
 
