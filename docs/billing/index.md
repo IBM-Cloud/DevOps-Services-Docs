@@ -1,6 +1,6 @@
 #Managing your Bluemix DevOps Services account
 
-###### Last updated: 27 April 2016
+###### Last updated: 20 June 2016
 
 Without signing up for an IBM&reg; Bluemix&reg; account, you can explore IBM Bluemix DevOps Services projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
@@ -28,12 +28,19 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
 <a name='idssetup'></a>
 ##Setting up a DevOps Services account
 
-1.	[Sign up for an account](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your IBM id with an alias. If you have a Jazz ID, that is used as your alias.
-2.	After your IBM id and alias are linked, you can log in to DevOps Services from a web browser or an IBM® Rational Team Concert™ client. In addition, you can access a Git repository from your local Git client.
+1.	[Sign up for an account](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your user ID with an alias. If you have a Jazz ID, that is used as your alias.
+2.	After your user ID and alias are linked, you can log in to DevOps Services from a web browser or an IBM® Rational Team Concert™ client. In addition, you can access a Git repository from your local Git client.
+**Note:** A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use a federated ID, you can use your password to log in to the web client from a browser. To log in to a non-browser client, such as a Git client, IBM Rational Team Concert, or the Bluemix Live Sync command-line client, you must use a personal access token instead of a password. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [Colleen's Blog - fix URL](https://developer.ibm.com/devops-services/2016/06/16/whats-federated-authentication-and-how-does-it-affect-me/).    
 
-	* To log in from a web browser, use your IBM id credentials. 
-	* To log in from a Rational Team Concert client, use your alias and IBM ID password.
-	* To access a Git repository from your local Git client, use your alias and IBM id password.
+If you use a federated ID:    
+	* To log in from a web browser, use your user ID and password.     
+	* To log in from a Rational Team Concert client, use your alias and personal access token.    
+	* To access a Git repository from your local Git client, use your alias and personal access token.        
+
+If you use an IBM id:    
+	* To log in from a web browser, use your user ID and password.     
+	* To log in from a Rational Team Concert client, use your alias and IBM id password.    
+	* To access a Git repository from your local Git client, use your alias and IBM id password.    
 
 **Tips:**
 * If you have authentication problems or if you are linked to the wrong account, you can request support by sending an email to [idslogin@jazz.net](mailto:idslogin@jazz.net). To change the email address of the DevOps Services account that is associated with your IBM id, open your profile, click PERSONAL INFORMATION, and update your email address.

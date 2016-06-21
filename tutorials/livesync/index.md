@@ -1,6 +1,6 @@
 #Test and debug a Node.js app with Bluemix Live Sync
 
-###### Last updated: 5 February 2016
+###### Last updated: 20 June 2016
 
 Testing and debugging are critical to ensure that your app runs without unexpected results. In IBM&reg; Bluemix&reg; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and edit your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app and have all of the benefits of deploying with Bluemix.
 
@@ -140,7 +140,10 @@ You can use Bluemix Live Sync for more than work in the Web IDE. You can also ed
 ###Synchronize your local environment with Bluemix
 
 1. Open a command-line window.
-2. Sign in to Bluemix by typing your IBM id and password:
+2. Sign in to Bluemix by typing your user ID and personal access token or IBM id password.    
+
+     **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use a federated ID, to log in to your Bluemix Live Sync command-line client, you must use a personal access token instead of a password. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [Colleen's Blog  - fix URL](https://developer.ibm.com/devops-services/2016/06/16/whats-federated-authentication-and-how-does-it-affect-me/).
+
 
   ```
   bl login
