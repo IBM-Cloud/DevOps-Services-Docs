@@ -159,7 +159,7 @@ The IBM Bluemix DevOps Services hook replaces the RationalJazzHub hook. If you c
 3. Click **Add service**, and from the **Available Services** list, select **IBM Bluemix DevOps Services**.
 4. If you are using public GitHub, type your federated ID and personal access token or IBM id and password. If you are using GitHub Enterprise, type your company user name and password.  
 
-    **Note:** A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use a federated ID, you must use a personal access token instead of a password. For information about createing a personal access token, see [Colleen's blog - fix URL](https://developer.ibm.com/devops-services/2016/06/16/whats-federated-authentication-and-how-does-it-affect-me/).
+    **Note:** A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use a federated ID, you must use a personal access token instead of a password. For information about creating a personal access token, see [Colleen's blog - fix URL](https://developer.ibm.com/devops-services/2016/06/16/whats-federated-authentication-and-how-does-it-affect-me/).
 
 5. Select the **Active** check box.   
  **Tip:** If you need to disable work item linking later, return to this page and clear the **Active** check box.  
