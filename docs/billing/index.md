@@ -1,6 +1,6 @@
 #Managing your Bluemix DevOps Services account
 
-###### Last updated: 21 June 2016
+###### Last updated: 22 June 2016
 
 Without signing up for an IBM&reg; Bluemix&reg; account, you can explore IBM Bluemix DevOps Services projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
@@ -31,7 +31,7 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
 1.	[Sign up for an account](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your user ID with an alias. If you have a Jazz ID, that is used as your alias.
 2.	After your user ID and alias are linked, you can log in to DevOps Services from a web browser or an IBM® Rational Team Concert™ client. In addition, you can access a Git repository from your local Git client.    
 
-    **Note:** A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use a federated ID, you can use your password to log in to the web client from a browser. To log in to a non-browser client, such as a Git client, IBM Rational Team Concert, or the Bluemix Live Sync command-line client, you must use a personal access token instead of a password. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [Colleen's Blog - fix URL](https://developer.ibm.com/devops-services/2016/06/16/whats-federated-authentication-and-how-does-it-affect-me/).    
+    **Note:** A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you can use your password to log in to the web client from a browser. To log in to a non-browser client, such as a Git client, IBM Rational Team Concert, or the Bluemix Live Sync command-line client, you must use a personal access token instead of a password. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/).    
 
 If you use a federated ID:    
 	* To log in from a web browser, use your user ID and password.     
