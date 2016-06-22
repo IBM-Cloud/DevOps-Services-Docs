@@ -1,6 +1,6 @@
 # Creating a project in Bluemix DevOps Services 
 
-###### Last updated: 20 June 2016
+###### Last updated: 22 June 2016
 
 In an IBM&reg; Bluemix&trade; DevOps Services project, one or more people can build, share, organize, and manage versions of resources to achieve a goal. Usually, that goal is to create an app. After you create an app in a DevOps Services project, you can deploy the app to IBM&reg; Bluemix&trade;. 
 
@@ -70,9 +70,9 @@ If you want to use only the traditional planning feature, which uses tasks and i
  bl login
  ```
 
-5. When you are prompted for credentials, enter your user ID and personal access token or IBM id password.
+5. When you are prompted for credentials, enter your user ID and personal access token or IBM id and password.
 
-    **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use a federated ID, to log in to your command-line client, you must use a personal access token instead of a password. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [Colleen's Blog  - fix URL](https://developer.ibm.com/devops-services/2016/06/16/whats-federated-authentication-and-how-does-it-affect-me/).
+    **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password to log in to your command-line client. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/).
 
 6. Start the project creation process by entering `bl create` and then follow the prompts on the command line.
 
