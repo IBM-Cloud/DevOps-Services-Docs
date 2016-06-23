@@ -39,7 +39,8 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
        * To access a Git repository from your local Git client, use your alias and personal access token. 
        * For more information about how to create a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/).        
     * If you use an IBM id, follow these instructions to log in:    
-       * To log in from a web browser, use your IBM id and password.     * To log in from a Rational Team Concert client, use your alias and IBM id password.    
+       * To log in from a web browser, use your IBM id and password.     
+       * To log in from a Rational Team Concert client, use your alias and IBM id password.    
        * To access a Git repository from your local Git client, use your alias and IBM id password.    
     * If you have authentication problems or if you are linked to the wrong account, you can request support by sending an email to [idslogin@jazz.net](mailto:idslogin@jazz.net). To change the email address of the DevOps Services account that is associated with your IBM id, open your profile, click **PERSONAL INFORMATION**, and update your email address.
     * When you update the email address of your DevOps Services account, the email address of the associated IBM id isn't automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you are prompted to synchronize them.
