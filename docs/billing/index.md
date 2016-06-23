@@ -1,6 +1,6 @@
 #Managing your Bluemix DevOps Services account
 
-###### Last updated: 22 June 2016
+###### Last updated: 23 June 2016
 
 Without signing up for an IBM&reg; Bluemix&reg; account, you can explore IBM Bluemix DevOps Services projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
@@ -28,8 +28,8 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
 <a name='idssetup'></a>
 ##Setting up a DevOps Services account
 
-1.	[Sign up for an account](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your user ID with an alias. If you have a Jazz ID, that is used as your alias.
-2.	After your user ID and alias are linked, you can log in to DevOps Services from a web browser or an IBM® Rational Team Concert™ client. In addition, you can access a Git repository from your local Git client.    
+1.	[Sign up for an account](https://hub.jazz.net/). When you sign up, you need to either create or use an alias. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time that you log in to DevOps Services, you link your user ID with an alias. If you have a Jazz ID, it is used as your alias.
+2.	After your user ID and alias are linked, you can log in to DevOps Services from a web browser or an IBM Rational Team Concert&trade; client. You can also access a Git repository from your local Git client.    
 
     **Important:** 
     * A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). 
@@ -38,7 +38,7 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
        * To log in from a Rational Team Concert client, use your alias and personal access token.     
        * To access a Git repository from your local Git client, use your alias and personal access token. 
        * For more information about how to create a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/).        
-    * If you use an IBM id, follow these instructions to log in:    
+    * If you use an IBM id, follow these instructions to log in:   
        * To log in from a web browser, use your IBM id and password.     
        * To log in from a Rational Team Concert client, use your alias and IBM id password.    
        * To access a Git repository from your local Git client, use your alias and IBM id password.    
@@ -109,8 +109,3 @@ You can monitor the usage details for your Bluemix account. For more information
 To help monitor monthly usage, [see the Bluemix cost estimator](https://ace.ng.bluemix.net/#/pricing/paneId=pricingSheet).
 
 To see your usage details, click **Profile Settings <img class="inline" src="./images/bm-profilealien.png" alt="Profile Settings icon"> > Account > Usage Details**.
-
-
-
-
-
