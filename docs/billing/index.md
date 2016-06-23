@@ -32,12 +32,12 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
 2.	After your user ID and alias are linked, you can log in to DevOps Services from a web browser or an IBM Rational Team Concert&trade; client. You can also access a Git repository from your local Git client.    
 
     **Important:** 
-    * A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). 
+    * Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). 
     * If you use a federated ID, follow these instructions to log in:
        * To log in from a web browser, use your federated ID and password.  
        * To log in from a Rational Team Concert client, use your alias and personal access token.     
        * To access a Git repository from your local Git client, use your alias and personal access token. 
-       * For more information about how to create a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/).        
+       * For more information about how to create a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/).        
     * If you use an IBM id, follow these instructions to log in:   
        * To log in from a web browser, use your IBM id and password.     
        * To log in from a Rational Team Concert client, use your alias and IBM id password.    

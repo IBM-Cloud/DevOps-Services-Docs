@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 22 June 2016
+###### Last updated: 23 June 2016
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&reg; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&reg;.
 
@@ -159,7 +159,7 @@ The IBM Bluemix DevOps Services hook replaces the RationalJazzHub hook. If you c
 3. Click **Add service**, and from the **Available Services** list, select **IBM Bluemix DevOps Services**.
 4. Type your federated ID and personal access token or your IBM id and password.
 
-    **Note:** A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password. For more information about how to create a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/)
+    **Note:** Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password. For more information about creating a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
 
 5. Select the **Active** check box.   
  **Tip:** If you need to disable work item linking later, return to this page and clear the **Active** check box.  
