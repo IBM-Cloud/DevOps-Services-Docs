@@ -31,7 +31,7 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
 1.	[Sign up for an account](https://hub.jazz.net/). When you sign up, you need to either create an alias or use an existing one. An *alias* is a publicly visible short name. Your alias is included in the URL of each project that you own. The first time you log in to DevOps Services, you link your user ID with an alias. If you have a Jazz ID, that is used as your alias.
 2.	After your user ID and alias are linked, you can log in to DevOps Services from a web browser or an IBM® Rational Team Concert™ client. In addition, you can access a Git repository from your local Git client.    
 
-    **Tips:** 
+    **Important:** 
     * A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). 
     * If you use a federated ID, follow these instructions to log in:
        * To log in from a web browser, use your federated ID and password.  
