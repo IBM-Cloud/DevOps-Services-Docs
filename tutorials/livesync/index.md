@@ -1,6 +1,6 @@
 #Test and debug a Node.js app with Bluemix Live Sync
 
-###### Last updated: 22 June 2016
+###### Last updated: 23 June 2016
 
 Testing and debugging are critical to ensure that your app runs without unexpected results. In IBM&reg; Bluemix&reg; DevOps Services, you can test and debug Node.js apps right from the Web IDE. Bluemix Live Sync provides tools to deploy and edit your code within a test environment. You can view simple code updates immediately in the running app without the need to redeploy. Bluemix Live Sync works both from the Web IDE or the command line, so you can choose where to develop your app and have all of the benefits of deploying with Bluemix.
 
@@ -140,15 +140,15 @@ You can use Bluemix Live Sync for more than work in the Web IDE. You can also ed
 ###Synchronize your local environment with Bluemix
 
 1. Open a command-line window.
-2. Sign in to Bluemix by typing your user ID and personal access token or IBM id password.    
-
-    **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password to log in to your Bluemix Live Sync command-line client. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/)
-
-
+2. Sign in to Bluemix by entering this command: 
 
   ```
   bl login
   ```
+  
+   Enter your user ID and personal access token or your IBM id password.    
+
+   **Note**: Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, to log in to your Bluemix Live Sync command-line client, you must use a personal access token instead of a password. If you don't use federated authentication, your IBM id and password work with all clients. For more information about creating a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
   
 3. View a list of your Bluemix projects: 
 
