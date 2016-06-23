@@ -1,6 +1,6 @@
 #Setting up GitHub for Bluemix DevOps Services projects
 
-###### Last updated: 6 January 2016
+###### Last updated: 22 June 2016
 
 If you have source code in a GitHub repository, or if you plan to, you can connect that repo to an IBM&reg; Bluemix&reg; DevOps Services project. When your project is connected to a GitHub repo, you can track changes between DevOps Services and GitHub automatically or manually. You can also automate the deployment of the source in your GitHub repo to your app on IBM&reg; Bluemix&reg;.
 
@@ -152,12 +152,15 @@ The IBM Bluemix DevOps Services hook replaces the RationalJazzHub hook. If you c
 
 ### Configuring the service hook
 
-1. In your GitHub repo, on the right, click **Settings**.
+1. In your GitHub repo, click the **Settings** tab.
 ![GitHub settings link.][4]
 2. Click **Webhooks & services**.
 ![GitHub web hooks and services link.][5]
 3. Click **Add service**, and from the **Available Services** list, select **IBM Bluemix DevOps Services**.
-4. If you are using public GitHub, type your IBM id and password. If you are using GitHub Enterprise, type your company user name and password. 
+4. Type your federated ID and personal access token or your IBM id and password.
+
+    **Note:** A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password. For more information about how to create a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/)
+
 5. Select the **Active** check box.   
  **Tip:** If you need to disable work item linking later, return to this page and clear the **Active** check box.  
 ![Configuration settings for the IBM Bluemix DevOps Services hook][6]
@@ -225,7 +228,7 @@ To automate the deployment of the source in your GitHub repo to your app on Blue
 
 [1]: https://hub.jazz.net
 [2]: images/githubDevOpsProject.png
-[4]: images/githubSettings1.png
+[4]: images/githubSettings1_new.png
 [5]: images/githubHooks1.png
 [6]: images/githubServiceConfig2.png
 [7]: images/githubComment.png

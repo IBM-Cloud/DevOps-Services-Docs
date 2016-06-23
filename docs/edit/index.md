@@ -1,6 +1,6 @@
 # Editing code in Bluemix DevOps Services
 
-###### Last updated: 18 August 2015
+###### Last updated: 22 June 2016
 
 The Web IDE is a browser-based development environment where you can develop for the web.  You can develop in JavaScript, HTML, and CSS with the help of content assist, code completion, and error checking.  Moreover, the Web IDE works with nearly any language and offers syntax highlighting [for most file types](https://hub.jazz.net/docs/overview/#dev_support).  Source control is built in through Git or Jazz SCM, and you can deploy code locally to test and debug your apps.
 
@@ -36,10 +36,10 @@ If you often need to change certain settings while you edit, you can access thos
 
 ![Local Editor Settings](images/local_editor_settings.png)
 
-By default, the settings for the editor style and font size are always shown.  To include other editor settings in the menu, follow these steps:
-1. Click the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon">.
-2. Click **Editor Settings**.
-3. Click the circle next to the setting name to include or exclude it from the **Local Editor Settings** menu.
+By default, the settings for the editor style and font size are always shown.  To include other editor settings in the menu, follow these steps:   
+1. Click the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon">.   
+2. Click **Editor Settings**.   
+3. Click the circle next to the setting name to include or exclude it from the **Local Editor Settings** menu.   
 
 ![Editor Settings toggle](images/editor_settings_toggle.png)
 
@@ -121,7 +121,10 @@ If you have a favorite code editor and don't want to use the Web IDE, you can us
 ###Synchronizing your local environment with Bluemix
 
 1. Open a command-line window.
-2. Sign in to Bluemix with the following command.  You will be prompted for your IBM id and password:
+2. Sign in to Bluemix with the following command.  You will be prompted for your user ID and password.    
+
+    **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password to log in to your command-line client. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/)
+    
 ```
 bl login
 ```

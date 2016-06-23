@@ -1,6 +1,6 @@
 #Automate integrations with DevOps Services <em><span style="color: #35b2d5">BETA</span></em>
 
-######Last modified: 10 February 2015
+######Last modified: 2 June 2015
 
 Time: 15 minutes 
 
@@ -61,6 +61,8 @@ The toolchain also integrates Slack messaging into the DevOps Services pipeline.
 
 <a name='configure_slack'></a>
 ## Configure the Slack integration
+
+**Important**: Notifications that are posted to public Slack channels are visible to everyone on the team. You are responsible for the content that you post. 
 
 1. On the App Details page, go to the Integrations section. 
 2. Expand the **SLACK** section.
