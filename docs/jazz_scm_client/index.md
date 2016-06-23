@@ -1,10 +1,10 @@
 # Setting up local Eclipse clients to work with Jazz source control
 
-###### Last updated: 22 June 2016
+###### Last updated: 23 June 2016
 
-If you use Jazz Source Control Management (SCM) for your IBM&reg; Bluemix&trade; DevOps Services project, you can either work locally and deliver changes through Eclipse or work by using the integrated Web IDE. If you work locally and deliver changes through Eclipse, you can install the IBM&reg; Rational Team Concert&trade; plug-in for version control.
+If you use Jazz Source Control Management (SCM) for your IBM&reg; Bluemix&trade; DevOps Services project, you can either work locally and deliver changes through Eclipse or work by using the integrated Web IDE. If you work locally and deliver changes through Eclipse, you can install the IBM Rational Team Concert&trade; plug-in for version control.
 
-If you use the Track & Plan feature to manage your project plans and work items, you can also access your work items from Eclipse.
+If you use the Track &amp; Plan feature to manage your project plans and work items, you can also access your work items from Eclipse.
 
 * [Installing the Rational Team Concert plug-in](#install_eclipse_and_the_rational_team_concert_plugin)
 * [Connecting to your DevOps Services projects from Eclipse](#connect_to_your_devops_services_projects_from_eclipse)
@@ -65,12 +65,12 @@ The project must use a Jazz Source Control Management (SCM) repository.
 3. Click the **Manage IBM DevOps Services Projects** icon.
  ![Manage JazzHub Projects button within the Team Artifacts View](./images/jazzhubfeature.png)
 
-4. In the **Manage IBM DevOps Services Projects** window, enter your alias and personal access token or IBM id password to sign in to Bluemix DevOps Services, and then click **Next**.     
+4. In the Manage IBM DevOps Services Projects window, sign in to DevOps Services by entering your alias and personal access token or your IBM id password and clicking **Next**.     
   
-    **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password to log in to your Eclipse client. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/)
+    **Note**: Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, to log in to your Eclipse client, you must use a personal access token instead of a password. If you don't use federated authentication, your IBM id and password work with all clients. For more information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
 
 
-5. Select the Bluemix DevOps Services projects to connect to and click **Finish**.
+5. Select the DevOps Services projects to connect to and click **Finish**.
 
 ###Option 2: Connecting by accepting a team invitation
 
@@ -87,11 +87,11 @@ The project must use a Jazz Source Control Management (SCM) repository.
 
 6. Paste the invitation text, click **Next**, and then click **Finish**.
 
-7. Enter your alias and personal access token or IBM id password to sign in to Bluemix DevOps Services.    
+7. Sign in to DevOps Services by entering your alias and personal access token or your IBM id password.    
 
-    **Note**: A DevOps Services user ID can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password to log in to your Eclipse client. If you are not a corporate user with a federated ID, then your IBM id and password will work with all clients. For information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/27/whats-federated-authentication-and-how-does-it-affect-me/)
+    **Note**: Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, to log in to your Eclipse client, you must use a personal access token instead of a password. If you don't use federated authentication, your IBM id and password work with all clients. For more information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
 
-You are now connected to your Bluemix DevOps Services project in Eclipse. To see the new repository connection and project area, click the **Team Artifacts** tab.
+You are now connected to your DevOps Services project in Eclipse. To see the new repository connection and project area, click the **Team Artifacts** tab.
 
 <a name='import_code_into_eclipse_from_jazz_source_control'></a>
 ## Loading DevOps Services projects in Eclipse
