@@ -1,7 +1,7 @@
 # FAQ
 ##### Last updated: 7 January 2016
 
-Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&trade; DevOps Services community.
+Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&reg; DevOps Services community.
 ____
 
 -   [I see IBM DevOps Services is now called IBM Bluemix DevOps Services. Can you tell me more?](#q1)
@@ -223,10 +223,9 @@ If you don't see the run bar in the Web IDE, one of these issues occured:
    * Fix: In your project's root directory, create a `project.json` file.
 2. DevOps Services failed to determine which folder your app is in.
    * Fix: If your app is in a directory other than the project root, do one of these steps:
-      * In your project's root directory, create a `manifest.yml` file.  Then edit the file so that it points to the location of your app.		
-For example: `path: path_to_your_app`
+      * In your project's root directory, create a `manifest.yml` file.  Then edit the file so that it points to the location of your app. For example: `path: path_to_your_app`
       * Move your app so that it is in your project's root directory.
-* 3. DevOps Services does not detect that your app is a Node.js app.
+3. DevOps Services does not detect that your app is a Node.js app.
    * Fix: In the app folder of your project, create a `package.json` file.
 
 <a name="q20"></a>
