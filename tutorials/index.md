@@ -45,7 +45,7 @@
 -->
 <tr><td>
 <h2><a href="/tutorials/activedeploy"><strong>Update a running app with zero downtime (15 minutes)</a></h2>
-<h6>A tutorial about using Active Deploy in the Build &amp; Deploy pipeline to update your running apps</h6></strong>
+<h6>A tutorial about using Active Deploy in the Build &amp; Deploy pipeline to update your running apps</h6>
 <p>Update a preconfigured sample app to see how you can automate the rollout of changes to your app.</p>
 </td></tr>
 </table>
