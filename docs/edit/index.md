@@ -1,8 +1,8 @@
 # Editing code in Bluemix DevOps Services
 
-###### Last updated: 18 August 2015
+###### Last updated: 23 June 2016
 
-The Web IDE is a browser-based development environment where you can develop for the web.  You can develop in JavaScript, HTML, and CSS with the help of content assist, code completion, and error checking.  Moreover, the Web IDE works with nearly any language and offers syntax highlighting [for most file types](https://hub.jazz.net/docs/overview/#dev_support).  Source control is built in through Git or Jazz SCM, and you can deploy code locally to test and debug your apps.
+The Web IDE is a browser-based development environment where you can develop for the web.  You can develop in JavaScript, HTML, and CSS with the help of content assist, code completion, and error checking.  Moreover, the Web IDE works with nearly any language and offers syntax highlighting [for most file types](https://hub.jazz.net/docs/overview/#dev_support). Source control is built in through Git or Jazz SCM, and you can deploy code locally to test and debug your apps.
 
 Best of all, the Web IDE is powered by the web.  You have nothing to install, nothing to maintain, and nothing to scale.  You can develop, anywhere that you have an internet connection.
 
@@ -32,14 +32,14 @@ You can view and modify the Web IDE's settings by clicking the **Settings** icon
 | Plug-ins  | Install, disable, or remove plug-ins from the editor  |
 | Tern  | View a list of all of the Tern code analysis plug-ins that are in the editor |
 	
-If you often need to change certain settings while you edit, you can access those settings quickly from the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon"> in the upper-right corner of the editor
+If you often need to change certain settings while you edit, you can access those settings quickly from the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon"> in the upper-right corner of the editor.
 
 ![Local Editor Settings](images/local_editor_settings.png)
 
-By default, the settings for the editor style and font size are always shown.  To include other editor settings in the menu, follow these steps:
-1. Click the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon">.
-2. Click **Editor Settings**.
-3. Click the circle next to the setting name to include or exclude it from the **Local Editor Settings** menu.
+By default, the settings for the editor style and font size are always shown. To include other editor settings in the menu, follow these steps:   
+1. Click the **Local Editor Settings** icon <img class="inline" src="./images/local_settings_icon.png"  alt="Local Editor Settings icon">.   
+2. Click **Editor Settings**.   
+3. Click the circle that is next to the setting name to include or exclude it from the **Local Editor Settings** menu.   
 
 ![Editor Settings toggle](images/editor_settings_toggle.png)
 
@@ -51,7 +51,7 @@ The Web IDE has two main sections.  The first section is the file navigator on t
 
 **Tip:** You can upload files to the file navigator by dragging them from your computer to the file navigator.
 
-The second section is the editor pane on the right.  The editor provides several features to make coding easier, such as content assist and syntax validation.
+The second section is the editor pane on the right. The editor provides several features to make coding easier, such as content assist and syntax validation.
 
 ![Web IDE](images/webide.png)
 
@@ -77,15 +77,15 @@ Outside of the editor, you can get help on any page by pressing `Shift+?`.
 <a name='sourcecontrol'></a>
 ##Source control
 You can access integrated source code management tools from the Web IDE.
-* If your project is sourced in Git, click the **Git Repository** icon <img class="inline" src="./images/git_icon.png"  alt="The Git Repository icon">.  For more information, see [Source control with Git](../git/)
-* If your project is sourced in Jazz, click the **Jazz** icon <img class="inline" src="./images/jazz_icon.png"  alt="The Jazz icon">.  For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/)
+* If your project is sourced in Git, click the **Git Repository** icon <img class="inline" src="./images/git_icon.png"  alt="The Git Repository icon">. For more information, see [Source control with Git](../git/).
+* If your project is sourced in Jazz, click the **Jazz** icon <img class="inline" src="./images/jazz_icon.png"  alt="The Jazz icon">. For more information, see [Set up local Eclipse clients to work with Jazz SCM](../jazz_scm_client/).
 
 
 <a name='deploy'></a>
 ##Deploying an app from your workspace
 
-1. To deploy your app, either select a launch configuration from the run bar or [create a launch configuration](https://hub.jazz.net/tutorials/livesync/#launch_configuration)
-1. Click the deploy icon <img class="inline" src="./images/deploy_button.png"  alt="The deploy icon">.  An instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration. 
+1. To deploy your app, either select a launch configuration from the run bar or [create a launch configuration](https://hub.jazz.net/tutorials/livesync/#launch_configuration).
+1. Click the deploy icon <img class="inline" src="./images/deploy_button.png"  alt="The deploy icon">. An instance of your app is deployed by using the current contents of your workspace and the environment that is defined in your launch configuration. 
 2. After your app is deployed, you can click the icons on the run bar to complete more actions:
 ![Run bar](images/runbar.png)
 
@@ -111,7 +111,7 @@ If you like working from a command-line shell, click the **Shell** icon <img  cl
 <a name='editlocal'></a>
 ##Editing outside of the Web IDE
 
-If you have a favorite code editor and don't want to use the Web IDE, you can use Bluemix Live Sync. Bluemix Live Sync is a command-line application that synchronizes the changes in your local file system with your cloud workspace in IBM Bluemix DevOps Services.  Bluemix Live Sync makes it possible for you to work directly with your project files by using any tool.
+If you have a favorite code editor and don't want to use the Web IDE, you can use Bluemix Live Sync. Bluemix Live Sync is a command-line application that synchronizes the changes in your local file system with your cloud workspace in IBM Bluemix DevOps Services. Bluemix Live Sync makes it possible for you to work directly with your project files by using any tool.
 
 ###Before you begin 
 
@@ -121,21 +121,25 @@ If you have a favorite code editor and don't want to use the Web IDE, you can us
 ###Synchronizing your local environment with Bluemix
 
 1. Open a command-line window.
-2. Sign in to Bluemix with the following command.  You will be prompted for your IBM id and password:
-```
-bl login
-```
-3. View a list of your Bluemix projects: 
-```
-bl projects
-```
-4. Synchronize your local environment with your project on Bluemix:
-```
-bl sync projectName
-```
-where `projectName` is your Bluemix app's name.
+2. Sign in to Bluemix by entering this command:     
+   ```
+   bl login
+   ```
+   Enter your user ID and password when you are prompted.
 
-When you are finished making changes, enter `q` to end synchronization.
+   **Note**: Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, to log in to your command-line client, you must use a personal access token instead of a password. If you don't use federated authentication, your IBM id and password work with all clients. For more information about creating a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
+   
+3. View a list of your Bluemix projects: 
+   ```
+   bl projects
+   ```
+4. Synchronize your local environment with your project on Bluemix:
+   ```
+   bl sync projectName
+   ```
+   where `projectName` is your Bluemix app's name.
+
+5. When you are finished making changes, enter `q` to end synchronization.
 
 ###Enabling the Desktop Sync feature to edit code locally
 

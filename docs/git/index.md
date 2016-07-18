@@ -1,6 +1,6 @@
 #Git source control 
 
-###### Last updated: 03 March 2016
+###### Last updated: 24 June 2016
 
 If you store your code in a Git repository that is hosted by IBM® Bluemix&trade; DevOps Services, you can work with code in a Git terminal or in a web IDE. You can also use GitHub source control with DevOps Services projects. If you work on a local workstation, you can use Git terminal commands to edit the contents of your Git repo. If you use the Web IDE, you don't need the Git terminal: you can run many common Git commands in the Web IDE. 
 
@@ -75,9 +75,12 @@ If you want to code and test locally, set up a local repo.
 
 1. In your terminal, type `git clone `, paste your Git URL, and press Enter.
 
-1. When you are prompted, enter your alias and password.  
-**Note**: If you are not prompted for your password, do not continue.  Delete your cloned repo
-and repeat the steps by using a modified repo address: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`.
+1. When you are prompted, enter your alias and personal access token or IBM id password.      
+    
+    **Notes**: 
+    * If you are not prompted for your password, do not continue.  Delete your cloned repo and repeat the steps by using a modified repo address: `https://your_alias:your_IBM_ID_password@hub.jazz.net/alias/project_name`.
+    * Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password. For more information about creating a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
+
 
 1. After your repo replicates, move into your new local repo.  
 
@@ -225,7 +228,10 @@ All of the available pull requests are displayed. For each pull request, you hav
 ####Git terminal
 1. Type `git pull` and press Enter.
 
-1. Enter your IBM id and password.
+1. Enter your user ID and personal access token or IBM id password.    
+
+   **Note:** Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, you must use a personal access token instead of a password. For more information about creating a personal access token, see [What's federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
+
 
 <a name="delete_a_local_branch"></a>
 ### Delete a local branch

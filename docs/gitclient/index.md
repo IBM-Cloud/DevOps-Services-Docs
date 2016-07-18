@@ -1,7 +1,7 @@
 <a name="top"></a>
 #Setting up local clients to work with Git source control 
 
-###### Last updated: 02 March 2016
+###### Last updated: 24 June 2016
 
 
 If you use a Git repository for your IBM&reg; Bluemix&trade; DevOps Services project, you can manage your repo and work locally or in the DevOps Services Web IDE. You can either use the command line to access your repo or, if you work in Eclipse, install the EGit plug-in for version control.
@@ -110,7 +110,9 @@ If you use Eclipse and have a project that uses Git for source control, you can 
 
 6. In the **URI** field, paste the Git URL.
 
-7. In the Authentication section, type your alias and IBM id password, and then click **Next**.
+7. In the Authentication section, type your alias and personal access token or IBM id password, and then click **Next**.    
+
+    **Note**: Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, to log in to your Eclipse client, you must use a personal access token instead of a password. If you don't use federated authentication, your IBM id and password work with all clients. For more information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
 
 8. Select the branches to work on and click **Next**.
 
@@ -166,7 +168,10 @@ If you use Eclipse, you can use the Rational Team Concert plug-in to access your
 1. In Eclipse, click **Window > Show View > Other... > Team > Team Artifacts**.
 2. Click the **Manage IBM DevOps Services Projects** icon, which is visible under the Team category. 
  ![Manage IBM DevOps Services Projects button within the Team Artifacts view](./images/jazzhubfeature.png)    
-3. In the Connect to IBM DevOps Services window, type your alias and IBM id password to sign in to Bluemix DevOps Services, and then click **Next**.
+3. In the Connect to IBM DevOps Services window, type your alias and personal access token or IBM id password to sign in to Bluemix DevOps Services, and then click **Next**.    
+  
+  **Note**: Your user ID for DevOps Services can be either an IBM id or a federated ID (corporate ID). If you use federated authentication, to log in to your Eclipse client, you must use a personal access token instead of a password. If you don't use federated authentication, your IBM id and password work with all clients. For more information about creating a personal access token, see [What’s federated authentication and how does it affect me?](https://developer.ibm.com/devops-services/2016/06/23/whats-federated-authentication-and-how-does-it-affect-me/)
+
 4. Select the Bluemix DevOps Services projects to connect to and click **Finish**.
 5. Use the Work Items or My Work view to work with work items.
 
