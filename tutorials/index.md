@@ -27,7 +27,7 @@
 <p>While your Node.js app is running on Bluemix, you can debug your code, deploy to a test environment, and make changes as needed.</p>
 </td></tr>
 <tr><td>
-<h2><a href="/tutorials/trackplan">Track and plan a Bluemix DevOps Services project (30 minutes)</a></h2>
+<h2><a href="/tutorials/trackplan"><strong>Track and plan a Bluemix DevOps Services project (30 minutes)</a></h2>
 <h6>A tutorial for people who plan projects</h6>
 <p>Track and plan the work for a project by creating work items, tracking a backlog, planning sprints, and completing current work.</p>
 </td></tr>
