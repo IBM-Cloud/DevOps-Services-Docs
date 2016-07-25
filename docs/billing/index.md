@@ -1,6 +1,6 @@
 #Managing your Bluemix DevOps Services account
 
-###### Last updated: 23 June 2016
+###### Last updated: 25 July 2016
 
 Without signing up for an IBM&reg; Bluemix&reg; account, you can explore IBM Bluemix DevOps Services projects and view the Docs. With an account, you can access all of the features that you need to develop, track, plan, and deploy apps.
 
@@ -43,7 +43,7 @@ After you sign up for a Bluemix account and set up a DevOps Services project, yo
        * To log in from a Rational Team Concert client, use your alias and IBM id password.    
        * To access a Git repository from your local Git client, use your alias and IBM id password.    
     * If you have authentication problems or if you are linked to the wrong account, you can request support by sending an email to [idslogin@jazz.net](mailto:idslogin@jazz.net). To change the email address of the DevOps Services account that is associated with your IBM id, open your profile, click **PERSONAL INFORMATION**, and update your email address.
-    * When you update the email address of your DevOps Services account, the email address of the associated IBM id isn't automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/account/profile/us?page=signinview). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you are prompted to synchronize them.
+    * When you update the email address of your DevOps Services account, the email address of the associated IBM id isn't automatically updated; you must synchronize the accounts. To synchronize the accounts, [update the email address for the linked IBM id](https://www.ibm.com/ibmweb/myibm/profile/profile-edit.jsp). If you don't synchronize the accounts, the next time that you log in to DevOps Services, you are prompted to synchronize them.
 
 <a name='bmaccounts'></a>
 ##Bluemix accounts
