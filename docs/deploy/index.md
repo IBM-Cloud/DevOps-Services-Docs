@@ -1,4 +1,4 @@
-#Build and deploy
+# Build and deploy
 
 ###### Last updated: 1 March 2016
 
@@ -18,7 +18,7 @@ The IBM&reg; Bluemix&reg; DevOps Services Build &amp; Deploy feature, also known
 * [Extending the capabilities of your pipeline](#ext)
 
 <a name="stages"></a>
-##Stages
+## Stages
 
 Stages organize input and jobs as your code is built, deployed, and tested. Stages accept input from either source control repositories or build jobs in other stages. When you create your first stage, the default settings are set for you on the **INPUT** tab.
 
@@ -35,7 +35,7 @@ You might want tighter control of a specific stage. If you do not want a stage t
 ![The INPUT tab][8]
 
 <a name="jobs"></a>
-##Jobs
+## Jobs
 A job is an execution unit within a stage. A stage can contain multiple jobs, and the jobs in a stage run sequentially. By default, if a job fails, subsequent jobs in the stage do not run.
 
 ![Build and test jobs within a stage][15]
@@ -49,7 +49,7 @@ After a job runs, the container that was created for it is discarded. The result
 To learn how to add a job to a stage, [see Adding a job to a stage][20].
 
 <a name="builds"></a>
-###Build jobs
+### Build jobs
 
 Build jobs compile your project in preparation for deployment. They generate artifacts that can be sent to a build archive directory, although by default, the artifacts are placed in the project's root directory.
 
@@ -58,27 +58,27 @@ Jobs that take input from build jobs must reference build artifacts in the same 
 **Note**: If you select the **Simple** builder type for a build job, you skip the build process. In that case, your code is not compiled, but is sent to the deployment stage as is. To both build and deploy, select a builder type other than **Simple**. 
 
 <a name="builds_var"></a>
-####Environment properties for build scripts
+#### Environment properties for build scripts
 You can include environment properties within a build job's build shell commands. The properties provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="deploys"></a>
-###Deploy jobs
+### Deploy jobs
 
 Deploy jobs upload your project to Bluemix as an app and are accessible from a URL. After a project is deployed, you can find the deployed app on your Bluemix Dashboard. You can configure the build and deploy jobs as separate stages or add them to the same stage to run automatically.
 
 Deploy jobs can deploy new apps or update existing apps. Even if you first deployed an app by using another method, such as the Cloud Foundry command line interface or the run bar in the Web IDE, you can update the app by using a deploy job. To update an app, in the deploy job, use that app's name.
 
 <a name="deploys_var"></a>
-####Environment properties for deployment scripts
+#### Environment properties for deployment scripts
 
 You can include environment properties within a deploy job's deployment script. These properties provide access to information about the job's execution environment. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
 <a name="tests"></a>
-###Test jobs
+### Test jobs
 If you want to require that certain conditions are met, include test jobs before or after your build and deploy jobs. Test jobs are highly customizable. For example, you might run tests on your project code and a deployed instance of your app. 
 
 <a name="manifests"></a>
-##Manifest files
+## Manifest files
 Manifest files, which are named `manifest.yml` and stored in a project's root directory, control how your project is deployed to Bluemix. For information about creating manifest files for a project, [see the Bluemix documentation about application manifests][1]. To integrate with Bluemix, your project must have a manifest file in its root directory. However, you are not required to deploy based on the information in the file. 
 
 In the pipeline, you can specify everything that a manifest file can by using `cf push` command arguments. The `cf push` command arguments are helpful in projects that have multiple deployment targets. If multiple deploy jobs all try to use the route that is specified in the project manifest file, a conflict occurs. 
@@ -88,7 +88,7 @@ To avoid conflicts, you can specify a route by using `cf push` followed by the h
 To use the `cf push` command arguments, open the configuration settings for a deploy job and modify the **Deploy Script** field. For more information, [see the Cloud Foundry Push documentation][3]. 
 
 <a name="example"></a>
-##An example pipeline
+## An example pipeline
 
 A simple pipeline might contain three stages:
 
@@ -103,7 +103,7 @@ A simple pipeline might contain three stages:
 Stages receive input from repositories and build jobs. The jobs in a stage run sequentially and independently of each other. In the example pipeline, the stages run sequentially even though the test and prod stages receive input from the build stage.
 
 <a name="add_stage"></a>
-##Adding a stage
+## Adding a stage
 
 1. On the Build & Deploy Pipeline page, click **ADD STAGE**. The Stage Configuration page opens. 
 2. Configure the stage.
@@ -114,7 +114,7 @@ Stages receive input from repositories and build jobs. The jobs in a stage run s
 ![Adding a stage to a pipeline][13]
 
 <a name="add_job"></a>
-##Adding a job to a stage
+## Adding a job to a stage
 
 1. On the stage, click the **Stage Configuration** icon, and then click **Configure Stage**. 
 2. Click the **JOBS** tab.
@@ -125,7 +125,7 @@ Stages receive input from repositories and build jobs. The jobs in a stage run s
 ![Adding a job to a stage][14]
 
 <a name="run_stage"></a>
-##Running a stage
+## Running a stage
 
 You can manually run a stage by clicking the **Run Stage** icon on the Build &amp; Deploy Pipeline page. 
 
@@ -139,11 +139,11 @@ You can also request on-demand builds and deployments from the build history pag
 To cancel a running stage, on the stage, click **View logs and history**. In the list on the left, click the running job's number and then click **CANCEL**. You can also cancel jobs individually by clicking a job and then clicking **CANCEL**, or by clicking the **Stop** icon next to a job on its stage.
   
 <a name="deploy"></a>
-##Deploying an app
+## Deploying an app
 
 A properly configured deploy job deploys your app to your target whenever the job is run. To manually run a deploy job, click the **Run Stage** icon of the stage that the job is in.
 
-###Input revisions
+### Input revisions
 When you run a stage manually, or if it runs because the stage before it is completed, the running stage selects its input revision. Usually, the input revision is a build number. To select the input revision, the stage follows this process:
 
 1. If a specific revision is selected, use it.
@@ -152,11 +152,11 @@ When you run a stage manually, or if it runs because the stage before it is comp
 
 **Tip:** You can deploy a previous build. On the stage that contains the build, click **View logs and history**. On the page that opens, select the build. Click **SEND TO**, and select a target.
 
-###Adding services to apps
+### Adding services to apps
 You can add services to your apps and manage those services from your Bluemix Dashboard or the Cloud Foundry command line interface (CLI). You can also issue Cloud Foundry CLI commands in scripts for DevOps Services pipeline jobs. For example, you can add a service to an app in the script of a deploy job. For more information about adding services, see [see Adding a service to your application][24].
 
 <a name="logs"></a>
-##Viewing logs
+## Viewing logs
 
 You can view the logs for jobs and view stages as they are running on the Stage History page. 
 
@@ -173,13 +173,13 @@ You can also run, cancel, or configure a stage from the Stage History page. At t
 ![Clicking a stage run number to select it on the Stage History page][26]
 
 <a name="access"></a>
-##Controlling access
+## Controlling access
 
 You can restrict who is able to run stages or modify a pipeline. To do so, go to the Pipeline Settings page, which you can reach by clicking the **Stage Configuration** icon on the Pipeline: All Stages page. 
 ![The pipeline settings gear icon][22]
 
 <a name="env"></a>
-##Environment properties and resources
+## Environment properties and resources
 
 You can use environment properties and pre-installed resources to interact with the Build &amp; Deploy pipeline. For example, you might incorporate them into a job script or test command. For more information, [see Environment properties and resources for the Build &amp; Deploy pipeline][25].
 
@@ -192,7 +192,7 @@ You can add four types of properties from the Environment Properties tab:
 * **Properties**: A file in the project's repository. This file can contain multiple properties. Each property must be on its own line. To separate key-value pairs, use the equals sign (=). 
 
 <a name="ext"></a>
-##Extending the capabilities of your pipeline
+## Extending the capabilities of your pipeline
 You can extend the capabilities of your Build & Deploy pipeline by configuring your jobs to use supported services. For example, test jobs can run static code scans and build jobs can globalize strings.
 
 For more information on extending pipeline capabilities, [see Extending the capabilities of your Build & Deploy pipeline][21].
