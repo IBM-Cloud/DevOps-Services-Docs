@@ -1,6 +1,6 @@
-#Clone, edit, and deploy an app
+# Clone, edit, and deploy an app
 
-######Last updated: 01 December 2015
+###### Last updated: 01 December 2015
 
 Time: 60 minutes 
 
@@ -60,7 +60,7 @@ To do this tutorial, you need a Bluemix account. Bluemix accounts provide access
 
 With the Track & Plan feature in DevOps Services, you can manage projects by using an agile approach. You can create sprints and rank and assign stories, tasks, and defects to members of your development team. 
 
-###Enable the Track & Plan feature
+### Enable the Track & Plan feature
 
 1. On the project's Overview page, click the **Project settings** icon.
 ![The Project Settings icon][44]
@@ -69,14 +69,14 @@ With the Track & Plan feature in DevOps Services, you can manage projects by usi
 4. Click **SAVE**.
 
 
-###Explore the Track & Plan views
+### Explore the Track & Plan views
 
 1. Near the top of the page, click **TRACK & PLAN**.
 2. If you don't see lanes that are labeled OPEN and IN PROGRESS, open the Lanes view by clicking **Display as lanes**.
 ![Click Display as lanes button][38]
 3. In the OPEN lane, click the **Create a work item** field. Work items are grouped into the OPEN, IN PROGRESS, and RESOLVED lanes based on their status.
 
-###Create a task
+### Create a task
 Depending on what you're planning, you can create different types of work items. For example, to describe a minor feature update, you might create a task item. To track the work to fix a problem, you might create a defect item. 
 
 Describe a task to personalize the Sentiment Analysis App. You can assign attributes to the new work item by clicking the attribute icons under the **Create a work item** field, and you can use shorthand in the field:
@@ -97,7 +97,7 @@ Your project now has one work item: a task to update the app's default search to
 
 ![A recently created work item][5]
 
-###Change the status of the task
+### Change the status of the task
 
 1. On the task, click the **Status** icon.
 2. Click **Start Working**. The task moves from the OPEN lane to IN PROGRESS lane.
@@ -150,7 +150,7 @@ A pipeline is formed by its stages. The pipeline for your Sentiment Analysis app
 
 <!--**Important:** You can complete this tutorial for free because a project is granted 60 minutes of free build time per month. However, the pipeline is a feature of the IBM Continuous Delivery Pipeline for Bluemix (the Delivery Pipeline service). When you use the Delivery Pipeline service with Bluemix, you can generate charges to your Bluemix account. For more information about Bluemix, DevOps Services, and charges, [see Configuring Bluemix billing for Bluemix DevOps Services][39].-->
 
-###Explore the build stage
+### Explore the build stage
 1. On the top navigation bar, click **BUILD & DEPLOY**. 
 
 2. On the Build stage tile, click the **Stage Configuration** icon <img class="inline" src="images/configure_stage.png" alt="The Stage Configuration icon"> and then click **Configure Stage**.  
@@ -173,7 +173,7 @@ A pipeline is formed by its stages. The pipeline for your Sentiment Analysis app
 
 The next stage is the Deploy stage; it contains a deploy job. Deploy jobs deploy your project to Bluemix. You can have many deploy jobs in a project, but in this tutorial, you need only one.
 
-###Explore the deployment stage
+### Explore the deployment stage
 
 0. On the Deploy stage tile, click the **Stage Configuration** icon <img class="inline" src="images/configure_stage.png" alt="The Stage Configuration icon"> and then click **Configure Stage**.
 
