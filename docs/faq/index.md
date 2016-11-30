@@ -1,5 +1,5 @@
 # FAQ
-##### Last updated: 7 January 2016
+##### Last updated: 30 November 2016
 
 Looking for more answers? Check out the [forum](https://developer.ibm.com/answers/smartspace/devops-services/), where you can ask questions and get advice from IBM developers and the IBM&reg; Bluemix&reg; DevOps Services community.
 ____
@@ -52,7 +52,7 @@ You can find help resources for getting started and improving your skills on the
 ### Why can't I accept my project invitation?
 
 If you try to accept a project invitation but get a message that states `A problem occurred with the invitation`, one of these issues might have occurred:   
-- The email address that is associated with your IBM id is different than the email address that the invitation was sent to.  To fix this issue, check your My IBM profile and your IBM Bluemix DevOps Services profile and make sure that they are both associated with the same email address.  
+- The email address that is associated with your IBM id is different than the email address that the invitation was sent to.  Make sure that the project owner sent the invitation to the email address that you use for your accounts. To fix this issue, check your My IBM profile and your IBM Bluemix DevOps Services profile and make sure that they are both associated with the same email address.  
 
    * [IBM Profile](https://www.ibm.com/account/profile/us): Check the value in the **Email** field.
    * [Bluemix DevOps Services profile](https://hub.jazz.net/account/profile): On the left, click **PERSONAL INFORMATION**, and then check the value in the **Email** field.
@@ -78,12 +78,15 @@ Create a new alias:
 1. Log in to [DevOps Services](https://hub.jazz.net), click the **Profile Settings** icon, and click  **Profile**.  
 2. On your profile page, click **EDIT PROFILE**.  
 3. Click **PERSONAL INFORMATION** and change your email address to another email address that is not associated with your IBM id.
+  
   **Note:** To verify which email address is associated with your IBM id, click [here](https://www.ibm.com/account/profile/us?page=signinview).  
 
 Unlink your email address:  
 1. Log in to [DevOps Services](https://hub.jazz.net) by using your IBM id.  
 2. Go to the [Unlink your Jazz ID and IBM id page](https://login.jazz.net/psso/proxy/unlink?redirect_uri=https://hub.jazz.net/) and click **Unlink Accounts**.  
 3. After your accounts are unlinked, log out of DevOps Services.  
+
+ **Tip**: To access an existing project after you unlink your accounts, you must use the Jazz ID that you unlinked, and then create a project invitation for the new Jazz ID.
 
 Associate your new alias with your IBM id:  
 1. Log in to [DevOps Services](https://hub.jazz.net) by using your IBM id.  
